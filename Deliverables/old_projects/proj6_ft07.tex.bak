@@ -1,0 +1,129 @@
+\documentclass[letterpaper,12pt]{article}
+
+\RequirePackage{GE05}
+% this inputs graphicx, too
+\RequirePackage{comment}
+\RequirePackage[hypertex]{hyperref}
+
+\def\ClassName{The Global Economy}
+\def\Category{Professor David Backus}
+\def\HeadName{Group Project \#6}
+
+\begin{document}
+\parindent = 0.0in
+\parskip = \bigskipamount
+\thispagestyle{empty}%
+\Head
+
+\centerline{\large \bf \HeadName}%
+\centerline{Revised:  \today}
+
+\medskip
+{\it Submit via Blackboard by 9am March 29.}
+\medskip
+
+You are delighted to have a summer internship at Citigroup Capital Markets.  
+Your first rotation:  Fixed Income Research.  
+On your first day, the Managing Director gives you a small project to get your feet wet. 
+Noting that bond markets are driven largely by macroeconomic news, 
+he asks you to write a report summarizing the prospects for the US 
+economy over the coming year --- specifically, 
+the year-on-year growth rate of industrial production.  
+Your report should include:  
+%
+\begin{itemize}
+\item A list of what you think are the most useful economic indicators
+along with a short description of what they are and why you think they 
+are useful.  
+
+\item A statistical analysis of what each of these indicators implies  
+for economic activity over the next 3-12 months.  
+
+\item A combination forecast that aggregates  --- in some way --- 
+the information in each of your chosen indicators into a 
+12-month forecast of the growth rate of industrial production.  
+
+\item A narrative to be shared with clients 
+that weaves these ingredients into a coherent story 
+about bond markets and the US economy.  
+If appropriate, point out aspects of the current situation 
+that are uncertain or difficult to explain.  
+\end{itemize}
+%
+He hands you a spreadsheet containing a large number of 
+economic indicators and walks away.  
+
+
+\vfill \centerline{\it \copyright \ \number\year \ 
+NYU Stern School of Business}
+
+\end{document}
+% --------------------------------------------------------------------------
+\newpage
+{\bf Sketch of a possible answer:}  
+\begin{itemize}
+\item Regression-based forecast.  Whatever you like.  
+If you tried multiple indicators, you may have found that they 
+point in different directions.  Welcome to the real world!   
+
+\item Interest rate forecast.  The results of the calculations are
+%
+\begin{center}
+\begin{tabular}{cccccc}
+\hline 
+         &  Current &  Current & Average & Risk & Expected \\
+Maturity &  Yield  &  Forward  & Forward & Premium & Short Rate \\
+\hline 
+1 &   5.1498 & 5.1498 &   4.2625  &       0  &  5.1498    \\
+2 &   5.1504 & 5.1510 &   4.9663  &  0.7038  &  4.4472    \\
+3 &   5.1344 & 5.1024 &   5.4612  &  1.1987  &  3.9037    \\
+4 &   5.1347 & 5.1356 &   5.6933  &  1.4307  &  3.7049    \\
+5 &   5.1404 & 5.1632 &   5.9747  &  1.7122  &  3.4510   \\
+\hline 
+\end{tabular}
+\end{center}
+% 
+As with the euro calculations we did in class, the flat yield 
+curve suggests that the market expected short rates to fall in the 
+coming years.  
+
+\item There's one issue you may need to face:  
+the yield curve suggests declining interest rates, 
+which would normally be associated with lower growth.  
+If you forecast lower, growth, no problem:  you narrative might be 
+that you see growth slowing and interest rates coming down, 
+which is a common pattern.  
+But if you see growth continuing at or near its historical average, 
+which is what most analysts predict, 
+then you might want to talk about why the yield curve is so flat.  
+A common story is that world investment has been low. 
+Another is some variant on ``bond markets have gone crazy.''  
+
+Here's Lehman's version ({\it Global Outlook:  Plain Sailing --- For Now\/}):  
+\begin{quote}
+
+The yield curve has a venerable record as a leading indictor of recession: the 10s-funds spread has turned negative within a
+year and a half of each of the past six recessions. 
+However, history is littered with simple rules of thumb that fall
+apart soon after the rule is discovered. Before blindly applying such rules it is important to understand why they work. In
+particular, the yield curve works as a recession indicator precisely because it is a signal that the Fed is so serious about
+fighting inflation that it is willing to risk recession. Past inversions have been associated with a 3-5\% real Fed funds rate.
+How does that apply today? So far, the Fed’s ``measured” rate hikes have been designed to slow growth without causing a
+financial accident. Most Fed officials view the low level of bond yields, and therefore the very flat yield curve, as a
+``conundrum.” While it is possible that the bond market is telling the Fed that it is being too tough, so that a period of low
+growth and low inflation lies ahead, we think it more likely low bond yields reflect a number of growth-stimulative factors.
+Consider the non-policy explanations for the flat yield curve. The global savings glut, or more precisely the global shortage
+of capital spending opportunities, is a net stimulus to the US economy: it means low demand for US capital goods exports,
+but more important it means an inflow of cheap financing from overseas, stimulating the interest-sensitive parts of the US
+economy. Massive buying of Treasury securities by Asian central banks has the same effect: this currency manipulation
+hurts the US trade balance but stimulates interest-sensitive spending. Buying by duration-matching pension funds tends to
+flatten the yield curve with no harm to the economy. And a flat yield curve resulting from less risk of growth and inflation
+volatility is a net positive to the economy.
+Perhaps the bond market is smarter than the Fed, the economics consensus and other financial markets (stocks, credit
+markets and the housing market): or perhaps the yield curve is not a reliable predictor of weakness ahead.
+
+\end{quote}
+
+\end{itemize}
+
+\end{document} 

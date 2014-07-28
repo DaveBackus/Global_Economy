@@ -1,0 +1,412 @@
+\documentclass[letterpaper,12pt]{article}
+
+\RequirePackage{GE05}
+% this inputs graphicx, too
+\RequirePackage{comment}
+\RequirePackage[hypertex]{hyperref}
+
+\def\ClassName{The Global Economy}
+\def\Category{Professor David Backus}
+\def\HeadName{Group Project \#5}
+
+\begin{document}
+\parindent = 0.0in
+\parskip = \bigskipamount
+\thispagestyle{empty}%
+\Head
+
+\centerline{\large \bf \HeadName}%
+\centerline{Revised:  \today}
+
+\medskip
+{\it Submit via Blackboard by 9am March 1.}
+
+\begin{enumerate}
+
+\item {\it Labor market theory.\/} As background to a
+consulting assignment, you have been asked to work through an
+example to illustrate the impact of
+minimum wage legislation and payroll taxes on employment and
+unemployment. You decide to adapt the framework of your 
+{Global Economy} class notes, 
+working through the demand for labor
+of a single firm producing widgets according to the production
+function $Y= A K^{1/3}L^{2/3}$. For simplicity, you assume that
+$A=K=1$ and that the price of widgets is 1, too.  The supply of
+labor rises with the wage $w$: $L^{s}=w^{2}$.
+%
+\begin{enumerate}
+
+\item Describe, first, how the labor market might work in this
+economy if there is no labor market regulation.  
+What is the wage?
+Employment? Unemployment?  (10~points)
+
+\item Now consider the effect of introducing a minimum wage
+$w_{m}$.  What are employment and unemployment rates if $w_{m}=1$?
+If $w_{m}=0.5$?  How does this market differ from the one above?
+How much would an unemployed person be willing to pay a recruiter
+to find a job?  
+(15~points)
+
+\item Suppose workers differ in productivity, 
+with some contributing effectively 1.5 units of labor 
+per unit paid, and others contributing only 0.5 units.  
+How would you expect a minimum wage of 0.75 
+to affect the two types?  
+(10~points)
+
+\end{enumerate}
+
+%\begin{comment}
+Answer. The firm's optimal level of labor (its labor demand) is
+such that the gain of adding one more worker is equal to its cost.
+The marginal gain is the derivative of sales with respect to
+labor: $\frac{2}{3}pAK^{1/3}L^{-1/3}$. The marginal cost is simply
+the wage $w$. Therefore, since $p=K=A=1$, the demand for labor is
+\[
+    L^{d} \;=\; \left(\frac{3}{2}w\right)^{-3}.
+\] 
+
+\begin{enumerate}
+\item The equilibrium is reached when demand equals supply. That
+is:
+\[ 
+    \left(\frac{3}{2}w\right)^{-3} \;=\; w^{2}.
+\] 
+Solving for $w$, we obtain that the equilibrium wage is
+\[ 
+    w^{*} \;=\; \left(\frac{3}{2}\right)^{-3/5}=.78.
+\] 
+The level of employment is
+\[ 
+    L^{*} \;=\; \left(\frac{3}{2}w^{*}\right)^{-3}={w^{*}}^{2}=.61.
+\] 
+The unemployment rate is $0$. Since there is no distortion, all
+individuals that would like to work at the equilibrium wage rate
+get a job.
+
+\item If $w_{m}=1$, the demand for labor is
+$L^{d}=\left(\frac{3}{2}\times 1\right)^{-3}=.30$. Instead the
+supply is $L^{s}=1^{2}=1$. Therefore the level of employment is
+$.30$. The unemployment rate is $\frac{1-.3}{1}=70\%$. Every
+unemployed will be willing to pay a recruiter up to the difference
+between the ongoing wage ($1$) and his/her reservation wage. The
+reservation wage is different across unemployed, and can be read
+off the labor supply curve.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}[h]
+\begin{center}
+\begin{picture}(300,200)(-30,-20)%
+
+\footnotesize%
+\put(-30,0){\vector(1,0){300}}%
+\put (0,-20){\vector(0,1){200}}%
+\put(265,-14){$L$}%
+\put(-15,175){$w$}%
+\put (154,157){$L^{s}(w)$}%
+\put(44,157){$L^{d}(w)$}%
+
+% Demand Curve
+\qbezier(45,145)(90,41)(165,10)%
+
+% Supply Curve
+\qbezier(45,25)(80,41)(175,140)%
+
+\qbezier[60] (0,92)(65,92)(128,92)%
+\qbezier[40] (71,0)(71,46)(71,93)%
+\qbezier[40] (128,0)(128,46)(128,93)%
+
+\qbezier[40] (0,62)(50,62)(95,62)%
+\qbezier[30] (95,0)(95,31)(95,62)%
+
+\put(-38,60){$w^{*}=.76$}%
+\put(-33,90){$w_{m}=1$}%
+
+\put(95,-18){$.61$}%
+
+\put(65,-18){$.30$}%
+\put(130,-18){$1$}%
+
+\end{picture}
+\end{center}
+\caption{With and without unemployment.} \label{fig:minimum1}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The wage $w_{m}=.5$ is below the equilibrium rate. This means that
+the minimum wage is not binding. The outcome in terms of wage and
+employment is going to be the same as in part (a).
+
+\item You might guess that the minimum wage would  affect 
+the low-skilled workers more than the high-skilled. 
+Why?  Because the high-skilled are worth more than the minimum 
+wage, so they will be hired (presumably) something close to their 
+productivity.
+But if the productivity of the low-skilled is below the minimum wage, 
+they won't be hired. 
+The result is that the unemployed will consist predominantly 
+(perhaps entirely in this setup) 
+on the low-skilled. 
+
+\end{enumerate}
+%\end{comment}
+
+% ----------------------------------------------------------------------
+\item {\it Labor market practice.\/}  
+Your first day on the job at General Electric, 
+you are given 4 hours to prepare
+a 5-minute presentation to your group summarizing the 
+labor market issues a manufacturer would face in 
+Belarus, France, and Ireland.   
+Once you get over your initial panic, you contact your Global Economy 
+professor, who suggests you look at:    
+%
+\begin{itemize}
+\item The Economist Intelligence Unit's various 
+\href{http://db.eiu.com/topic_view.asp?pubcode=CP&title=Country+Profile}{reports} 
+and 
+\href{http://www.countrydata.bvdep.com/cgi/template.dll?product=101&user=ipaddress}
+{databases};
+
+
+\item The OECD's  \href{http://www.oecd.org/topic/0,2686,en_2649_37457_1_1_1_1_37457,00.html} {Employment Resources}; 
+% (esp the Employment Outlook)
+
+\item The Bureau of Labor Statistics'
+\href{http://www.bls.gov/fls/hcompsupptabtoc.htm}{Foreign Labor Statistics};
+
+\item The World Bank's
+\href{http://www.doingbusiness.org/}
+{Doing Business} 
+and
+\href{http://devdata.worldbank.org/dataonline/}
+{World Development Indicators}.  
+
+\end{itemize}
+%
+You quickly turn this data into a series of charts and bullet points 
+that highlight the salient differences across these countries.  (35~points) 
+
+%\begin{comment}
+Answer.  Consider the following data:  
+
+\begin{center}
+\begin{tabular}{lcccc}
+\hline\hline
+Indicator   & Belarus & France & Ireland  \\
+\hline\hline 
+1. Unemployment rate & 2.6 & 9.7  &  4.5   \\
+
+2. Employment rate   & & 62.3 & 67.1  \\
+3. GDP per worker    & & \\
+4. Hours per year    & & 1535 & 1638  \\
+5. Hourly direct pay & & 16.93  & 19.86  \\
+6. Hourly total cost & & 24.63  &  22.76   \\
+7. Difficulty of firing & 40  & 40 & 30  \\
+8. Employment rigidity & 27 & 56 & 33  \\
+9. Educ of adults    &  &  7.9   &  9.4 \\
+10. Scientific literacy &   & 500 & 513  \\
+\hline\hline 
+\end{tabular}
+\end{center}
+Sources:  Economist, OECD, 
+BLS, Doing Business, and NationMaster.com.  
+Most recent year available.   
+
+What do we make of this?  
+Belarus remains a mystery;
+we'd guess labor is cheap, 
+but there's little information available from standard sources. 
+For the others:  the major difference 
+is in labor market regulations, which make employment 
+more rigid in France.  
+No one would make a decision on the basis of this information alone, 
+but it gives you a sense of what to look for.  
+%\end{comment}
+
+% ----------------------------------------------------------------------
+\item {\it Trade liberalization.} You have been asked to explain
+to an audience of consultants why trade liberalization is win-win:  
+why all countries can benefit.  
+You realize that they want to
+believe in free trade because their clients do, but like many
+people around the world they don't quite believe it themselves.
+You decide that the best approach is to construct a numerical
+example.
+
+You tell a story about the European Union (country 1) and Romania
+(country 2), each of which produces cellular phones and shirts by
+means of labor.  Their productivity levels in the two activities
+are reported in the table below. (One unit of labor produces 5
+cell phones in Romania, ...)
+%\begin{table}[h]
+\begin{center}
+
+\begin{tabular}{||l|c|c||}
+\hline\hline%
+                     &   Cell Phones       &      Shirts    \\%
+
+\hline\hline%
+EU (country 1)       &   $\alpha_{1}=20$   & $\beta_{1}=10$  \\%
+\hline%
+Romania (country 2)  &   $\alpha_{2}=5$    & $\beta_{2}=8$   \\%
+\hline\hline%
+\end{tabular}
+%\caption{Productivity levels.}\label{tab:prod}
+\end{center}
+%\end{table}
+For the sake of the example, you assume that product and labor
+markets are competitive in both countries and each has a total of
+100 units of labor.
+%
+\begin{enumerate}
+
+\item You start by illustrating the case of no trade. You compute
+the relative price of shirts to cell phones in each country and
+draw their consumption possibilities frontiers. (10~points)
+
+\item Next you show that if the two countries allow trade, each
+will benefit from specializing (the EU in cell phones and Romania
+in shirts).   
+Explain why residents in both countries are better off than with no trade. (10~points)
+
+\item Lobbyists for the textile industry in the EU have been
+arguing that competition from developing countries such as Romania
+is unfair because it is supported by extremely low wages. 
+Show that if wages in Romania approached EU levels, 
+trade would stop altogether. 
+Show, in addition, that this outcome would leave both
+Romanian and EU residents worse off. (10~points)
+
+\end{enumerate}
+
+
+%\begin{comment}
+Answer. Let's use $a$ to denote cell phones and $b$ to denote
+shirts.
+%
+\begin{enumerate}
+
+\item In absence of trade, since markets for the two products are
+competitive, it will be the case that in the EU
+%
+\[ 
+    p_{a} \;=\; \frac{w_{1}}{\alpha_{1}} , \;\;\;
+    p_{b} \;=\; \frac{w_{1}}{\beta_{1}},
+\] 
+%
+and in Romania
+%
+\[ 
+    p_{a} \;=\; \frac{w_{2}}{\alpha_{2}} , \;\;\;
+    p_{b} \;=\; \frac{w_{2}}{\beta_{2}}.
+\] 
+%
+Therefore the relative prices are going to be
+${p_{a}}/{p_{b}}= {\beta_{1}}/{\alpha_{1}} = {1}/{2}$ in
+the EU and
+${p_{a}}/{p_{b}} = {\beta_{2}}/{\alpha_{2}}= {8}/{5}$ in
+Romania.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}[h]
+\begin{center}
+\begin{picture}(300,200)(-30,-20)%
+
+\footnotesize%
+\put(-30,0){\vector(1,0){300}}%
+\put (0,-20){\vector(0,1){200}}%
+\put(265,-14){$b$}%
+\put(-15,175){$a$}%
+
+%\put (154,57){Possibilities with trade}%
+%\put(17,17){Possibilities without trade}%
+
+\put(0,60){\line(5,-4){75}}%
+%\qbezier[100](0,150)(100,75)(200,0)%
+
+\put(-25,58){$500$}%
+\put(68,-18){$800$}%
+
+\end{picture}
+\end{center}
+\caption{No trade:  Possibilities in Romania.} \label{fig:gains1}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}[!]
+\begin{center}
+\begin{picture}(300,200)(-30,-20)%
+
+\footnotesize%
+\put(-30,0){\vector(1,0){300}}%
+\put (0,-20){\vector(0,1){200}}%
+\put(265,-14){$b$}%
+\put(-15,175){$a$}%
+
+%\put (154,57){Possibilities with trade}%
+%\put(17,17){Possibilities without trade}%
+
+\put(0,150){\line(1,-2){75}}%
+%\qbezier[100](0,150)(100,75)(200,0)%
+
+\put(-25,148){$2,000$}%
+\put(68,-18){$1,000$}%
+
+\end{picture}
+\end{center}
+\caption{No trade:  Possibilities in the EU.} \label{fig:gains2}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\item Trade will be mutually beneficial if the relative price
+satisfies
+%
+\[ 
+    \frac{1}{2} \;<\; \frac{p_{a}}{p_{b}}<\frac{8}{5}.
+\]
+%
+In fact, if this is the case, both possibility frontiers expand.
+
+If the EU specializes in cell phones and Romania in shirts, the
+international prices will be $p_{a}=\frac{w_{1}}{\alpha_{1}}$ and
+$p_{b}=\frac{w_{2}}{\beta_{2}}$, respectively. Therefore the above
+condition can be rewritten as
+%
+\[ 
+    \frac{1}{2} \;<\; 
+    \frac{w_{1}}{w_{2}}\frac{\beta_{2}}{\alpha_{1}}<\frac{8}{5}
+\] 
+%
+or
+%
+\[ 
+    \frac{5}{4} \;<\; \frac{w_{1}}{w_{2}} \;<\; 4.
+\] 
+%\pagebreak
+
+\item Given the current productivity levels in the two countries,
+any legislation that led to a decrease in the ratio
+$w_{1} < w_{2}$ below $ {5}/{4}$ would imply that the EU
+is better off by producing shirts domestically, rather than import
+them from Romania. In turn, this would imply a reversal to
+no-trade. Given the above discussion, this would make Romanians
+(and EU citizens) worse off.
+\end{enumerate}
+%\end{comment}
+
+
+\end{enumerate}
+
+
+\vfill \centerline{\it \copyright \ \number\year \ NYU Stern
+School of Business}
+
+\end{document}

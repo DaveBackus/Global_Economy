@@ -1,0 +1,197 @@
+\documentclass[letterpaper,12pt]{article}
+
+\RequirePackage{GE13}
+% this inputs graphicx, too
+\RequirePackage{comment}
+\RequirePackage{hyperref}
+%\RequirePackage{eurosym}  % for euro symbol -- use \euro
+
+\def\ClassName{The Global Economy}
+\def\Category{Mini-Case}
+\def\HeadName{Heineken USA}
+
+\begin{document}
+\parindent = 0.0in
+\parskip = 0.4\bigskipamount
+\thispagestyle{empty}%
+\Head
+
+\centerline{\large \bf \HeadName}%
+\centerline{Revised:  \today}
+
+\bigskip
+
+%{\it This started as a group project, but I think it also works as a catalyst to class %discussion.
+%{\it We don't have time for a serious quantitative analysis.
+%The idea is to sketch out the issues with some sense of the magnitudes.}
+%data or time for a serious quantitative analysis.
+%Your goal is to suggest approaches to finding answers
+%and possibly sketch a rough approximation.\/}
+
+\bigskip
+As the new marketing director of the Heineken brand for Heineken USA,
+you are beginning to realize that exchange rates compete with
+advertising campaigns for your attention.
+Heineken is the \#2 imported beer in the US
+(after Grupo Modelo's Corona) and an important source of revenue and earnings
+for your parent company, Heineken NV.
+You have learned that your margins depend to a large extent on
+the strength of the euro relative to the dollar
+and wonder what you might do about it.
+
+You don't know much (yet) about the business or exchange rates,
+but have been given these numbers to work with:
+\begin{itemize} \itemsep=0.01in \topsep=0.01in
+\item One unit:  one 6-pack (6 355-ml bottles or the equivalent).
+\item Monthly volume:  15 million units.
+\item Exchange rate:  one euro is currently worth  1.35 dollars.
+\item Production costs for US delivery:  1.96 euros.
+\item US distribution and marketing expenses:  2.25 dollars.
+\item US wholesale price:  6.75 dollars.
+\item Elasticity of demand in US market:  $-3.0$.
+\end{itemize}
+
+You know very little about exchange rates,
+so you turn to your recently-hired assistant,
+the proud owner of a Stern MBA.
+You ask her to write a memo answering these questions:
+%
+\begin{itemize} %\itemsep=0.01in \topsep=0.01in
+\item How much money are you making per unit?  %Altogether?
+
+\item What happens to your margin if the euro rises 15\%?
+How likely is that?
+
+\item What overall pricing strategy would you recommend to deal with
+the inevitable movements in the  exchange rate?
+\end{itemize}
+
+{\it Acknowledgement.\/}  This project is motivated by Rebecca Hellerstein,
+an economist at the New York Fed who studies pricing strategies of international businesses, including brewers.
+
+
+\vfill
+\centerline{\it \copyright \ \number\year \ NYU Stern School of Business}
+
+\end{document}
+
+% --------------------------------------------------------------------------
+\newpage
+{\bf Sketch of an answer:}
+
+\begin{itemize}
+
+\item The idea is to estimate the annual standard deviation (volatility)  of the euro,
+either by taking year-on-year changes or extrapolating changes
+over shorter intervals.
+Or you could look at the implied volatility for currency options.
+Estimates vary, but a ballpark volatility is 0.15 = 15\%.
+If we assume a normal distribution (wrong, but a good place to start)
+then the probability of an annual change greater than 2/3 of a standard deviation in either direction is about 50\%.
+[The standard normal is greater than 2/3 about 25\% of the time;
+in Excel, try ``1--NORMSDIST(2/3)''.]
+
+\item The euro is overvalued by the Big Mac index (Big Macs are
+more expensive in the EuroZone) but that is relatively
+unhelpful in forecasting the exchange rate over the next year.
+Interest rates are lower in the EZ, but interest rates (like prices)
+have only modest power to forecast exchange rates.
+You won't go far wrong by assuming that the exchange rate is unpredictable.
+
+\item A good starting point:
+apply the pricing formula from Firms \& Markets:
+\[
+    p  \;=\;  \mbox{MC} \left( \frac{1} {1+1/\varepsilon} \right) .
+\]
+where $\varepsilon$ is the price elasticity of demand ($-3$ in this case).
+We'll assume the elasticity is constant, which means the demand curve has the form
+\[
+    q \;=\; a p^{\displaystyle \varepsilon} .
+\]
+With the given numbers, $\mbox{MC} = 1.96*1.184 + 1.75 = 4.07$
+and the optimal price is $ 6.106$ (roughly what we report).
+If the euro rises 10\%, then $\mbox{MC}$ rises to 4.30 and the optimal price
+rises to 6.454.
+In words:  higher cost leads you to raise your price.
+
+Comment:  Note that we have violated PPP at the micro level.
+The price of beer doesn't change in Euroland (we didn't say that, but let's
+assume that's the case) and rises by 5.7\% in the US --- in dollars.
+In euros, the US price of Heineken has fallen by (approximately) 4.3\%,
+so it's gotten less expensive in the US relative to Europe.
+Why the difference?  Because of local content,
+the US costs that go into US sales.
+No doubt there are other reasons, too, but you get the idea:
+there's no reason to expect
+PPP to work as anything but a rough approximation.
+
+Continuing with the calculations: volume falls by about 17\%
+(the price rise multiplied by the elasticity $-3$) and revenue
+falls by the difference.
+In proportional terms, profit falls by the same amount as revenue.
+
+Bottom line (in case you got lost):
+In business terms, your costs have gone up.  What do you do?
+You raise price, but this lowers your volume
+(and, presumably, your market share).
+
+\item What about the peso?
+Corona is a leading competitor in the imported beer market,
+so anything that affects its cost of production will
+indirectly affect Heineken.
+In fact, Heineken was the leading imported beer in the US for decades.
+But following the peso crisis in December 1994,
+Corona's cost of production fell sharply (a weak peso),
+which they used to increase their market share
+(lower price, aggressive marketing, brilliant use of limes
+to cover a nondescript product).
+They've been number one ever since.
+
+\end{itemize}
+
+\end{document}
+
+2005 version:
+
+You're in the treasury department of a large European retailer.  The company has a significant
+cash position that it invests in ``money market'' securities (maturities under six months). Given
+the low returns currently available on Euro-zone paper, your team is exploring the possibility of
+investing farther afield.  After spending an hour at the Bloomberg terminal, you suggest to your
+boss that she consider Australia, where money market rates are well above US and Euro-zone rates.
+She recalls, however, that Australia has a current account deficit of more than 5\% of GDP. Noting
+that current account deficits in Mexico, Korea, and Argentina were followed by massive
+depreciations of their currencies, she asks you to write a short report summarizing your view of
+the Australian dollar and addressing, in particular, these issues:
+%
+\begin{enumerate}
+\item The current account:  how long has the deficit persisted, and why? Does it pose a risk to
+the Auzzie dollar (AUD)?
+
+\item The real exchange rate:  is the AUD expensive or cheap in a PPP sense?
+
+\item Other factors that could lead to a significant depreciation over the next six months.
+\end{enumerate}
+%
+Not knowing where to start, you contact your Global Economy professor, who suggests the following:
+\begin{itemize}
+\item For online sources in general, try NYU's
+\href{http://www.nyu.edu/library/bobst/vbl/}{Virtual Business Library} and Nouriel Roubini's
+\href{http://www.stern.nyu.edu/globalmacro/}{Global Macro site} (click on ``Countries").
+
+\item For economic and political analysis of Australia, try the Economist Intelligence Unit's
+\href{http://db.eiu.com/index.asp?layout=publicationTypes}{Country Intelligence site}, especially
+the Country Profile.
+
+\item For macroeconomic data, try the EIU's
+\href{http://www.countrydata.bvdep.com/cgi/template.dll?product=101&user=ipaddress}{Country Data}
+or the International Monetary Fund's
+\href{http://ifs.apdi.net/imf/ifsbrowser.aspx?branch=ROOT}{International Financial Statistics}.
+
+\item For current analysis, try investment bank reports (access varies, but use your contacts).
+\end{itemize}
+
+
+\vfill
+\centerline{\it \copyright \ \number\year \ NYU Stern School of Business}
+
+\end{document}

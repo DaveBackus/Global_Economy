@@ -1,0 +1,144 @@
+\documentclass[12pt]{exam}
+
+\usepackage{ge05}
+\usepackage{comment}
+\usepackage{booktabs}
+\usepackage[dvipdfm]{hyperref}
+\urlstyle{rm}   % change fonts for url's (from Chad Jones)
+\hypersetup{
+    colorlinks=true,        % kills boxes
+    allcolors=blue,
+    pdfsubject={NYU Stern course GB 2303, Global Economy},
+    pdfauthor={Dave Backus @ NYU},
+    pdfstartview={FitH},
+    pdfpagemode={UseNone},
+%    pdfnewwindow=true,      % links in new window
+%    linkcolor=blue,         % color of internal links
+%    citecolor=blue,         % color of links to bibliography
+%    filecolor=blue,         % color of file links
+%    urlcolor=blue           % color of external links
+% see:  http://www.tug.org/applications/hyperref/manual.html
+}
+
+% for ge05.sty
+\def\ClassName{The Global Economy}
+%\def\Category{Professor David Backus}
+\def\Category{Backus \& Cooley}
+\def\HeadName{Practice Problems D}
+\newcommand{\phm}{\phantom{--}}
+\newcommand{\NX}{\mbox{\it NX\/}}
+
+\noprintanswers
+%\printanswers
+
+\begin{document}
+\parindent = 0.0in
+\parskip = \bigskipamount
+\thispagestyle{empty}%
+\Head
+
+\centerline{\large \bf \HeadName:  Exchange Rates \& Crises}
+\centerline{Revised:  \today}
+
+\medskip
+{\it This will not be collected or graded,
+but it's a good way to make sure you're up to speed.
+We recommend you do it before the next class.}
+
+
+\begin{questions}
+% --------------------------------------------------------------------
+\question Purchasing power parity for Big Macs.
+The Economist reports the following data for
+local prices of Big Macs and US dollars in July 2011:
+
+\begin{center}
+\begin{tabular}{lccc}
+\toprule
+        & Big Mac Price  &  Exchange Rate    \\
+        &(Local Currency)&(LCUs per Dollar)   \\
+\midrule
+Argentina       &  20.0  &  4.13  \\
+Brazil          &  9.50  &  1.54 \\
+India           &  84.0  &  44.4   \\
+United States   &  4.07  &  1.00   \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{parts}
+\part What is the dollar price of a Big Mac in each of these locations?
+\part How does the ratio of Big Mac prices compare to the real exchange rate?
+\part What exchange rates for the first three currencies would
+equate the dollar prices of Big Macs to the US price.
+\part How much are the first three currencies over or undervalued
+relative to the US dollar?
+\end{parts}
+
+\begin{solution}
+\begin{parts}
+\part 
+
+\begin{center}
+\begin{tabular}{lccc}
+\toprule
+        & Big Mac Price  &  Exchange Rate & Big Mac Price\\
+        &(Local Currency)&(LCUs per USD)  &    (USD)   \\
+\midrule
+Argentina       &  20.0  &  4.13  &  \\
+Brazil          &  9.50  &  1.54 \\
+India           &  84.0  &  44.4   \\
+United States   &  4.07  &  1.00   \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+
+\end{parts}
+\end{solution}
+
+% --------------------------------------------------------------------
+\question Foreign exchange reserves.
+Countries often buy and sell foreign currency as part of their
+day-to-day central bank operations.
+
+\begin{parts}
+\part Describe the central bank's balance sheet.
+Where do foreign exchange reserves appear?
+\part If private citizens choose to buy foreign currency
+from the central bank, what happens to its balance sheet?
+What limits how much of this the central bank can accomodate?
+\end{parts}
+
+
+% --------------------------------------------------------------------
+\question The trilemma in action.  In 1992, the Bank of England found
+that its commitment to maintain a quasi-fixed parity of the pound against
+the Deutschemark forced it to raise short-term interest rates during
+a recession.
+What were its choices?
+How does this illustrate the trilemma?
+
+% --------------------------------------------------------------------
+\question Crisis triggers.
+Economic crises have been with us throughout recorded history.
+Although they often come as a surprise, their forms are familiar
+from past experience.
+
+\begin{parts}
+\part What are the classic crisis triggers?
+\part What indicators would you use to help assess
+each source of crisis risk?
+\part What are the standard responses to each one?
+\part What would you do now if you were the benevolent dictator
+of the European Union?
+\end{parts}
+
+
+\end{questions}
+
+\vfill \centerline{\it \copyright \ \number\year \
+NYU Stern School of Business}
+
+\end{document}
+

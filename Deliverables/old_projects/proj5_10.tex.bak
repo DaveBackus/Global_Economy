@@ -1,0 +1,119 @@
+\documentclass[letterpaper,12pt]{article}
+
+\RequirePackage{GE05}
+% this inputs graphicx, too
+\RequirePackage{comment}
+\RequirePackage[hypertex]{hyperref}
+    \hypersetup{colorlinks=true,urlcolor=blue,linkcolor=red}
+
+\def\ClassName{The Global Economy}
+\def\Category{Professor David Backus}
+\def\HeadName{Group Project \#5}
+
+\begin{document}
+\parindent = 0.0in
+\parskip = 0.75\bigskipamount
+\thispagestyle{empty}%
+\Head
+
+\centerline{\large \bf \HeadName:  Fixed Income Research}%
+\centerline{Revised:  \today}
+
+\medskip
+{\it Submit via Blackboard by 9am March 30.}
+\medskip
+
+You are delighted to have a summer internship in Barclay's  
+capital markets group.  
+Your first rotation:  Fixed Income Research.  
+On your first day, the Managing Director gives you 
+a small project to get your feet wet. 
+Noting that bond markets are driven largely by macroeconomic news, 
+she asks you to write a report summarizing the near-term prospects for the US 
+economy, specifically the first three quarters of the year.  
+
+Your report should be a professional business document, no more than 5 pages long, and include:  
+%
+\begin{itemize}
+\item A description of the most recent quarterly growth rates of US GDP 
+--- the last ten years, let us say.  
+
+\item A list of what you think are the most useful indicators
+of future economic growth 
+along with a short description of what they are and why you think they 
+are useful.  
+
+\item A qualitative analysis of recent behavior of the same indicators 
+and whether they point to higher growth or something else.  
+
+\item An overall assessment of the growth prospects of the US 
+ economy for the first three quarters of the year.  
+ 
+%\item A narrative to be shared with clients about the factors 
+%affecting the near-term performance of the US economy 
+%including, if you wish, a discussion of factors not 
+%captured by the indicators described above.  
+\end{itemize}
+%
+She hands you a spreadsheet containing a large number of 
+economic indicators and walks away.  
+
+Keep in mind:  
+\begin{itemize} 
+\item If you do not recall what a professional business document
+looks like, review Group Project \#2.
+\item A convenient source of US data is the St Louis Fed's 
+\href{http://research.stlouisfed.org/fred2/}{FRED}.
+\end{itemize} 
+
+
+\vfill \centerline{\it \copyright \ \number\year \ 
+NYU Stern School of Business}
+
+
+\end{document}
+% --------------------------------------------------------------------------
+\newpage
+{Sketch of an answer.  
+The project is a loosely structured real-world problem;
+it does not lend itself to a simple mechanical answer.
+Here's a sketch of what I'd do: }  
+\begin{itemize}
+\item List of indicators.  
+We've looked at many, take your pick.  
+Among the most popular:  
+housing starts and building permits, 
+stock market, 
+new claims for unemployment insurance, 
+industrial production, term spreads.  
+The challenge here is that a 6-month forecast is very demanding:
+you need a substantial lead in anything you use.  
+
+\item Statistical analysis.  
+I think cross-correlation functions are useful ways to get across leads and lags, but you can get across similar 
+information in different ways --- 
+regressions with lags, for example,
+or scatterplots of variables with different leads and lags.  
+
+\item Combination.  
+I'd use a multivariate regression, with the forward-looking 
+6-month growth rate of employment as the dependent variable
+and several indicators as independent variables.
+I'd include lags of the indicators and the dependent 
+variable as additional independent variables.
+You'd have to take a course in time series statistics 
+to understand this fully, 
+but the idea is that they allow more flexibility in the dynamic relations
+among the variables.  
+
+\item Narrative.  This would depend on what you find.
+If you find that (say) housing variables are weak,
+and that this weakness translates (through the regression)
+into a forecast of weak growth, 
+you could join Professor Roubini and many others and talk about that.
+Almost everyone predicts weakness right now, 
+the question is how much.  
+
+\end{itemize}
+
+\end{document} 

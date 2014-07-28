@@ -1,0 +1,1152 @@
+\documentclass[10pt]{beamer}
+\usefonttheme[onlylarge]{structurebold}
+\usecolortheme[rgb={0.7,0,0}]{structure}
+
+\hypersetup{
+  bookmarks = false,
+  colorlinks,
+  citecolor = red,
+  linkcolor=blue,
+  pdfpagemode=none,
+  pdfstartview={Fit},
+  pdftitle={},
+  pdfauthor={Michael E. Waugh},
+  pdfkeywords={} }
+  \setbeamertemplate{navigation symbols}{}
+
+
+
+
+\mode<presentation> {
+  \usetheme{boxes}
+  % or ...
+
+  \setbeamercovered{transparent}
+  % or whatever (possibly just delete it)
+}
+
+\setbeamertemplate{itemize subitem}[circle]
+\setbeamerfont{frametitle}{size= \large}
+\setbeamerfont{ framesubtitle }{size = \footnotesize}
+\setbeamertemplate{frametitle}
+{
+\medskip
+\smallskip
+{\textsf{\underline{\insertframetitle\phantom{))))))))}}}}}
+
+
+\usepackage[english]{babel}
+\usepackage{wasysym}
+
+\definecolor{granata}{rgb}{.8,.0,.1}
+
+\addfootbox{}{\hspace{8.5cm}\tiny \quad {\color{purple}Fiscal Policy---The Global Economy} {\color[rgb]{.332,.1,.545}}}%
+
+
+\title[NYU Stern] % (optional, use only with long paper titles)
+{\huge The Global Economy}
+
+\author[Michael Waugh] % (optional, use only with lots of authors)
+{\bf{\Large Fiscal Policy}}%
+
+
+\date[] % (optional)
+
+\subject{Talks}
+
+
+\begin{document}
+
+\newif\iflogvar%
+\logvartrue
+
+
+
+% Set the UNL logo, UNL.pdf must be in the latex path or working directory
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+
+
+%\begin{frame}
+%  \frametitle{Outline}
+%  \tableofcontents
+%  % You might wish to add the option [pausesections]
+%\end{frame}
+
+
+% Since this a solution template for a generic talk, very little can
+% be said about how it should be structured. However, the talk length
+% of between 15min and 45min and the theme suggest that you stick to
+% the following rules:
+
+% - Exactly two or three sections (other than the summary).
+% - At *most* three subsections per section.
+% - Talk about 30s to 2min per frame. So there should be between about
+%   15 and 30 frames, all told.
+
+%*************************************************************************************************** TITLE
+
+\iflogvar
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%\begin{frame}[t]
+%\frametitle{A Laugh}
+%\begin{center}
+%\includegraphics[scale=.3]{the_onion.pdf}
+%\end{center}
+%\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}[t]
+\frametitle{Road Map}
+\bigskip
+\begin{itemize}
+\item What Should Governments Do?
+\medskip
+\item Taxes and debt: how should they pay for it?
+\medskip
+\item Sustainability analysis.
+\medskip
+\item Issues in the U.S. 
+\begin{itemize}
+\medskip
+\item Social Security
+\medskip
+\item Medicare/Medicaid
+\end{itemize}
+\end{itemize}
+\bigskip
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\begin{frame}[t]
+%\frametitle{In the News}
+%\bigskip
+%\bigskip
+%\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[t]
+\frametitle{What Should Governments Do? I}
+\bigskip
+\begin{itemize}
+\item Provide public goods
+\medskip
+\item Public goods are hard for markets to supply
+\begin{itemize}
+\medskip
+\item Non excludable: hard to keep people from consuming it
+Fish in the ocean, (olde tyme) radio, fireworks
+\medskip
+\item Non rival: my consumption does not affect your consumption
+T.V. (cable and broadcast), fresh air, NY skyline
+\medskip
+\end{itemize}
+\item Hard for a private firm to capture all the benefits of these goods, so market would provide too little
+\medskip
+\item Public goods governments may provide
+\begin{itemize}
+\medskip
+\item National defense, environmental protection, police, fire
+\end{itemize}
+\end{itemize}
+\bigskip
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[t]
+\frametitle{What Should Governments Do? II}
+\bigskip
+\begin{itemize}
+\item Provide insurance and redistribution
+\medskip
+\item Protect the unfortunate and unlucky
+\medskip
+\begin{itemize}
+\item Disability insurance, medical programs
+\medskip
+\item People who save too little: social security
+\end{itemize}
+\medskip
+\item Theory
+\begin{itemize}
+\medskip
+\item Rawls' ``Veil of Ignorance''
+\medskip
+\item Market failure: adverse selection, moral hazard
+\medskip
+\item These are large programs in many countries
+\end{itemize}
+\end{itemize}
+\bigskip
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[t]
+\frametitle{U.S. Budget Outlays}
+\vspace{-.15in}
+\includegraphics[height=3in,width=4.25in]{us_budget.pdf}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[t]
+\frametitle{What Should Governments Do? II}
+\bigskip
+\begin{itemize}
+\item Insurance concerns make up large shares of government budgets
+\medskip
+\item How much insurance?
+\medskip
+\begin{itemize}
+\item A lot of variation across countries
+\medskip
+\item Economists don't have great answers to this question 
+\medskip
+\end{itemize}
+\item In general, larger insurance programs have to be paid for by higher taxes (more on this later)
+\medskip
+\begin{itemize}
+\item Economists do have something to say here
+\end{itemize}
+\end{itemize}
+\bigskip
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[t]
+\frametitle{Social Insurance and Taxes Across Countries}
+\vspace{-.15in}
+\includegraphics[height=3in,width=4.25in]{cc_insurance.pdf}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}[t]
+%\frametitle{A Laugh\ldots}
+%\begin{center}
+%\includegraphics[scale=.5]{onion_one.pdf}
+%\end{center}
+%\end{frame}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}[t]
+%\frametitle{A Laugh\ldots}
+%\begin{center}
+%\includegraphics[scale=.5]{onion_two.pdf}
+%\end{center}
+%\end{frame}
+
+
+\begin{frame}[t]
+\frametitle{How Do Governments Provide This?}
+\bigskip
+\begin{itemize}
+\item Societies have to pay for these expenditures, usually through taxation
+\medskip
+\item What does “good” tax policy look like? Keep distortions low\ldots
+\medskip
+\begin{itemize}
+\item Broad tax base with low rates. 
+\medskip
+\item Avoid taxing inputs. Production should be efficient, so avoid distorting input decisions.
+\end{itemize}
+\end{itemize}
+\bigskip
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[t]
+\frametitle{Greg Mankiw's Taxes}
+\bigskip
+\begin{itemize}
+\item If he earns an extra dollar, saves and invests it, and gives the proceeds to his kids in 35 years, how much do they get?
+\bigskip
+\item Inputs
+\begin{itemize}
+\medskip
+\item Income tax rate:  35\%
+\medskip
+\item Return on investment:  10\%
+\medskip
+\item Corporate tax rate:  25\%
+\medskip
+\item Dividend and capital gains rate:  15\%
+\medskip
+\item Estate tax rate:  15\%
+\bigskip
+\end{itemize}
+\item Answers:  28 with no taxes, 1.85 with given tax rates
+\bigskip
+\item What are his incentives to work and save?
+\end{itemize}
+\bigskip
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[t]
+\frametitle{Taxes and Debt}
+\bigskip
+\begin{itemize}
+\item Government budget:
+\begin{eqnarray*}
+G_t + V_t + i_tB_t = T_t + B_{t+1} - B_{t}
+\end{eqnarray*}
+\medskip
+\item Ingredients:
+\begin{itemize}
+\medskip
+\item $G =$ government purchases of goods and services
+\medskip
+\item $V =$ transfer payments from government to households
+\medskip
+\item $G + V =$ government spending
+\medskip
+\item $T =$ tax revenue
+\medskip
+\item $D = G + V - T =$ primary deficit (excl. interest)
+\medskip
+\item $B =$ government debt (``bonds'') at begining of period.
+\medskip
+\item $i =$ (nominal) interest rate paid on debt
+\medskip
+\item $iB =$ interest payments
+\bigskip
+\end{itemize}
+\end{itemize}
+\bigskip
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[t]
+\frametitle{How Should a Deficits Be Financed?}
+\bigskip
+\begin{itemize}
+\item Government budget:
+\begin{eqnarray*}
+G_t + V_t + i_tB_t = T_t + B_{t+1} - B_{t}
+\end{eqnarray*}
+\medskip
+\item If $G_t + V_t + i_tB_t - T_t > 0$
+\begin{itemize}
+\medskip
+\item Raise taxes: increase $T_t$
+\medskip
+\item Issue debt: increase $B_t$
+\end{itemize}
+\bigskip
+\item Is there a difference?
+\end{itemize}
+\bigskip
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[t]
+\frametitle{Taxes and Debt}
+\bigskip
+\begin{itemize}
+\item Government budget constraint
+\begin{eqnarray*}
+G_t + V_t + i_tB_t = T_t + B_{t+1} - B_{t}
+\end{eqnarray*}
+\item Rewrite as 
+\begin{eqnarray*}
+B_t(1+i_t) = B_{t+1} + T_t - G_t - V_t\\
+\\
+B_t(1+i_t) = B_{t+1} - D_t\\
+\\
+B_{t} = \frac{B_{t+1}}{1+i_{t}} - \frac{D_t}{1+i_{t}}
+\end{eqnarray*}
+\medskip
+\item Debt must be backed by PV of tommorow's debt plus primary surplus
+\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[t]
+\frametitle{Taxes and Debt: Present Value}
+\bigskip
+\begin{itemize}
+\item Repeated substitution gives us
+\begin{eqnarray*}
+B_{t} = \frac{B_{t+n}}{(1+i)^n} - \bigg[\frac{D_{t}}{1+i} + \frac{D_{t+1}}{(1+i)^2} + \frac{D_{t+1}}{(1+i)^3} \ldots \frac{D_{t+n-1}}{(1+i)^n} \bigg]
+\end{eqnarray*}
+\medskip
+\item In words, debt today is backed by value of future \textbf{primary} surpluses
+\begin{itemize}
+\medskip
+\item Assumes $\frac{B_{t+n}}{(1+i)^n} \rightarrow 0$
+\medskip
+\item Don't need $B_{t+n}  \rightarrow 0$
+\end{itemize}
+\end{itemize}
+\bigskip
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{frame}[t]
+\frametitle{Pay Me Now, or Pay Me Later}
+\bigskip
+\begin{itemize}
+\item Spending must be financed by tax revenues
+\medskip
+\begin{itemize}
+\item Tax revenues now
+\medskip
+\item Or tax revenues later (with interest!)
+\end{itemize}
+\medskip
+\item Debt allows governments to
+\begin{itemize}
+\medskip
+\item Keep tax rates from fluctuating, ``smooth'' payments in response to disasters, wars, etc.
+\medskip
+\item Transfer today’s spending to tomorrow’s taxpayers
+\end{itemize}
+\end{itemize}
+\bigskip
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}[t]
+\frametitle{Sustainability Analysis}
+\bigskip
+\begin{itemize}
+\item Here is the issue:
+\begin{itemize}
+\medskip
+\item What happens to ratio of debt to GDP if policy doesn’t change?
+\medskip
+\item It decreases/constant:  sustainable.  If not, unsustainable
+\medskip
+\item Both measured at current prices (“nominal”)
+\bigskip
+\end{itemize}
+\item Growth of (nominal) debt:  $B_{t+1} = (1+i)B_{t} + D_{t} $
+\bigskip
+\item Growth of (nominal) GDP:  $Y_{t+1} = (1+g)Y_{t}$
+\bigskip
+\item Growth of debt to GDP ratio:  $\frac{B_{t+1}}{Y_{t+1}} = \frac{(1+i)B_t}{(1+g)Y_{t}} + \frac{D_t}{(1+g)Y_{t}}$
+\end{itemize}
+\bigskip
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[t]
+\frametitle{Sustainability Analysis}
+\bigskip
+\begin{itemize}
+\item Long run ``natural'' growth rates
+\begin{itemize}
+\medskip
+\item Debt: $(1+i)$
+\medskip
+\item Nominal GDP: $(1+g)$
+\medskip
+\item Ratio of dept to GDP: $\frac{1+i}{1+g}$
+\bigskip
+\end{itemize}
+\item Sustainability requires $\frac{1+i}{1+g} < 1$ or $i < g$
+\bigskip
+\item Typically $i > g$, thus something must change---but what?
+\end{itemize}
+\bigskip
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[t]
+\frametitle{Sustainability Analysis}
+\bigskip
+\begin{itemize}
+\item ``Unsustainable'' means something must change
+\begin{itemize}
+\medskip
+\item Start running surpluses: Higher tax revenue, Lower spending.
+\medskip
+\item Higher growth, either nominally through inflation or real.
+\medskip
+\item Lower interest rate
+\medskip
+\item Default on debt
+\bigskip
+\end{itemize}
+\end{itemize}
+\bigskip
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}[t]
+%\frametitle{Debt and Deficits in Ireland}
+%\vspace{-.05in}
+%\includegraphics[height=3in,width=4.25in]{ireland.pdf}
+%\end{frame}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}[t]
+%\frametitle{Fiscal policy in Ireland 2010}
+%\vspace{-.05in}
+%\includegraphics[height=3in,width=4.25in]{ireland_two.pdf}
+%\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\begin{frame}[t]
+%\frametitle{Sustainability Analysis for Ireland 2010}
+%\bigskip
+%\begin{itemize}
+%\item Here is the issue:
+%\medskip
+%\begin{eqnarray*}
+%\frac{B_{2010}}{Y_{2010}} &=& \frac{1+i}{1+g}\frac{B_{2009}}{Y_{2009}} + \frac{1}{1+g}\frac{D_{2009}}{Y_{2009}} \\
+%\\
+%\\
+%\frac{B_{2010}}{Y_{2010}} &=& \frac{1+.038}{1+.0023}65.5 + \frac{1}{1+.0023}10.9\\
+%\\
+%\\
+%\frac{B_{2010}}{Y_{2010}} &=& 78.7
+%\end{eqnarray*}
+%\medskip
+%\item Check at home: what is debt in 2011 if the primary deficit, GDP growth rate, and interest rate stay constant?
+%\end{itemize}
+%\bigskip
+%\end{frame}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}[t]
+%\frametitle{Ireland Debt – Constant Policy}
+%\vspace{-.05in}
+%\includegraphics[height=3in,width=4.25in]{ireland_thr.pdf}
+%\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[t]
+\frametitle{Sustainability Analysis: Greece, Italy, Spain \ldots}
+\bigskip
+\begin{itemize}
+\item ``Unsustainable'' means something must change
+\begin{itemize}
+\medskip
+\item Start running surpluses: Higher tax revenue, Lower spending --- {\color{red}Painful}.
+\medskip
+\item Higher growth, either nominally through inflation or real--- {\color{red}EU eliminates this choice}.
+\medskip
+\item Lower interest rate --- {\color{red}Who would finance this?}
+\medskip
+\item Default on debt --- {\color{red}Would the EU let this happen?}
+\bigskip
+\end{itemize}
+\end{itemize}
+\bigskip
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[t]
+\frametitle{Two Views on Deficit Financed Tax Cuts}
+\bigskip
+\begin{itemize}
+\item Deficit Financed Tax Cuts
+\begin{enumerate}
+\medskip
+\item Consumers will ignore future tax burden and spend extra money
+\medskip
+\item Consumers realize taxes must be raised in the future and save most of the extra money (Ricardian Equivalence)
+\bigskip
+\end{enumerate}
+\item Government stimulus package?
+\end{itemize}
+\bigskip
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[t]
+\frametitle{Two Views: Ignorance is Bliss}
+\bigskip
+\begin{itemize}
+\item Consumers will ignore future tax burden and spend extra money
+\bigskip
+\item When will the future surpluses be needed?
+\begin{itemize}
+\medskip
+\item Pass burden to future
+\medskip
+\item Do you care about your kids?
+\bigskip
+\end{itemize}
+\end{itemize}
+\bigskip
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[t]
+\frametitle{Two Views: Ricardian Equivalence}
+\bigskip
+\begin{itemize}
+\item Consumers realize taxes must be raised in the future and save most of the extra money (Ricardian Equivalence)
+\bigskip
+\item Requires
+\begin{itemize}
+\medskip
+\item Good capital markets: must be able to earn the same rate of return as the government pays
+\medskip
+\item Care about the future.  Do you care about your kids?
+\medskip
+\item No credit constraints
+\bigskip
+\end{itemize}
+\end{itemize}
+\bigskip
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[t]
+\frametitle{Two Views: Evidence}
+\bigskip
+\begin{itemize}
+\item Ricardian Equivalence
+\begin{itemize}
+\medskip
+\item Some evidence that it holds
+\medskip
+\item Does not hold perfectly
+\medskip
+\item Important conceptual point
+\bigskip
+\end{itemize}
+\item Either way: deficits are about the timing of taxing and spending
+\bigskip
+\item Smooth the payments of expenditure shocks: wars, hurricanes, etc.
+\end{itemize}
+\bigskip
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[t]
+\frametitle{Federal Deficit Outlook}
+\vspace{-.05in}
+\includegraphics[height=3in,width=4.25in]{deficit_outlook.pdf}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[t]
+\frametitle{Federal Debt Outlook}
+\vspace{-.05in}
+\includegraphics[height=3in,width=4.25in]{debt_outlook.pdf}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}[t]
+\frametitle{Long-term Budget Issues in the U.S.}
+\bigskip
+\begin{itemize}
+\item U.S. debt held but the public $\approx$ \$ 9 trillion
+\bigskip
+\item Unfunded liabilities (present value)
+\begin{itemize}
+\medskip
+\item Social Security (OASDI) = \$ 16 trillion
+\medskip
+\item Medicare = \$ 36 trillion
+\bigskip
+\end{itemize}
+\item Nominal GDP in 2010 about \$ 15 trillion
+\bigskip
+\item Debt to GDP ratio
+\begin{itemize}
+\medskip
+\item Explicit = 9 \/ 15 = 60 \%
+\medskip
+\item Implicit = (16+36) \/ 15 =  {\color{red} 350 \%}
+\bigskip
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[t]
+\frametitle{Social Security}
+\bigskip
+\begin{itemize}
+\item Social Security is a “pay as you go” system
+\begin{itemize}
+\medskip
+\item Current workers finance current retirees
+\medskip
+\item 1983 changed system to accumulate surplus to cover baby boomers retiring.
+\medskip
+\item Surpluses accumulated in the social security trust fund
+\bigskip
+\end{itemize}
+\item Trust fund will not keep the system funded
+\bigskip
+\item Large implicit debt obligations in the future
+\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[t]
+\frametitle{Social Security Outlays and Receipts}
+\vspace{-.05in}
+\includegraphics[height=3in,width=4.25in]{us_social.pdf}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[t]
+\frametitle{Social Security Fixes}
+\bigskip
+\begin{itemize}
+\item Economist: solutions are “simple”
+\begin{itemize}
+\medskip
+\item Increase the payroll tax (need about 2\% more)
+\medskip
+\item Reduce initial level of benefits
+\medskip
+\item Increase retirement age
+\medskip
+\item Reduce cost of living adjustments
+\bigskip
+\end{itemize}
+\item Society/politicians: no, they are not!
+\bigskip
+\item Congressional Budget Office analysis \href{http://www.cbo.gov/doc.cfm?index=11580
+}{here}
+\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\begin{frame}[t]
+\frametitle{Medicare and Medicaid}
+\bigskip
+\begin{itemize}
+\item Provide low cost or free medical care
+\begin{itemize}
+\medskip
+\item Medicare: age 65 and older
+\medskip
+\item Medicaid: poor (varies by state)
+\bigskip
+\end{itemize}
+\item Medicare spending growth
+\begin{itemize}
+\medskip
+\item Increase in covered population (aging)
+\medskip
+\item Costs per enrollee
+\bigskip
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[t]
+\frametitle{Medicare and Medicaid}
+\bigskip
+\begin{itemize}
+\item The key issue: Medical spending is growing much faster than GDP
+\medskip
+\item Why?
+\begin{itemize}
+\medskip
+\item Increase in covered population (baby boomers, again!)
+\medskip
+\item Increase in spending per enrollee
+\bigskip
+\end{itemize}
+\item Which is more important?
+\end{itemize}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[t]
+\frametitle{Medicare and Medicaid}
+\vspace{-.15in}
+\includegraphics[height=3in,width=4.25in]{cbo_factors_med_only.pdf}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[t]
+\frametitle{Medicare and Medicaid}
+\bigskip
+\begin{itemize}
+\item What can be done?
+\begin{itemize}
+\medskip
+\item Reduce people receiving benefits --- Small effect
+\medskip
+\item Reduce payments to providers
+\medskip
+\item Encourage efficiency in health care, i.e. ``TFP''
+\begin{itemize}
+\medskip
+\item Economists: benefits vs. costs of treatments
+\medskip
+\item Most everyone else: incredibly sensitive subject
+\medskip
+\item Pass costs of more expensive treatments onto patients
+\medskip
+\item Managing chronic conditions: 85\% of Medicare expenditures are spent on 25\% of beneficiaries
+\end{itemize}
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[t]
+\frametitle{From the CBO\ldots}
+\vspace{-.05in}
+\includegraphics[height=3in,width=4.25in]{cbo_outlook.pdf}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[t]
+\frametitle{Taxes and Debt Summary}
+\bigskip
+\begin{itemize}
+\item Key issue: deficits must be financed
+\begin{itemize}
+\medskip
+\item By issuing debt today
+\medskip
+\item And by running (primary) surpluses in the future
+\bigskip
+\end{itemize}
+\item Sustainability analysis
+\begin{itemize}
+\medskip
+\item Debt tends to grow unless you run surpluses
+\bigskip
+\end{itemize}
+\item US deficits
+\begin{itemize}
+\medskip
+\item The biggest issues are not the current deficit, but projected future deficits implied by social security and Medicare-Medicaid payments
+\bigskip
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\begin{frame}[t]
+%\frametitle{Fiscal Policy in US}
+%\bigskip
+%\begin{itemize}
+%\item Is the US in trouble? Why or why not?
+%\end{itemize}
+%\bigskip
+%\end{frame}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\begin{frame}[t]
+%\frametitle{Fiscal Policy in US}
+%\bigskip
+%\begin{itemize}
+%\item Is the US in trouble? Why or why not?
+%\end{itemize}
+%\bigskip
+%\footnotesize
+%\begin{table}[t]
+%%\footnotesize
+%\setlength {\tabcolsep}{2.5mm}
+%\vspace{0.01cm}
+%\renewcommand{\arraystretch}{1.5}
+%\begin{center}
+%\begin{tabular}{l|c}
+%\multicolumn{2}{c}{\textbf{\normalsize Fiscal Situation of the U.S. 2009 \% Of GDP}}\\
+%\hline \hline
+%Primary deficit (non-interest)     & 12.4 \\
+%Interest on debt       & 1.3\\
+%Total deficit  & 13.7\\
+%Public debt (last period)  & 38.7\\
+%\hline
+%\hline
+%\end{tabular}
+%\end{center}
+%\end{table}
+%\end{frame}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\begin{frame}[t]
+%\frametitle{Fiscal Policy in US}
+%\bigskip
+%\begin{itemize}
+%\item US in 2009
+%\begin{itemize}
+%\medskip
+%\item B/Y $= 38.7\%$
+%\medskip
+%\item D/Y $= -12.4\%$
+%\medskip
+%\item i $= 3.4\%$
+%\medskip
+%\item g $=-2.2\%$
+%\medskip
+%\item How does B/Y change?
+%\bigskip
+%\end{itemize}
+%\end{itemize}
+%\end{frame}
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}[t]
+%\frametitle{US Revenues and Outlays}
+%\vspace{-.15in}
+%\includegraphics[height=3in,width=4.25in]{cbo_revenue_outlay_v2.pdf}
+%\end{frame}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}[t]
+%\frametitle{Debt Burden in the US}
+%\vspace{-.15in}
+%\includegraphics[height=3in,width=4.25in]{cbo_debt_held_gdp_v2.pdf}
+%\end{frame}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}[t]
+%\frametitle{Rising Debt Burden in the US}
+%\vspace{-.15in}
+%\includegraphics[height=3in,width=4.25in]{cbo_long_debt_held_gdp_v2.pdf}
+%\end{frame}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}[t]
+%\frametitle{Debt Burden Across Countries in 2007}
+%\vspace{-.15in}
+%\includegraphics[height=3in,width=4.25in]{deficit_gdp_world_outlook.pdf}
+%\end{frame}
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\begin{frame}[t]
+%\frametitle{Fiscal Policy in US}
+%\bigskip
+%\begin{itemize}
+%\item What are the long-term budget issues
+%\end{itemize}
+%\end{frame}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}[t]
+%\frametitle{Projected Outlays By Category}
+%\vspace{-.15in}
+%\includegraphics[height=3in,width=4.25in]{cbo_outlays_catagory.pdf}
+%\end{frame}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}[t]
+%\frametitle{Spending on Medicare, Medicaid, and Social Security}
+%\vspace{-.15in}
+%\includegraphics[height=3in,width=4.25in]{cbo_spending_med_social.pdf}
+%\end{frame}
+%
+
+
+%
+%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}[t]
+%\frametitle{Population Age Over 65 as \% of the Population 20 to 64}
+%\vspace{-.15in}
+%\includegraphics[height=3in,width=4.25in]{population_age.pdf}
+%\end{frame}
+%
+
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\begin{frame}[t]
+%\frametitle{Long-term Expenditure Summary}
+%\bigskip
+%\begin{itemize}
+%\item Large implicity liabilities coming due
+%\begin{itemize}
+%\medskip
+%\item U.S. Social Security System
+%\medskip
+%\item Medicare and Medicaid
+%\bigskip
+%\end{itemize}
+%\item Solutions
+%\begin{itemize}
+%\medskip
+%\item Increase retirement age
+%\medskip
+%\item Lower benefits
+%\medskip
+%\item Increase taxes
+%\medskip
+%\item Encourage efficiency in health care
+%\bigskip
+%\end{itemize}
+%\item Bottom line from the CBO:
+%\begin{itemize}
+%\medskip
+%\item ``The United States faces a fundamental disconnect between the services that people expect the government to provide, particularly in the form of benefits for older Americans, and the tax revenues that people are willing to send to the government to finance those services.''
+%\end{itemize}
+%\end{itemize}
+%\end{frame}
+%
+%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+
+%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}[t]
+%\frametitle{Revenue Sources in the US}
+%\vspace{-.15in}
+%\includegraphics[height=3in,width=4.25in]{revenue_source.pdf}
+%\end{frame}
+%
+%\begin{frame}[t]
+%\frametitle{Budget Deficits: Private Sector Response}
+%\vspace{-.15in}
+%\includegraphics[height=3in,width=4.25in]{ricardo_us_data.pdf}
+%\end{frame}
+%
+%
+%\begin{frame}[t]
+%\frametitle{Budget Deficits: Private Sector Response}
+%\vspace{-.15in}
+%\includegraphics[height=3in,width=4.25in]{ricardo_japan_data.pdf}
+%\end{frame}
+%
+%\begin{frame}[t]
+%\frametitle{Budget Deficits: Private Sector Response}
+%\vspace{-.15in}
+%\includegraphics[height=3in,width=4.25in]{ricardo_uk_data.pdf}
+%\end{frame}
+%
+%
+%
+%
+%%
+
+
+\end{document} 

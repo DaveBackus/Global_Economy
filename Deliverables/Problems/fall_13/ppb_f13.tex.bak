@@ -1,0 +1,231 @@
+\documentclass[12pt]{exam}
+
+\usepackage{ge13}
+\usepackage{comment}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\urlstyle{rm}   % change fonts for url's (from Chad Jones)
+\hypersetup{
+    colorlinks=true,        % kills boxes
+    allcolors=blue,
+    pdfsubject={NYU Stern course GB 2303, Global Economy},
+    pdfauthor={Dave Backus @ NYU},
+    pdfstartview={FitH},
+    pdfpagemode={UseNone},
+%    pdfnewwindow=true,      % links in new window
+%    linkcolor=blue,         % color of internal links
+%    citecolor=blue,         % color of links to bibliography
+%    filecolor=blue,         % color of file links
+%    urlcolor=blue           % color of external links
+% see:  http://www.tug.org/applications/hyperref/manual.html
+}
+
+\usepackage{enumitem}
+\setitemize{leftmargin=*, topsep=0pt}
+\setenumerate{leftmargin=*, topsep=0pt}
+\usepackage{attachfile}
+    \attachfilesetup{color=0.5 0 0.5}
+\usepackage{needspace}
+% example:  \needspace{4\baselineskip} makes sure we have four lines available before pagebreak
+
+% for ge05.sty
+\def\ClassName{The Global Economy}
+\def\Category{Professor David Backus}
+%\def\Category{Backus \& Cooley}
+\def\HeadName{Practice Problems B}
+\newcommand{\phm}{\phantom{--}}
+\newcommand{\NX}{\mbox{\it NX\/}}
+
+\printanswers
+
+\begin{document}
+\parindent = 0.0in
+\parskip = \bigskipamount
+\thispagestyle{empty}%
+\Head
+
+\centerline{\large \bf \HeadName:  Labor Markets \& Trade}
+\centerline{Revised:  \today}
+
+\medskip
+{\it This will not be collected or graded,
+but it's a good way to make sure you're up to speed.
+We recommend you do it before the next class.}
+
+\begin{questions}
+
+% --------------------------------------------------------------------
+\question {\it Labor market analysis.\/}
+As the TF in a Global Economy section,
+you have been asked to work through an example to illustrate
+the impact of a minimum wage and payroll taxes on employment and unemployment.
+you start with these labor demand and supply functions:
+\begin{eqnarray*}
+    \mbox{Demand:} && L^d(w) \;\;=\;\; 1/(1.5 w)^3 \\
+    \mbox{Supply:} && L^s(w) \;\;=\;\; w^2 .
+\end{eqnarray*}
+%
+\begin{parts}
+\part Describe first how a frictionless labor market might work.
+What wage rate clears the market (that is, equates supply and demand)?
+How much labor is employed?
+What is the unemployment rate?
+Sketch the result in a supply/demand diagram.
+
+\part Now consider introducing a minimum wage.  If the minimum wage is
+$w_m = 1$, how much labor is employed?
+How much is supplied?
+What is the unemployment rate?
+Show how this works in your diagram.
+
+\part Suppose the minimum wage is $w_m = 1/2$.
+How much labor is employed?  Supplied?
+What is the unemployment rate?
+
+\part Suppose there is no minimum wage, but the government
+imposes 5\% payroll tax:
+a tax on labor paid by the employer.
+That is:  if $w$ is the wage received by the employee,
+$ 1.05 \cdot w$ is what the employer pays.
+What is the equilibrium wage?  Employment?
+How do they compare to the equilibrium without the tax?
+\end{parts}
+%
+Comment.  If you aren't comfortable with the mathematics here,
+you can answer the same questions qualitatively using a supply
+and demand diagram.
+
+\begin{solution}
+Same idea as class, with numbers added.
+See the spreadsheet for calculations.
+\begin{parts}
+\part In a frictionless market,
+prices and quantities adjust until supply equals demand.
+If we do that, it implies (sorry)
+\begin{eqnarray*}
+    w^5 &=& (1/1.5)^3
+\end{eqnarray*}
+or $w = 0.784$.
+If we substitute into supply or demand, we find $L = 0.615$.
+At these values, everyone works who wants to and unemployment is zero.
+
+\part If the minimum wage is $w_{min} = 1$, note that this is above
+the wage in the frictionless market.
+At this wage, more people want to work than firms want to hire.
+We have $L^d = 0.296$, $L^s = 1$, employment = 0.296,
+unemployment $= 1 - 0.296 = 0.704$, and the unemployment rate is
+$ 0.704 / (0.296 + 0.704) = 70.4\%$.
+
+\part If the minimum wage is 1/2, then we're back to the solution in (a):
+0.615 units of labor are employed and unemployment is zero.
+Why?  The market wage is above this minimum, so it's irrelevant.
+
+\part The labor demand function becomes
+\begin{eqnarray*}
+    L^s(w) &=& 1/( 1.5 \times 1.05 w)^3,
+\end{eqnarray*}
+where $w$ is the pretax wage.
+Setting supply equal demand gives us a wage of 0.761.
+Employment is 0.580.
+There is no unemployment, but both employment and the wage
+are lower than they were without the tax.
+Why?  Because the cost of hiring has gone up for firms.
+Even with the lower (pretax) wage,
+the cost including the tax has gone up to 0.800.
+
+It's probably easier to follow the logic with generic supply and demand curves.
+The tax shifts the demand curve for labor down by the amount of the tax.
+If demand slopes down and supply slopes up,
+we'll see a decline in employment.
+This isn't any different from other markets.
+We tax cigarettes, for example, because we want to reduce the quantity.
+It's the same logic.
+
+\end{parts}
+\end{solution}
+
+% --------------------------------------------------------------------
+\question {\it Protecting sugar.\/}
+The US has a long-running tradition of protecting sugar producers,
+going back to 1789 when Treasury Secretary Alexander Hamilton helped
+pass a tariff on sugar imports.
+(Tariffs at that time were the major source of federal government revenue
+and were needed to service the country's debt.)
+Currently the US restricts the quantity of sugar imports (quotas) and guarantees
+prices to US producers that are well above world prices.
+
+\begin{parts}
+\part Who benefits from these policies?
+\part Who loses?
+\part Economists believe that the cost of sugar protection outweigh
+the benefits, yet these policies have been in place for 200 years.
+Why?
+\end{parts}
+
+\begin{solution}
+\begin{parts}
+\part Producers of sugar or sugar substitutes benefit:
+Sugar cane and sugar beet farmers, as well as corn growers,
+who produce the ubiquitous ``high-fructose corn syrup,''
+a common substitute for sugar in American soft drinks and candy.
+The Iowa primary usually illustrates this connection in stark terms.
+
+\part Anyone who consumes or produces a product that contains sugar is hurt.
+Also people who use substitutes.
+
+\part Sad to say, economists do not make policy.
+Policy is made by people who wanted to get reelected.
+Sugar producers are a small group, so you might think their influence
+would be small, but they have a strong interest in such policies.
+Everyone else, a much larger group, generally loses from these policies,
+but their losses, while large in total, are small to them individually,
+hence unlikely to change their votes.
+\end{parts}
+\end{solution}
+
+% --------------------------------------------------------------------
+\question {\it Dumping coffee.\/}
+You are working for Illy USA, the American subsidiary of
+an Italian company that imports and sells coffee products in the US.
+You boss tells you that domestic coffee roasters have filed a dumping complaint
+against the company,
+but does not know what that means.
+He asks:
+%
+\begin{parts}
+\part What must they show to sustain a judgement of dumping against Illy?
+
+\part What damage could this do to Illy USA?
+
+\part Why has dumping become more common in the recent past?
+\end{parts}
+
+\begin{solution}
+\begin{parts}
+\part They must show two things.  First, that Illy has priced
+coffee ``unfairly'' in the US.
+For example, that Illy sells coffee in the US below its estimated cost of production
+or below what it charges in Italy.
+Second, that they have suffered ``injury'' as a result.
+
+\part It could result in duties (tariffs) imposed on Illy's imports,
+not to mention the endless litigation associated with
+many dumping cases.
+
+\part Antidumping cases have risen in popularity as
+World Trade Organization (WTO) rules have eliminated other
+trade barriers.
+\end{parts}
+%
+Wikipedia has a nice summary:  \\
+\centerline{\url{http://en.wikipedia.org/wiki/Dumping_(pricing_policy)}}
+\end{solution}
+
+
+\end{questions}
+
+\vfill \centerline{\it \copyright \ \number\year \
+NYU Stern School of Business}
+
+\end{document}
+

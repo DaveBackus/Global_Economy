@@ -1,0 +1,77 @@
+\documentclass[letterpaper,12pt]{article}
+
+%\usepackage[hypertex]{hyperref}
+\usepackage{comment}
+\usepackage{amsmath}
+% Either of these allows you to use \Box
+%\usepackage{wasysym}
+\usepackage{amssymb}
+
+\usepackage{verbatim}
+\usepackage{booktabs}
+\usepackage[small,compact]{titlesec}
+
+\RequirePackage{GE13}
+% this inputs graphicx, too
+
+\def\ClassName{The Global Economy}
+\def\Category{Checklist}
+\def\HeadName{Global Economy Long-Term Checklist}
+
+\begin{document}
+\parindent = 0.0in
+\parskip = \bigskipamount
+\thispagestyle{empty}%
+\Head
+
+\centerline{\large \bf \HeadName}%
+\centerline{Revised:  \today}
+
+\bigskip
+A checklist of indicators to consider before entering a
+long-term business relationship in another country.
+
+\section{Measures of long-term country performance}
+
+\renewcommand{\labelitemi}{$\Box$}
+\begin{itemize}
+\item Descriptive indicators:  real GDP per capita; growth rates of (real) GDP, GDP per capita, and GDP per worker; saving and investment rates.
+    %, net exports, and capital flows; government spending.
+\item Level and growth accounting:  productivity,
+    capital (ratios to GDP and labor),
+    labor (employment, hours, education);
+    similar measures for sectors and industries of interest.
+\item Comment:  There are virtually no examples of countries with good long-term performance that have not had significant
+    productivity growth.
+\end{itemize}
+
+\subsubsection*{2. Measures of institutional quality}
+
+%\renewcommand{\labelitemi}{$\diamond$}
+\begin{itemize}%{labelitemi}{$\bullet$}
+\item Political institutions:
+    Is the political system stable?
+    Are policies stable, or do they change
+    with the government?
+    Is a change of government imminent?
+    Is corruption prevalent?
+\item Legal institutions:  Is there a well-developed legal system?  Is the judiciary independent and honest?
+    Are contracts enforced?
+\item Labor markets:  Is it easy to hire and fire workers?  Are employer-employee relations cooperative?
+\item Financial markets:  Is there a well-functioning banking system?  Are there well-developed debt and equity markets?  Are investors protected?  Is relevant financial information disclosed to investors?
+\item Product markets:  Are they open to new entrants?  Is there extensive regulation?  Do you face a government-supported competitor?
+\item Infrastructure:  Is it adequate?  Reliable?
+Categories:  energy, transportation (roads, railroads, ports, airports), telecommunication (phone, internet).
+\item International:  Are international transactions subject to quotas, taxes, or unusual regulations or red tape?
+Is shipping efficient and reliable?
+\item Comment:  You want to weave these ingredients into a coherent picture of the economic and business climate, and to consider how your choice of business opportunity and/or the way you structure it can mitigate risk from weak institutions.
+\end{itemize}
+
+
+\subsubsection*{3. Integration}
+
+Your goal is to integrate this information and form an assessment of those aspects of the business climate relevant to your business proposition.   Note, too, that there are often good opportunities in countries with weak institutions --- perhaps even for that reason.
+
+\vfill \centerline{\it \copyright \ \number\year \ NYU Stern School of Business}
+
+\end{document}

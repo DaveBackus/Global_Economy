@@ -1,0 +1,144 @@
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage{comment}
+%\usepackage{amsmath}
+
+
+\usepackage{amssymb}
+\renewcommand{\labelitemi}{$\Box$}
+\renewcommand{\labelitemii}{$\Box$}
+
+\usepackage[compact]{titlesec}
+
+\RequirePackage{GE13}
+% this inputs graphicx, too
+
+\def\ClassName{The Global Economy}
+\def\Category{Checklist}
+\def\HeadName{Global Economy Short-Term Checklist}
+
+\begin{document}
+\parindent = 0.0in
+\parskip = 0.0\bigskipamount
+\thispagestyle{empty}%
+\Head
+
+\centerline{\large \bf \HeadName}%
+\centerline{Revised:  \today}
+
+\bigskip
+A checklist of indicators and tools for assessing the economic conditions of a country before entering a short-term business relationship.
+
+
+\subsubsection*{1. Measures of short-term country performance}
+
+\renewcommand{\labelitemi}{$\Box$}
+\begin{itemize}
+
+\item Macroeconomic conditions:  GDP growth; consumption, investment, and saving; employment and unemployment; inflation; short and long-term interest rates; government deficit and debt; real and nominal exchange rates.
+    %; net exports, current account balance, and net foreign asset position.
+%    [Remind yourself what each is, and what it tells you about the economy.]
+
+\item Business cycle indicators:  housing starts, retail sales,
+    new claims for unemployment insurance, stock prices, money growth, many others;
+    details vary by country.
+
+\item Comment:  All countries experience fluctuations in growth rates.
+    In developed countries, near-term growth is somewhat predictable
+    from a variety of economic indicators.
+    In developing countries, volatility is greater and there is a greater
+    chance of a complete change in long-term growth prospects, up or down.
+\end{itemize}
+
+
+\subsubsection*{2. Analytical tools}
+
+\begin{itemize}
+\item Graphs:  plot indicator (or its growth rate);
+    draw lines for mean and mean +/-- one standard deviation
+    for comparison.
+
+\item Business-cycle scorecard:  a table that summarizes
+the strengths of a number of business-cycle indicators.
+
+\item Cross-correlation function:  graphical tool for identifying leads and lags in economic indicators.
+\item Aggregate supply and demand:  the benchmark theoretical framework for thinking about short-term movements in GDP growth and inflation.
+\item Taylor rule:  bond traders' guide to monetary policy; indicates how
+    short-term
+    interest rate is likely to respond to changes in economic growth and inflation; helps to identify ``neutral'' policy so that you can say whether current policy is unusual.
+\item Government debt dynamics:  shows sources of year-to-year changes in the ratio of government debt to GDP.  Critical inputs:  interest on debt, GDP growth, primary deficit.
+%\item Net foreign asset dynamics:  shows sources of year-to-year changes in the ratio %of net foreign assets to GDP.  Critical inputs:  GDP growth, interest on NFA, net %exports.
+\item Exchange rates:  purchasing power parity, interest rate parity.
+    Comment:  short-term fluctuations in currency prices are
+    large and mostly inexplicable.
+\end{itemize}
+
+
+\subsubsection*{3. Crisis indicators}
+
+%Here's the crisis checklist:
+%
+\begin{itemize}
+\item Government debt and deficits.
+Common rules of thumb:  worry if government
+deficit is more than 5\% of GDP or debt is more than 50\% of GDP.
+Adjust upward for developed countries, downward for developing countries.
+And note:  quantitative benchmarks are less important than the political environment.
+Watch out for hidden liabilities:  pensions, health care, bailouts, etc.
+
+Fine points:  worry further if debt is short-term and/or denominated in foreign currency.
+Short-term debt subjects the government to refinancing risk:
+ markets may demand better terms or refuse to refinance.  Foreign-denominated debt subjects government to risk
+if currency falls in value, increasing the debt in local terms.
+
+\item Banking/financial system.
+A financial collapse hurts the economy
+and may leave the government with a large expense.
+Not a topic for this course, but analysts track leverage
+and nonperforming loans.
+
+\item Currency and capital controls.
+Does the central bank limit purchases and sales of local currency?
+Can you move money (``capital'') in and out of the country?
+Under what conditions?
+
+\item Exchange rate and reserves.
+Fixed exchange rate regimes sometimes blow up.
+Rule of thumb:  worry if the exchange rate is fixed, or close to it,
+and the currency is overvalued in PPP terms
+(Big Macs cost 30\% more than in other currencies,
+real exchange rate has risen more than 30\% in last 2-5 years).
+Worry more if foreign exchange reserves
+are low or have fallen significantly.
+
+The trilemma.  You can only have two of
+(i)~fixed exchange rate, (ii)~free international movement of capital,
+and (iii)~independent monetary policy.  If you try to have all three,
+something will give, probably the exchange rate.
+
+
+%\item Current account and net foreign assets.
+%If net foreign assets is negative we say a country is a net borrower.
+%Rule of thumb:  worry if net foreign borrowing is greater than 50\% of GDP. Worry more %if foreign borrowing finances government deficits.
+%Worry further is the current account deficit is more than 5\% of GDP.
+
+\item Politics and institutions.
+Especially in emerging markets, it's often more important to follow the politics than the economic numbers.
+Worry if the political situation is unstable, especially in a country
+with otherwise weak institutions.
+\end{itemize}
+
+
+\subsubsection*{4. Integration}
+
+The challenge is to put all these pieces together:
+to use our tools and economic data to come up with a coherent picture of
+current and near-term future economic conditions,
+and how these conditions are likely to affect any business opportunities
+you are considering.
+Remember, too, that bad current conditions can be wonderful opportunities if things improve.
+
+\bigskip
+\vfill \centerline{\it \copyright \ \number\year \ NYU Stern School of Business}
+
+\end{document}

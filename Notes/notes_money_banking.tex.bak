@@ -1,0 +1,871 @@
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage{amsmath}
+\usepackage[dvips]{graphicx}
+\usepackage{hyperref}
+%    \hypersetup{colorlinks=true,urlcolor=blue,linkcolor=red}
+\RequirePackage{GE05}
+
+\newcommand{\GDP}{\mbox{\em GDP\/}}
+\newcommand{\NDP}{\mbox{\em NDP\/}}
+\newcommand{\GNP}{\mbox{\em GNP\/}}
+\newcommand{\NX}{\mbox{\em NX\/}}
+\newcommand{\NY}{\mbox{\em NY\/}}
+\newcommand{\CA}{\mbox{\em CA\/}}
+\newcommand{\NFA}{\mbox{\em NFA\/}}
+\newcommand{\Def}{\mbox{\em Def\/}}
+\newcommand{\CPI}{\mbox{\em CPI\/}}
+\newcommand{\CU}{\mbox{\em CU\/}}
+\newcommand{\RE}{\mbox{\em RE\/}}
+\newcommand{\MB}{\mbox{\em MB\/}}
+
+\def\ClassName{The Global Economy}
+\def\Category{Backus \& Clementi}
+\def\HeadName{Money and Banking}
+
+\begin{document}
+\thispagestyle{empty}%
+\Head
+
+\centerline{\large \bf \HeadName}%
+\centerline{Revised: \today}
+
+\bigskip
+
+This note is about the nuts and bolts of monetary policy. It is an
+updated version of chapter 10 of the manuscript entitled
+``Macroeconomics: A Modern Perspective," by Tom Cooley and Lee
+Ohanian.
+
+\subsubsection*{What is money?}
+
+A standard way to begin discussions of money is to try to define
+what it is. This is somewhat difficult to do because historically
+many things have been used as money - shells, beads, cigarettes,
+pieces of paper. What characteristics make any of these suitable as
+a form of money? One way to think about this is to define money in
+terms of the services it provides. Money is an asset. An asset is
+something that serves as a store of value. This means that it can be
+used as a way of transferring consumption between periods. But, lots
+of things, stocks, bonds, real estate, can and do fulfill that
+function. Money is really quite different from other assets because
+it provides another important service - it serves as a medium of
+exchange. The medium of exchange role implies that it is freely
+exchanged for goods and services and it has wide acceptance and
+(generally) well understood value. Another service that money
+provides is that it serves as a unit of account. The role of unit of
+account means that when we talk about the value of other assets or
+consumption goods we use monetary units as a standard way of
+denominating them.
+
+How does money come into being and why are people willing to accept
+some forms of money? We know that different forms of money have
+evolved naturally in many societies. One example that is often cited
+is that cigarettes became used as a form of money in prisoner of war
+camps during World War II. They are also often used as a form of
+money in U.S. prisons. What problems does the existence of an
+accepted form of money solve? The easiest way to understand this is
+to imagine a simple economy in which individuals all specialize in
+the production of a single good. Some grow wheat, some harvest wood,
+some raise chickens and some educate the young. The educators and
+wood harvesters have to eat, the food producers need wood and need
+to educate their young and so on. People benefit from transacting
+with one another. But if this were a pure barter world, then
+transaction could only take place when we found someone who offered
+in trade something we desire and who desired that which we produce.
+This is called the \textit{double coincidence of wants}. The point
+is that transacting in such a world would be very inefficient.
+Suppose, instead that there were some accepted medium of exchange.
+It need not be anything with intrinsic value. It could be stones of
+a certain size and shape, or pieces of paper embossed with a picture
+of long dead politicians. All that is required is that everyone
+agree that it is the medium of exchange and agree on its relative
+value. In this world, educators could now exchange education
+services for the type of money and use the money to purchase wheat
+and wood without worrying about whether the producers of wheat and
+woods that he encountered had any need for education services. The
+acceptance of a medium of exchange thus facilitates transactions in
+the society because it removes an important impediment to economic
+activity. That is why money arises naturally. Now, lets talk about
+how we measure it.
+
+Because the distinguishing characteristic of money is its use to
+facilitate transactions, a definition of money would include assets
+commonly used to facilitate transactions and would exclude assets
+that are difficult or impossible to use for transactions. My house,
+for example, is an asset and a store of value, but it would be
+difficult to use for transactions because it is not divisible and
+there may be a lot of uncertainty about its value. Unfortunately,
+the distinction between these types of assets is not always very
+sharp and it has changed over time because of technology and
+improved access to information. Accordingly, there is not a unique
+empirical definition of money. Rather, there are several measures
+that we use and each of them tends to be useful for some purposes.
+In what follows we will discuss the monetary measures that are
+tracked in the United States. Although the discussion is specific to
+the United States these definitions tend to be fairly universally
+applied.
+
+The narrowest measure of the money supply counts only
+government-issued currency held by the non-bank public. This
+aggregate is included in all broader definitions of money and is
+called the currency component of the money supply.
+
+A somewhat broader definition of the money supply includes the total
+monetary liabilities of the federal government and is known either
+as \textit{high-powered money} or the \textit{monetary base},
+denoted MB. This broader definition includes currency held by the
+non-bank public as well as reserves held by commercial banks as
+backing for their deposit liabilities. Banks can hold reserves in
+either of two forms, \textit{vault cash} held directly by the
+commercial bank and \textit{reserve deposits} maintained by the
+commercial bank at one of the twelve regional Federal Reserve Banks.
+The Federal Reserve has tight short-term control over the monetary
+base but not over broader monetary aggregates.
+
+A somewhat broader definition of money is known as M1. It includes
+currency held by the non-bank public, travelers checks, and
+checkable deposits at commercial banks. (Note that bank reserves do
+not appear directly in M1. Instead, they back deposits at commercial
+banks.) A still broader definition of the money supply, known as M2,
+includes M1 plus savings deposits, small time deposits (under
+\$100,000), money market mutual fund shares (MMMFs) held by the
+public, money market deposit accounts (MMDAs), overnight Eurodollar
+deposits in foreign branches of U.S. banks, and overnight repurchase
+agreements whereby a bank sells a security overnight to a non-bank
+institution. A still broader definition, M3, includes M2 plus large
+certificates of deposit and MMMFs held by institutions.
+
+Table \ref{fig:money_measures} shows the components of the various
+measures of money as of February 2005 (figures are in billions of
+dollars).
+%
+\begin{table}
+\begin{center}
+\begin{tabular}{lr}
+\hline%
+Monetary Base                            & 764.5 \\
+\\
+M1 & 1,366.9 \\
+\hspace{0.25in} Currency                 & 702.0 \\
+\hspace{0.25in} Travelers Checks         & 7.5 \\
+\hspace{0.25in} Demand Deposits          & 335.6 \\
+\hspace{0.25in} Other Checkable Deposits & 321.8 \\
+\\
+M2 & 6,456.3 \\
+\\
+M3 & 9,502.5 \\
+\hline
+%
+\end{tabular}
+\end{center}
+\caption{United States - Measures of Money Supply in February
+2005.}\label{fig:money_measures}
+\end{table}
+%
+For comparison, nominal $GDP$ in 2004 was about \$11,735 billion. It
+is worth noting that what you might commonly think of as money,
+currency, is only a small fraction of these broader measures. But it
+is clear that all of these other components of money are available,
+to some degree or other, for transactions.
+
+For our purposes, the exact definition of the money supply is not
+crucial. The important points to note are (a) deposits rather than
+currency constitute the largest portion of the broader monetary
+aggregates and (b) the distinction between these broader aggregates
+and the monetary base, over which the Federal Reserve has close
+control. From now on, we will speak only of the monetary base and
+the money supply, with the latter being composed of currency and
+deposits. For most purposes we need not be specific about which
+deposits are included in the definition.
+
+\subsubsection*{Managing the money supply}
+
+In the United States and in most other countries, the supply of
+money is controlled by a Central Bank. The U.S. central bank is
+called the Federal Reserve. It was established in 1913 by an act of
+congress and has responsibility for regulating banks and, most
+importantly, for formulating and conducting monetary policy. The
+Federal Reserve is an independent central bank. This means that it
+can formulate and implement policy independently of the government
+in power. This arrangement is not true of other countries and we
+will discuss the importance of this independence later on. There are
+12 regional Federal Reserve Banks and a Board of Governors of the
+Federal Reserve System that resides in Washington D.C.. Since the
+1930's power over monetary policy has been concentrated in the
+Federal Reserve Board and a group called the Federal Open Market
+Committee (FOMC). The FOMC consists of the seven Governors of the
+Federal Reserve System, who are appointed by the president for
+staggered 14 year terms, the Chairman, currently Alan Greenspan, who
+serves for a four year term and five of the regional bank presidents
+who serve on a rotating basis. The FOMC meets every six weeks and is
+the group that sets monetary policy.
+
+As noted above, the Federal Reserve directly controls the monetary
+base. Through its control of the monetary base and other tools of
+monetary policy, the Federal Reserve also influences the short-term
+behavior of the broader monetary aggregates and can control their
+long-run behavior. The Federal Reserve's short-run control over
+aggregates broader than the monetary base is far from perfect, and
+commercial banks and the non-bank public can have a substantial
+effect on the short-term behavior of the broader monetary
+aggregates. Historically banks were at center of the financial
+system and the Federal Reserve had substantial control over the
+provision of credit in the economy. In recent years, however, the
+role of non-bank financial institutions such as insurance companies
+and pension funds has increased and these institutions and the
+credit they provide are not subject to the influence of the Fed.
+
+We will illustrate in some detail how the Fed implements monetary
+policy. Before we do that, it will be useful to describe the
+features of a banking system where deposits must be backed by
+reserves.
+
+The United States has what is called a fractional-reserve banking
+system, meaning that commercial banks have to hold reserves equal
+only to a fraction of their deposit liabilities. Banks hold reserves
+for two reasons. First, because they must be able to honor demands
+for cash by their depositors. Second, in the U.S. and in many other
+countries, they are required to maintain certain reserves. The
+amount of such required reserves has varied tremendously over time
+and it varies tremendously across countries. In Canada and the U.K.
+for example, banks are not required to maintain any set fraction of
+deposits as reserves. Of course this doesn't mean the banks in those
+countries don't maintain reserves because they still do so for the
+first reason cited. Variations in reserve requirements have at
+various times been an important tool of monetary policy. How those
+variations affect the economy is an important topic that we will
+discuss further. The significance of the fact that banks only have
+to keep fractional reserves is that banks can use a dollar of
+reserves to back several dollars of deposits. We now examine how
+commercial banks use additional reserves to create deposits.
+
+The table below illustrates a highly simplified balance sheet of a
+commercial bank. The major asset categories are reserves, earning
+assets, and buildings and facilities. Reserves earn no interest. The
+two main types of earning assets are loans made by the bank and
+securities (mainly government debt) held by the bank. The bank's
+major liability is deposits held for its customers.
+
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline \multicolumn{2}{|c|}{Bank Balance Sheet} \\
+\hline\hline Assets & Liabilities \\ \hline\hline
+\multicolumn{1}{|l}{Reserves} & \multicolumn{1}{|l|}{Deposits} \\
+\multicolumn{1}{|l}{\thinspace\thinspace\thinspace\thinspace\thinspace
+\thinspace\thinspace\thinspace\thinspace\thinspace\thinspace\thinspace
+\thinspace Required} & \multicolumn{1}{|l|}{} \\
+\multicolumn{1}{|l}{\thinspace\thinspace\thinspace\thinspace\thinspace
+\thinspace\thinspace\thinspace\thinspace\thinspace\thinspace\thinspace
+\thinspace\thinspace\thinspace Excess} & \multicolumn{1}{|l|}{} \\
+\multicolumn{1}{|l}{Earning Assets} & \multicolumn{1}{|l|}{} \\
+\multicolumn{1}{|l}{\thinspace\thinspace\thinspace\thinspace\thinspace
+\thinspace\thinspace\thinspace\thinspace\thinspace\thinspace\thinspace
+\thinspace\thinspace Securities} & \multicolumn{1}{|l|}{} \\
+\multicolumn{1}{|l}{\thinspace\thinspace\thinspace\thinspace\thinspace
+\thinspace\thinspace\thinspace\thinspace\thinspace\thinspace\thinspace
+\thinspace\thinspace Loans} & \multicolumn{1}{|l|}{} \\
+\multicolumn{1}{|l}{Buildings, etc.} & \multicolumn{1}{|l|}{Net Worth} \\
+\hline
+\end{tabular}
+\end{center}
+
+Suppose we decided to start a student bank, to be run by the
+association of students. Initially all items on the balance sheet of
+Student Bank are zero. (For simplicity, we do not explicitly show
+net worth, securities, buildings and facilities, etc., on the
+balance sheet.) Now suppose that our customers deposit \$1,000,000
+of currency in the Bank (these are well-to-do students or there are
+lots of them!). This currency (now vault cash) counts as a part of
+Student Bank's reserves. Suppose that the only regulation this bank
+faces is that it must maintain a certain fraction of its deposit as
+reserve. \ If the required reserve ratio is 0.2, Student Bank now
+has required reserves of \$200 and excess reserves of \$800. The
+following table shows the bank's new balance sheet. Because these
+reserves earn no interest, the bank wishes to convert its excess
+reserves into earning assets.
+
+\begin{center}
+\begin{tabular}{|l|r|l|r|}
+\hline
+\multicolumn{4}{|c|}{Student Bank} \\
+\hline \multicolumn{2}{|c|}{Assets(000's)} &
+\multicolumn{2}{l|}{Liabilities (000's)}
+\\ \hline\hline
+\multicolumn{1}{|l|}{Reserves} & \multicolumn{1}{|r|}{1,000} &
+\multicolumn{1}{|l|}{Deposits} & 1,000 \\
+\multicolumn{1}{|c|}{Required} & 200 & \multicolumn{1}{|c}{} &
+\multicolumn{1}{|c|}{} \\
+\multicolumn{1}{|c|}{Excess} & 800 & \multicolumn{1}{|c}{} &
+\multicolumn{1}{|c|}{} \\
+\multicolumn{1}{|l|}{Loans} & 0 & \multicolumn{1}{|c|}{} &
+\multicolumn{1}{|c|}{} \\ \hline
+\end{tabular}
+\end{center}
+
+But, the bank was formed to make some money and provide services to
+other students. Student Bank can convert its excess reserves into
+earning assets by making a loan. Suppose that Hillary, a customer of
+Student Bank, comes to the bank and applies for an \$800,000 loan to
+invest in some vacation real estate in Arkansas. The bank's credit
+review committee approves the loan and credits Hillary's checking
+account with \$800,000. The bank's deposits increase to \$1,800,000,
+its required reserves increase to \$360,000, and its excess reserves
+fall to \$640,000. The table below shows the new balance sheet of
+Student Bank.
+
+\begin{center}
+\begin{tabular}{|l|r|l|r|}
+\hline
+\multicolumn{4}{|c|}{Student Bank} \\
+\hline%
+\multicolumn{2}{|c|}{Assets (000's)} & \multicolumn{2}{l|}{Liabilities (000's) } \\%
+\hline\hline%
+\multicolumn{1}{|l|}{Reserves} & \multicolumn{1}{|r|}{1,000} & \multicolumn{1}{|l|}{Deposits} & 1,800 \\%
+\multicolumn{1}{|l|}{\thinspace\thinspace\thinspace\thinspace Required} & \multicolumn{1}{|r|}{360} & \multicolumn{1}{|l|}{} &  \\%
+\multicolumn{1}{|l|}{\thinspace\thinspace\thinspace\thinspace\thinspace
+\thinspace Excess} & \multicolumn{1}{|r|}{640} &
+\multicolumn{1}{|l|}{} &
+\\
+\multicolumn{1}{|l|}{Loans} & \multicolumn{1}{|r|}{800} &
+\multicolumn{1}{|l|}{} &  \\ \hline
+\end{tabular}
+\end{center}
+
+Hillary now goes to the real estate developer and writes a check for
+\$800,000 to pay for her part of the investment. The developer
+deposits the check in his account at Ozark Bank. When the check
+clears, Student Bank must transfer \$800,000 in cash to Ozark Bank.
+Student Bank loses deposits and reserves of \$800,000, while Ozark
+Bank gains deposits and reserves in the same amount. The balance
+sheets of the two banks are shown below. Notice that Student Bank
+now has no excess reserves, while Ozark Bank has excess reserves of
+\$640,000.
+
+\begin{center}
+\begin{tabular}{|l|r|l|r|c|l|r|l|r|}
+\hline \multicolumn{4}{|c|}{Student Bank} & \multicolumn{1}{|c|}{} & \multicolumn{4}{|c|}{Ozark Bank} \\%
+\hline \multicolumn{2}{|c|}{Assets (000's)} &
+\multicolumn{2}{c|}{Liabilities (000's) } & \multicolumn{1}{|c|}{} & \multicolumn{2}{|c}{Assets (000's)} & \multicolumn{2}{|c|}{Liabilities (000's)} \\%
+\hline\hline%
+\multicolumn{1}{|l|}{Reserves} & \multicolumn{1}{|r|}{200} & \multicolumn{1}{|l|}{Deposits} & 1,000 & \multicolumn{1}{|l|}{} & Reserves & 800 & Deposits & 800 \\%
+\multicolumn{1}{|l|}{\thinspace\thinspace\thinspace\thinspace\thinspace
+\thinspace\thinspace Required} & \multicolumn{1}{|r|}{200} &
+\multicolumn{1}{|l|}{} &  & \multicolumn{1}{|l|}{} &
+\thinspace\thinspace
+\thinspace\thinspace\thinspace\thinspace\thinspace Required & 160 &  &  \\
+\multicolumn{1}{|l|}{\thinspace\thinspace\thinspace\thinspace\thinspace
+\thinspace\thinspace Excess} & \multicolumn{1}{|r|}{0} &
+\multicolumn{1}{|l|}{} &  & \multicolumn{1}{|l|}{} &
+\thinspace\thinspace
+\thinspace\thinspace\thinspace\thinspace\thinspace Excess & 640 &  &  \\
+\multicolumn{1}{|l|}{Loans} & \multicolumn{1}{|l|}{800} &
+\multicolumn{1}{|l|}{} &  & \multicolumn{1}{|l|}{} & Loans & 0 &  &  \\
+\hline
+\end{tabular}
+\end{center}
+
+Ozark Bank now converts its excess reserves into earning assets by
+making a loan of \$640,000, to Bill, leaving it with the following
+balance sheet:
+
+\begin{center}
+\begin{tabular}{|l|l|l|l|}
+\hline
+\multicolumn{4}{|c|}{Ozark Bank} \\%
+\hline
+\multicolumn{2}{|c|}{Assets (000's)} & \multicolumn{2}{l|}{Liabilities (000's) } \\%
+\hline\hline
+\multicolumn{1}{|l|}{Reserves} & \multicolumn{1}{|r|}{800} & Deposits & \multicolumn{1}{|r|} {1,400} \\%
+\multicolumn{1}{|l|}{\thinspace\thinspace\thinspace\thinspace\thinspace \thinspace Required} & \multicolumn{1}{|r|} {288} &  &  \\%
+\multicolumn{1}{|l|}{\thinspace\thinspace\thinspace\thinspace\thinspace \thinspace Excess} & \multicolumn{1}{|r|} {512} &  &  \\%
+\multicolumn{1}{|l|}{Loans} & \multicolumn{1}{|r|} {640} & \multicolumn{1}{|l|}{} &  \\
+\hline
+\end{tabular}
+\end{center}
+
+The borrower, Bill spends this \$640,000 with various merchants who
+deposits their funds in Arkansas Bank. When everything clears, these
+two banks are left with the balance sheets shown below.
+
+\begin{center}
+\begin{tabular}{|ll|ll|cllll|}
+\hline \cline{6-9} \multicolumn{4}{|c|}{Ozark Bank} &
+\multicolumn{1}{|c|}{} &
+\multicolumn{4}{|c|}{Arkansas Bank} \\
+\hline \multicolumn{2}{|c|}{Assets (000's)} &
+\multicolumn{2}{c|}{Liabilities (000's) } & \multicolumn{1}{|c|}{} &
+\multicolumn{2}{|c|}{Assets (000's)} &
+\multicolumn{2}{|c|}{Liabilities (000's)} \\ \hline\hline
+\multicolumn{1}{|l|}{Reserves} & \multicolumn{1}{|r|} {160} &
+\multicolumn{1}{|l|}{Deposits} & \multicolumn{1}{r|} {800} &
+\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{Reserves} &
+\multicolumn{1}{l|}{640} & \multicolumn{1}{l|}{Deposits} & \multicolumn{1}{|r|}{640} \\
+\multicolumn{1}{|l|}{\thinspace\thinspace\thinspace\thinspace\thinspace
+\thinspace Required} & \multicolumn{1}{|r|} {160} &
+\multicolumn{1}{|l|}{} &  & \multicolumn{1}{|l|}{} &
+\multicolumn{1}{l|}{\thinspace\thinspace
+\thinspace\thinspace\thinspace\thinspace Required} &
+\multicolumn{1}{l|}{128}
+& \multicolumn{1}{l|}{} &  \\
+\multicolumn{1}{|l|}{\thinspace\thinspace\thinspace\thinspace\thinspace
+\thinspace Excess} & \multicolumn{1}{r|} {0} &
+\multicolumn{1}{|l|}{} & & \multicolumn{1}{|l|}{} &
+\multicolumn{1}{l|}{\thinspace\thinspace\thinspace\thinspace\thinspace
+\thinspace\thinspace Excess} & \multicolumn{1}{l|}{512} &
+\multicolumn{1}{l|}{} &  \\
+\multicolumn{1}{|l|}{Loans} & \multicolumn{1}{|r|} {640} &
+\multicolumn{1}{|l|}{} &  & \multicolumn{1}{|l|}{} &
+\multicolumn{1}{l|}{Loans} &
+\multicolumn{1}{r|}{0} & \multicolumn{1}{l|}{} &  \\
+\hline
+\end{tabular}
+\end{center}
+
+This process, which is repeated again and again, is known as the
+bank credit expansion process because the supply of bank credit
+increases at each step. Each increase in bank lending causes an
+equal increase in deposits and the money supply. Banks are unique
+among financial institutions because their lending activities
+increase the money supply.
+
+What is the end result of the credit expansion process? Deposits
+increase at each stage of the process, and the total increase in
+deposits is \$(1,000,000 + 800,000 + 640,000 + 512,000 + ...) =
+\$5,000,000. Total bank reserves increase by \$1,000,000 in the
+initial stage and then increase no further. The \$1,000,000 of
+additional reserves is just redistributed among different banks. The
+end result is that \$1,000,000 of additional bank reserves supports
+\$5,000,000 of additional deposits. This result is due to the fact
+that the reserve ratio is 0.2, so that each dollar of reserves can
+support five dollars of deposits.
+
+\subsubsection*{The Money Multiplier}
+
+In the above example, we implicitly assumed that each bank customer
+held all of his or her money in deposits. What would have happened
+if each depositor had held a mix of deposits and currency? To be
+specific, suppose the real estate developer had deposited only
+\$600,000 in Ozark Bank and had held \$200,000 in currency (perhaps
+to make political contributions!). Ozark Bank would have had 25
+percent fewer excess reserves and would have created fewer deposits.
+In addition, each subsequent bank would have created 25 percent less
+deposits. The net result is more currency, fewer deposits, and less
+total money in the system. How do we know that the decline in
+deposits outweighs the increase in currency, resulting in a smaller
+total money supply? The reason is that each dollar held by the
+public in currency removes one dollar in reserves from the banking
+system, and each dollar of reserves (under the assumption of a
+reserve ratio of 0.2) can back five dollars of deposits.
+
+We could illustrate this result by following an initial deposit of
+\$1,000,000 through several different banks, as in our previous
+example, but an example with both currency and deposits would get
+very messy. This simplest illustration is algebraic. We will use the
+following notation:
+
+$M$ = the money supply
+
+$C$ = the currency component of the money supply
+
+$D$ = deposits
+
+$H$ = high-powered money (the monetary base)
+
+$R$ = bank reserves
+
+$c$ = the ratio of currency to deposits
+
+$rr$ = the ratio of reserves to deposits (the reserve ratio)
+
+\smallskip\
+
+The money supply is equal to deposits plus currency:
+
+\begin{equation*}
+M=D+C.
+\end{equation*}
+
+The monetary base is divided between currency and bank reserves:
+
+\begin{equation*}
+H=C+R.
+\end{equation*}
+
+Banks hold reserves equal to a fraction of their deposits:
+
+\begin{equation*}
+R=rrD.
+\end{equation*}
+
+The public holds currency equal to a fraction of deposits:
+
+\begin{equation*}
+C=cD.
+\end{equation*}
+
+Substituting for currency, the money supply is given by:
+
+\begin{equation*}
+M=D+cD=(1+c)D.
+\end{equation*}
+
+Substituting for currency and reserves, the monetary base is given
+by:
+
+\begin{equation*}
+H=cD+rrD=(c+rr)D.
+\end{equation*}
+
+The ratio of the money supply to the monetary base is called the
+\textit{money multiplier} and is equal to
+
+\begin{equation*}
+m=\frac MH=\frac{(1+c)}{(c+rr)}.
+\end{equation*}
+
+The money multiplier tells us how much each dollar of the monetary
+base can support. In our first example, people hold no currency
+$(c=0)$ and the reserve ratio is 0.2, so that the money multiplier
+is five. Suppose that the Federal Reserve injects six dollars into
+the financial system. The six dollars, when deposited in the banking
+system, is multiplied through the credit expansion process into 30
+dollars of deposits.
+
+If people hold currency equal to 20 percent of deposits $(c=0.2)$
+and the reserve ratio is still 0.2, then the money multiplier is
+only three. If the Federal Reserve injects six dollars of
+high-powered money into the system, the public initially holds one
+dollar in currency and deposits the remaining five dollars in the
+banking system. Through the credit expansion process, the banking
+system multiplies this five dollars of reserves into a larger amount
+of deposits. However, at each step of the process, the public
+withdraws some money from the banking system so as to keep its
+currency holdings equal to 20 percent of deposits. Each of these
+currency withdrawals reduces bank reserves, so that the banking
+system can create fewer deposits at each stage of the credit
+expansion process. In the end, the money supply expands by only 18
+dollars, three dollars of which is currency and 15 dollars of which
+is deposits. Because high-powered money increases by six dollars and
+currency holding increase by only three dollars, the remaining three
+dollars find their way into the banking system as reserves. The
+additional reserves are exactly equal to the amount banks must hold
+to back the 15 dollars of new deposits.
+
+\subsubsection*{The Balance Sheet of the Central Bank}
+
+In the previous discussion we followed money through individual
+banks without explicitly acknowledging the role of the central bank
+- the Federal Reserve - in the process. Now, let us look at the
+banking sector as a whole and the role of the central bank in
+changing the money supply.
+
+The following table illustrates the entries in the aggregate balance
+sheet for the banking sector of a country:
+
+\begin{center}
+\begin{tabular}{|cl|}
+\hline%
+\multicolumn{2}{|c|}{\textbf{Banking Sector}} \\%
+\hline\hline%
+\multicolumn{1}{|c|}{Assets} & \multicolumn{1}{|c|}{Liabilities} \\%
+\hline\hline%
+\multicolumn{1}{|l}{Reserves} & \multicolumn{1}{|l|}{Deposits} \\%
+%
+\multicolumn{1}{|l}{\thinspace\thinspace\thinspace\thinspace\thinspace \ \ \thinspace Required} & \multicolumn{1}{|l|}{\ \ \ \ \ \ \ \ Demand Deposits}\\%
+%
+\multicolumn{1}{|l}{\thinspace\thinspace\thinspace\thinspace\thinspace \thinspace\ \ Excess} & \multicolumn{1}{|l|}{\ \ \ \ \ \ \ \ Time Deposits}\\%
+%
+\multicolumn{1}{|l}{} & \multicolumn{1}{|l|}{Borrowing from} \\%
+%
+\multicolumn{1}{|l}{Cash} & \multicolumn{1}{|l|}{\ \ \ \ \ \ \ \ \ Central Bank} \\%
+%
+\multicolumn{1}{|l}{Securities} & \multicolumn{1}{|l|}{\ \ \ \ \ \ \ \ \ Other}\\%
+%
+\multicolumn{1}{|l}{Loans} & \multicolumn{1}{|l|}{} \\%
+%
+\hline
+\end{tabular}
+\end{center}
+
+This is just like the balance sheets considered above except that
+now we have expanded the range of assets and liabilities that a bank
+has. Bank reserves here represent the banking sector's deposits with
+the central bank. The securities can make many forms but include
+securities issued by the government. Now let us look at the balance
+sheet of the central bank.
+
+\bigskip
+
+\begin{center}
+\begin{tabular}{|cc|}
+\hline \multicolumn{2}{|c|}{\textbf{Central Bank}} \\%
+\hline\hline%
+\multicolumn{1}{|c|}{Assets} & \multicolumn{1}{|c|}{Liabilities} \\%
+\hline\hline%
+Securities & \multicolumn{1}{|c|}{Currency} \\%
+Loans to Banks & \multicolumn{1}{|c|}{Reserves} \\%
+%
+Foreign Exchange & \multicolumn{1}{|c|}{Other Deposits} \\%
+%
+\hline
+\end{tabular}
+\end{center}
+
+The banks assets include government securities, loans to member
+banks, and foreign exchange reserves. The latter includes deposits
+abroad, foreign denominated securities, and deposits with other
+central banks. The banks liabilities include currency issued,
+reserves deposited by member banks and other deposits. In the U.S.,
+the Federal Reserve by law cannot pay interest on reserves.
+
+\subsubsection*{The Tools of Monetary Policy}
+
+The Central Bank has three main tools with which to influence the
+money supply. The most important is \textit{open market operations},
+through which the Central Bank buys and sells federal government
+debt securities on the secondary market. In the U.S. these
+securities are issued by the U.S. Treasury and certain government
+agencies, but the Federal Reserve is prohibited from purchasing
+government debt directly when issued. The Central Bank uses open
+market operations to control the monetary base. For example, let's
+assume the Central Bank buys \$100 million of government bonds from
+private banks. It pays for those bonds by crediting the private
+banks accounts at the Central Bank. Such accounts are part of both
+bank reserves and the monetary base. The effect is shown in the two
+balance sheets below:
+
+\begin{center}
+\bigskip
+
+\bigskip
+\begin{tabular}{|crcr|}
+\hline
+\multicolumn{4}{|c|}{\textbf{Banking Sector}} \\
+\hline\hline%
+\multicolumn{2}{|c|}{Assets (000's)} & \multicolumn{2}{|c|} {Liabilities (000's)}\\%
+\hline\hline%
+\multicolumn{2}{|l}{Reserves} & \multicolumn{2}{|l|}{Deposits} \\%
+\multicolumn{2}{|l}{\thinspace\thinspace\thinspace\thinspace\thinspace \thinspace Required} & \multicolumn{2}{|l|}{\ \ \ \ \ \ Demand Deposits} \\%
+\multicolumn{1}{|l}{\thinspace\thinspace\thinspace\thinspace\thinspace \thinspace Excess} & \multicolumn{1}{r|} {+100,000} & \multicolumn{2}{|l|}{\ \ \ \ \ \ Time Deposits} \\%
+\multicolumn{2}{|l}{} & \multicolumn{2}{|l|}{Borrowing from} \\
+%
+\multicolumn{2}{|l}{Cash} & \multicolumn{2}{|l|}{\ \ \ \ \ \ \ Central Bank}\\%
+%
+\multicolumn{1}{|l}{Securities} & \multicolumn{1}{r|} {-100,000} & \multicolumn{2}{|l|}{\ \ \ \ \ \ \ Other} \\%
+%
+\multicolumn{2}{|l}{Loans} & \multicolumn{2}{|l|}{} \\%
+\hline \hline%
+\end{tabular}
+
+\bigskip
+
+\begin{tabular}{|crcr|}
+\hline \multicolumn{4}{|c|}{\textbf{Central Bank}} \\
+\hline\hline%
+\multicolumn{2}{|c|}{Assets (000's)} & \multicolumn{2}{|c|}{Liabilities (000's)}\\%
+\hline\hline%
+\multicolumn{1}{|l}{Securities} & \multicolumn{1}{r|}{+100,000} & \multicolumn{2}{l|}{Currency} \\%
+%
+\multicolumn{2}{|l|}{Loans to Banks} & \multicolumn{1}{|l}{Reserves} & \multicolumn{1}{l|}{+100,000} \\%
+%
+\multicolumn{1}{|l}{Foreign Exchange} & \multicolumn{1}{l|}{}  & \multicolumn{1}{|l}{Other Deposits} & \multicolumn{1}{l|}{}  \\%
+\hline
+\end{tabular}
+\end{center}
+
+The private banks can now use the additional \$100 million of
+reserves to back additional deposits by the public. They have excess
+reserves so they are free to make additional loans to customers,
+thereby increasing the amount of money or ``liquidity'' in the
+economy in the way we illustrated in our earlier simple example. The
+net result is that an open market purchase expands the monetary base
+and increases bank reserves.
+
+Conversely, if the Central Bank sells government securities that it
+holds to the private banking sector it has the effect of decreasing
+the monetary base. An open market sale of securities by the Central
+Bank causes a reduction in bank reserves and the monetary base.
+
+The Central Bank's second tool of monetary control is
+\textit{reserve requirements}. The Central Bank can require banks to
+hold reserves equal to some fraction of their deposits. If it raises
+the required reserve ratio (i.e., the ratio of reserves to
+deposits), the Central Bank reduces the amount of deposits that
+banks can support with a given stock of reserves. This has the
+effect of reducing the amount of money that is available for lending
+and thus reducing the money supply. \ In practice changes in reserve
+requirements have not been used much as an instrument of monetary
+policy for some time. In Canada and the United Kingdom required
+reserves are zero. In the United States reserve requirements for
+time and savings deposits were eliminated in 1990.
+
+If a commercial bank's actual reserves are below the level required
+by the Central Bank, the bank can borrow additional reserves either
+from the Central Bank or from another commercial bank that has
+excess reserves. In the U.S. such interbank loans are known as
+\textit{federal funds}, and the interest rate on these loans is
+known as the\textit{\ federal funds rate}. The U.S. Federal
+Reserve's borrowing facility is known as the \textit{discount
+window}, and the associated interest rate is the \textit{discount
+rate}. Changes in the discount rate are the Federal Reserve's third
+tool of monetary control. By raising the discount rate, the Federal
+Reserve can discourage banks from borrowing at the discount window,
+thus making banks less aggressive in creating deposits. In addition,
+the Federal Reserve can informally discourage what it regards as
+excessive commercial bank borrowing at the discount window.
+
+How does the description just given fit with our understanding of
+how monetary policy works in practice? In the United States the
+policy decisions made at meetings of the Federal Open Market
+Committee are usually stated in terms of interest rates. For
+example, at the meeting held March 22nd, 2005, the FOMC decided to
+raise the ``Target level'' for the Federal Funds Rate and the
+Discount Rate each by 25 basis points. Thus, the stated policy is to
+raise the Federal Funds rate by 25 basis points or one quarter of
+one percent. Such a policy is implemented by conducting open market
+operations that have the effect of withdrawing reserves (and hence
+liquidity) from the system to the point at which the market rate for
+federal funds - reserves borrowed from other banks or from the Fed,
+rise by twenty five basis points. For that reason the specific goals
+of monetary policy are stated in terms of an interest rate rather
+than the size of a monetary aggregate or the amount of reserves in
+the system. The Discount Rate is something that is just implemented
+directly. The Fed raises the rate at which it is willing to lend
+reserves to member banks.
+
+These examples illustrate the role of the Central Bank, the banks,
+and the public in the money supply process. The Central Bank
+controls the monetary base and sets minimum required values for the
+reserve ratio. As a matter of prudence, banks generally hold some
+reserves above the minimum required, but they can vary the amount of
+excess reserves they hold and the volume of new loans and deposits
+they generate. These decisions affect the money multiplier through
+their effect on the reserve ratio. Finally, the public can
+significantly alter the money multiplier by changing the mix of
+currency and deposits it holds.
+
+\subsubsection*{The Management of Reserves}
+
+In some ways this idea of the money multiplier depending on the
+amount of required reserves is outdated. In the U.S. required
+reserves are about ten percent. But, even these reserve requirements
+may not really be binding for banks. And, as we noted above, in many
+countries, Canada being one example, required reserves are zero.
+
+It is interesting to think about the issue of reserves from the
+point of view of the bank. As we discussed earlier, banks still hold
+reserves so they can honor transactions made by customers. If I
+write a check to pay a bill or use my debit card to purchase
+something, the bank must honor it immediately. Clearly it would be
+unacceptable for them to argue that I have to wait because they are
+temporarily short of funds. So, they are motivated to hold reserves.
+But, if the required level of reserves is greater than what they
+need to cover transactions they are unhappy because those reserves
+do not earn any interest.
+
+How do banks respond to this mismatch between required reserves and
+desired reserves? Recall, that banks are no longer required to hold
+reserves for time deposits or for money market deposit accounts. In
+response to the mismatch between required reserves and desired
+reserves banks have created sweep accounts. At the end of the day
+they can sweep excess funds from checking accounts, which are
+subject to reserves requirements, into money market accounts that
+are exempt from reserve requirements. The end result of this is that
+reserves will be reduced toward the level that is needed to meet
+transactions demand.
+
+Because banks are able to operate closer to their margins, they are
+likely to go into the markets for reserves more often. A bank that
+inadvertently finishes a day with too few reserves can avoid penalty
+by borrowing reserves from other banks in the \textit{Federal Funds
+Market. }Or, the bank can borrow money from the Federal Reserve
+through the Discount Window. Similarly, a bank which ends the day
+with too many reserves is likely to be a net lender in the Federal
+Funds market. The increased use of sweeps accounts has the effect of
+causing more activity in the Federal Funds Market and potentially
+causing the Federal Funds rate to be more volatile. Some observers
+have worried that the use of sweeps complicates the implementation
+of monetary policy by making specific targets for the funds rate
+more difficult to hit. To counter this possibility that reserve
+management might make the Federal Funds rate more volatile, the Fed
+has changed the period over which banks calculate their reserves.
+
+\subsubsection*{Other Functions of A Central Bank}
+
+The discussion so far has focused mainly on the role of the Central
+Bank in the money supply process. In the United States and in most
+other countries the Central Bank has other important duties as well.
+Typically Central Banks have some responsibility for the supervision
+and regulation of banks. It has a responsibility to guarantee the
+soundness of the banking system and with that role in mind it
+regulates the actions of member banks to make sure that they remain
+financially sound. Bank regulation usually takes three forms.
+
+Banks are required to meet minimum \textit{capital requirements}.
+These specify the ratio of capital to bank assets. There are
+international standards for the minimum ratio of capital to risk
+adjusted assets that are by the Bank for International Settlements.
+
+\textit{Bank examination} is often an important function of the
+central bank. Bank portfolios are reviewed periodically to make
+certain that banks adequate reserves for losses on risky loans.
+
+Finally, Central Banks usually provide \textit{lender of last
+resort} facilities for banks that are solvent but may be illiquid
+because of the fact that they tend borrow short term but make long
+term loans. In many countries the difficulty is to decide when banks
+are indeed solvent or whether they are simply illiquid, and then
+there is problem of deciding what to do about it. That is a topic
+worthy of extensive discussion in itself but it would take us too
+far afield from our primary objective.
+
+Finally, in some countries, notably the U.S., the Central Bank is
+responsible for the regulation of banking structure. That is, it
+oversees the acquisition of banks and non-banking businesses by bank
+holding companies. For many years and for historical reasons there
+was a fear of consolidation in the banking industry and of the
+expansion of banks into related financial activities. In recent
+years many of the barriers to these activities have been removed,
+and this function of the Fed has changed.
+
+
+%\subsubsection*{Executive summary}
+
+%Business cycles around the world share these properties:
+%\begin{enumerate}
+%\item Economies do not growth smoothly, they exhibit a lot of
+%short-run volatility.
+
+%\end{enumerate}
+
+
+%\subsubsection*{Review questions}
+
+%You might think about each of the following issues, which we'll
+%address at greater length shortly.
+%\begin{enumerate}
+
+%\item Why do you think employment lags the economy?
+
+%\end{enumerate}
+
+
+%\subsubsection*{Further reading}
+
+%For more information ...
+%
+%\begin{itemize}
+%\item National Bureau of Economic Research: US
+%\href{http://www.nber.org/cycles.html/}{business cycle dates} and
+%\href{http://www.nber.org/releases/}{calendar} of release dates
+%for international economic indicators (you can sign up for email
+%reminders).
+
+%\end{itemize}
+
+
+\vfill \centerline{\it \copyright \ \number\year \ NYU Stern
+School of Business}
+
+\end{document}

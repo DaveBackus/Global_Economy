@@ -1,0 +1,800 @@
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage{ge05}
+\usepackage{comment}
+\usepackage{booktabs}
+\usepackage[dvipdfm]{hyperref}
+\urlstyle{rm}   % change fonts for url's (from Chad Jones)
+\hypersetup{
+    colorlinks=true,        % kills boxes
+    allcolors=blue,
+    pdfsubject={NYU Stern course GB 2303, Global Economy},
+    pdfauthor={Dave Backus @ NYU},
+    pdfstartview={FitH},
+    pdfpagemode={UseNone},
+%    pdfnewwindow=true,      % links in new window
+%    linkcolor=blue,         % color of internal links
+%    citecolor=blue,         % color of links to bibliography
+%    filecolor=blue,         % color of file links
+%    urlcolor=blue           % color of external links
+% see:  http://www.tug.org/applications/hyperref/manual.html
+}
+
+\def\ClassName{The Global Economy}
+\def\Category{Class Notes}
+\def\HeadName{Exchange Rates}
+
+\begin{document}
+\thispagestyle{empty}%
+\Head
+
+\centerline{\large \bf \HeadName}%
+\centerline{Revised: \today}
+
+\bigskip
+
+Exchange rates (prices of foreign currency)
+are a central element of most international transactions.
+When Heineken sells beer in the US,
+its euro profits depend on its euro costs of production,
+its dollar revenues in the US, and the dollar-euro exchange rate.
+When a Tokyo resident purchases a dollar-denominated asset,
+her return (in yen) depends on the asset's dollar yield
+and the change in the dollar-yen exchange rate.
+The level and change of exchange rates are therefore
+important aspects of international business.
+
+We'll learn two things about exchange rates
+in what follows:
+%
+\begin{itemize}
+\item In flexible exchange rate system,
+short-term fluctuations are substantial, largely unpredictable,
+and close to inexplicable.
+That's been horribly disappointing to those of us who would like to
+understand them better, but it's a fact of life.
+From a business perspective, they're a source of random noise.
+Heineken profits, for example, vary with the dollar-euro rate,
+even if the underlying business doesn't change.
+
+\item Fixed exchange rates remain fixed only through central bank support.
+The central bank must be willing and able to exchange foreign and
+domestic currencies at the stated rate or the whole thing collapses.
+This is a common trigger in emerging market crises:
+when the central bank runs out of foreign currency,
+it can no longer maintain the value of domestic currency.
+Chaos ensues.
+\end{itemize}
+%
+These issues are the subjects of Parts I and II, respectively.
+
+
+\subsubsection*{Terminology}
+
+There is an enormous amount of jargon associated with this subject.
+You'll run across references to:
+%
+\begin{itemize}
+\item {\it Exchange rate regimes.\/}
+Governments follow a range of policies toward the prices of their currencies.
+One aspect of policy is whether people and businesses can freely
+exchange their currency for another:
+whether the currency is {\it convertible\/}.
+The US dollar, for example, is convertible,
+but the renminbi is not:  you need approval from the Chinese central
+bank to buy or sell Chinese currency.
+Another aspect of policy is whether the price is set by the government,
+allowed to float freely, or something in between.
+If the government sets the price, we say it has a
+fixed exchange rate  regime.
+If the price is determined in a free market, we say we have a
+{\it flexible\/} or {\it floating\/} exchange rate regime.
+
+
+\item {\it Exchange rate conventions.\/}
+I typically express exchange rates as local currency prices of
+one unit of foreign currency.
+In the US, we might refer to the dollar price of one euro.
+In currency markets, the conventions vary (every currency is different),
+but I'll try to stick with this one.
+It has the somewhat strange feature that
+an increase in the exchange rate is a decline in the relative value of the home currency,
+but remember that it's an increase in the value of the foreign currency.
+As a rule of thumb, remember that we quote prices in dollars
+(or whatever our local currency is).
+
+Changes in exchange rates also have their own names.
+For a flexible exchange rate,
+we refer to a decrease in the value of a currency as a
+{\it depreciation\/} and an increase as an {\it appreciation\/}.
+For a fixed exchange rate, where the changes reflect policy,
+the analogous terms are {\it devaluation\/} and {\it revaluation\/}.
+
+\item {\it Real exchange rates.\/}
+You'll see this term, too, but what does it mean?
+(What's an imaginary exchange rate?)
+A nominal exchange rate is the price of a currency:
+the number of units of currency A needed to buy one unit
+of currency B.
+The real exchange rate is the relative price of commodity or
+basket of goods.
+If $P$ is the US CPI in dollars, $P^*$ is the European CPI in euros,
+and $e$ is the dollar price of one euro (the {\it nominal} exchange rate), then the (CPI-based) {\it real exchange rate\/} between the US and the Euro Zone is
+\[
+    \mbox{\it RER\/}  \;=\; e P^* /P ,
+\]
+the ratio of the price of EU goods to US goods,
+with both expressed in the same units (here dollars).
+(Note:  asterisks are commonly used to denote foreign values.)
+
+\item {\it Parity relations.\/}
+We generally think that trade will tend to reduce differences in prices and returns across countries.
+Parity relations are based on the assumption that differences are
+eliminated altogether.  It's an extreme assumption, to be sure,
+but a useful benchmark.
+{\it Purchasing power parity\/} is the theory that prices of baskets of goods are equal across countries:  $P = e P^* $
+(or $\mbox{\it RER\/} = 1$).
+This works for some specific goods (think of gold),
+but anyone who takes a vacation abroad realizes that it is
+at best a crude approximation for
+broad categories of goods (hotels, restaurant meals, or the CPI).
+{\it Interest rate parity\/} is the assumption that returns are equal
+for comparable investments in different currencies --- think of US and Japanese treasury bills, or dollar- and yen-denominated eurocurrency deposits at major banks.
+Despite the globalization of financial markets,
+this doesn't work that well either.  % ?? covered ? uncovered?
+%The carry trade is devoted to exploiting differences
+%in expected returns across currencies.
+
+\end{itemize}
+%
+You'll see each of these shortly.
+
+\bigskip\bigskip\bigskip
+\centerline{\bf Part I:  Predictability of Exchange Rates}
+
+\subsubsection*{Properties of exchange rates}
+
+Flexible exchange rates move around --- a lot.
+The standard deviation of annual rates of change of currency prices
+is 10-12\% for major currencies, more for emerging markets.
+That's less than the standard deviation of equity returns
+(the return on the S\&P 500 index has a standard deviation of 16-18\%)
+but a significant source of risk.
+With a standard deviation of 10\%, and a normal distribution,
+there's a 5\% chance of seeing a one-year change greater than 20\%
+either up or down.
+(That's if we use the normal distribution.
+Since currencies have fat tails, it's really a little worse than that.)
+
+%Even worse, these changes are largely unpredictable.
+
+You can get a sense of recent dollar movements from
+Figure~\ref{fig:exch_rates},
+which plots the price of one dollar expressed in Australian dollars,
+British pounds, Canadian dollars, euros, yen, and renminbi, respectively.
+(Inverses of dollar exchange rates, in other words.)
+They are constructed as indexes, with the January 2001 values
+set equal to 100.
+You can see that the dollar-euro rate fluctuates quite a bit;
+over the last five years, it's ranged from 70 to 110.
+This reflects, to a large extent, the approaches taken by
+the US and the European central banks:
+they let their currencies float freely.
+The yen, the Canadian dollar, and the Australian dollar
+are similar.
+The renminbi, however, is fixed (or close to it)
+by the Chinese central bank at a value of about 8 yuan per dollar.
+%Fixed exchange rates are fairly common among developing countries.
+More on this later.
+
+%
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale=1.0]{exchange.eps}
+    \caption{The US dollar against other major currencies.}
+    \label{fig:exch_rates}
+\end{figure}
+%
+
+
+\subsubsection*{Purchasing power parity}
+
+So we've seen that exchange rates move around.
+But can we say anything about why?
+The answer is no,
+but here's a theory that is useful in giving us
+a benchmark or anchor we can use to decide whether exchange rates
+seem sensible.
+
+The idea is to compare prices of goods.
+You'd be wrong, but imagine that exchange rates adjust to
+equate prices across countries.
+The logic is arbitrage:  if a good is cheaper in one
+country than another, then people would buy in the cheap country
+and sell in the other, taking a profit on the way.
+This process will tend to eliminate the difference in prices.
+
+Consider wine.
+Suppose a bottle of (some specific) wine costs $p=26$ dollars in New York,
+and $p^*=20$ euros in Paris.
+Are the prices the same?
+If the exchange rate is $e=1.3$ dollars per euro,
+then the New York and Paris prices are the same once we express them
+in the same units.
+More generally, we might say that
+\begin{equation}
+    p \;=\; e p^* .
+\end{equation}
+We refer to this relation as the {\it law of one price\/}:
+that a product should sell for the same price in two locations.
+An even better example might be gold,
+which sells for pretty much the same price in
+New York, London, and Tokyo.
+
+If the law of one price works for some products,
+there are many more for which restrictions on
+trade (tariffs or quotas), or transportation costs,
+or other ``frictions'' prevent arbitrage.
+Agricultural products, for example, are protected in many countries,
+leading to substantial differences across countries
+in the prices of such basic commodities as rice, wheat, and sugar.
+Cement faces substantial shipping costs, even within countries.
+Many services (haircuts, dry cleaning, medical and legal services)
+are inherently difficult to trade,
+and often protected by regulation as well.
+
+{\it The Economist\/}, with its usual flair for combining insight
+with entertainment, computes dollar prices of the Big Mac around the
+world.
+The idea is that it's the same product everywhere, so differences
+in prices reflect deviations from the law of one price.
+In January 2006, Big Mac prices were \$3.15 in the US,
+\$3.55 in the Euro Zone, \$2.19 in Japan, \$1.55 in Argentina,
+and \$1.30 in China. The price differences are not only large, they vary
+widely over time. In April 2000, the prices were \$2.50 in the US,
+\$2.78 in Japan, and \$2.50 in Argentina, implying much higher
+relative prices in Japan and Argentina.
+Perhaps it's no surprise that the law of one price doesn't hold:
+you can imagine the mess involved in trying to arbitrage price
+differences.
+But it's a good illustration of international price differences
+more generally.
+
+
+Despite such modest encouragement,
+the first-cut theory of exchange rates is based on an application of
+law-of-one-price logic to broad baskets of goods.
+The so-called theory of purchasing power parity (PPP)
+is that local and foreign price indexes ($P$ and $P^*$, say)
+are linked through the exchange rate:  $ P \approx e P^* $ or
+\begin{equation}
+    \mbox{\it RER\/} \;=\; eP^* /P \;\approx\; 1.
+\end{equation}
+The approximation symbol suggests that we don't expect this to be perfect.
+In the most common applications, the price indexes are CPIs
+(consumer price indexes)
+and we refer to the measure of the real exchange rate as CPI-based.
+If this doesn't work for specific goods, why might we expect it to hold
+for average prices of goods?
+One reason is that, for any pair of countries,
+we might see as many products that are ``overpriced"
+as there are products that are ``underpriced."
+When we average, these deviations could offset each other.
+In fact, they don't.
+If prices of some goods are cheaper abroad, then prices
+of other goods tend to be, too.
+
+What limited success we have comes in the long run.
+As an empirical matter,
+deviations from PPP tend to average out over time.
+Sometimes prices are higher in Paris, sometimes higher in New York,
+but on average prices are roughly comparable.
+Prices are lower, on average, in countries with lower GDP per capita,
+% Call this Balassa-Sam ??
+but here, too, large fluctuations in the real exchange rate tend to disappear
+with time.
+How much time do we need for this to work?
+At least several years.
+If you're thinking of going to Paris this summer,
+there's no reason to expect that it will become cheaper
+between now and then.
+
+
+Real exchange rates computed this way are often used to judge whether
+a currency's price is reasonable.
+If the prices are lower at home than abroad ($\mbox{\it RER\/} > 1$),
+we say the (home) currency is {\it undervalued\/},
+and if prices are higher at home ($\mbox{\it RER\/} < 1$),
+we say the currency is {\it overvalued\/}.
+[If this seems mysterious to you, apply it to the problem of taking
+a vacation in Paris or Mexico City.]
+We can do the same thing with the Big Mac index.
+We saw earlier that Big Macs were cheaper in the US than the Euro Zone,
+so we might say that the dollar in undervalued relative to the euro.
+Big Macs are even cheaper in Japan, so the yen is undervalued relative
+to both the dollar and the euro.
+Over time, we might expect most of these ``misvaluations'' to decline.
+Experience suggests, however, that any such adjustment will take years.
+Our best estimates are that half the mispricing will disappear
+in 5 years.
+We can do the same thing with CPIs, with one difference:
+since CPI are indexes, we don't know the absolute prices.
+The standard approach is to find the mean value of the real exchange rate
+(or its logarithm) and judge under- or overvaluation by comparing the
+real exchange rate to its mean, rather than one.
+
+
+At the risk of trying your patience,
+we'll conclude this section by describing PPP in growth rates.
+PPP implies that the exchange rate is the ratio of price
+indexes:  $ e \approx P/P^*$.
+If we take logarithms and first-difference, we have
+%
+\begin{equation*}
+\log(e_{t+1})-\log(e_{t}) \;\approx\;
+[\log(P_{t+1})-\log(P_{t})]-[\log(P^{*}_{t+1})-\log(P^{*}_{t})]%
+\end{equation*}
+%
+or
+%
+\begin{equation*}
+    d_{t+1} \;\approx\; \pi_{t+1}-\pi^{*}_{t+1} ,%
+\end{equation*}
+where $\pi$ and $\pi^*$ are the home and foreign inflation rates
+and $ d_{t+1} = \log(e_{t+1})-\log(e_{t}) $
+is the rate of depreciation of the home currency.
+In words:  PPP implies that rate of change in the exchange rate
+should be equal to the difference in inflation rates.
+
+
+Does this work?  It turns out that the relation
+tends to hold in the long-run, but not in the short run, in the
+sense that there are plenty of deviations from it. For example, let's
+consider the case of the exchange rate between the Venezuelan
+Bolivar and the US dollar. Between January 1985 and January 2006,
+Venezuela's average annual inflation rate was 30\%, as opposed to
+the US's 2.9\%. In the same period, the Bolivar
+depreciated at the average yearly rate of 27.9\%, i.e. only .8\%
+more than implied by the PPP condition. In the short-run, however,
+deviations from PPP are the norm.
+Figure~\ref{fig:venezuela} shows that this has definitely been the
+case for the Bolivar: there have been plenty of periods in which
+exchange rate depreciation did not track closely the inflation
+differential with the United States. In some instances, in
+particular in the late 80's, the deviations were due to the central
+bank's attempt to keep the exchange rate constant.
+In other cases (the early 90s for example), the deviations
+had probably nothing to do with central bank interventions.
+%
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=1.0]{venezuela.eps}
+    \caption{Venezuela: Bolivar's depreciation and inflation differential.}
+    \label{fig:venezuela}
+\end{figure}
+%
+In developed countries, it's not unusual to see deviations of
+the real exchange rate from one of 30-40\% in either direction.
+Figure~\ref{fig:us_euro} shows this for the dollar-euro.
+In recent years the US dollar has depreciated against the euro
+despite similar inflation rates.
+%
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=1.0]{us_euro.eps}
+    \caption{Dollar versus euro and inflation differential.}
+    \label{fig:us_euro}
+\end{figure}
+%
+This picture is typical of developed countries:
+inflation differentials are relatively small,
+so changes in the real and nominal exchange rates are almost equal.
+These deviations from PPP tend to disappear with time,
+but as we saw earlier, they go away slowly.
+
+
+\subsubsection*{Interest rate parity (skim only)}
+
+%  ?? change
+%  interest diff and uip
+%  carry trade and predictions
+
+Exchange rates also play a role in interest rate differences across
+countries. In June 2004, for example, 3-month eurodollar deposits
+paid interest rates of 1.40\% in US dollars, 4.78\% in British
+pounds, 5.48\% in Australian dollars, and 2.12\% in euros. If
+international capital markets are so closely connected, why do we see
+such differences?  The answer is that these returns are
+expressed in different currencies, so they're not directly comparable.
+
+
+Let's think about how prices of currencies show up in interest rate
+differentials. We'll start with a relation called {\em covered
+interest parity}, which says that interest rates denominated in
+different currencies are the same once you ``cover'' yourself
+against possible currency changes.  The argument follows the
+standard logic of arbitrage used endlessly in finance.  Let's
+compare two equivalent strategies for investing one US dollar for 3
+months. The first strategy is to invest one dollar in a 3-month
+euro-dollar deposit (with the stress on ``dollar''). After three
+months that leaves us with $(1+i/4)$  dollars, where $i$ is the
+dollar rate of interest expressed as an annual rate.
+
+What if we invested one dollar in euro-denominated instruments? Here
+we need several steps to express the return in dollars and make it
+comparable to the first strategy. Step one is to convert the dollar
+to euros, leaving us with $1/e$ euros ($e$ is the spot exchange rate
+-- the dollar price of one euro). Step two is to invest this money
+in a 3-month euro deposit, earning the annualized rate of return
+$i^{*}$. That leaves us with $(1+i^{*}/4)/e$ euros after three
+months. We could convert it at the spot rate prevailing three months
+from now, but that exposes us to the risk that the euro will fall.
+An alternative is to sell euros forward at price $f$. In three
+months, we will have $(1+i^{*}/4)/e$ euros that we want to convert
+back to dollars. With a three-month forward contract, we arrange now
+to convert them at the forward rate $f$ expressed, like $e$, as
+dollars per euro. This strategy leaves us with $(1+i^{*}/4)f/e$
+dollars after three months.
+
+Thus we have two relatively riskless  strategies, one yielding
+$(1+i/4)$, the other yielding $(1+i^{*}/4)f/e$. Which is better?
+Well, if either strategy had a higher payoff, you could short one
+and go long the other, earning extra interest with no risk.
+Arbitrage will tend to drive the two together:
+\begin{equation}
+                            (1+i/4) \;=\; (1+i^{*}/4)f/e.
+                            \label{eq:cip}
+\end{equation}
+We call (\ref{eq:cip}) {\it covered interest parity\/}.
+Currency traders assure us that covered interest parity
+is an extremely good approximation in the data.
+The only difference between the left and right sides is a bid-ask spread,
+which averages less than 0.05\% for major currencies.
+
+
+A related issue is whether international differences
+in interest rates reflect differences in expected depreciation rates.
+Does the high rate on Aussie dollars (AUD)
+reflect the market's assessment that
+the AUD will fall in value relative to (say) the euro?
+To see how this works, suppose
+we converted the proceeds of our foreign investment
+back to local currency at the exchange rate prevailing
+in 3 months.  Our return would then be
+\[
+                            (1+i^{*}/4) e_{3}/e ,
+\]
+where $e_3$ is the spot exchange rate 3 months in the future.
+This investment is risky, since we don't know what the
+future exchange rate will be, but we might expect
+it to have a similar expected return to a local investment.
+That is,
+\begin{equation}
+                            (1+i/4) \;=\; (1+i^{*}/4) E (e_{3})/e ,
+                            \label{eq:uip}
+\end{equation}
+where $E(e_3)$ is our current expectation
+of the exchange rate in 3 months.
+This relation is an application of the expectations hypothesis to
+currency prices (the forward rate equals the expected future spot rate)
+that is commonly referred to as {\it uncovered interest parity\/}.
+
+
+In fact, uncovered interest rate parity doesn't work.
+It implies that high interest rate currencies depreciate,
+when in fact they appreciate (increase in value),
+making them good investments on average.
+If $i>i^*$, we invest at home.  If $i<i^*$, we invest abroad,
+expecting to pocket not only the higher interest rate but
+an appreciation of the currency ($e_3>e$).
+Why this investment opportunity persists remains something of a mystery to
+academics and investors alike.
+Two fine points:  (i)~This feature of the data does not apply to
+the currencies of developing countries, where higher interest rates
+typically imply future depreciation.
+(ii)~Even in developed countries, forecasts of exchange rate changes based on interest differentials have an $R^2$ of about 0.05.
+That's still useful for investment purposes,
+but leaves most of the variance of exchange rate changes unexplained.
+
+
+\subsubsection*{Predicting exchange rates}
+
+Let's summarize what we've learned about movements in exchange rates:
+%
+\begin{itemize}
+\item PPP works reasonably well over long periods of time,
+but has little empirical content over periods of less than a few years,
+and virtually none over periods under a year.
+
+\item Interest rate differentials have some forecasting power,
+with high interest rate currency increasing in value on average,
+the they leave most of the variance of exchange rate movements
+ unexplained.
+\end{itemize}
+%
+Can we do better than this?
+A little, but probably no more than that.
+It's extremely hard to forecast exchange rates better than
+a 50-50 bet on up or down.
+Interest differentials do a little better, but only a little.
+The $R^2$ are less than 0.05.
+We may be able to do better still
+using more complex theory or personal judgment about policy,
+but years of failure suggest that
+it's very hard to beat a random walk consistently.
+
+
+\bigskip\bigskip\bigskip
+\newpage
+\centerline{\bf Part II:  Fixed exchange rate regimes}
+
+
+\subsubsection*{Fixing exchange rates}
+
+The primary difference between currency markets and others
+is the direct role of the government,
+specifically the central bank.
+China, for example, has adopted a ``fixed'' or ``pegged'' exchange rate,
+which means it follows policies that maintain a given official value
+for exchange rate with minimal day-to-day movement around that value.
+The US, on the other hand, has a ``flexible'' or ``floating'' exchange rate,
+in which the dollar fluctuates in value
+against other currencies with little
+direct intervention in currency markets.
+We say that China and the US have adopted different exchange rate ``regimes.''
+
+How does a fixed exchange rate system work?
+Can a central bank simply announce a rate?
+Probably not.
+I can't make people trade at the stated price
+I could claim, for example, that my apartment was worth
+\$10m, but if no one is willing to buy it for that price
+the statement is meaningless.
+For the same reason, a central bank must back up its
+claim to fix the exchange rate by buying and selling as much foreign currency as people want at the stated price.
+
+
+Let's think through how this might work.
+Suppose the New York City government decided to fix the price of beer at \$2 a 6-pack (cheap even if you live outside NYC).
+It supports this price by buying or selling
+any amount at the quoted price.  Can they keep the price this low?
+Our guess is that at this price,
+beermakers would not find it profitable to make any
+(at least not any that we'd be willing to call beer).  People would then flood the government with requests for beer, which the government would
+not be able to meet.  When the government reneged on its promise to buy or sell at \$2, the price
+would rise above \$2 to its market level, either officially or on the black market.
+In short, unless the government has enough beer to back up the price,
+the system will collapse.
+Alternatively, suppose the government set the price at \$20.
+Beermakers would flood the government with beer at this price, leaving the
+government with a huge surplus.  This is roughly what Europeans do with agriculture, where artificially high prices have left the EU with
+``mountains of butter," ``lakes of wine," and so on.
+The point is that the government can only fix a price
+if it is willing and able to buy and sell at that price.
+
+     The same logic applies to currencies.
+If the People's Bank of China were to support an excessively high price for
+the renminbi, then they would be flooded with offers from traders
+selling renminbi for (say) dollars.
+Its balance sheet would look something like this:
+%
+\begin{center}
+\begin{tabular}{lrclr}
+               Assets  &     &&     Liabilities                     \\
+               \hline
+               FX Reserves &  20 &&     Money &  200   \\
+               Bonds   & 180 && \\
+\end{tabular}
+\end{center}
+%
+We made these numbers up, but they give us the right idea:
+the central bank has the usual liabilities,
+``money" and government bonds,
+and also holds some foreign currency reserves,
+which you might think of (for this example) as dollars.
+The PBC intervenes in the currency market by trading renminbi for dollars,
+and vice versa, depending on market conditions.
+Suppose, for example, that Nike wanted to convert
+\$2m to renminbi for the purpose of building a new plant.
+It would do this through a Chinese bank.
+If the bank had no countervailing trades, it would
+go to the PBC and exchange the \$2m for renminbi at the going rate
+--- say 10 yuan per dollar, to make the arithmetic simple.
+The PBC's balance sheet would then show an increase of
+20m yuan worth of foreign currency
+and a comparable increase in its monetary base:
+%
+\begin{center}
+\begin{tabular}{lrclr}
+               Assets  &     &&     Liabilities                     \\
+               \hline
+               FX Reserves &  40 &&     Money &  220   \\
+               Bonds  & 180 &&
+\end{tabular}
+\end{center}
+%
+The PBC's net worth is unchanged,
+since it has exchanged assets with equal value.
+
+
+[Update:  The PBC's fixed exchange rate was revalued
+(increased in value) in July 2005.
+Since then, the PBC has allowed modest changes in value,
+with the net result that it has appreciated
+somewhat against the dollar.]
+
+
+The difference, then, between fixed and flexible exchange rate regimes
+is that the former obligates the central bank to buy and sell
+currencies at the stated price.
+As a matter of experience, fixed exchange rate systems often collapse ---
+sometimes spectacularly --- when the central bank runs out of reserves.
+The issue:  if people would prefer to buy foreign currency at the official
+exchange rate, the central bank may find that its supply of reserves is not
+enough to meet the market demand.
+(The market for currencies is enormous, so you need a lot of reserves.)
+For that reason, currency traders often look closely at central bank's
+foreign currency reserves to measure their ability to maintain the rate.
+
+
+In China and many other developing countries,
+there are often further restrictions on the ability of private agents to buy and sell currency (``convertibility'').
+Citizens are sometimes prohibited from using foreign currency for
+domestic transactions.
+They may also face limits on their ability to buy foreign currency
+to buy foreign goods or assets.
+In China, for example, purchases of foreign currency are generally allowed
+to buy foreign goods, but not to buy foreign assets.
+This, of course, has an impact on the market value of the currency,
+making it more difficult for investors to bet for or against a change
+in the value of the renminbi.
+
+
+\subsubsection*{Exchange rate crises}
+
+We've seen how fixed exchange rates work:  the central bank
+agrees to buy or sell as much foreign currency as it takes
+to fix the rate.
+But what happens if people want to exchange your currency for foreign
+currency, as happened in Mexico in December 1994?
+If the central bank runs out of foreign currency (dollars, in this case),
+then it has no way to enforce the official rate.
+
+Suppose the central bank's balance sheet looks like the one above,
+with ``fx reserves'' of 40.  And suppose, further, that investors
+would like to exchange 50 worth of pesos for the same value in dollars.
+Once the central bank runs out of dollars, it can no longer support
+the exchange rate, which becomes (more or less automatically) floating.
+
+That's a standard part of how fixed exchange rate systems blow up:
+the promise to fix the rate is only as good as the central bank's
+ability to trade at that price.
+If it runs out of reserves, the promise is seen to be empty.
+That raises an interesting question about whether exchange rates
+are more or less volatile in a flexible exchange rate regime.
+With flexible rates, we tend to see a lot of short-run volatility ---
+Figure  \ref{fig:exch_rates}, for example.
+With fixed exchange rates, short-run volatility is low,
+but we occasionally have very large changes if the system collapses.
+%And if you're trying to assess hood of a crisis,
+%one of the things you'd look at is the quantity of reserves.
+
+
+\subsubsection*{Executive summary}
+
+\begin{enumerate}
+\item In the long run, exchange rates tend to
+equalize prices of products across countries (PPP).
+
+\item In the short run, exchange rate movements are large
+and unpredictable.
+
+\item Foreign currency reserves are an indicator of the
+government's ability to maintain a fixed exchange rate.
+\end{enumerate}
+
+%\begin{comment}
+\subsubsection*{Review questions}
+
+\begin{enumerate}
+
+\item Forecasting the euro.
+Right now, the euro is ``overvalued'' in PPP terms relative to the
+dollar (goods are more expensive in Europe) and Euro Zone short-term interest rates remain 2-3\% above US interest rates.
+Given these facts, how would you expect the euro/dollar exchange rate to change over the next 6 months?  6 years?
+How good is each of these informed guesses?
+
+Answer.  Purchasing power parity is a long-run ``anchor'' for the
+exchange rate:  if prices of goods and services in the Euro Zone
+are higher than those in the US, when expressed in a common currency,
+we'd expect the euro to fall in value relative to the dollar
+--- eventually.
+This is pretty much useless over a period as short as 6 months,
+but has some content over 6 years.
+More useful in the short-run is the interest differential.
+Since the Euro interest rate is higher, we'd expect the euro to increase in value.
+Neither works all that well:  an $R^2$ of 0.05 would be good over
+periods of a few months.
+
+
+\item Foreign exchange market intervention.
+Use a hypothetical central bank balance sheet to show how
+purchases of foreign currency affect the bank's assets and liabilities. What does this purchase do to the supply of money (currency)?
+
+Answer.  When a central bank buys foreign currency,
+it receives it from private owners and gives them
+    domestic currency in return.
+    The latter is an increase in the domestic money supply.
+    Suppose, for example, the central bank
+    starts with the balance sheet
+    %
+\begin{center}
+\begin{tabular}{lrclr}
+               Assets  &     &&     Liabilities                     \\
+               \hline
+               FX Reserves &  100 &&     Money  &  200   \\
+               Bonds   & 100 && \\
+\end{tabular}
+\end{center}
+%
+The purchase of 25 worth of foreign currency
+changes the balance sheet to
+%
+\begin{center}
+\begin{tabular}{lrclr}
+               Assets  &     &&     Liabilities                     \\
+               \hline
+               FX Reserves &  125 &&     Money  &  225   \\
+               Bonds   & 100 && \\
+\end{tabular}
+\end{center}
+%
+
+\item Sterilization.  Suppose the central bank has increased the money supply by purchasing foreign currency, as described above.
+    How might it offset this impact on the money supply (sterilize it, so to speak)?
+
+Answer.  It does an equal sale of bonds, accepting money in return.
+If it sells 25 worth of bonds, the balance sheet changes to
+\begin{center}
+\begin{tabular}{lrclr}
+               Assets  &     &&     Liabilities                     \\
+               \hline
+               FX Reserves &  125 &&     Money  &  200   \\
+               Bonds   & 75 && \\
+\end{tabular}
+\end{center}
+%
+The net result of the two trades is that it's liabilities are now more heavily weighted in foreign currency.
+If the foreign currency rises, it makes money; if it falls, it loses money.
+This posture is designed as protection against a sharp fall in local currency (or rise in foreign currency), and it does that.
+
+\end{enumerate}
+%\end{comment}
+
+
+\subsubsection*{Further reading}
+
+%
+\begin{itemize}
+\item The Economist's
+\href{http://www.economist.com/markets/Bigmac/index.cfm}{Big Mac index}
+is the center of a nice web site on exchange rate data and issues.
+
+\item Deutsche Bank's
+%\href
+%{http://www.deutsche-bank.de/presse/en/releases_761.shtml}
+{\it Guide to Exchange-Rate Determination\/} is a terrific
+summary of what we know about exchange rates from a
+bond and currency trader's perspective.
+
+\item The International
+Monetary Fund's {\it Annual Report on Exchange Arrangements\/}
+is the definitive guide to exchange rate arrangements:  fixed,
+flexible, capital controls, and so on.
+\end{itemize}
+
+\vfill \centerline{\it \copyright \ \number\year \
+NYU Stern School of Business}
+
+\end{document}
+

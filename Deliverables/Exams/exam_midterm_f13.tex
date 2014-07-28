@@ -1,0 +1,539 @@
+\documentclass[letterpaper,12pt]{exam}
+
+\usepackage{ge13}
+\usepackage{comment}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\urlstyle{rm}   % change fonts for url's (from Chad Jones)
+\hypersetup{
+    colorlinks=true,        % kills boxes
+    allcolors=blue,
+    pdfsubject={NYU Stern course GB 2303, Global Economy},
+    pdfauthor={Dave Backus @ NYU},
+    pdfstartview={FitH},
+    pdfpagemode={UseNone},
+%    pdfnewwindow=true,      % links in new window
+%    linkcolor=blue,         % color of internal links
+%    citecolor=blue,         % color of links to bibliography
+%    filecolor=blue,         % color of file links
+%    urlcolor=blue           % color of external links
+% see:  http://www.tug.org/applications/hyperref/manual.html
+}
+
+\newcommand{\NX}{\mbox{\em NX\/}}
+\newcommand{\POP}{\mbox{\em POP\/}}
+
+% list spacing
+\usepackage{enumitem}
+\setitemize{leftmargin=*, topsep=0pt}
+\setenumerate{leftmargin=*, topsep=0pt}
+
+\usepackage{attachfile}
+    \attachfilesetup{color=0.5 0 0.5}
+
+\def\ClassName{The Global Economy}
+\def\Category{David Backus}
+\def\HeadName{Midterm Examination}
+
+\printanswers
+
+\begin{document}
+\parindent = 0.0in
+\parskip = 0.75\bigskipamount
+\thispagestyle{empty}%
+\Head
+
+\centerline{\large \bf \HeadName}%
+\centerline{Revised:  \today}
+
+\bigskip
+You have 90 minutes to complete this exam.  Please answer each
+question in the space provided and show all of your work.
+You may consult one page of notes and a calculator,
+but devices capable of wireless transmission are prohibited.
+
+I understand that the honor code applies: I will not lie, cheat,
+or steal to gain an academic advantage, or tolerate those who do.
+
+\begin{flushright}
+\rule{4in}{0.5pt} \\ (Name and Signature)
+\end{flushright}
+
+%\medskip
+\begin{table}[h]
+    \centering
+    \tabcolsep = 0.3in
+    \begin{tabular}{lrr}
+    \toprule
+    Year            &  $ Y/L $   &  $K/L$   \\
+    \midrule
+    1990            &   2.489  &   2.396   \\
+    2011            &   6.582  &  24.722   \\
+    \bottomrule
+    \end{tabular}
+    \caption{Aggregate data for Vietnam.
+    $Y$ is real GDP, $K$ is the stock of capital, and $L$ is the number
+    of people working.
+    The numbers are thousands of 2005 US dollars.
+    Source:  Penn World Table, Version 8.0.}
+    \label{tab:vietnam}
+\end{table}
+
+
+
+\begin{questions}
+% ======================================================================
+\question {\it Prospects for Vietnam (40 points).\/}
+You have been asked to provide a short overview of Vietnam's economic prospects
+for a group of international business leaders who have come to
+Washington DC for the annual IMF meetings.
+To many in the United States, Vietnam brings up painful memories of war and Oliver Stone movies,
+but its economic performance over the past two decades has been extraordinary.
+GDP per capita remains low at about 3600 USD,
+but its GDP growth rate since 1990 has been over 7 percent per year.
+
+In preparing your report,
+you start with some basic data from the Penn World Table,
+reported in Table \ref{tab:vietnam}.
+Then you turn to the Economist Intelligence Unit,
+where you find (quotes from reports, edited lightly for continuity,
+with additional data from other sources):
+\begin{itemize}
+\item The Communist Party remains the dominant political force.
+The government, the army, and the bureaucracy are subordinate to it.
+\item Vietnam's economic success over the last two decades followed the Party's 1986
+commitment to ``economic renovation.''
+By the end of the 1980s economic reforms had become part of the new consensus.
+%\item Its transportation and communications infrastructure
+%have improved markedly, but
+%even with substantial investments it has been difficult to keep up with
+%rising demand.
+\item Regulatory conditions and market access for foreign investors have continued to
+improve in recent years, reflecting Vietnam's efforts to fulfil its commitments on
+accession to the World Trade Organisation (WTO) in January 2007.
+
+%\item The population is highly literate, but mostly unskilled.
+%The average education of the adult population is now 6.3 years of school.
+%Primary and secondary school enrollment, however, is close to 100\%.
+
+\item The EIU democracy index puts Vietnam among the most authoratarian
+regimes in the world.
+In the functioning of government, however, Vietnam fares much better,
+and the public's confidence in the government and the party is high.
+Vietnam also scores well in the degree of societal consensus and cohesion.
+The judiciary is relatively weak and not independent of the
+Communist Party.
+
+\item
+The World Bank's Doing Business now ranks Vietnam 99th (of 185) on overall ease of doing business, which is below China (91) and above India (132).
+The World Bank's Governance Indicators rank Vietnam in the 43rd percentile
+on overall government effectiveness and the 39th percentile on rule of law.
+The Heritage Foundation rates Vietnam 15 (of 100) on rule of law
+but 64 on business freedom and 79 on open markets.
+
+\item A recent slowdown in growth coincided
+with growing evidence of corruption
+and rising prices gas, food, and utilities,
+which led the prime minster to make a public apology.
+The trouble stems in large part from the Communist Party's
+failure to discipline state-owned enterprises,
+which account for 40\% of output, and to clean up bad debts lurking in state-owned banks.
+Some state-owned firms are reported to be so cash-strapped
+they have stopped paying workers.
+
+\item There has been debate in the party
+between conservative hard-liners pushing for stability
+and reformist moderates who would like to see further liberalization,
+including privatization of state-owned firms.
+One Western diplomat says the question now isn't whether
+real reform will happen, but how fast.
+\end{itemize}
+%
+\begin{parts}
+\item Using the data in the table,
+compute the continuously-compounded annual growth rate of GDP per worker
+for the period 1990-2011.
+(5~points)
+
+\item Identify the sources of growth in Vietnam over the same period.
+(This is an indication that you should do the usual growth accounting calculations.
+Be sure to include calculations of productivity.)
+What is the primary source of growth?
+(15~points)
+
+\item Between 1990 and 2011, average years of schooling for adults
+rose from 5.3 to 6.3.
+By how much would you estimate this increased GDP?
+(5~points)
+
+\item Continued high performance in developing countries is often
+connected to continued improvement in institutions.
+Which institutions are important, in general?
+From what you've read above, how does Vietnam rate on them?
+Using the information presented, and your own good judgement,
+how attractive do you think Vietnam will be over the next ten years
+to international firms looking to do business there?
+(15~points)
+\end{parts}
+
+\begin{solution}
+Brief answers follow,
+but see also the attached spreadsheet:
+download this pdf file, open it with the Adobe Reader or the equivalent,
+and click on the pushpin:
+\attachfile{exam_midterm_f13_answerkey.xlsx}
+
+The calculations for (a,b) are summarized here:
+%
+\begin{center}
+    \tabcolsep = 0.2in
+    \begin{tabular}{lrrr}
+    \toprule
+    Year            &  $ Y/L $   &  $K/L$  & $A$  \\
+    \midrule
+    1990            &   2.489  &   2.396  & 1.860  \\
+    2011            &   6.582  &  24.722  & 2.259 \\
+    Growth rate     &   4.631  &  11.114 & 0.926 \\
+    Contribution to growth
+                    &   4.631  &  3.705 & 0.926 \\
+    \bottomrule
+    \end{tabular}
+\end{center}
+The row labeled ``contribution'' is the same as the previous
+one, except that the growth rate of capital per worker has
+been multiplied by $\alpha = 1/3$.
+
+\begin{parts}
+\item The continuously-compounded annual rate of growth is
+\begin{eqnarray*}
+    \gamma_{Y/L} &=& [\ln (6.582) - \ln(2.489)]/(2011-1990) \;\;=\;\; 4.631 \%.
+\end{eqnarray*}
+
+Grading:  5 points for correct calculation.
+
+\item Growth accounting involves this equation:
+\begin{eqnarray*}
+    \gamma_{Y/L} &=& (1/3) \gamma_{K/L} + \gamma_{A} .
+\end{eqnarray*}
+With the numbers above, we have (in percentages)
+\begin{eqnarray*}
+    4.631 &=& (1/3) 11.114  + 0.926  \;\;=\;\; 3.705  + 0.926.
+\end{eqnarray*}
+We see, unusually, that most of the growth here has come from
+an enormous increase in the capital stock.
+The contribution of productivity, which is usually the most important one,
+is relatively small.
+
+Looking to later questions, this could be a source of concern:
+that we're not seeing the increase in productivity we'd expect to see.
+
+Grading:  3 points for noting the growth accounting equation,
+3 for the productivity numbers,
+3 for the growth rates of capital per worker and productivity,
+3 for multiplying the former by one-third,
+and 3 more for interpreting the results sensibly.
+
+\item This is a more difficult question, designed for the aficionados.
+At an intuitive level, you might guess that increasing the skill of the labor force
+would raise output.
+More formally, you might use a version of the production
+function that includes ``human capital'' $H$, the term we use for skill:
+\begin{eqnarray*}
+    Y &=& A K^\alpha (HL)^{1-\alpha} .
+\end{eqnarray*}
+You could go further and describe the connection between skill and education,
+as we do in the text, but that's not necessary here.
+
+Grading:  2 points for noticing that this would raise the skill level of workers,
+and therefore raise output.
+3 points for a more formal analysis like the one above.
+
+\item The standard list of institutions is governance, property rights, rule of law,
+and open competitive markets.
+Possible comments include:
+%
+\begin{itemize}
+\item Governance.
+The view expressed by Madison is that the government has to be strong enough to
+control misbehavior by the governed, but not so strong to encourage misbehavior by itself.
+A one-party system provokes some concern about the latter, but the public's high degree
+of confidence in the government suggests it has been responsive to their concerns.
+The apology for corruption etc is an example.
+Ditto the mention of business freedom.
+
+\item Property rights are an issue.  Vietnam ranks poorly here,
+a common byproduct of a communist past.
+
+\item Rule of law is a similar source of concern.  Note, for example,
+the absence of an independent judiciary.
+Despite this, Heritage ranks it highly on business freedom.
+
+\item Open competitive markets.
+Heritage ranks it highly on open markets.
+The major concern here is with the state-owned firms,
+which are likely to have superior access to funding
+and perhaps monopoly positions in things like utilities.
+The optimistic scenario expressed by the unnamed diplomat
+is that reforms will make even these markets
+more competitive in the future.
+
+\end{itemize}
+Grading:  5 points for the list of institutions, 10 for some sensible assessment of them.
+\end{parts}
+\end{solution}
+
+
+%\pagebreak \phantom{xx} \pagebreak \phantom{xx} \pagebreak
+\begin{table}[h]
+\centering
+\tabcolsep = 0.1in
+\begin{tabular}{lrrr}
+\toprule
+Indicator & Zambia &  Botswana & Tanzania \\
+\midrule
+\multicolumn{2}{l}{\it General} \\
+GDP per capita  (2005 USD) &  1690  & 11,300 & 1250  \\
+Population (millions)      &   13.5 & 2.0 &  44.9   \\
+Doing Business overall (percentile) & 49  & 68 & 27 \\
+World Economic Forum overall (percentile) & 37 & 50 & 16\\
+\midrule
+\multicolumn{2}{l}{\it Governance} \\
+Political stability (percentile)  &  66 & 88 & 48 \\
+Govt effectiveness (percentile)   &  38 & 68 & 28 \\
+Regulatory quality (percentile)   &  37 & 74 & 37 \\
+Rule of law (percentile)          &  42 & 75 & 34 \\
+Control of corruption (percentile)&  46 & 79 & 22 \\
+\midrule
+\multicolumn{2}{l}{\it Labor} \\
+Minimum wage (USD per month) &   76 & 92 & 52 \\
+Severance after 10 years (weeks of pay) & 87 & 36 & 10 \\
+Labor market efficiency (percentile) & 37 & 68 & 67  \\
+Literacy (percent of adults)        & 71 & 84 & 73 \\
+Years of school (adults)        & 6.7 & 9.6 & 5.8  \\
+\midrule
+\multicolumn{2}{l}{\it Infrastructure and trade} \\
+Infrastructure quality (percentile)  & 20 & 36 & 10 \\
+%\midrule
+%\multicolumn{2}{l}{\it International trade} \\
+Import documents required (number) & 8 & 5 & 6\\
+Import delay (days) &  56 & 37 & 31  \\
+Import cost (USD per container) &  3600 & 3500 & 1600 \\
+\bottomrule
+\end{tabular}
+\caption{Economic and institutional indicators.
+Percentiles range from 0 (worst) to 100 (best).
+Sources:  Penn World Table, World Economic Forum, World Bank, Doing Business.}
+\label{tab:zambia}
+\end{table}
+
+% ======================================================================
+\question {\it Zambeef looks for opportunities (20~points).\/}
+Zambeef, the Zambia-based meat distributor, is looking for new opportunities.
+The Economist reports:
+``Zambeef operates meat counters at all 20 Shoprite stores across Zambia
+as well as its newer outlets in Ghana and Nigeria.
+Zambeef also has around 100 shops of its own.
+The CEO notes that with markets targeting both low and high-income consumers,
+they are able to sell `all of the animal.'
+The firm is also vertically integrated;
+its `farm-to-fork' model includes farms, retail outlets,
+and `cold chain logistics' with its fleet of 78 refrigerated trucks.
+The downside of recent expansion, they say, is the demands on its managers.''
+
+Zambeef is now looking to expand, either in Zambia or in nearby countries.
+As a consultant based in Johannesburg,
+you have been asked to advise Zambeef on the strengths and weaknesses
+of neighboring Botswana, Tanzania, and Zambia.
+You quickly summarize various measures of institutional quality in the three countries;
+see Table \ref{tab:zambia}.
+You also turn to the World Economic Forum's Global Competitiveness Report,
+which includes a survey of business leaders and tabulates the most commonly
+reported problems.
+For the three countries, the most common complaints were
+\begin{itemize}
+\item Zambia:  access to financing, corruption, and inadequate infrastructure.
+\item Botswana:  poor work ethic of labor force, inefficient government bureaucracy,
+and access to financing.
+\item Tanzania:  access to financing, corruption, and inadequate infrastructure.
+\end{itemize}
+
+
+\begin{parts}
+\item Describe the features of an economy that are important to
+operating a business like Zambeef's.
+How do Botswana and Tanzania compare to Zambia on these features?
+(10~points)
+\item
+What issues raise the most concern in each country?
+How might you deal with them?
+What location(s) would you recommend?
+(10~points)
+\end{parts}
+
+\begin{solution}
+This is a more qualitative question, and a somewhat fuzzy one at that,
+but here are some of the things a good answer might mention.
+A good answer should put some structure on the analysis,
+not simply list what's in the table.
+%
+\begin{parts}
+\item Zambeef is deeply imbedded in any country in which it operates.
+Unlike, say, manufacturing for export or business-process outsourcing,
+they have to deal with the full range of political and economic conditions.
+Moreover, food is typically a regulated business, so they'll have to deal with that.
+As a rough guide:
+\begin{itemize}
+\item Market size.
+Tanzania has the largest population by a wide margin.
+Zambia is next.
+Botswana is smaller, but has much higher income per person.
+
+\item Overall business conditions.
+Both DB and the WEF rate the countries in this order:
+Botswana $>$ Zambia $>$ Tanzania.
+The same for political stability,
+government effectiveness, rule of law, and control of corruption.
+That falls roughly in line with GDP per capita.
+All of these things are important to us.
+If, say, meat inspectors are corrupt, that's a problem for the business
+--- or at least an extra cost.
+
+\item Labor market.
+We have limited data here, but obviously we need to hire people.
+The worst labor market seems to be Zambia, where the business seems to operate fine,
+so the other countries must be doable.
+The minimum wages seem manageable.
+It's not clear how important literacy is, but there's not a huge difference
+across countries.
+One concern is the comment about the poor work ethic in Botswana.
+
+\item Infrastructure.
+Botswana is again the strongest of the three and Tanzania the weakest.
+Yet you wonder, given that the business works in Zambia,
+whether this is something that can be overcome.
+
+\item Trade restrictions.
+These seem to be roughly similar, with Zambia the worst.
+Curiously, this data suggests it's cheaper to import into
+Tanzania than other countries.
+You might want to check with Zambeef and see whether that's relevant.
+\end{itemize}
+
+Grading:  10 points for a clear list of issues and
+a logical argument that connects
+the institutions to the demands of the business.
+Partial credit for part thereof.
+
+\item If this were real life, we'd have a series of questions we'd want to address
+with more information.
+Among them:
+\begin{itemize}
+\item Zambia:  Are there more opportunities?
+Or is ``all 20'' at Shoprite the limit?
+Are the ``demands on managers'' simply a sign of growth,
+or does it reflect something about the supply of the right kind of talent?
+
+\item Botswana:  How concerned should we be about the work ethic?
+Does the higher income suggest a different market segment than we're used to?
+
+\item Tanzania:  Is the poor infrastructure manageable?
+Should we be concerned about government effectiveness and corruption?
+\end{itemize}
+All three countries look doable given these numbers,
+and the fact that this business works in Zambia.
+Two other things we'd want to look at are
+the existing competition in each location and whether
+Shoprite or another partner might facilitate entry.
+
+Grading:  10 points for a logical argument
+that flows from your earlier analysis and identifies the key issues.
+\end{parts}
+\end{solution}
+
+%\pagebreak \phantom{xx} \pagebreak %\phantom{xx} \pagebreak
+% ======================================================================
+\question {\it Short questions (50 points).\/}
+%
+\begin{parts}
+% http://research.stlouisfed.org/fred2/series/LNS12300002
+\item In 1960, 41\% of women aged 25-54 in the US were employed.
+In the most recent data, the number is 69\%.
+What is the likely impact on US GDP growth over this period?
+What is the likely impact on the US employment rate?
+(10~points)
+
+\item Suppose Apple's Irish assembly plant
+took 230 (millions of euros)
+in parts produced in Asia and hired workers for 80
+to assemble products worth 320, which were then sold  in the US.
+What is the value-added of the plant?
+Which of these transactions appears as an expenditure
+in the Irish national accounts?
+(10~points)
+
+\item Describe, in Ricardo's model, how --- and why ---
+free trade affects productivity.
+(10~points)
+
+\item Consider the statement:
+``When financial institutions fail, we should let them fail.''
+Do you agree or disagree?  Why?
+(10~points)
+
+\item Consider the statement:  ``Germany's high investment rate
+is supported, in large part, by flows of capital from other countries.''
+Do you agree or disagree?  Why?
+(10~points)
+\end{parts}
+
+\begin{solution}
+\begin{parts}
+\item An increase in women working should lead to
+(i)~more output (via the production function)
+and (ii)~an increase in the employment rate
+(the ratio of the number of people employed to the adult population).
+
+Grading:  5 points for noting the increase in output, including mention
+of the production function;
+5 points for noting the increase in the employment rate,
+including a statement of what that is.
+
+\item Value-added is $ 320 - 230 = 90$.
+Expenditure components are imports (230) and exports (320).
+
+Grading:  5 points for value added, 5 for imports and exports.
+
+\item Free trade changes which good are produced:
+we shift people to the most productive sector, which raises overall productivity.
+
+Grading:  10 points for this or the equivalent.
+
+\item We have two opposing objectives:
+(i)~create a good set of incentives for financial institutions
+(ie, let bad ones fail)
+and (ii)~protect the rest of the economy from the collateral damage a
+failing financial system would do to them
+(ie, prop up financial institutions in times of trouble).
+Most financial regulation is an attempt to balance these two things.
+
+Grading:  5 points each for noting (i) and (ii),
+or the equivalent.
+
+\item Disagree --- it's opposite.
+We saw that Germany's saving rate is greater than its investment rate,
+so capital flows out of Germany to other countries, not from them.
+
+Grading:  10 points for this.
+
+\end{parts}
+%
+\end{solution}
+
+\end{questions}
+
+%\pagebreak \phantom{xx} %\pagebreak \phantom{xx}
+
+\vfill \centerline{\it \copyright \ \number\year \ NYU Stern
+School of Business}
+
+\end{document}

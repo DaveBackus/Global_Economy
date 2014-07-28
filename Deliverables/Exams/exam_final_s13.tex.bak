@@ -1,0 +1,436 @@
+\documentclass[letterpaper,12pt]{exam}
+
+\usepackage{ge13}
+\usepackage{comment}
+\usepackage{booktabs}
+\usepackage{eurosym}
+\usepackage{hyperref}
+\urlstyle{rm}   % change fonts for url's (from Chad Jones)
+\hypersetup{
+    colorlinks=true,        % kills boxes
+    allcolors=blue,
+    pdfsubject={NYU Stern course GB 2303, Global Economy},
+    pdfauthor={Dave Backus @ NYU},
+    pdfstartview={FitH},
+    pdfpagemode={UseNone},
+%    pdfnewwindow=true,      % links in new window
+%    linkcolor=blue,         % color of internal links
+%    citecolor=blue,         % color of links to bibliography
+%    filecolor=blue,         % color of file links
+%    urlcolor=blue           % color of external links
+% see:  http://www.tug.org/applications/hyperref/manual.html
+}
+
+\def\ClassName{The Global Economy}
+\def\Category{David Backus}
+\def\HeadName{Final Examination}
+
+\printanswers
+
+\begin{document}
+\parindent = 0.0in
+\parskip = \bigskipamount
+\thispagestyle{empty}%
+\Head
+
+\centerline{\large \bf \HeadName}%
+%\centerline{March 9, 2005}
+\centerline{Revised:  \today}
+
+\bigskip
+{\it You have 120 minutes to complete this exam.  Please answer each
+question in the space provided and show all of your work.
+You may consult one page of notes and a calculator,
+but devices capable of wireless transmission are prohibited.
+
+I understand that the honor code applies: I will not lie, cheat,
+or steal to gain an academic advantage, or tolerate those who do.}
+
+\bigskip
+\begin{flushright}
+\rule{4in}{0.5pt} \\ (Name and Signature)
+\end{flushright}
+
+\begin{figure}[h]
+\begin{center}
+\setlength{\unitlength}{0.075em}
+%\setlength{\unitlength}{0.1em}
+\begin{picture}(280,200)(-20,0)
+%\footnotesize
+\thicklines
+
+% horizontal axis
+\put(-30,0){\vector(1,0){300}}
+\put(255,-16){$Y$}
+
+% vertical axis
+\put(0,-20){\vector(0,1){200}}
+\put(-15,155){$P$}
+
+% demand
+\put(25,165){\line(4,-3){200}}\put(230,10){AD}
+%\put(65,165){\line(4,-3){200}}\put(270,10){AD}
+
+% supply
+\put(25,13){\line(4,3){200}} \put(230,160){AS}
+%\put(65,13){\line(4,3){200}} \put(270,160){AS$'$}
+\put(126.4,0){\line(0,1){170}} \put(118,175){AS$^*$}\put(122,-16){$Y^*$}
+
+% equilibrium labels
+%\put(105,85){\footnotesize B}
+%\put(150,115){\footnotesize A}
+%\put(138,64){\footnotesize C}
+% dotted lines
+%\qbezier[31]{(133,0)(133,46)(133,92)}
+%\qbezier[45]{(0,92)(67,92)(133,92)}
+%\qbezier[45]{(0,72)(67,72)(133,72)}
+
+\end{picture}
+\end{center}
+\caption{Aggregate supply and demand diagram}
+\label{fig:asad}
+\end{figure}
+
+\begin{questions}
+% ======================================================================
+\question {\it Two views of monetary policy (40~points).\/}
+The goal is to connect some of the things we've learned
+about monetary policy,
+starting with the diagram in Figure \ref{fig:asad}.
+
+\begin{parts}
+\part If we increase the money supply, what happens to the curves in the diagram?
+Which ones shift?  Why?
+(5~points)
+\part What is the short-run impact on prices and output?  The long-run impact?
+Illustrate both in the diagram.
+(10~points)
+\part How does the impact compare to the traditional goals of monetary policy?
+Is the policy of increasing the money supply a good one in the context of the figure?
+(10~points)
+\part Now consider the same thing from the perspective of the quantity theory equation.
+If velocity is constant, what is the impact of an increase in the money supply?
+(10~points)
+\part How do your answers to (b) and (d) compare?
+Is your analysis in (b) consistent with the quantity theory?
+(5~points)
+\end{parts}
+
+\begin{solution}
+We'll refer to the diagram:  
+\begin{center}
+\setlength{\unitlength}{0.075em}
+%\setlength{\unitlength}{0.1em}
+\begin{picture}(280,200)(-10,-15)
+%\footnotesize
+\thicklines
+
+% horizontal axis
+\put(-30,0){\vector(1,0){300}}
+\put(255,-16){$Y$}
+
+% vertical axis
+\put(0,-20){\vector(0,1){200}}
+\put(-15,155){$P$}
+
+% demand
+\put(25,165){\line(4,-3){200}}\put(230,10){AD}
+\put(65,165){\line(4,-3){200}}\put(270,10){AD$'$}
+
+% supply
+\put(25,13){\line(4,3){200}} \put(230,160){AS}
+%\put(65,13){\line(4,3){200}} \put(270,160){AS$'$}
+\put(126.4,0){\line(0,1){170}} \put(118,175){AS$^*$}\put(122,-16){$Y^*$}
+
+% equilibrium labels
+\put(145,112){\footnotesize B}
+\put(105,85){\footnotesize A}
+\put(115,110){\footnotesize C}
+% dotted lines
+%\qbezier[31]{(133,0)(133,46)(133,92)}
+%\qbezier[45]{(0,92)(67,92)(133,92)}
+%\qbezier[45]{(0,72)(67,72)(133,72)}
+
+\end{picture}
+\end{center}
+
+
+\begin{parts}
+\part An increase in the money supply shifts aggregate demand to the right.
+The new curve is represented in the diagram by AD$'$.
+
+Grading: 5 points for noting which curve to shift, and which direction.  
+
+\part In the short run, we move from A to B.  Prices and output both rise.
+In the long run, we move to C, where we see (relative to A) that the only impact is on prices. 
+
+Grading: 5 points for the short run, 5 points for the long run.  
+
+\part The traditional goals are (i) output equal to $Y^*$ and 
+(ii) stable prices.  
+We miss on both in the short run and the long run.  
+The best policy is to stay at A.
+
+Grading:  5 points for a clear statement of the goals, 
+5 points for noting the difference between them and the policy under 
+consideration.  
+
+\part The quantity theory equation is 
+\begin{eqnarray*}
+    M V &=& P Y ,
+\end{eqnarray*}
+where $M$ is the money supply, $V$ is velocity, 
+$P$ is the price level, and $Y$ is real output.  
+If $V$ is constant, an increase in $M$ increases some combination
+of $P$ and $Y$.
+
+Grading:  5 points for the equation, 5 points for noting its consequences.  
+
+\part We found the same in our AS/AD analysis, 
+but in the latter 
+we also had a way to determine how much of each, 
+and how that changes over different time horizons.  
+
+Grading:  5 points for some commentary along these lines.  
+\end{parts}
+\end{solution}
+
+%\pagebreak \phantom{x} \pagebreak
+% ======================================================================
+\begin{table}[h]
+\centering
+\begin{tabular}{lrrrrrr}
+\toprule
+        & 2008 & 2009 & 2010 & 2011 & 2012 & 2013 \\
+\midrule
+Nominal GDP (\euro billions) & 172.0 & 168.5 & 172.8 & 171.0 & 165.4 & 156.7 \\
+Real GDP growth (\%) & 0.0 & --2.9 & 1.9 & --1.6 & --3.2 & --3.0 \\
+Inflation (\%) & 2.6 & --0.8 & 1.4 & 3.7 & 2.8 & 0.4 \\
+Govt revenue (\% of GDP)  & 41.1 & 39.6 & 41.4 & 45.0 & 41.0 & 40.7 \\
+Govt spending (\% of GDP) & 44.8 & 49.8 & 51.3 & 49.4 & 47.4 & 46.7  \\
+Public sector balance (\% of GDP) & --3.7 & --10.2 & --9.9 & --4.4 & --6.4 & --6.0\\
+Primary balance (\% of GDP)  & --1.0 & --7.6 &  --7.1 & --0.6 & --2.4 & --0.5   \\
+Govt debt (yearend, \% of GDP) & 71.7 & 83.4 & 91.0 & 98.9 & 118.2 \\
+Interest rate paid on debt (\%) &  & 3.6 & 3.5 & 4.0 & 3.6	& 4.2 \\
+Market rate on debt (\%)        & 4.5 & 4.2 & 5.4 & 10.2 & 10.5 & 6.3 \\
+\bottomrule
+\end{tabular}
+\label{tab:portugal}
+\caption{Economic indicators for Portugal.  Source:  EIU reports.}
+\end{table}
+
+\question {\it Disaster and opportunity in Portugal (40~points).\/}
+As an investor in distressed debt,
+you know well that economic disasters can be great opportunities.
+You wonder whether Portugal is one now, specifically
+the debt of the Portuguese government.
+
+You take a look at the Economist Intelligence Unit's reports
+and find:
+\begin{itemize}
+\item Portugal is currently operating with deficit financing
+provided by the ``troika'' (the EU, ECB, and IMF).
+One of the conditions is that the deficit be reduced.
+The \euro 80b in ``bailout loans'' have more attractive interest rates
+than debt issued in the public market.
+
+\item The average maturity of government debt is currently 7.5 years.
+
+\item Although 80\% of the deficit reduction plans involved increases in
+tax revenue, the Constitutional Court ruled against roughly half the proposed
+cuts in spending.
+
+\item Portuguese banks face rising loan losses as the economy endures a prolonged
+contraction.
+
+\item There is risk the government will absorb large
+``contingent liabilities'' from insolvent banks and state-owned companies.
+
+\item The exchange rate is fixed within the Euro Zone.
+The central bank has no foreign currency reserves.
+
+\item The EIU expects the governing center-right coalition
+of the Social Democratic Party and the Popular Party
+to hold together through 2015, when elections are due.
+However, continued austerity could weaken public support for the government
+amid a prolonged recession.
+\end{itemize}
+
+Using all of the information above, and your own experience and good judgement,
+assess the risks to an investor in Portuguese government debt.
+\begin{parts}
+\part Use what you know about debt dynamics to compute the ratio
+of government debt to GDP at year-end 2013.
+What factors contribute to this number?
+(10~points)
+\part How important is the interest rate paid on debt?
+How would your analysis change if the rate rose by 2\%?
+Fell by 2\%?
+Which is more likely, in your view?
+(10~points)
+\part Overall, how would you assess the risks to investors?
+What are the biggest risks?
+Would you buy Portuguese debt now?
+(20~points)
+\end{parts}
+
+\begin{solution}
+\begin{parts}
+\part The debt dynamics equation is 
+\begin{eqnarray*}
+   \Delta (B_t/Y_t)  &=&  (i_t - \pi_t)(B_{t-1}/Y_{t-1})
+                - g_t (B_{t-1}/Y_{t-1}) + D_t/Y_t .
+\end{eqnarray*}
+The three terms are
+\begin{eqnarray*}
+    (i_t - \pi_t)(B_{t-1}/Y_{t-1}) &=& (0.042 - 0.004) (118.2) \;\;=\;\; 4.5  \\                - g_t (B_{t-1}/Y_{t-1})   &=& - (-0.030) (118.2) \;\;=\;\; 3.5 \\
+    D_t/Y_t  &=&  0.5 .
+\end{eqnarray*}
+Their total is 8.5, so the ratio of debt to GDP will rise from 118.2 to 126.7.
+
+Grading:  3 points for each component done right, 1 more for summing them.  
+
+\part This involves the first term above.  If we increase the interest rate paid
+by 2\%, that adds $ 0.02 \times 118.2 = 2.4$, 
+so you get an additional increase in debt of 2.4\% of GDP.
+Similarly, a decline of 2\% leads to a decline in debt of the same amount.  
+Given the large difference between the interest rate paid on the debt
+and the current market rate, it seems more likely the rate will go up 
+than go down. 
+
+Grading: 7 points for the calculation, 3 for noting the difference
+between the rate paid and the market.  
+
+\part This is a call for the checklist:
+\begin{itemize}
+\item Debt and deficits.  
+(i)~The calculation shows us debt is still rising, although a substantial part
+comes from a shrinking economy.  
+(ii)~Contingent liabilities.
+
+\item Banks.  
+The EIU suggests that banks could be collateral damage
+from a bad economy.  
+
+\item Exchange rates and reserves.  Not relevant here, 
+Portugal is part of the Euro Zone and does not have any control over
+its exchange rate.  
+
+\part Politics.  Always an issue, but the EIU thinks 
+it's mostly under control.  
+\end{itemize}
+The biggest risk seems to be that the government is unable to get 
+the budget under control.  
+If it does, the debt could be a good deal.  
+Should you buy some? It's a risky bet, for sure.  
+To me, the fiscal situation is bad enough that I'd stay away.
+But there's some upside if they turn it around,
+and if they continue to get favorable terms from the troika.  
+
+Grading:  15 points for the checklist and its components, 
+5 points for a sensible argument assessing the various risks.  
+
+\end{parts}
+\end{solution}
+
+%\pagebreak \phantom{x} \pagebreak
+% ======================================================================
+\question {\it Short answers (40 points).\/}
+\begin{parts}
+\part Draw the cross-correlation function for a countercyclical lagging indicator.
+(10~points)
+\part In the Euro Zone, GDP growth is now $-0.5$\%
+and inflation is 1.7\%.
+The ECB recently reduced its target rate to 0.5\%.
+Use the Taylor rule to assess the suitability of this policy.
+(10~points)
+\part Describe how China's purchases of foreign currency affect
+the balance sheet of the central bank, the People's Bank of China.
+How would it be affected by ``sterlization.''
+(10~points)
+\part The Economist reports that Big Macs cost about the same in Canada
+and the US in 2008, but are now 25\% more expensive in Canada.
+What does this suggest about the ``dollar-dollar'' exchange rate over the next 6 months?
+(10~points)
+\end{parts}
+
+\begin{solution}
+\begin{parts}
+\part The largest correlation should be in the lower-right quadrant, 
+like the ccf for the unemployment rate in Figure 11.3 of the book.  
+Your figure should be labeled correctly, with leads to the left and
+lags to the right.  
+
+\part The Taylor rule calculation is something like this:
+\begin{eqnarray*}
+    i &=& r^* + \pi + 0.5 (\pi - \pi^*) + 0.5 (g - g^*) .
+\end{eqnarray*}
+The US targets are 
+$ r^* = 2$, $\pi^* = 2$, and $g^* = 3$. 
+If we use the same, we get $i = 1.8$, which is well below the current rate of 0.5. 
+Like the US, the ECB is being more aggressive with monetary policy
+than the Taylor rule suggests.  
+
+Grading:  5 points for a correct formula for the Taylor rule, 
+5 for applying it in this way or something close.  
+
+\part Let's say the PBOC's balance sheet looks something like this:
+%
+\begin{center}
+\begin{tabular}{lr|lr}
+               Assets  &     &     Liabilities                     \\
+               \hline
+               FX Reserves &  100 &     Money &  200   \\
+               Bonds   & 100 & \\
+\end{tabular}
+\end{center}
+%
+If the PBOC purchases 50 worth of foreign currency,
+it changes to 
+%
+\begin{center}
+\begin{tabular}{lr|lr}
+               Assets  &     &     Liabilities                     \\
+               \hline
+               FX Reserves &  150 &     Money  &  250   \\
+               Bonds   & 100 & \\
+\end{tabular}
+\end{center}
+%
+Note that (the supply of) money has gone up:  when it bought foreign currency, 
+it issued local currency in return. 
+The PBOC can undo this by selling 50 of bonds, taking money 
+in exchange:  
+%
+\begin{center}
+\begin{tabular}{lr|lr}
+               Assets  &     &     Liabilities                     \\
+               \hline
+               FX Reserves &  150 &     Money  &  200   \\
+               Bonds   & 50 & \\
+\end{tabular}
+\end{center}
+%
+This transaction is referred to as ``sterilization.''
+
+Grading:  5 points each for the describing the impact of the two transactions 
+on the balance sheet. 
+
+\part This is a PPP-like calculation:  goods are expensive in Canada, 
+so the Canadian dollar is overvalued.  
+We know from experience that this has no predictive value in the short term.
+
+Grading:  5 points for noting the overvaluation, 5 for noting the lack 
+of predictive content. 
+
+\end{parts}
+\end{solution}
+
+\end{questions}
+
+%\pagebreak \phantom{xx} %\pagebreak \phantom{xx}
+
+\vfill \centerline{\it \copyright \ \number\year \ NYU Stern
+School of Business}
+
+\end{document}

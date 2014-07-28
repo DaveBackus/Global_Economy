@@ -1,0 +1,346 @@
+\documentclass[12pt]{exam}
+
+\usepackage{ge13}
+\usepackage{comment}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\urlstyle{rm}   % change fonts for url's (from Chad Jones)
+\hypersetup{
+    colorlinks=true,        % kills boxes
+    allcolors=blue,
+    pdfsubject={NYU Stern course GB 2303, Global Economy},
+    pdfauthor={Dave Backus @ NYU},
+    pdfstartview={FitH},
+    pdfpagemode={UseNone},
+%    pdfnewwindow=true,      % links in new window
+%    linkcolor=blue,         % color of internal links
+%    citecolor=blue,         % color of links to bibliography
+%    filecolor=blue,         % color of file links
+%    urlcolor=blue           % color of external links
+% see:  http://www.tug.org/applications/hyperref/manual.html
+}
+
+\usepackage{enumitem}
+    \setitemize{leftmargin=*, topsep=0pt}
+    \setenumerate{leftmargin=*, topsep=0pt}
+\usepackage{attachfile}
+    \attachfilesetup{color=0.5 0 0.5}
+\usepackage{needspace}
+% example:  \needspace{4\baselineskip} makes sure we have four lines available before pagebreak
+
+% for ge05.sty
+\def\ClassName{The Global Economy}
+\def\Category{David Backus}
+%\def\Category{Backus \& Cooley}
+\def\HeadName{Problem Set \#4}
+\newcommand{\phm}{\phantom{--}}
+\newcommand{\NX}{\mbox{\it NX\/}}
+\newcommand{\POP}{\mbox{\it POP\/}}
+
+\printanswers
+
+\begin{document}
+\parindent = 0.0in
+\parskip = \bigskipamount
+\thispagestyle{empty}%
+\Head
+
+\centerline{\large \bf \HeadName: Monetary \& Fiscal Policy}
+\centerline{Revised:  \today}
+
+\medskip
+{\it You may do this assignment in a group.
+Whatever you hand in should be the work of your group
+and include the names of all of the contributors.}
+
+\begin{questions}
+% --------------------------------------------------------------------
+\question {\it The Taylor rule in the Euro Area (50 points).\/}
+You're a trader on Deutsche Bank's fixed income desk
+and have just been transferred from New York to London.
+You realize, among other things, that you must come
+to terms quickly with differences between American and European monetary policy.
+You wonder, given the chaos right now in the Euro Area, whether
+the Taylor rule is a reasonable guide.
+You review your Global Economy class notes and do the following:
+\begin{parts}
+\item Using data from FRED (see data guide below),
+you plot inflation and GDP growth for the Euro Area.
+(10~points)
+\item You also plot the Euro Area interbank rate (a representative short-term interest rate)
+and the Taylor rule for the same rate for the period 1999-present.
+Since it's not clear what ``potential output'' is right now,
+you use the growth rate version of the rule:
+\begin{eqnarray*}
+    i_t  \;=\;  r^* + \pi_t + 0.5 (\pi_t - \pi^*)
+            + 0.5 (g_t - g^*)   ,
+\end{eqnarray*}
+where $g_t$ is the growth rate of real GDP.
+As usual, you use year-on-year inflation and growth rates
+and set $r^* = \pi^* = 2$.
+You also set $g^* = 2$, but wonder whether another value would be appropriate.
+(10~points)
+\item How does the policy rate compare to the Taylor rule in 2009?
+Do you think the ECB's policy was appropriate?
+(10~points)
+\item How does the policy rate compare to the rule now?
+What justification does President Mario Draghi give in his most recent
+\href{http://www.ecb.europa.eu/press/pressconf/2013/html/index.en.html}{press conference}?
+Do you think the policy is appropriate?
+(20~points)
+\end{parts}
+Data guide.  To implement the Taylor rule,
+you'll need quarterly data for
+\begin{itemize}
+\item Real GDP (FRED code NAEXKP01EZQ661S):  use year-on-year growth rate.
+\item Consumer prices (FRED code CP0000EZ17M086NEST):  use year-on-year growth rate.
+\item Euro area interbank rate (FRED code IR3TIB01EZQ156N):  use as is.
+\end{itemize}
+You can download all of them from FRED.
+It's not required, but you can also generate the graph(s) directly in FRED.
+
+\begin{solution}
+\begin{parts}
+\item The graph is at
+
+\url{http://research.stlouisfed.org/fred2/graph/?g=pHg}.
+
+Right now, inflation (year-on-year) is about 0.8\% and GDP growth is about --0.2\%.
+Relative to 2011 and 2012, inflation is significantly lower and growth a bit higher.
+
+\item The interest rate and the Taylor rule are pictured together at
+
+\url{http://research.stlouisfed.org/fred2/graph/?g=pQ4}.
+
+In the figure, the blue line is the interbank rate and
+the red line is the Taylor rule.
+The link includes a description of how it was computed.\
+Note that the two lines are (roughly) similar between 2000 and 2008; in this respect,
+the Taylor rule has been a reasonable guide to ECB interest rate policy.
+The two lines are even closer over this period if the target 
+growth rate is 3\%.  
+
+\item In 2009, the Taylor rule points to a negative interest rate,
+which of course isn't feasible.
+The ECB reduced the interbank rate to 1.75\%,
+which was a less aggressive response than we saw from the Fed.
+
+Would another value be appropriate?
+One possibility:
+You could suggest they should have reduced the rate further,
+as the Fed did.
+Or you could argue that the Taylor rule isn't really appropriate for the ECB,
+with its mandated emphasis on inflation.
+
+\item Right now, the Taylor rule is about 1\% above the actual interest rate.
+In this respect, the ECB is being more expansionary than the rule suggests. 
+
+Draghi said in his press conference:
+\begin{quote}
+Underlying price pressures in the euro area are expected to remain subdued ...
+[and other factors suggest] we may experience a prolonged period of low inflation.  ...
+Our monetary policy stance will remain accommodative for as long as necessary,
+and will thereby continue to assist the gradual economic recovery.
+\end{quote}
+In short:  a low interest rate is justified by the inflation numbers and, furthermore,
+this will contribute to growth.
+Unlike similar statements from the Fed, the emphasis is clearly on inflation.
+See
+\href{http://www.ecb.europa.eu/press/pressconf/2013/html/is131205.en.html}{here}.
+
+\end{parts}
+\end{solution}
+
+
+% --------------------------------------------------------------------
+\question {\it Fiscal policy in India (50 points).\/}
+%
+After a century or more of poor macroeconomic performance,
+India began growing rapidly in the 1980s and briefly approached Chinese rates of growth.
+It remains a poor country, but much less so than thirty years ago.
+Last year, however, growth dropped dramatically,
+and analysts fear there could be worse to come.
+Among their concerns:
+\begin{itemize}
+\item The ruling Congress party has done little to continue
+the liberalization that led to high growth over the last thirty years.
+\item Some of the most restrictive labor market regulations
+anywhere in the world have limited the participation
+of the large population of unskilled workers,
+as firms invest in automation and hire skilled workers instead.
+Think:  call centers and software, not manufacturing.
+\item Infrastructure remains poor across the board.
+\item The rupee dropped 20\% in August, as investors reacted
+to the prospect of higher interest rates in the developed world
+and the government's misguided attempt to impose capital controls.
+\item Major redistribution programs, designed to help the poor and garner votes,
+have exacerbated a continuing problem with government debt and deficits.
+The Economist Intelligence Unit puts it this way in their Country Risk Service:
+``India's sovereign risk rating
+is constrained by poor fiscal management and high levels of public debt.''
+\end{itemize}
+
+Your mission is to focus on the last item:
+to assess the fiscal policy risks to the economy.
+Having some experience with such situations,
+you collect some data:
+%
+\begin{center}
+\begin{tabular}{lrrrr}
+\toprule
+         & 2011 &  2012  &  2013 & 2014  \\%
+\midrule
+Real GDP growth (percent)	& 7.75 & 3.99 & 5.68 & 6.23 \\
+Inflation (percent)			& 9.30 & 8.10 &	7.85 & 7.35 \\
+Interest rate on debt (percent) & 6.39 & 6.61 & 6.86 & 7.25 \\
+Govt expenditures (percent of GDP) & 27.19 & 27.50 & 27.78 & 28.01 \\
+Government deficit (percent of GDP) & 8.44 & 8.31 & 8.31 & 8.45 \\
+Government primary deficit (percent of GDP)	& 4.20 & 3.90 & 3.77 & 3.68 \\
+Government debt (percent of GDP) & 66.36	\\ % 66.84	66.39	66.69
+\bottomrule
+\end{tabular}
+\end{center}
+Entries for 2013 and 2014 are forecasts.
+
+With this information in hand, you start to sketch out your report:
+\begin{parts}
+\item What is the difference between the government's deficit and primary deficit?
+Why is the latter smaller?
+(10~points)
+
+\item Compute India's debt-to-GDP ratio for the period in the table.
+Over the period 2011-2014, what factors account for the change in the ratio?
+(20~points)
+
+\item
+How would your estimate change of the debt-to-GDP ratio at year-end 2014
+if  (i)~the interest rate paid on debt rose by 2\%
+or (ii)~the growth rate fell by 2\%?
+(10~points)
+
+\item
+After skimming the EIU's Country Risk Report ---
+and using your own good judgement ---
+how would you rate the risk from government debt and deficits
+to the Indian economy?
+What specific concerns would you point to?
+(10~points)
+\end{parts}
+
+Accessing the EIU's Country Risk Reports.
+Go to NYU's
+\href{http://library.nyu.edu/vbl/}{Virtual Business Library},
+then click on Country Information,
+EIU Country Risk Service (login as requested if off-campus),
+Country Risk Service (again), and (in this case) India.
+Choose the latest report and give it a quick read.
+
+
+\begin{solution}
+\begin{parts}
+\item The difference between the primary and total budget balances
+reflects interest payments on the debt.
+In 2012,
+the government deficit was $8.31$ percent of GDP
+and the primary deficit was 3.90 percent.
+The difference of 4.41 percent is interest payments on the debt.
+
+\item This is a call to apply our debt dynamics tool.
+The equation is
+\begin{eqnarray*}
+    \Delta ({B_{t}}/{Y_{t}})
+            &=&
+                (i_t-\pi_t) ({B_{t-1}}/{Y_{t-1}})
+                - g_t ({B_{t-1}}/{Y_{t-1}})
+             +    ({D_{t}}/{Y_{t}})  .
+%             \label{eq:debt-dynamics}
+\end{eqnarray*}
+We'll label these terms (A), (B), and (C), as we did in class.
+
+The results of these calculations are listed below.
+See also the spreadsheet (save this pdf file, open it, and click on the pushpin):
+\attachfile{ps4_f13_answerkey.xlsx}
+%
+\begin{center}
+\begin{tabular}{lrrrrr}
+\toprule
+         & 2011 &  2012  &  2013 & 2014  & 2012-14\\%
+\midrule
+Real GDP growth 	& 7.75 & 3.99 & 5.68 & 6.23 \\
+Inflation 			& 9.30 & 8.10 &	7.85 & 7.35 \\
+Interest rate on debt & 6.39 & 6.61 & 6.86 & 7.25 \\
+Govt expenditures  & 27.19 & 27.50 & 27.78 & 28.01 \\
+Government deficit  & 8.44 & 8.31 & 8.31 & 8.45 \\
+Primary deficit 	& 4.20 & 3.90 & 3.77 & 3.68 \\
+Ratio of debt to GDP  & 66.36	\\ % 66.84	66.39	66.69
+\midrule
+(A) real interest & & --0.98 & --0.66 & --0.07 & --1.71 \\
+(B) growth        & & --2.64 & --3.78 & --4.11 & --10.54 \\
+(C) primary deficit & & 3.90 & 3.77	& 3.68 & 11.35 \\
+\midrule
+Total (A) + (B) + (C) & & 0.27 & --0.67 & --0.50 & --0.90 \\
+Ratio of debt to GDP & & 66.63 & 65.96 & 65.46 \\
+\bottomrule
+\end{tabular}
+\end{center}
+\medskip
+
+Overall, we see that debt falls from 66.36 to 65.46, a change of --0.90.
+We see in the far right column that this modest amount reflects two offsetting
+effects:  a decline of 10.54 from economic growth, and a rise of 11.25 from
+primary deficits.
+We also see a fortuitous contribution from negative real interest rates.
+
+[A few brave souls noted that our debt dynamics equation is an approximation.
+It's not necessary to go beyond that, but if you did, you get
+a point or two for bravery.]
+
+\item You may notice that the effect of these changes is the same:
+both add $0.02*B_{t-1}/Y{t-1} $ to the change in $B/Y$.
+Over the three years, this adds almost 4\% to the change,
+with the effect that the ratio of debt to GDP rises by 3.08\%,
+rather then falls by 0.90\%.
+The point is that modest changes in conditions can change the debt situation in
+a noticeable way.
+Details on the calculations in the spreadsheet.
+
+\item The EIU Country Risk Report includes these notable comments:
+\begin{itemize}
+\item Growth.  The government has undertaken a series of reforms to revive the torpid economy.
+However, real GDP growth slowed sharply in the first quarter of the fiscal year.
+
+\item Interest. In October the Reserve Bank of India (the central bank) again raised its main
+policy interest rate, the repurchase rate, which now stands at 7.75\%,
+in a bid to moderate inflation.
+We forecast that the RBI's policy measures will help to moderate inflationary
+expectations, although headline consumer price rises will remain high in 2013.
+
+\item Political. The government's budgetary strategy has been repeatedly blown
+off course by a series of unfavourable developments since 2008.  In
+its budget for 2013/14, the UPA has set itself the target of cutting the fiscal
+shortfall to the equivalent of 4.8\% of GDP. However, the sharp depreciation of
+the rupee in June-August 2013 is likely to scupper the government's plans to
+lower its subsidy bill, which accounts for around 16\% of public expenditure.
+With elections looming, there is also a growing risk that the government will
+boost spending in the run-up to the polls, in a bid to secure voter approval.
+
+\item Two things we haven't discussed:  \\
+(i) Banking.  Following a downgrade to India's rating for banking sector risk in October, in
+view of continued stress on the sector, The Economist Intelligence Unit does
+not envisage a further downgrade. \\
+(ii) Foreign debt.  Although the level of domestic public debt is high, external debt as a
+proportion of GDP remains low, and so it is unlikely that India will experience
+an external debt crisis in 2014-15.
+
+\end{itemize}
+
+\end{parts}
+\end{solution}
+
+\end{questions}
+
+\vfill \centerline{\it \copyright \ \number\year \
+NYU Stern School of Business}
+
+\end{document}
+

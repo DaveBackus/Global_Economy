@@ -1,0 +1,351 @@
+\documentclass[12pt]{exam}
+
+\usepackage{ge05}
+\usepackage{comment}
+\usepackage{booktabs}
+\usepackage[dvipdfm]{hyperref}
+\urlstyle{rm}   % change fonts for url's (from Chad Jones)
+\hypersetup{
+    colorlinks=true,        % kills boxes
+    allcolors=blue,
+    pdfsubject={NYU Stern course GB 2303, Global Economy},
+    pdfauthor={Dave Backus @ NYU},
+    pdfstartview={FitH},
+    pdfpagemode={UseNone},
+%    pdfnewwindow=true,      % links in new window
+%    linkcolor=blue,         % color of internal links
+%    citecolor=blue,         % color of links to bibliography
+%    filecolor=blue,         % color of file links
+%    urlcolor=blue           % color of external links
+% see:  http://www.tug.org/applications/hyperref/manual.html
+}
+
+% for ge05.sty
+\def\ClassName{The Global Economy}
+%\def\Category{Professor David Backus}
+\def\Category{Backus \& Cooley}
+\def\HeadName{Problem Set \#4}
+\newcommand{\phm}{\phantom{--}}
+\newcommand{\NX}{\mbox{\it NX\/}}
+\newcommand{\POP}{\mbox{\it POP\/}}
+
+\printanswers
+
+\begin{document}
+\parindent = 0.0in
+\parskip = \bigskipamount
+\thispagestyle{empty}%
+\Head
+
+\centerline{\large \bf \HeadName: Monetary \& Fiscal Policy}
+\centerline{Revised:  \today}
+
+\medskip
+{\it You may do this assignment in a group of up to five people.
+Whatever you hand in should be the work of your group.}
+
+\begin{questions}
+% --------------------------------------------------------------------
+\question The Tayor Rule (50 points).
+You have been asked by your boss to explain the Taylor Rule
+and use it as a guide to current US monetary policy.
+You review your Global Economy class notes and do the following:
+\begin{parts}
+\part Using data from FRED (see data guide below),
+you plot the Taylor Rule and the fed funds rate for the period 1960 to present.
+(15~points)
+\part What do you think was the impact on output and inflation
+of keeping the fed funds rate below the Taylor
+Rule during the 1970s?
+(10~points)
+\part How did policy compare to the Taylor Rule from 1985 to 2000?
+What do you think was the impact on output and inflation?
+(10~points)
+\part What does the Taylor Rule suggest now?
+What options does the Fed have for dealing with the current situation?
+How does that compare to the Fed's stated policy in their
+most recent
+\href{http://federalreserve.gov/monetarypolicy/fomccalendars.htm}
+{policy statement}?
+(15~points)
+\end{parts}
+Data guide.  To implement the Taylor Rule,
+you'll need quarterly data on
+\begin{itemize}
+\item GDP (FRED variable GDP):  use year-on-year growth rate
+\item Consumer prices (FRED variable PCEPI)):  use year-on-year growth rate
+\item Fed Funds rate (FRED variable FEDFUNDS):  use as is.
+\end{itemize}
+You can download all of them from FRED.
+It's not required, but you can also generate the graph(s) directly in FRED.
+
+\begin{solution}
+\begin{parts}
+\part The Taylor rule calculation is
+\begin{eqnarray*}
+    i_t  \;=\;  r^* + \pi_t + (1/2) (\pi_t - \pi^*)
+            + (1/2) (g_t - g^* )   ,
+\end{eqnarray*}
+You'll see different versions of this equation,
+discussed in the notes,
+but this is the one we'll use.
+
+Here's a FRED figure of the rule and the actual fed funds rate:
+
+\url{http://research.stlouisfed.org/fred2/graph/?g=6D5}
+
+The link includes a description of how it was computed.
+In the figure, the blue line is the actual fed funds rate and
+the red line is the fed funds rate implied by the Taylor rule.
+By convention, we've set $r^* = 2\%$, $\pi^* = 2\%$, and $g^* = 3\%$.
+
+Some people replace the last term 
+in the Taylor rule with the percentage difference 
+between real GDP and its long-run equilibrium level, 
+often referred to as ``potential output.''
+The challenge here, of course, is deciding what the long-run equilibrium
+is.  
+One of the standard numbers is available in FRED.
+It's neither recommended nor required, but 
+if you took this route, your Taylor rule might look like 
+
+\url{http://research.stlouisfed.org/fred2/graph/?g=6Pg}
+
+which isn't a lot different from the previous version.  
+
+
+\part You can see in the figure that the Fed set interest rates in the 1970s below
+the Taylor rule.
+The standard interpretation is that the Fed was overly ``expansionary,''
+setting the interest rate too low and (and implicitly allowing the money supply
+to grow too fast).
+This led to the inflation we saw way back then.
+
+\part From 1985 to 2000, there's not much difference between the Taylor rule
+and Fed policy, except that the Fed smoothed out the wiggles in the rule.
+As for outcomes:  we experienced, on the whole, low and stable inflation rates.
+We also experienced above-average GDP growth and relatively stable GDP growth,
+with only the 1991 recession to detract from overall performance.
+See this FRED figure documenting inflation and GDP growth over the same period:
+
+\url{http://research.stlouisfed.org/fred2/graph/?g=6D7}
+
+It's not clear how much credit to give to monetary policy for (say) the dot-com boom,
+but even a skeptic would have to say that the policy
+doesn't seem to have caused any damage and probably did some good.
+
+\part Right now, the Taylor rule is pointing to higher interest rates
+but the Fed has announced that it expects to keep interest rates near zero
+through most of 2014.
+The question is whether the Fed is making the same mistake it made in the 1970s,
+keeping the interest rate too low.
+An alternative is that the Fed thinks the Taylor rule is misleading under current conditions.
+We can reconvene in three years and see how this works out.
+
+\end{parts}
+\end{solution}
+
+
+% --------------------------------------------------------------------
+\question Fiscal policy in Turkey (50 points).
+The Turkish economy has had its ups and downs over the last century,
+but some think it could be poised for Chinese-like growth.
+One concern, however, is fiscal policy.
+Large government deficits in the 1990s led to inflation rates
+consistently above 50 percent.
+ An accord with the IMF, in which loans were tied to fiscal stringency,
+  was in effect from 1999 to 2008.
+  Despite a ``spike'' during 2008-09, the government debt and ongoing deficits
+    remain modest.
+    Both have benefitted from strong growth in the economy.
+but some think it may be poised for Chinese-like growth.
+Your mission is to assess the risks to the economy,
+starting with fiscal policy,
+and the likelihood of sustained rapid growth.
+
+Having some experience with such situations,
+you collect some data:
+
+\begin{center}
+{\small
+\begin{tabular}{lrrrrrrrrr}
+\toprule
+         & 2003 &  2004  &  2005  &  2006   & 2007  & 2008 &  2009  &  2010 & 2011 \\%
+\midrule
+Real GDP growth  & 5.2 & 9.3 & 8.4 & 6.9 & 4.7 & 0.7 & --4.8 & 9.1 & 7.8 \\
+Inflation        &23.4 &10.9 & 8.4 & 9.8 & 6.6 & 10.8& 5.0 & 8.4 & 6.1 \\
+Govt expenditures&30.9 & 25.3 & 22.6 & 23.5 & 24.2 & 23.9 & 28.2 & 26.6 & 25.9 \\
+Budget balance   &--8.9&--5.4 &--1.3 &--0.6 &--1.6 &--1.8 &--5.5 &--3.6 &--1.7 \\
+Primary balance  & 4.1 & 4.7 & 5.8 & 5.5 & 4.2 & 3.5 & 0.1 & 0.8 & 1.6 \\
+Public debt      & 62.3 \\ %& 51.1 & 45.5 & 39.6 & 40.0 & 46.3 \\
+Interest rate (short) & 36.2 & 21.4 & 14.7 & 15.6 & 17.2 & 16.0 & 9.2 & 5.8 & 3.0 \\
+\bottomrule
+\end{tabular}
+}
+\end{center}
+The data are from the Economist Intelligence Unit's CountryData.
+(i)~Government expenditures, (government) budget balances,
+and public debt are expressed as
+percentages of GDP (ratio to GDP multiplied by 100).
+(ii)~Government budget numbers are balances:
+negative numbers indicate deficits,
+positive numbers indicate surpluses.
+(iii)~Entries for 2011 are estimates.
+(iv)~The interest rate is nominal.  
+
+After giving the numbers a quick look,
+you study the Economist Intelligence Unit's
+various reports for background information and summarize the relevant sections:
+%
+\begin{itemize}
+\item Modern Turkish politics has evolved from the secular
+single-party republic established by Mustafa Kemal (Ataturk) in 1923 into
+a multiparty democracy.
+
+\item The ruling Justice Party (AKP) gained power in 2002
+and is likely to retain power until elections in 2015 and beyond.
+    The AKP's ``pro-Islamist roots'' are an ongoing source of tension
+    with the ``secularist elite'' and a source of
+    political uncertainty.
+
+\item Turkey has a free-trade agreement (``customs union'')
+with the EU and is exploring closer ties, including membership.
+Some think this process imposes discipline on economic policies.
+\end{itemize}
+
+With this information in hand, you start to sketch out your report:
+\begin{parts}
+\part Why are the differences between the primary and total budget
+balances so large?
+(10~points)
+
+\part Compute Turkey's debt-to-GDP ratio for the period in the table.
+What seem to be the major factors in its behavior?
+(20~points)
+
+\part
+What factors might change your estimate of how the debt ratio could evolve
+during 2012 and after?
+(10~points)
+
+\part After skimming the EIU's Country Risk Report ---
+and using your own good judgement ---
+do you see any specific concerns looming about
+fiscal policy over the next 3-5 years?
+Other concerns?
+(10~points)
+\end{parts}
+
+Accessing the EIU's Country Risk Reports.
+Go to NYU's
+\href{http://library.nyu.edu/vbl/}{Virtual Business Library},
+then click on Country Information,
+EIU Country Risk Service (login as requested if off-campus),
+Country Risk Service (again), and (in this case) Turkey.
+Choose the latest report and give it a quick read.
+
+\begin{solution}
+\begin{parts}
+\part The difference between the primary and total budget balances
+reflects interest payments on the debt.
+Like Brazil, Turkey pays relatively high interest rates on its
+debt, which increases its cost.
+For example, in 2003, the total deficit was 8.9\% of GDP,
+listed in the table as a budget balance of $-8.9\%$.
+Nevertheless, there was a primary balance of 4.1\% (a surplus),
+which is a primary deficit with the opposite sign:
+$-4.1\%$.
+The difference of 13.0\% of GDP (yikes!)
+was interest payments on the debt.
+
+\part This is an extensive calculation.
+For the details, see the spreadsheet
+
+\url{http://pages.stern.nyu.edu/~dbackus/2303/ps4_s12_answerkey.xls}
+
+The key equation is
+\begin{eqnarray*}
+    \Delta ({B_{t}}/{Y_{t}})
+            &=&
+                (i-\pi) ({B_{t-1}}/{Y_{t-1}})
+                - g ({B_{t-1}}/{Y_{t-1}})
+             +    ({D_{t}}/{Y_{t}})  .
+\end{eqnarray*}
+Make sure you know what all the pieces are.
+We derived it as an approximation, but ignore that.
+
+Most of the things you need are given, you just put them to work in the equation.
+The only one about which there might be some question is
+the interest rate $i_t$.
+You could either take the given interest rate
+or compute the implied interest rate on the debt from interest payments.
+Either is fine as far as grading is concerned,
+but here's what involved in using the implied interest rate,
+which is what is done in the spreadsheet.
+From (a), we know interest payments on the debt $i_t B_{t-1}/Y_t$.
+Why the different timing?  Because interest is paid on last year's debt ($B_{t-1}$)
+but is reported as a ratio to current GDP ($Y_t$).
+Thus in 2003 we have $i_t B_{t-1}/Y_t = 13.0\%$.
+To extract $i_t$, we calculate
+\begin{eqnarray*}
+    i_t &=&  \left[ \frac{(i_t B_{t-1}/Y_t)}
+            {(B_{t-1}/Y_{t-1})} \right]
+            (Y_t/Y_{t-1}) .
+\end{eqnarray*}
+If you try this for 2004, you get 19.5\%,
+which is a bit lower than the 21.4\%
+interest rate reported in the table.
+
+Back to the calculation.
+We compute each of the terms in the equation and see how they add up.
+The results include a ratio of debt to GDP 35.1\% in 2011,
+a decline of 27.2\% of GDP since 2003.
+How did that happen?
+The components are
+
+\begin{center}
+%\begin{table}
+\begin{tabular}{lccc}
+\toprule
+       & Interest &  Growth & Primary Deficit \\
+       &  $(i-\pi)B_{t-1}/Y_{t-1}$  &  $-g B_{t-1}/Y_{t-1}$
+                & $D_t/Y_t$ \\
+\midrule
+2003-2011 \hspace*{0.4in} & 20.3  & --21.3  &  --26.2 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+We see that interest is pushing us the other way, raising the debt-to-GDP ratio.
+But we overcome that with strong growth and primary surpluses.
+
+Bottom line:  after having serious debt and deficit problems,
+Turkey has shown great fiscal discipline over the last decade.
+
+
+\part What could go wrong?
+Answers may differ, but a standard list might include:
+a sharp rise in interest rates, which have some down since 2003;
+slower growth;
+some unseen budget problems;
+and so on.
+
+\part The economic fundamentals look fine.
+The EIU Country Risk Report rates Turkey as stable along most dimensions.
+The biggest concern is political.
+There's a long history to this, alluded to in the question.
+The EIU's update includes:
+``The Kurdish issue and related terrorist attacks pose a major risk to social and
+political stability. Tension between the religiously conservative ruling Justice
+and Development Party and the secularist-nationalist elites will remain high.''
+
+\end{parts}
+\end{solution}
+
+\end{questions}
+
+\vfill \centerline{\it \copyright \ \number\year \
+NYU Stern School of Business}
+
+\end{document}
+

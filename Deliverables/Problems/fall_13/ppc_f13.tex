@@ -1,0 +1,447 @@
+\documentclass[12pt]{exam}
+
+\usepackage{ge13}
+\usepackage{comment}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\urlstyle{rm}   % change fonts for url's (from Chad Jones)
+\hypersetup{
+    colorlinks=true,        % kills boxes
+    allcolors=blue,
+    pdfsubject={NYU Stern course GB 2303, Global Economy},
+    pdfauthor={Dave Backus @ NYU},
+    pdfstartview={FitH},
+    pdfpagemode={UseNone},
+%    pdfnewwindow=true,      % links in new window
+%    linkcolor=blue,         % color of internal links
+%    citecolor=blue,         % color of links to bibliography
+%    filecolor=blue,         % color of file links
+%    urlcolor=blue           % color of external links
+% see:  http://www.tug.org/applications/hyperref/manual.html
+}
+
+\usepackage{enumitem}
+\setitemize{leftmargin=*, topsep=0pt}
+\setenumerate{leftmargin=*, topsep=0pt}
+\usepackage{attachfile}
+    \attachfilesetup{color=0.5 0 0.5}
+\usepackage{needspace}
+% example:  \needspace{4\baselineskip} makes sure we have four lines available before pagebreak
+
+% for ge05.sty
+\def\ClassName{The Global Economy}
+\def\Category{Professor David Backus}
+%\def\Category{Backus \& Cooley}
+\def\HeadName{Practice Problems C}
+\newcommand{\phm}{\phantom{--}}
+\newcommand{\NX}{\mbox{\it NX\/}}
+
+\printanswers
+
+\begin{document}
+\parindent = 0.0in
+\parskip = \bigskipamount
+\thispagestyle{empty}%
+\Head
+
+\centerline{\large \bf \HeadName:  Aggregate Supply \& Demand}
+\centerline{Revised:  \today}
+
+\medskip
+{\it This will not be collected or graded,
+but it's a good way to make sure you're up to speed.
+We recommend you do it before the next class.}
+
+\begin{questions}
+% --------------------------------------------------------------------
+\question {\it Inflation high and low.\/}
+\begin{parts}
+\part Describe in one paragraph how fiscal deficits can cause hyperinflation.
+Show qualitatively how the Treasury and Central Bank balance sheets change.
+
+\part During the 1990s, the US economy experienced high output growth
+and low inflation.
+How is this possible?  Why didn't the economy ``overheat''?
+\end{parts}
+
+\begin{solution}
+\begin{parts}
+\part Hyperinflation.  During hyperinflations
+the Treasury typically can't issue debt --- investors
+won't buy it --- so it sells the debt to the Central Bank.
+Their balance sheets start out like this
+
+\begin{center}
+\begin{tabular}{lr|lr}
+\multicolumn{4}{l}{} \\
+\multicolumn{4}{l}{Treasury} \\
+\midrule
+Assets  &&  Liabilities \\
+\midrule
+& & Bonds & 200 \\
+
+\multicolumn{4}{l}{} \\
+\multicolumn{4}{l}{Central Bank} \\
+\midrule
+Assets  &&  Liabilities \\
+\midrule
+Bonds &  100 & Money & 100 \\
+\multicolumn{4}{l}{}
+\end{tabular}
+\end{center}
+
+Then they change into something like this, with greater government debt
+and a larger supply of money (currency):
+
+\pagebreak
+
+\begin{center}
+\begin{tabular}{lr|lr}
+%\multicolumn{4}{l}{} \\
+\multicolumn{4}{l}{Treasury} \\
+\midrule
+Assets  &&  Liabilities \\
+\midrule
+& & Bonds & 250 \\
+
+\multicolumn{4}{l}{} \\
+\multicolumn{4}{l}{Central Bank} \\
+\midrule
+Assets  &&  Liabilities \\
+\midrule
+Bonds &  150 & Money & 150 \\
+\multicolumn{4}{l}{}
+\end{tabular}
+\end{center}
+
+In essence, the Bank traded 50 in currency for 50 in bonds,
+and the Treasury used the currency to pay people it owed money to.
+
+\part There's no inherent conflict between high growth
+and low inflation.  That's exactly what you'd expect to see
+if AS shifts to the right (higher productivity?)
+and AD shifts along with it as monetary policy ``accommodates''
+the increase in growth.
+
+\end{parts}
+\end{solution}
+
+
+\begin{comment}
+% --------------------------------------------------------------------
+\question Aggregate supply.
+Consider the aggregate supply curve.
+\begin{parts}
+\part Why does it slope upward?
+\part Why is the Long-run aggregate supply curve vertical?
+Explain why it differs from short-run aggregate supply.
+\end{parts}
+\end{comment}
+
+% --------------------------------------------------------------------
+\question {\it Shocks.\/}
+Fill out the following table,
+telling us, for each shock,
+whether it affects the supply or demand curve
+and whether the short-run impact on
+output and prices is positive (+) or negative ($-$):
+
+{\small
+\begin{center}
+%\tabcolsep = 0.2in
+\begin{tabular}{lccc}
+\toprule
+Shock        &  Supply or Demand?  &  Output Effect & Price Effect \\
+\midrule
+Sales tax holiday \\
+Increase in money supply \\
+Improved inventory control \\
+Better information technology \\
+Fall in world oil prices \\
+Facebook goes bankrupt \\
+\bottomrule
+\end{tabular}
+\end{center}
+}
+\smallskip
+
+\begin{solution}
+Summary:
+
+{\small
+\begin{center}
+%\tabcolsep = 0.2in
+\begin{tabular}{lccc}
+\toprule
+Shock        &  Supply or Demand?  &  Output & Price  \\
+\midrule
+Sales tax holiday &  demand  & + & + \\
+Increase in money supply  & demand & + & + \\
+Improved inventory control &  supply & + & $-$ \\
+Better information technology & supply & + & $-$ \\
+Fall in world oil prices    & supply &  + & $-$ \\
+Facebook goes bankrupt      &  supply (ha!) & + & $-$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+}
+Here's the thought process.
+Supply or demand?  If it affects purchases of goods, it's demand.
+If it affects production of goods, it's supply.
+Impact on output and prices?
+If supply shifts, they move in opposite directions.
+If demand shifts, they move in the same direction.
+\end{solution}
+
+
+% --------------------------------------------------------------------
+\question {\it Clean air and jobs.\/}
+As part of its clean air initiative,
+the Canadian government now requires firms to submit lengthy reports
+about the impact of its activities on the environment.
+(This is fiction, by the way:  any connection to real governments,
+dead or alive, is purely coincidental.)
+Our mission is to look at the impact of such an initiative
+on aggregate supply and demand.
+
+\begin{parts}
+\part What is the likely impact of the initiative on aggregate supply and demand?
+(Ask yourself:  Does this affect the production or purchase of goods and services?)
+If we start at a position of long-run equilibrium,
+which curves shift, and in what direction?
+Show the result in the appropriate diagram.
+
+\part What is the short-run impact on inflation and output? The long-run impact?
+
+\part Do you think anything is missing from this analysis?
+\end{parts}
+
+\begin{solution}
+\begin{parts}
+\part The idea is that it shifts the AS curves to the left --- both of them.
+Why?  It now takes more people to produce the same goods.
+Here's how that might look:
+
+%  Supply and demand diagram
+\begin{center}
+\setlength{\unitlength}{0.075em}
+\begin{picture}(250,200)(0,0)
+%\footnotesize
+\thicklines
+
+% horizontal axis
+\put(-30,0){\vector(1,0){300}}
+\put(255,-16){$Y$}
+\put(142,-16){$Y^*$}
+\put(102,-16){$Y^{*\prime}$}
+
+% vertical axis
+\put(0,-20){\vector(0,1){200}}
+\put(-15,155){$P$}
+
+% demand
+\put(25,165){\line(4,-3){200}}\put(230,10){AD}
+%\put(65,165){\line(4,-3){200}}\put(270,10){AD$'$}
+
+% supply
+\put(65,13){\line(4,3){200}} \put(270,160){AS}
+\put(25,13){\line(4,3){200}} \put(230,160){AS$'$}
+\put(146.4,0){\line(0,1){170}} \put(138,175){AS$^*$}
+\put(106.4,0){\line(0,1){170}} \put(98,175){AS$^{*\prime}$}
+
+% equilibrium labels
+\put(150,55){\footnotesize A}
+\put(122,75){\footnotesize B}
+\put(95,94){\footnotesize C}
+\put(95,76){\footnotesize D}
+%\put(95,54){\footnotesize D}
+% dotted lines
+%\qbezier[31]{(133,0)(133,46)(133,92)}
+%\qbezier[45]{(0,92)(67,92)(133,92)}
+%\qbezier[45]{(0,72)(67,72)(133,72)}
+
+\end{picture}
+\end{center}
+\bigskip
+
+\part We start at A.
+When the curves shift, the new short-run equilibrium is where
+AD crosses the new AS:  namely B.
+The new long-run equilibrium is where AD crosses the new AS$^*$:  namely C.
+Overall, the new regulations reduce output and raise prices.
+
+\part Lots of things!
+Some of them:
+(i)~The monetary authority could offset the impact on prices
+by shifting AD to the left, leaving us at D.
+This is the usual accommodation of supply shocks.
+(ii)~We might regard this as a good thing.
+The question is how we value clean air relative to other things
+and how steep the tradeoff is (how much output are we giving up?).
+
+\end{parts}
+\end{solution}
+
+% --------------------------------------*------------------------------
+\question {\it The non-crisis down under.\/}
+The 2008 recession was relatively mild in Australia.
+After three quarters of falling GDP, output began growing rapidly.
+In late 2009, the Reserve Bank of Australia (RBA) began to raise its target
+interest rate.
+
+\begin{parts}
+\part What might have motivated the RBA to raise the interest rate?
+
+\part What is the likely impact on aggregate supply and demand curves?
+On inflation and output growth?
+\end{parts}
+
+\begin{solution}
+\begin{parts}
+\part The usual suspects are higher growth and higher inflation.
+You could look at this in terms of AS/AD, with the AD shifting
+out as the economy recovered.
+Or you could use the Taylor rule.
+
+\part If they raise the interest rate, this corresponds
+to a decrease in the money supply (or money supply growth) and a shift left of AD.
+The interpretation would be that AD had shifted right during the recovery
+and they now think offsetting it is appropriate.
+If they shift AD left, that reduces output growth and inflation.
+
+\end{parts}
+\end{solution}
+
+
+% --------------------------------------------------------------------
+\question {\it Inflation and output.\/}
+Using the last two problems as input, consider the relation
+between inflation and output growth.
+\begin{parts}
+\part When do inflation and output growth move in the same direction?
+\part When do they move in opposite directions?
+\end{parts}
+
+\begin{solution}
+\begin{parts}
+\part When AD shifts.
+\part When AS shifts.
+\end{parts}
+\end{solution}
+
+% --------------------------------------------------------------------
+\question {\it US monetary policy in 2010.\/}
+The Federal Reserve's Federal Open Market Committee (FOMC)
+met April 27-28, 2010, and released this statement:
+%
+\begin{quote}
+Information received since the FOMC met in March suggests that economic activity has continued to strengthen and that the labor market is beginning to improve. Growth in household spending has picked up recently.  ...
+Business spending on equipment and software has risen significantly. ...
+Housing starts have edged up but remain at a depressed level. ...
+%Although the pace of economic recovery is likely to be moderate for a time,
+With substantial resource slack ... and longer-term inflation expectations stable, inflation is likely to be subdued for some time. ...
+
+The Committee will maintain the target range for the federal funds rate at 0 to 1/4 percent.  ...
+
+Voting against the policy action was [Kansas City Fed President]
+Thomas M. Hoenig, who believed that ... [an] exceptionally low level
+of the federal funds rate ...  was no longer warranted.
+\end{quote}
+%
+Later the same week, the Bureau of Economic Analysis announced that
+in the first quarter real GDP growth was estimated to be 3.2\% and
+inflation (in the GDP price index) 0.9\%.
+Both are expressed at annual rates.
+
+\begin{parts}
+\part Consider this information in the context of
+the aggregate supply and demand framework.
+Based on the FOMC statement,
+where is the short-run equilibrium of the economy relative to
+the Fed's inflation target and the long-run equilibrium level of output?
+Illustrate your answer with the appropriate diagram.
+
+\part Given your answer to (a), what should the Fed's response be?
+How should it change the money supply?  The fed funds rate?
+
+\part Given your answer(s), do you agree with Hoenig?
+Why or why not?
+\end{parts}
+
+\begin{solution}
+\begin{parts}
+\part The phrase ``substantial resource slack''
+suggests that output is below its long-run equilibrium.
+The phrase ``inflation is likely to be subdued for some time''
+suggests that inflation is below target (2\% say).
+That suggests a picture something like this, with A as the short-run equilibrium.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Supply and demand diagram
+%\begin{figure}[h!]
+%
+\begin{center}
+\setlength{\unitlength}{0.075em}
+\begin{picture}(300,220)(0,-20)
+%\footnotesize
+\thicklines
+
+% horizontal axis
+\put(-30,0){\vector(1,0){300}}
+\put(255,-16){$Y$}
+\put(142,-16){$Y^*$}
+
+% vertical axis
+\put(0,-20){\vector(0,1){200}}
+\put(-15,155){$P$}
+
+% demand
+\put(25,165){\line(4,-3){200}}\put(230,10){AD}
+
+% supply
+\put(25,13){\line(4,3){200}} \put(230,160){AS}
+\put(146.4,0){\line(0,1){170}} \put(138,175){AS$^*$}
+
+% equilibrium labels
+\put(105,85){\footnotesize A}
+\put(135,60){\footnotesize B}
+\put(135,110){\footnotesize C}
+% dotted lines
+%\qbezier[31]{(133,0)(133,46)(133,92)}
+%\qbezier[45]{(0,92)(67,92)(133,92)}
+%\qbezier[45]{(0,72)(67,72)(133,72)}
+
+\end{picture}
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bigskip
+(We don't know that C is at the intersection of AS and AS$^*$,
+just that it's above and to the right of A.)
+
+\part The goals of policy are (i)~stable prices
+(ie, 2\% inflation) and
+(ii)~long-run equilibrium level of output.
+From (a), we know that the Fed believes both are below their target levels.
+We can move both in the right direction by shifting the AD curve
+to the right.
+An increase in the money supply has this effect.
+Typically we would describe this as a drop in the
+``fed funds'' rate.
+
+\part Hoenig could have several things in mind,
+including
+(i)~a different opinion about the state of the economy and/or
+(ii)~a belief that current interest rates are too low already
+(we already shifted AD to the right).
+The latter might be based, for example,
+on a calculation of the Taylor rule.
+\end{parts}
+\end{solution}
+
+\end{questions}
+
+\vfill \centerline{\it \copyright \ \number\year \
+NYU Stern School of Business}
+
+\end{document}
+

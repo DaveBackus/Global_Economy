@@ -1,0 +1,394 @@
+Hi Dave, this is a file that does many things and also with other datasets.
+
+The instruction for importing the dataset is
+
+insheet using c:\data\pwtge_xls, n double
+
+Please, let me know if you have any questions.
+
+gl
+
+-- 
+__________________________________
+Gian Luca Clementi
+Department of Economics
+Stern School of Business
+New York University
+ 
+http://pages.stern.nyu.edu/~gclement
+
+clear
+
+************************************************************************************* Importing the data
+set memory 100m
+
+insheet using c:\data\pwt62_mod.txt, n double
+
+drop country
+rename isocode country
+
+keep country year rgdpch pop
+
+keep if country=="NGA" | country=="EGY" | country=="KOR" | country=="IND" |country=="ESP" | country=="PRT"|country=="GRC" | country=="IRL"
+
+keep if year<2005
+keep if year>1954
+
+gen gdp_kor = rgdpch if country=="KOR"
+gen gdp_ind = rgdpch if country=="IND"
+
+label variable gdp_kor "South Korea"
+
+label variable gdp_ind  "India"
+
+twoway line gdp_kor year  || connect gdp_ind year, plotr(ic(ltkhaki)) xtitle(" ") ytitle(" ") ylabel(,angle(horizontal)) legend(off) ///
+                         title("Real GPD per Capita") subtitle(US Dollars) ///
+                         text(10000 1975 "South Korea", place(e) size(large)) ///
+                         text(3500 1994 "India", place(e) size(large))
+graph export "C:\DATA\Classes\C.Growth\india_korea.emf", replace
+graph export "C:\DATA\Classes\C.Growth\india_korea.eps", replace
+
+gen gdp_esp = rgdpch if country=="ESP"
+gen gdp_por = rgdpch if country=="PRT"
+gen gdp_gre = rgdpch if country=="GRC"
+gen gdp_irl = rgdpch if country=="IRL"
+
+label variable gdp_esp "Spain"
+label variable gdp_por "Portugal"
+label variable gdp_gre "Greece"
+label variable gdp_irl  "Ireland"
+
+
+line gdp_esp year  || connect gdp_por year, msymbol(T) || connect gdp_gre year, msymbol(+) || ///
+                  connect gdp_irl year, plotr(ic(ltkhaki)) xtitle(" ") ytitle(" ") ylabel(,angle(horizontal))  title("Real GPD per Capita") subtitle(US Dollars)
+graph export "C:\DATA\Classes\C.Growth\europa.emf", replace
+graph export "C:\DATA\Classes\C.Growth\europa.eps", replace
+
+
+
+keep if year<2004
+keep if year>1959
+
+
+gen gdp_nga = rgdpch if country=="NGA"
+gen gdp_egy = rgdpch if country=="EGY"
+
+label variable gdp_nga "Nigeria"
+
+label variable gdp_egy "Egypt"
+
+
+twoway line gdp_nga year  || connect gdp_egy year, plotr(ic(ltkhaki)) xtitle(" ") ytitle(" ") ///
+                         ylabel(,angle(horizontal)) legend(off) ///
+                         title("Real GPD per Capita") subtitle(US Dollars) ///
+                         text(1300 1990 "Nigeria", place(e) size(large)) ///
+                         text(2300 1970 "Egypt", place(e) size(large))
+graph export "C:\DATA\Classes\C.Growth\nigeria_egypt.emf", replace
+graph export "C:\DATA\Classes\C.Growth\nigeria_egypt.eps", replace
+
+clear
+
+************************************************************************************* Importing the data
+set memory 100m
+
+insheet using c:\data\pwt62_mod.txt, n double
+
+drop country
+rename isocode country
+
+keep country year rgdpch pop
+
+keep if country=="JPN"
+
+gen tm=_n
+gen inv_tm = 56-_n
+
+gen var_tomorrow=rgdpch if tm>1
+gen var_aux= rgdpch if inv_tm>1
+gen var_today = var_aux[_n-1]
+
+gen growth_output=100*(var_tomorrow/var_today-1)
+
+gen exper_70=11473*(1.085)^(year-1970) if year>1970
+
+gen exper_90=22220*(1.033)^(year-1990) if year>1990
+
+gen bench_70 = exper_70/rgdpch
+gen bench_90 = exper_90/rgdpch
+gen bench = 1
+
+line growth_output year
+
+label variable exper_70 "8.5% growth"
+label variable exper_90 "3.3% growth"
+label variable rgdpch "Actual"
+
+line rgdpch year, plotr(ic(ltkhaki)) xtitle(" ") ytitle(" ") ylabel(,angle(horizontal)) ///
+                                   title("Japan - Real GDP per Capita") ///
+                                   subtitle("PPP adj. US Dollars - Actual and Projected") || ///
+                                   connected exper_70 year, msymbol(+) || connected exper_90 year, msymbol(o)
+graph export "C:\DATA\Classes\C.Growth\japan.emf", replace
+graph export "C:\DATA\Classes\C.Growth\japan.eps", replace
+
+label variable bench_70 "8.5% growth"
+label variable bench_90 "3.3% growth"
+label variable bench "Actual"
+
+line bench_70 bench_90 bench year, plotr(ic(ltkhaki)) xtitle(" ") ytitle(" ") ylabel(,angle(horizontal))  title("Japan - Real GPD per Capital") subtitle("Ratio of Projected over Actual")
+graph export "C:\DATA\Classes\C.Growth\Japan_bis.emf", replace
+
+*************************************************************************************************************************************
+
+clear
+
+************************************************************************************* Importing the data
+set memory 100m
+
+insheet using c:\data\pwt61.csv, n double
+
+rename isocode country
+rename yr year
+
+keep country year rgdpch pop
+
+keep if country=="BOL"
+
+gen output=rgdpch*pop
+
+gen tm=_n
+gen inv_tm = 52-_n
+
+gen var_tomorrow=output if tm>1
+gen var_aux= output if inv_tm>1
+gen var_today = var_aux[_n-1]
+
+gen growth_output=100*(var_tomorrow/var_today-1)
+
+drop var_tomorrow var_aux var_today
+
+gen log_output = log(output)
+
+gen var_tomorrow=log_output if tm>1
+gen var_aux= log_output if inv_tm>1
+gen var_today = var_aux[_n-1]
+
+gen growth_log= 100*(var_tomorrow - var_today)
+
+label variable growth_output "Growth Rate"
+
+label variable growth_log "Log Approximation"
+
+line growth_log year, plotr(ic(ltkhaki)) xtitle(" ") ytitle(" ") ylabel(,angle(horizontal)) ///
+                     title("Bolivia - Growth Rate of Real GDP") || connect growth_output year, msymbol(o)
+graph export "C:\DATA\Classes\C.Growth\bolivia.emf", replace
+
+********************************************************************************************************************************
+clear
+
+insheet using c:\data\class_4_data.txt, nonames double
+
+**********  Generate the variable quarter
+gen tm=_n
+gen date_m=tm-20-1
+tsset date_m, quarterly
+label variable date_m "year:quarter"
+
+gen v1_plot = v1/1000
+
+gen v1_log = log(v1)
+
+line v1_plot date_m, plotr(ic(ltkhaki)) xtitle(" ") ytitle(" ") ylabel(,angle(horizontal)) ///
+                    title("United Kingdom - Quarterly GDP") subtitle("Constant Prices - Billions of Pounds")
+graph export "C:\DATA\Classes\C.Growth\uk_gdp.emf", replace
+graph export "C:\DATA\Classes\C.Growth\uk_gdp.eps", replace
+
+hpfilter v1_plot, l(1600)
+
+label variable v1_plot "Actual series"
+label variable Hv1_plot "Trend"
+
+line v1_plot Hv1_plot date_m, plotr(ic(ltkhaki)) xtitle(" ") ytitle(" ") ylabel(,angle(horizontal)) ///
+                         title("United Kingdom - Quarterly GDP") subtitle("Constant Prices - Billions of Pounds")
+graph export "C:\DATA\Classes\C.Growth\uk_gdp_trend.emf", replace
+graph export "C:\DATA\Classes\C.Growth\uk_gdp_trend.eps", replace
+
+hpfilter v1_log, l(1600)
+gen var_hp=100*(v1_log-Hv1_log)
+
+line var_hp date_m, plotr(ic(ltkhaki)) xtitle(" ") ytitle(" ") ylabel(,angle(horizontal)) ///
+                       title("United Kingdom - Real Quarterly GDP") subtitle("Percentage Fluctuation around Trend")
+graph export "C:\DATA\Classes\C.Growth\uk_gdp_fluc.emf", replace
+graph export "C:\DATA\Classes\C.Growth\uk_gdp_fluc.eps", replace
+
+
+****************************************************************************************************************
+****************** INDIA
+****************************************************************************************************************
+****************** Pictures used to justify why we use GDP per capita as indicator
+****************** Slides of Class #3
+
+clear
+
+insheet using c:\data\pwt62_mod.txt, n double
+
+keep if isocode=="IND"
+
+keep year rgdpch pop
+
+gen gdp=rgdpch*pop
+
+gen gdp_growth = 100*(log(gdp)-log(gdp[_n-1]))
+
+gen capita_growth = 100*(log(rgdpch)-log(rgdpch[_n-1]))
+
+label variable gdp_growth "GDP"
+label variable capita_growth "Per Capita GDP"
+
+line capita_growth year, plotr(ic(ltkhaki)) xtitle(" ") ytitle("Percentage") ylabel(,angle(horizontal)) ///
+                        title("India - Growth Rate of Real GDP") || ///
+                        connected gdp_growth year, msymbol(+)
+graph export "C:\DATA\Classes\C.Growth\india_growth.emf", replace
+graph export "C:\DATA\Classes\C.Growth\india_growth.eps", replace
+
+gen growth_pop = 100*(log(pop)-log(pop[_n-1]))
+
+gen log_pop=log(pop/1000)
+
+label variable log_pop "Population (log)"
+label variable growth_pop "Poulation Growth - right scale"
+
+twoway line log_pop year,ylabel(5.991 "400" 6.396 "600" 6.685 "800" 6.907 "1,000",angle(horizontal)) ytitle("Millions") || ///
+                         connect growth_pop year, msymbol(+) ///
+                         ylabel(,angle(horizontal)) yaxis(2) ylabel(,angle(horizontal)) ytitle("Percentage", axis(2)) ///
+                         ylabel(,angle(horizontal) axis(2)) plotr(ic(ltkhaki)) xtitle(" ") ///
+                         title("India - Population Growth")
+
+graph export "C:\DATA\Classes\C.Growth\india_pop.emf", replace
+graph export "C:\DATA\Classes\C.Growth\india_pop.eps", replace
+
+
+****************************************************************************************************************
+****************************************************************************************************************
+****************** Plotting capital per worker, employment rate, education
+****************** Slides of Class #3
+
+clear
+
+insheet using c:\data\pwt_ge.xls, n double
+
+keep if country=="KOR" | country=="ESP" | country=="FRA" | country=="MEX" | country=="USA" | ///
+       country=="ZWE" | country=="CHL" | country=="IND" | country=="SWE"
+
+gen cap_worker = capital_head*population/labor
+
+gen cap_kor = cap_worker if country=="KOR"
+gen cap_esp = cap_worker if country=="ESP"
+gen cap_fra = cap_worker if country=="FRA"
+gen cap_mex = cap_worker if country=="MEX"
+gen cap_usa = cap_worker if country=="USA"
+
+label variable cap_usa "USA"
+label variable cap_esp "Spain"
+label variable cap_fra "France"
+label variable cap_mex "Mexico"
+label variable cap_kor "Korea"
+
+
+line cap_mex year, plotr(ic(ltkhaki)) xtitle(" ") ytitle(" ") ylabel(,angle(horizontal)) ///
+                         title("Capital per worker") subtitle(US Dollars) || ///
+                         connected cap_kor year, msymbol(o) || connected cap_esp year, msymbol(+) || ///
+                         connected cap_fra year, symbol(T)
+
+graph export "C:\DATA\Classes\C.Growth\capital_worker.emf", replace
+graph export "C:\DATA\Classes\C.Growth\capital_worker.eps", replace
+
+gen lab_worker = labor/population*100
+
+gen lab_kor = lab_worker if country=="KOR"
+gen lab_esp = lab_worker if country=="ESP"
+gen lab_fra = lab_worker if country=="FRA"
+gen lab_mex = lab_worker if country=="MEX"
+gen lab_usa = lab_worker if country=="USA"
+
+label variable lab_usa "USA"
+label variable lab_esp "Spain"
+label variable lab_fra "France"
+label variable lab_mex "Mexico"
+label variable lab_kor "Korea"
+
+
+line lab_mex year, plotr(ic(ltkhaki)) xtitle(" ") ytitle(" ") ylabel(,angle(horizontal)) ///
+                         title("Employed as percentage of population") || ///
+                         connected lab_kor year, msymbol(o) || connected lab_esp year, msymbol(+) || ///
+                         connected lab_fra year, symbol(T)
+
+graph export "C:\DATA\Classes\C.Growth\empl_rate.emf", replace
+graph export "C:\DATA\Classes\C.Growth\empl_rate.eps", replace
+
+
+gen edu_zwe = education if country=="ZWE"
+gen edu_chl = education if country=="CHL"
+gen edu_ind = education if country=="IND"
+gen edu_swe = education if country=="SWE"
+
+label variable edu_zwe "Zimbabwe"
+label variable edu_chl "Chile"
+label variable edu_ind "India"
+label variable edu_swe "Sweden"
+
+line edu_zwe year, plotr(ic(ltkhaki)) xtitle(" ") ytitle(" ") ylabel(,angle(horizontal)) ///
+                         title("Years of school completed") subtitle("Avg among individuals older than 15") || ///
+                         connected edu_chl year, msymbol(o) || connected edu_ind year, msymbol(+) || ///
+                         connected edu_swe year, symbol(T)
+
+graph export "C:\DATA\Classes\C.Growth\education.emf", replace
+graph export "C:\DATA\Classes\C.Growth\education.eps", replace
+
+clear
+
+************************************************************************************* Importing the data
+***************************** Static Growth Accounting
+
+set memory 100m
+
+insheet using c:\data\pwt_ge.xls, n double
+
+keep if country=="BRA" | country=="CHN" | country=="FRA" | country=="IND" |country=="KOR" | country=="ZWE"| country=="USA"
+
+keep if year==2003
+
+gen empl_rate = labor/population
+
+gen k_l_ratio = capital_head*population/labor
+
+gen tfp = empl_rate*(k_l_ratio^.4)*education^.6
+replace tfp = output_head/tfp
+
+* US is the benchmark
+gen y_n_usa = output_head[6]
+gen k_l_usa = k_l_ratio[6]
+gen edu_usa = education[6]
+gen l_n_usa = empl_rate[6]
+gen tfp_usa = tfp[6]
+
+replace empl_rate = empl_rate/l_n_usa*100
+replace education = education/edu_usa*100
+replace k_l_ratio = k_l_ratio/k_l_usa*100
+replace output_head = output_head/y_n_usa*100
+replace tfp = tfp/tfp_usa*100
+
+drop if country=="USA"
+
+graph bar output_head empl_rate k_l_ratio education tfp, plotr(ic(ltkhaki)) over(country) ///
+                          ylabel(,angle(horizontal)) ytitle(" ") title("Accounting for Development - Year 2003") ///
+                          subtitle("Measures are percentage of US value") ///
+                          legend( label(1 "(a) GDP per capita") label(2 "(b) Employment Rate")  ///
+                          label(3 "(c) Capital/Labor Ratio") label(4 "(d) Human Capital") label(5 "(e) TFP"))
+
+graph export "C:\DATA\Classes\C.Growth\devel_accounting.emf", replace
+graph export "C:\DATA\Classes\C.Growth\devel_accounting.eps", replace
+
+	
+	
+	
+		

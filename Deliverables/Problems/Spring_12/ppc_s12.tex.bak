@@ -1,0 +1,287 @@
+\documentclass[12pt]{exam}
+
+\usepackage{ge05}
+\usepackage{comment}
+\usepackage{booktabs}
+\usepackage[dvipdfm]{hyperref}
+\urlstyle{rm}   % change fonts for url's (from Chad Jones)
+\hypersetup{
+    colorlinks=true,        % kills boxes
+    allcolors=blue,
+    pdfsubject={NYU Stern course GB 2303, Global Economy},
+    pdfauthor={Dave Backus @ NYU},
+    pdfstartview={FitH},
+    pdfpagemode={UseNone},
+%    pdfnewwindow=true,      % links in new window
+%    linkcolor=blue,         % color of internal links
+%    citecolor=blue,         % color of links to bibliography
+%    filecolor=blue,         % color of file links
+%    urlcolor=blue           % color of external links
+% see:  http://www.tug.org/applications/hyperref/manual.html
+}
+
+% for ge05.sty
+\def\ClassName{The Global Economy}
+%\def\Category{Professor David Backus}
+\def\Category{Backus \& Cooley}
+\def\HeadName{Practice Problems C}
+\newcommand{\phm}{\phantom{--}}
+\newcommand{\NX}{\mbox{\it NX\/}}
+
+\noprintanswers
+%\printanswers
+
+\begin{document}
+\parindent = 0.0in
+\parskip = \bigskipamount
+\thispagestyle{empty}%
+\Head
+
+\centerline{\large \bf \HeadName:  Aggregate Supply \& Demand}
+\centerline{Revised:  \today}
+
+\medskip
+{\it This will not be collected or graded,
+but it's a good way to make sure you're up to speed.
+We recommend you do it before the next class.}
+
+\begin{questions}
+% --------------------------------------------------------------------
+\question Inflation high and low (20 points).
+\begin{parts}
+\part Describe in one paragraph how fiscal deficits can cause hyperinflation.
+Show qualitatively how the Treasury and Central Bank balance sheets change
+during a hyperinflation.
+(10~points)
+
+\part During the 1990s, the US economy experienced high output growth
+and low inflation.
+How is this possible?  Why didn't the economy ``overheat''?
+(10~points)
+\end{parts}
+
+\begin{solution}
+\begin{parts}
+\part ..
+\end{parts}
+\end{solution}
+
+
+\begin{comment}
+% --------------------------------------------------------------------
+\question Aggregate supply.
+Consider the aggregate supply curve.
+\begin{parts}
+\part Why does it slope upward?
+\part Why is the Long-run aggregate supply curve vertical?
+Explain why it differs from short-run aggregate supply.
+\end{parts}
+\end{comment}
+
+% --------------------------------------------------------------------
+\question Clean air.
+As part of its clean air initiative,
+the Canadian government now requires firms to submit lengthy reports
+about the impact of its activities on the environment.
+(This is fiction, by the way:  any connection to real governments,
+alive or dead, is purely coincidental.)
+Our mission is to look at the impact of such an initiative
+on aggregate supply and demand.
+
+\begin{parts}
+\part What is the likely impact of the initiative on aggregate supply and demand?
+(Ask yourself:  Does this affect the production or purchase of goods and services?)
+If we start at a position of long-run equilibrium,
+which curves shift, and in what direction?
+Show the result in the appropriate diagram.
+
+\part What is the short-run impact on inflation and output? The long-run impact?
+
+\part Do you think anything is missing from this analysis?
+\end{parts}
+
+\begin{solution}
+\begin{parts}
+\part ..
+\end{parts}
+\end{solution}
+
+% --------------------------------------*------------------------------
+\question The non-crisis down under.
+The 2008 recession was relatively mild in Australia.
+After three quarters of falling GDP, output began growing rapidly.
+In late 2009, the Reserve Bank of Australia (RBA) began to raise its target
+interest rate.
+
+\begin{parts}
+\part What might have motivated the RBA to raise the interest rate?
+\part What is the likely impact on aggregate supply and demand curves?
+On inflation and output growth?
+\end{parts}
+
+\begin{solution}
+\begin{parts}
+\part ..
+\end{parts}
+\end{solution}
+
+
+% --------------------------------------------------------------------
+\question Inflation and output.
+Using the last two problems as input, consider the relation
+between inflation and output growth.
+\begin{parts}
+\part When do inflation and output growth move in the same direction?
+\part When do they move in opposite directions?
+\end{parts}
+
+\begin{solution}
+\begin{parts}
+\part ..
+\end{parts}
+\end{solution}
+
+% --------------------------------------------------------------------
+\question US monetary policy in 2010.
+The Federal Reserve's Federal Open Market Committee (FOMC)
+met April 27-28, 2010, and released this statement:
+%
+\begin{quote}
+Information received since the FOMC met in March suggests that economic activity has continued to strengthen and that the labor market is beginning to improve. Growth in household spending has picked up recently.  ...
+Business spending on equipment and software has risen significantly. ...
+Housing starts have edged up but remain at a depressed level. ...
+%Although the pace of economic recovery is likely to be moderate for a time,
+With substantial resource slack ... and longer-term inflation expectations stable, inflation is likely to be subdued for some time. ...
+
+The Committee will maintain the target range for the federal funds rate at 0 to 1/4 percent.  ...
+
+Voting against the policy action was [Kansas City Fed President]
+Thomas M. Hoenig, who believed that ... [an] exceptionally low level
+of the federal funds rate ...  was no longer warranted.
+\end{quote}
+%
+Later the same week, the Bureau of Economic Analysis announced that
+in the first quarter real GDP growth was estimated to be 3.2\% and
+inflation (in the GDP price index) 0.9\%.
+Both are expressed at annual rates.
+
+\begin{parts}
+\part Consider this information in the context of
+the aggregate supply and demand framework.
+Based on the FOMC statement,
+where is the short-run equilibrium of the economy relative to
+the Fed's inflation target and the long-run equilibrium level of output?
+Illustrate your answer with the appropriate diagram.
+
+\part Given your answer to (a), what should the Fed's response be?
+How should it change the money supply?  The fed funds rate?
+
+\part Given your answer(s), do you agree with Hoenig?
+Why or why not?
+\end{parts}
+
+\begin{solution}
+\begin{parts}
+\part The phrase ``substantial resource slack''
+suggests that output is below its long-run equilibrium.
+The phrase ``inflation is likely to be subdued for some time''
+suggests that inflation is below target (2\% say).
+That suggests a picture something like this, with A as the short-run equilibrium and C as the target.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Supply and demand diagram
+%\begin{figure}[h!]
+%
+\begin{center}
+\setlength{\unitlength}{0.075em}
+\begin{picture}(300,220)(0,-20)
+%\footnotesize
+\thicklines
+
+% horizontal axis
+\put(-30,0){\vector(1,0){300}}
+\put(255,-16){$Y$}
+\put(142,-16){$Y^*$}
+
+% vertical axis
+\put(0,-20){\vector(0,1){200}}
+\put(-15,155){$P$}
+
+% demand
+\put(25,165){\line(4,-3){200}}\put(230,10){AD}
+
+% supply
+\put(25,13){\line(4,3){200}} \put(230,160){AS}
+\put(146.4,0){\line(0,1){170}} \put(138,175){AS$^*$}
+
+% equilibrium labels
+\put(105,85){\footnotesize A}
+\put(135,60){\footnotesize B}
+\put(135,110){\footnotesize C}
+% dotted lines
+%\qbezier[31]{(133,0)(133,46)(133,92)}
+%\qbezier[45]{(0,92)(67,92)(133,92)}
+%\qbezier[45]{(0,72)(67,72)(133,72)}
+
+\end{picture}
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bigskip
+(We don't know that C is at the intersection of AS and AS$^*$,
+just that it's above and to the right of A.)
+
+Grading:  10 points for something like this.
+
+\part The goals of policy are (i)~stable prices
+(ie, 2\% inflation) and
+(ii)~long-run equilibrium level of output.
+From (a), we know that both are below their target levels.
+We can move both in the right direction by shifting the AD curve up and
+to the right.
+An increase in the money supply has this effect.
+Typically we would describe this as a drop in the short-term
+``fed funds'' rate.
+
+Grading:  5 points for the goals, 5 for showing how the Fed would
+accomplish them.
+
+\part Now we shift gears and think in terms of the Taylor Rule.
+The rule gives us a fed funds rate of
+\begin{eqnarray*}
+    i &=& r + \pi + 0.5 (\pi - \pi^*) + 0.5 (g - g^*) \\
+        &=&  2 + 0.9 + 0.5 (0.9 - 2) + 0.5 (3.2 - 3)
+        \;\;=\;\; 2.45.
+\end{eqnarray*}
+There are lots of choices here, but they should give you
+an interest rate above the current recommendation of
+``0 to 1/4 percent.''
+
+Here are some possible interpretations:
+\begin{itemize}
+\item The current rate is too low.  Hoenig hints at this in his statement.
+(In fact, he was making a more subtle point about whether the Fed should
+commit to a long period of very low interest rates, but I edited that out
+to keep things simple.)
+
+\item There's a difference between excess capacity ($y-y^*$) and the growth rate version we've used.
+    This is a subtle issue, not something I'd expect you to worry about,
+    but might show up in public discussion.
+    The difficulty with the capacity version is coming up with a number
+    for $y^*$.
+    If you do this, you might argue that although
+    growth is now up to its postwar average,
+    output remains well below its long-run equilibrium.
+    That's in fact what the statement says, so this is a plausible
+    interpretation of the policy decision.
+\end{itemize}
+\end{parts}
+\end{solution}
+
+
+\end{questions}
+
+\vfill \centerline{\it \copyright \ \number\year \
+NYU Stern School of Business}
+
+\end{document}
+

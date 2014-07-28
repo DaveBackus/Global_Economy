@@ -1,0 +1,1127 @@
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" href="/html/en/pq5.css" type="text/css">
+<title>Document View</title>
+
+
+<script language="JavaScript1.2" src="/js/retrieve.js"></script>
+
+<script language="JavaScript" type="text/javascript" src="/js/wave.js"></script> 
+<link rel="stylesheet" href="/html/en/pq5.css" type="text/css">
+
+<script language="JavaScript1.2" type="text/javascript">
+//*********************
+// Generic stuff
+//    - could live in a "generic.js" file but everybody already includes banner.js
+//    - still a ways to go (NS6/DOM for ex.) but it's a start
+//    - specific MENU STUFF at bottom of file
+//*********************
+
+// Hmmm - client side v srvr/hgen vars - the latter probably more efficient....
+BR_DOM  = (document.getElementById) ? true : false;
+BR_NS4  = (document.layers) ? true : false;
+BR_IE   = (document.all) ? true : false;
+BR_IE4  =  BR_IE && !BR_DOM;
+BR_Mac  = (navigator.appVersion.indexOf("Mac") != -1);
+BR_IE4M =  BR_IE4 && BR_Mac;
+BR_NS6  =  BR_DOM && !BR_IE;
+
+// Following vars are intended to make life generic betw. NS and IE.  If we need to
+// break this down further we may be better off having independent .js includes for each.
+var szSty  = BR_IE ? ".style"  : "";
+var szHide = BR_IE ? "hidden"  : "hide";
+var szShow = BR_IE ? "visible" : "show";
+var szObjPref = BR_IE ? "" : "document.";
+
+// Global vars
+var nTimerID;
+var nStdDelay = 10;
+
+
+// -----------------------------
+// NS4 DHTML resize fix
+// -----------------------------
+if (BR_NS4)
+  {
+  nCurWidth  = innerWidth;
+  nCurHeight = innerHeight;
+  onresize   = doReload;
+  //alert("resize handler installed");
+  }
+
+function doReload()
+{
+  if (innerWidth != nCurWidth || innerHeight != nCurHeight)
+    {
+    //alert("reload");
+    location.reload();
+    }
+}
+// End of the big fix
+
+function timerClear()
+{
+  clearTimeout(nTimerID);
+}
+
+function timerOff(szObj, nMs)
+{
+  var szTmp="toggleVis('" + szObj + "',0)";
+  //alert(szTmp);
+  if (nMs)
+    nTimerID = setTimeout(szTmp, nMs);
+  else
+    nTimerID = setTimeout(szTmp, 50);
+}
+
+function helpWindow(helpUrl)
+{
+  // alert("helpUrl ["+helpUrl+"]");
+  var handle = window.open(helpUrl, "pqhelp", "resizable=yes,height=520,width=500,top=0,left=75,scrollbars=yes,location=no,menubar=no,toolbar=yes");
+  handle.focus();  
+}
+
+function profileExternalWindow(extUrl) {
+  // alert("extUrl [" + extUrl + "]");
+  var handle = window.open(extUrl, "PQprofileExt", "location,scrollbars,resizable,width=550,height=450");
+  handle.focus();  
+}
+
+function getw()
+{ 
+  var w;
+  if((navigator.appName == "Netscape")&&(navigator.userAgent.indexOf("4.") != -1))
+  { 
+    w = window.innerWidth;
+  } 
+  else if((navigator.appName== "Microsoft Internet Explorer")&&(navigator.userAgent.indexOf("4.") != -1))
+  { 
+    w = document.body.clientWidth;
+  }
+  else
+  { 
+    w=1 ;
+  }
+  return w;
+}
+
+function geth()
+{ 
+  var h;
+  if((navigator.appName == "Netscape")&&(navigator.userAgent.indexOf("4.") != -1))
+  { 
+    h  = window.innerHeight;
+  } 
+  else if ((navigator.appName== "Microsoft Internet Explorer")&&(navigator.userAgent.indexOf("4.") != -1))
+  { 
+    h = document.body.clientHeight;
+  }
+  else
+  { 
+    h=1;
+  }
+  return h;
+}
+
+function getx()
+{
+  var xMax;
+  if((navigator.appName == "Netscape")&&(navigator.userAgent.indexOf("4.") != -1))
+  { 
+    xMax=screen.width;
+  }
+  else if((navigator.appName== "Microsoft Internet Explorer")&&(navigator.userAgent.indexOf("4.") != -1))
+  { 
+    xMax=screen.width;
+  }
+  else
+  { 
+    xMax=1;
+  }
+  return xMax;
+}
+
+function gety()
+{ 
+  var yMax;
+  if((navigator.appName == "Netscape")&&(navigator.userAgent.indexOf("4.") != -1))
+  { 
+    yMax=screen.height;
+  }
+  else if((navigator.appName== "Microsoft Internet Explorer")&&(navigator.userAgent.indexOf("4.") != -1))
+  { 
+    yMax=screen.height;
+  }
+  else 
+  { 
+    yMax=1;
+  }
+  return yMax;
+}
+</script>
+<script language="JavaScript1.2" src="/code/dyn-help.js" type="text/javascript"></script>
+
+</head>
+<body>
+<a name="top">
+
+
+      
+
+
+
+ 
+
+
+<script language="javascript">
+function setMarkedListCookie(){   
+   document.cookie="mlpage=" + escape("no");  
+}
+</script>
+
+<script language="JavaScript1.2" src="/js/overlib.js"></script>
+<div id="overDiv" style="position:absolute; visibility:hidden; z-index:1000;"></div>
+<script language="Javascript1.2">
+<!--
+
+function checkMarkedList() {
+    mcookie = null;
+    mcookie = getMarkedListCookie();
+    if (mcookie != null) {
+        if (mcookie == "no") {
+            return overlib("View your documents, searches, and visited publications.");
+        }
+    }
+}
+
+function chooseLang() {
+			var origLocation = "/pqdlink?did=648962971&index=46&TS=1140537375&SrchMode=1&sid=2&Fmt=3&VInst=PROD&VType=PQD&clientId=9269&RQT=309&VName=PQD";
+	var newLocation = origLocation;
+	
+	if(origLocation.match(/RQT=305/i) || origLocation.match(/RQT=512/i)) {
+      newLocation = "/pqdlink?sid=0&firstIndex=0&RQT=511&TS=1140537514&clientId=9269";
+    }
+	
+	if(origLocation.match(/RQT=535/i)) {
+	  newLocation = "/pqdlink?RQT=534&TS=1140537514&clientId=9269";
+	}
+	
+		if(newLocation.match(/lang=/))
+	{
+		    newLocation = newLocation.replace(/lang=(.*)/, "lang=" + document.languageForm.lang.options[document.languageForm.lang.selectedIndex].value);
+	}
+	else
+	{
+	    newLocation = newLocation + "&" + "lang" + "=" + document.languageForm.lang.options[document.languageForm.lang.selectedIndex].value;
+	}
+
+   	window.location = newLocation;
+}
+
+var M_SEARCH = 0,
+	M_ADVANCED = 1,
+	M_PUB = 2,
+	M_MARKED_LEFT = 3,
+	M_MARKED = 4,
+	M_MARKED_RIGHT = 5,
+	M_RESULTS = 6,
+	M_TOPIC = 7;
+
+var arrList = new Array("basic", "advanced", "pubsearch" , "research_left", "research", "research_right", "results", "topic");
+
+//toggle images on omouseover and onmouseout
+function doBut(nItem, bOn)
+{
+
+  var szId = arrList[nItem]; 
+  var szBut = szId + "But";
+  obj = eval("document."+szBut);
+  
+  if (typeof (obj) == "undefined")
+        return;
+  
+  if (bOn)
+    {
+    if (nItem == M_MARKED_LEFT || nItem == M_MARKED_RIGHT) {
+    obj.src = "/images/common/nav_" + szId + "_on.gif";
+    }else{
+    obj.src = "/images/en/nav_" + szId + "_on.gif";
+    }
+    mouseOverButton = nItem;
+    }
+  else
+    {
+    if (nItem != nCurMenu)
+    if (nItem == M_MARKED_LEFT || nItem == M_MARKED_RIGHT) {
+           obj.src = "/images/common/nav_" + szId + "_off.gif";
+    }else{
+          obj.src = "/images/en/nav_" + szId + "_off.gif";
+    }
+    mouseOverButton = -1;
+    }
+  return;
+}
+
+function encodeUriComponent(str) {
+    var re = /\s/g;
+    str = str.replace(re, "%20");
+    var re = /\"/g;
+    str = str.replace(re, "&quot;");
+    re = /\#/g;
+    str = str.replace(re, "%23");
+    re = /&/g;
+    str = str.replace(re, "%26");
+    re = /\//g;
+    str = str.replace(re, "%2F");
+    re = /:/g;
+    str = str.replace(re, "%3A");
+    return str;
+}
+
+function chooseDB(element,lastSrchMode, prevIndex) {
+			var origLocation = window.location.href;
+		// alert("origLocation [" + origLocation + "]");	
+	var newLocation = origLocation;
+	var xsq = "";
+    var savingParams = 0;
+    
+    if(origLocation.match(/RQT=305/i) || origLocation.match(/RQT=512/i)) {
+      newLocation = "/pqdlink?sid=0&firstIndex=0&RQT=511&TS=1140537514&clientId=9269";
+    }
+    
+	// if there was no ?, we need to add one
+	if(!(origLocation.match(/\?/)))
+	{
+								newLocation = origLocation + "?RQT=306&TS=1140537514";
+	}
+
+        var internalLocation = "/pqdlink";
+
+    var qs = "index=46&did=648962971&SrchMode=1&sid=2&Fmt=3&VInst=PROD&VType=PQD&RQT=309&VName=PQD&TS=1140537375&clientId=9269";
+    if ( qs != "" ) {
+        internalLocation = internalLocation + "?" + qs;
+    }
+    if ( internalLocation.match(/RQT=301/i) ||
+         internalLocation.match(/RQT=302/i) ||
+         internalLocation.match(/RQT=304/i) ||
+         internalLocation.match(/RQT=504/i) ) {
+        switch ( lastSrchMode ) {
+                                    case 2:
+            newLocation = internalLocation.replace(/RQT=\d+/i, "RQT=403");
+            break;
+            case 1:
+            default:
+            newLocation = internalLocation.replace(/RQT=\d+/i, "RQT=306");
+            break;
+        }
+                newLocation = newLocation.replace(/UserId=([^&]+)/i, "");
+        newLocation = newLocation.replace(/Passwd=([^&]+)/i, "");
+    }
+
+    // alert("BEFORE 574 check [" + newLocation + "]");
+            if ( newLocation.match(/RQT=574/i) ) {
+        newLocation = newLocation.replace(/PQDCounter=([^&]+)/, "");
+        newLocation = newLocation.replace(/HNPCounter=([^&]+)/, "");
+    }
+    // alert("AFTER 574 check [" + newLocation + "]");
+
+		if(newLocation.match(/DBId=/))
+	{
+	newLocation = newLocation.replace(/DBId=([^&]+)/, "DBId=" + element.options[element.selectedIndex].value);    
+	if(newLocation.match(/TpLogin/))
+	  {
+	    newLocation = newLocation.replace(/DBId=[^&]*&/, "");
+	    	  }
+	
+	}
+	else
+	{
+	    	    newLocation = newLocation + "&" + "DBId" + "=" + element.options[element.selectedIndex].value;
+	}
+	if(newLocation.match(/TpLogin%3D/))
+	{   var redirUrl;
+	    redirUrl = element.options[element.selectedIndex].value;
+	    	    element.options[prevIndex].selected = 1;  	    popupNewWindow(unescape(redirUrl));
+	    return;  	}
+	else
+	{
+	   	}
+	
+	// If Multiple databases is selected from the drop down
+	// then take to the Collections page
+	if(element.options[element.selectedIndex].value == "-1"){
+	newLocation = "/pqdlink?RQT=573&LASTSRCHMODE="+lastSrchMode;
+	}
+
+    newLocation = newLocation.replace(/#sform/, "");
+    newLocation = newLocation.replace(/#more/, "");
+    newLocation = newLocation.replace(/saved=[^&]*/,"");
+    newLocation = newLocation.replace(/xsq=[^&]*/,"");
+    newLocation = newLocation.replace(/xsq1=[^&]*/,"");
+    newLocation = newLocation.replace(/xsq2=[^&]*/,"");
+    newLocation = newLocation.replace(/xsq3=[^&]*/,"");
+    newLocation = newLocation.replace(/xsq4=[^&]*/,"");
+    newLocation = newLocation.replace(/xsq5=[^&]*/,"");
+    newLocation = newLocation.replace(/xsq6=[^&]*/,"");
+    newLocation = newLocation.replace(/xFO=[^&]*/,"");
+    newLocation = newLocation.replace(/xFO1=[^&]*/,"");
+    newLocation = newLocation.replace(/xFO2=[^&]*/,"");
+    newLocation = newLocation.replace(/xFO3=[^&]*/,"");
+    newLocation = newLocation.replace(/xFO4=[^&]*/,"");
+    newLocation = newLocation.replace(/xFO5=[^&]*/,"");
+    newLocation = newLocation.replace(/xFO6=[^&]*/,"");
+    newLocation = newLocation.replace(/xOP1=[^&]*/,"");
+    newLocation = newLocation.replace(/xOP2=[^&]*/,"");
+    newLocation = newLocation.replace(/xOP3=[^&]*/,"");
+    newLocation = newLocation.replace(/xOP4=[^&]*/,"");
+    newLocation = newLocation.replace(/xOP5=[^&]*/,"");
+    newLocation = newLocation.replace(/xOP6=[^&]*/,"");
+    
+    if(document.frmBasicSrch)
+    {
+      xsq = document.frmBasicSrch.SQ.value;
+      // alert("xsq [" + xsq + "]");
+
+      if (xsq != "") {
+        xsq = encodeUriComponent(xsq);
+        // alert("encoded xsq [" + xsq + "]");
+
+        savingParams = 1;
+        newLocation = newLocation + "&xsq=" + xsq;
+      }
+    }
+  else if(document.frmAdvancedSrch)
+  {
+    var xsqArray = new Array(10);  
+    var xfoArray = new Array(10);  
+    var xopArray = new Array(10);  
+    xsqArray[0] = document.frmAdvancedSrch.SQ.value;
+    xsqArray[1] = document.frmAdvancedSrch.SQ1.value;
+    xsqArray[2] = document.frmAdvancedSrch.SQ2.value;
+    if(document.frmAdvancedSrch.SQ3) {
+        xsqArray[3] = document.frmAdvancedSrch.SQ3.value;
+    } else {xsqArray[3] = "";}
+    if(document.frmAdvancedSrch.SQ4) {
+        xsqArray[4] = document.frmAdvancedSrch.SQ4.value;
+    } else {xsqArray[4] = "";}
+    if(document.frmAdvancedSrch.SQ5) {
+        xsqArray[5] = document.frmAdvancedSrch.SQ5.value;
+    } else {xsqArray[5] = "";}
+    if(document.frmAdvancedSrch.SQ6) {
+        xsqArray[6] = document.frmAdvancedSrch.SQ6.value;
+    } else {xsqArray[6] = "";}
+            if (document.frmAdvancedSrch.FO.options) {
+        xfoArray[0] = document.frmAdvancedSrch.FO.options[document.frmAdvancedSrch.FO.selectedIndex].value;
+    } else if (document.frmAdvancedSrch.FO) {
+        xfoArray[0] = document.frmAdvancedSrch.FO.value;
+    } else {
+        xfoArray[0] = "";
+    }
+    if (document.frmAdvancedSrch.FO1.options) {
+        xfoArray[1] = document.frmAdvancedSrch.FO1.options[document.frmAdvancedSrch.FO1.selectedIndex].value;
+    } else if (document.frmAdvancedSrch.FO1) {
+        xfoArray[1] = document.frmAdvancedSrch.FO1.value;
+    } else {
+        xfoArray[1] = "";
+    }
+    if (document.frmAdvancedSrch.FO2.options) {
+        xfoArray[2] = document.frmAdvancedSrch.FO2.options[document.frmAdvancedSrch.FO2.selectedIndex].value;
+    } else if (document.frmAdvancedSrch.FO2) {
+        xfoArray[2] = document.frmAdvancedSrch.FO2.value;
+    } else {
+        xfoArray[2] = "";
+    }
+    if(document.frmAdvancedSrch.OP3) {
+        if (document.frmAdvancedSrch.FO3.options) {
+            xfoArray[3] = document.frmAdvancedSrch.FO3.options[document.frmAdvancedSrch.FO3.selectedIndex].value;
+        } else if (document.frmAdvancedSrch.FO3) {
+            xfoArray[3] = document.frmAdvancedSrch.FO3.value;
+        } else {
+            xfoArray[3] = "";
+        }
+    } else { xfoArray[3] = ""; }
+    if(document.frmAdvancedSrch.OP4) {
+        if (document.frmAdvancedSrch.FO4.options) {
+            xfoArray[4] = document.frmAdvancedSrch.FO4.options[document.frmAdvancedSrch.FO4.selectedIndex].value;
+        } else if (document.frmAdvancedSrch.FO4) {
+            xfoArray[4] = document.frmAdvancedSrch.FO4.value;
+        } else {
+            xfoArray[4] = "";
+        }
+    } else { xfoArray[4] = ""; }
+    if(document.frmAdvancedSrch.OP5) {
+        if (document.frmAdvancedSrch.FO5.options) {
+            xfoArray[5] = document.frmAdvancedSrch.FO5.options[document.frmAdvancedSrch.FO5.selectedIndex].value;
+        } else if (document.frmAdvancedSrch.FO5) {
+            xfoArray[5] = document.frmAdvancedSrch.FO5.value;
+        } else {
+            xfoArray[5] = "";
+        }
+    } else { xfoArray[5] = ""; }
+    if(document.frmAdvancedSrch.OP6) {
+        if (document.frmAdvancedSrch.FO6.options) {
+            xfoArray[6] = document.frmAdvancedSrch.FO6.options[document.frmAdvancedSrch.FO6.selectedIndex].value;
+        } else if (document.frmAdvancedSrch.FO6) {
+            xfoArray[6] = document.frmAdvancedSrch.FO6.value;
+        } else {
+            xfoArray[6] = "";
+        }
+    } else { xfoArray[6] = ""; }
+            xopArray[0] = "";
+    xopArray[1] = document.frmAdvancedSrch.OP1.options[document.frmAdvancedSrch.OP1.selectedIndex].value;
+    xopArray[2] = document.frmAdvancedSrch.OP2.options[document.frmAdvancedSrch.OP2.selectedIndex].value;
+    if(document.frmAdvancedSrch.OP3) {
+      xopArray[3] = document.frmAdvancedSrch.OP3.options[document.frmAdvancedSrch.OP3.selectedIndex].value;
+    } else {xopArray[3] = "";}
+    if(document.frmAdvancedSrch.OP3) {
+      xopArray[4] = document.frmAdvancedSrch.OP4.options[document.frmAdvancedSrch.OP4.selectedIndex].value;
+    } else {xopArray[4] = "";}
+    if(document.frmAdvancedSrch.OP3) {
+      xopArray[5] = document.frmAdvancedSrch.OP5.options[document.frmAdvancedSrch.OP5.selectedIndex].value;
+    } else {xopArray[5] = "";}
+    if(document.frmAdvancedSrch.OP3) {
+      xopArray[6] = document.frmAdvancedSrch.OP6.options[document.frmAdvancedSrch.OP6.selectedIndex].value;
+    } else {xopArray[6] = "";}
+    
+	for(i = 0; i < 7; i++) {
+	  if(xsqArray[i] != null && xsqArray[i] != "") {
+      
+        savingParams = 1;
+        xsqArray[i] = encodeUriComponent(xsqArray[i]);
+        xopArray[i] = encodeUriComponent(xopArray[i]);
+
+        switch(i) {
+          case 0:     
+            newLocation = newLocation + "&xsq=" + xsqArray[i] + "&xFO=" + xfoArray[i]; 
+            break;
+          case 1:
+            newLocation = newLocation + "&xsq1=" + xsqArray[i] + "&xFO1=" + xfoArray[i] + "&xOP1=" + xopArray[i]; 
+            break;
+          case 2:
+            newLocation = newLocation + "&xsq2=" + xsqArray[i] + "&xFO2=" + xfoArray[i] + "&xOP2=" + xopArray[i]; 
+            break;
+          case 3:
+            newLocation = newLocation + "&xsq3=" + xsqArray[i] + "&xFO3=" + xfoArray[i] + "&xOP3=" + xopArray[i]; 
+            break;
+          case 4:
+            newLocation = newLocation + "&xsq4=" + xsqArray[i] + "&xFO4=" + xfoArray[i] + "&xOP4=" + xopArray[i]; 
+            break;
+          case 5:
+            newLocation = newLocation + "&xsq5=" + xsqArray[i] + "&xFO5=" + xfoArray[i] + "&xOP5=" + xopArray[i]; 
+            break;
+          case 6:
+            newLocation = newLocation + "&xsq6=" + xsqArray[i] + "&xFO6=" + xfoArray[i] + "&xOP6=" + xopArray[i];       
+            break;
+        }
+         
+	  } 	} 	 
+
+     
+  }    if(savingParams != 0) {
+     newLocation = newLocation + "&saved=1";
+   }
+
+    newLocation = newLocation.replace(/&+/g, "&");
+	// alert("newLocation [" + newLocation + "]");
+	var sformRegExp = /sform$/;
+	if(newLocation.match(sformRegExp) || newLocation.match(/more$/)) {
+	    window.location = newLocation;
+	}
+	else {
+    	window.location = newLocation+"#sform";
+    }
+}
+
+//Set on the button state
+function bannerInit() {
+  setMarkedListCookie();
+      nCurMenu = M_SEARCH;
+    doBut(nCurMenu, 1);
+  }
+
+function highlightMarkButton() {
+    if (document.getElementById) {
+        var markedlistBut = document.getElementById("markedlist");
+        if (markedlistBut) {
+            markedlistBut.style.backgroundColor='#FF9900';
+        }
+        var markedlistBut2=document.getElementById("markedlist2");
+        if (markedlistBut2) {
+            markedlistBut2.style.backgroundColor='#FF9900';
+        }
+        doBut(M_MARKED_LEFT,1);
+        doBut(M_MARKED,1);
+        doBut(M_MARKED_RIGHT,1);
+    }
+}
+
+function unhighlightMark(){
+    // setMarkedListCookie();
+    if (getMarkedListCookie() != null) {
+        var mcookie = getMarkedListCookie();
+        if (mcookie == "no") {
+            if (document.getElementById) {
+                var markedRow=document.getElementById("markedlist");
+                if (markedRow) {
+                    markedRow.style.backgroundColor='#C3DC79';
+                }
+                markedlistBut2=document.getElementById("markedlist2");
+                if (markedlistBut2) {
+                    markedlistBut2.style.backgroundColor='#C3DC79';
+                }
+                doBut(M_MARKED_LEFT,0);
+                doBut(M_MARKED,0);
+                doBut(M_MARKED_RIGHT,0);
+            }  
+        }    
+    }
+}
+
+function getMarkedListCookie() {
+    var cookies = document.cookie.split(';');
+
+    for(var i = 0; i < cookies.length; i++) {
+        var cookie = cookies[i].split('=');
+        if (cookie[0].indexOf("mlpage") != -1) {
+            return unescape(cookie[1]);
+        }
+    }           
+    return null;
+}
+
+function displayLink(mypage, isWarnUser, isNewWindow) {
+   if ( isWarnUser ) {
+       NewWindow('/pqdlink?RQT=323&popup=1&link='+mypage+'&nw='+isNewWindow, 350, 150, mypage, isNewWindow);
+       return;
+    }
+    if ( isNewWindow ) { 
+      //window.location.href="/pqdlink?RQT=323";
+      popupNewWindow(mypage);
+   } else {
+      //window.location.href="/pqdlink?RQT=323";
+      window.top.location.href=mypage; 
+   }
+   return false;
+}
+
+function NewWindow(mypage, w, h, link, bool) {
+   if ( w !=0 && h != 0 ) {
+      LeftPosition = (screen.width) ? (screen.width-w)/2 : 0;
+      TopPosition = (screen.height) ? (screen.height-h)/2 : 0;
+      settings = 'height='+h+',width='+w+',top='+TopPosition+',left='+LeftPosition+',scrollbars='+scroll+',resizable'
+      win = window.open(mypage,"LogoutAlert",settings)
+   } else {
+      win = window.open(mypage,"LibraryLink")
+   }
+   win.opener = self;
+}
+var winW;			// window width
+var winH;			// window height
+
+function popupNewWindow(URL_string) {
+	// Get window width and height
+	if (parseInt(navigator.appVersion)>3) {
+		if (navigator.appName=="Netscape") {
+			winW = window.innerWidth - 60;
+			winH = window.innerHeight - 80;
+		}
+		if (navigator.appName.indexOf("Microsoft")!=-1) {
+			winW = document.body.offsetWidth - 60;
+			winH = document.body.offsetHeight - 80;
+		}
+	}
+	newWindow = window.open(URL_string,'newWindow','menubar=yes,toolbar=yes,location=yes,status=yes,scrollbars=yes,resizable=yes,height=' + winH + ',width=' + winW + ',left=50,top=50');
+}
+// -->
+</script>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+          
+      
+            
+  <td valign="top" align="left" width="30%">
+    <a href="http://www.il.proquest.com/proquest" target= "_blank">
+    <img src="/images/common/logo_proquest.gif" width="178" height="27" border="0" alt="ProQuest"></a>        
+  </td>                  
+          <td><a href="/pqdlink?did=648962971&index=46&TS=1140537375&SrchMode=1&sid=2&Fmt=3&VInst=PROD&VType=PQD&clientId=9269&RQT=309&VName=PQD&int=1" ><img src="/images/common/spacer.gif" width="1" height="1" border="0" alt="Text Only Interface" title="Text Only Interface"></a></td>     
+    <td valign="top" align="right" class="textSmall">
+              <a href="javascript:void(0);" onClick="return displayLink('http://library.nyu.edu/ask', false, true);" name="LibraryLink">Ask a Librarian </a> &nbsp;|&nbsp;
+        <span class="bold"><a href='javascript:void(0);' class="help" onClick= 'helpWindow("/i-std/en/pri/article/artdisplay.htm");'name="HelpLink" >Help</a></span>&nbsp;&nbsp;
+    </td>
+  </tr>
+  <tr>
+    <td colspan="3"><img src="/images/common/spacer.gif" width="1" height="5" border="0"></td>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="1" width="100%">
+  <form name="marked">
+    <input type="hidden" name="numMarked" value=0>
+  </form>
+  <tr valign="bottom">
+    <td>
+      <table border="0" cellspacing="1" cellpadding="0">
+        <tr>
+          <td align="left" valign="bottom">
+            <a href="/pqdlink?RQT=306&TS=1140537514&clientId=9269" onMouseOver="doBut(M_SEARCH, 1)" onMouseOut="doBut(M_SEARCH, 0)">
+    	      <img id="basicBut" name="basicBut" src="/images/en/nav_basic_off.gif" width=62 height=25 border=0  alt="Basic Search"></a></td>
+          <td align="left" valign="bottom">
+            <a href="/pqdlink?RQT=403&TS=1140537514&clientId=9269" onMouseOver="doBut(M_ADVANCED, 1)" onMouseOut="doBut(M_ADVANCED, 0)">
+              <img id="advancedBut" name="advancedBut" src="/images/en/nav_advanced_off.gif" width=87 height=25 border=0 alt="Advanced Search"></a></td>
+                                                <!-- TOPIC GUIDE TAB -->
+    <td valign="bottom" align="left">
+      <a href="/pqdlink?RQT=460&TS=1140537514&clientId=9269" onMouseOver="doBut(M_TOPIC, 1)" onMouseOut="doBut(M_TOPIC, 0)">
+        <img id="topicBut" name="topicBut" src="/images/en/nav_topic_off.gif" width=69 height=25 border=0 alt="Topic Guide"></a></td>
+                            
+        <td valign="bottom" align="left">
+      <a href="/pqdlink?TS=1140537514&clientId=9269&RQT=317" onMouseOver="doBut(M_PUB, 1)" onMouseOut="doBut(M_PUB, 0)">
+        <img id="pubsearchBut" name="pubsearchBut" src="/images/en/nav_pubsearch_off.gif" width=103 height=25 border=0 alt="Publication Search"></a></td>
+            <td align="left" valign="bottom" title="My Research" onMouseOver="highlightMarkButton();return checkMarkedList()" onMouseOut="unhighlightMark();return nd()">
+            <table id="TAB_MyResearch" border="0" cellspacing="0" cellpadding="0">
+              <tr id="markedlist" bgcolor="#C3DC79">
+                <td valign="bottom" align="left"> <a href="/pqdlink?RQT=532&TS=1140537514&clientId=9269"><img src="/images/common/nav_research_left_off.gif" name="research_leftBut" id="research_leftBut" alt="" width="11" height="12" border="0"></a></td>
+                <td valign="bottom" align="center"> <a href="/pqdlink?RQT=532&TS=1140537514&clientId=9269"><img src="/images/en/nav_research_off.gif" name="researchBut" id="researchBut" width=98 height=12 border=0></a></td>
+                <td valign="bottom" align="right"> <a href="/pqdlink?RQT=532&TS=1140537514&clientId=9269"><img src="/images/common/nav_research_right_off.gif" name="research_rightBut" id="research_rightBut" alt="" width="11" height="12" border="0"></a></td>
+              </tr>
+              <tr bgcolor="#C3DC79" height=13>
+                                                    <td id="markedlist2" colspan="3" valign="bottom" class="textSmall" nowrap style="font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px" align="center"><a href="/pqdlink?RQT=532&TS=1140537514&clientId=9269"><div id="MarkedCountSpan">0 marked items</div></a></td>
+	                          </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+          <form name="languageForm" method="POST" action="#">
+        <td align="right" valign="bottom">
+          <table align="right" border="0" cellspacing="1" cellpadding="0">
+            <tr>
+              <td valign="bottom" nowrap class="textSmall"><span style="font-size: 0.85em; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; color: #808080;">Interface language:</span><br>
+                <select name="lang" id="lang" onchange='chooseLang();'>
+                        <option value="zh-CN" >Chinese (Simplified)</option>
+      <option value="zh-TW" >Chinese (Traditional)</option>
+      <option value="de" >Deutsch</option>
+      <option value="en"  selected >English</option>
+      <option value="es" >Español</option>
+      <option value="fr" >Français</option>
+      <option value="it" >Italiano</option>
+      <option value="ja" >Japanese</option>
+      <option value="ko" >Korean</option>
+      <option value="no" >Norsk</option>
+      <option value="pl" >Polski</option>
+      <option value="pt" >Português</option>
+      <option value="ru" >Russian</option>
+      <option value="tr" >Türkçe</option>
+                  </select>
+              </td>
+            </tr>
+          </table>
+        </td> 
+      </form>
+      </tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td bgcolor="#FF9900"><img src="/images/common/spacer.gif" width="1" height="1" border="0" alt=""></td>
+	</tr>
+</table>
+
+
+<script language="Javascript">
+<!--
+bannerInit();
+// -->
+</script>
+
+
+  <img src="/images/common/spacer.gif" width="1" height="3" border="0"><br>
+
+      <table width="100%" border="0" cellspacing="1" cellpadding="2">
+    <tr>
+      <!-- DATABASES SELECTED BEGIN -->
+      <td class="textSmall">
+        <a href="/pqdlink?RQT=573&TS=1140537514&clientId=9269&LASTSRCHMODE=1" onMouseOver="return overlib('Select a different combination of databases to search.');" onMouseOut="return nd();">Databases selected:</a>&nbsp;
+                          Multiple databases...
+              </td>
+      <!-- DATABASES SELECTED END -->
+                          <td class="textsmall" align="right"><a href="http://www.il.proquest.com/proquest/temppages/whatsnew/" target="PQWhatsNew"></a></td>
+          </tr>
+  </table>
+
+  <img src="/images/common/spacer.gif" width="1" height="3" border="0"><br>
+  <table width="100%" border="0" cellspacing="1" cellpadding="2">
+  <form name="article">
+  <tr>
+          <td class="header">Document View</td>
+      
+<script language="javascript">
+<!--
+function displaySelection(selectElement) {
+    for (var i=0; i < selectElement.options.length; i++) 
+        if (selectElement.options[i].selected)
+            url = selectElement.options[i].value;
+
+    if (url != "dummy")
+        top.location.href=url;
+}
+
+
+function MarkList(whichchk)
+    {
+     var markedsofar=parseInt(document.marked.numMarked.value,10);
+    if (whichchk.checked)
+        {
+        if (0 == 50)
+            {
+            alert("There are already 50 documents marked.");
+            whichchk.checked = false;
+
+            return;             
+            }
+        chk = 1;
+        markedsofar=markedsofar+1;
+        whichchk.checked = true;
+        //to make sure if another checkbox is checked as well
+         for(var i=0;i<document.article.marked.length;i++){
+            if(!document.article.marked[i].checked){
+                document.article.marked[i].checked=true;
+            }
+         }
+        }
+    else {
+        chk = 0;
+        markedsofar=markedsofar - 1;
+        whichchk.checked = false;
+         for(var i=0;i<document.article.marked.length;i++){
+            if(document.article.marked[i].checked){
+                document.article.marked[i].checked=false;
+            }
+         }
+
+    }
+    document.marked.numMarked.value=markedsofar;
+
+    var timeNow = new Date();
+        var qrystring = "/pqdlink?RQT=530&markedListInfo=";
+    var markedInfo = "key%3Ddid%253D648962971%26retrieveGroup%3D0%26VType%3DPQD%26VInst%3DPROD%26VName%3DPQD%26mark%3D"+chk;
+    qrystring += markedInfo + "&";
+    qrystring += "a="+timeNow.getTime();
+
+    if(whichchk.checked){
+    x = new Image();    
+    x.src = qrystring;
+   } else{
+    y = new Image();    
+    y.src = qrystring;
+   }
+      updateBannerMarkedCount(markedsofar);
+    }
+
+function updateBannerMarkedCount(numMarked) {
+      count = null;
+    if (document.all) {
+        count = document.all["MarkedCountSpan"];
+    } else if (document.getElementById) {
+        count = document.getElementById("MarkedCountSpan");
+    }
+
+    if (count) {
+        artString="$numMarked marked items";
+        if (numMarked == 1) {
+            artString="$numMarked marked item";
+        }
+        count.innerHTML = artString.replace(/\$numMarked/, numMarked);
+    }
+  }
+
+function changePage(index) {
+    var temp = '/pqdlink?RQT=309&Fmt=3&VType=PQD&VName=PQD&VInst=PROD&TS=1140537514&clientId=9269&did=648962971&SrchMode=1&sid=2&index=46&startPage='+index;
+  //alert(temp);
+  window.parent.location.href = temp;
+  return false;
+}
+function NewRefWin(link) {
+  parent.refWindow=window.open(link, "_REFPAGE", 
+                               'toolbar=no,location=no,directories=no,status=no,scrollbars=yes,resizable=1,width=760,height=450');
+  parent.refWindow.focus();
+}
+
+function newPQFTOWin(link) {
+  parent.refWindow=window.open(link, 'PqddFtoWin');
+  parent.refWindow.focus();
+  return false;
+}
+
+//-->
+</script>
+
+	
+
+	
+             	   		<td class="textSmall">
+			
+			
+			
+   		    					
+			    		    			<font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="2" color="#666666">
+    				<strong>&laquo;</strong>
+    			</font>		
+	            <a href="/pqdlink?sid=2&firstIndex=40&RQT=511&TS=1140537514&clientId=9269">
+        	 	Back to Results</a>
+		    											</td>
+		<td align="center" class="textSmall">
+		  	       			<a href="/pqdlink?index=45&did=649858801&SrchMode=1&sid=2&Fmt=7&retrieveGroup=0&VType=PQD&VInst=PROD&RQT=309&VName=PQD&TS=1140537513&clientId=9269">&lt; Previous</a>
+	       	       
+                                 
+                        &nbsp;Document  47                 of 184&nbsp;  	    
+           	                      <a href="/pqdlink?index=47&did=618525411&SrchMode=1&sid=2&Fmt=7&retrieveGroup=0&VType=PQD&VInst=PROD&RQT=309&VName=PQD&TS=1140537513&clientId=9269">Next &gt;</a>
+             	    		</td>
+		<td align="right" class="textSmall">
+             		        <a href="/pqdlink?RQT=318&pmid=7510&Tab=3&TS=1140537514&clientId=9269&VType=PQD&VName=PQD&VInst=PROD">Publisher Information</a>
+                &nbsp;
+		</td>
+	</tr>
+			<tr>
+		<td class="textSmall">
+		                    <a href="/pqdlink?index=46&sid=2&srchmode=1&vinst=PROD&fmt=3&startpage=-1&clientid=9269&vname=PQD&RQT=309&did=648962971&scaling=FULL&ts=1140537375&vtype=PQD&rqt=309&TS=1140537514&clientId=9269&cc=1&TS=1140537514"><img src="/images/en/button_print.gif" alt='Print' border="0"/></a>   &nbsp;&nbsp;&nbsp; <a href="/pqdlink?RQT=563&VInst=PROD&VName=PQD&VType=PQD&sid=2&Fmt=3&did=648962971&otherFmt=2|3"><img src="/images/en/button_email.gif" alt='Email' border="0"/></a>  
+		</td>
+				
+        			<td class="textSmall">
+			<input type="checkbox" name="marked" value="key%3Ddid%253D648962971%26retrieveGroup%3D0%26VType%3DPQD%26VInst%3DPROD%26VName%3DPQD%26mark%3D"  onClick="MarkList(this);"> Mark Document
+			</td>
+        			
+		<td colspan="2" align="right" class="textSmall">
+		      
+      		
+		 		            <a href="/pqdlink?index=46&sid=2&srchmode=1&vinst=PROD&fmt=2&startpage=-1&clientid=9269&vname=PQD&RQT=309&did=648962971&scaling=FULL&ts=1140537375&vtype=PQD&rqt=309&TS=1140537514&clientId=9269"><img src=	   	     "/images/common/ab.gif"
+	   	 alt="Abstract" border="0" align="absmiddle"/></a>&nbsp;<a href="/pqdlink?index=46&sid=2&srchmode=1&vinst=PROD&fmt=2&startpage=-1&clientid=9269&vname=PQD&RQT=309&did=648962971&scaling=FULL&ts=1140537375&vtype=PQD&rqt=309&TS=1140537514&clientId=9269">Abstract</a>
+			 	 	 	 ,&nbsp;
+	 		 	 <img src=	   	      "/images/common/ft.gif"
+	   	 alt="Full Text" border="0" align="absmiddle"/>&nbsp;Full Text	 
+	 	 	 			</td>
+	<td>
+     </td>
+	</tr>
+	</table>				
+
+
+  
+<hr width="100%" size="1" noshade>
+
+  
+
+<span class="textMedium">
+                <script>setRequestString("pqdweb?RQT=305");</script><table cellpadding="2" cellspacing="0" border="0"><!--Start PUBLISHER_LOGO--><tr><td><a href="javascript:popupNewWindow('http://www.dowjones.com/')"><img alt="Publication Image" border="0" src="/i/pub/7510.gif"></a></td></tr><!--End PUBLISHER_LOGO--><!--Start CITATION--><a name="citation"></a><tr><td class="headerBlack"><strong>Byrd Brains</strong></td></tr><tr><td class="textMedium"><!--Start AUTHORS--><!--End AUTHORS--><!--Start PUB_TITLE--><b><a href="/pqdlink?RQT=318&pmid=7510&TS=1140537514&clientId=9269&VType=PQD&VName=PQD&VInst=PROD">Wall Street Journal</a></b><!--End PUB_TITLE-->.&nbsp;<!--Start EDITION-->(Eastern edition).    <!--End EDITION--><!--Start PM_QUAL-->New York, N.Y.:                <!--End PM_QUAL--><!--Start ISSUE_URL--><a href="/pqdlink?RQT=572&VType=PQD&VName=PQD&VInst=PROD&pmid=7510&pcid=12808881&SrchMode=3">Jun 9, 2004</a><!--End ISSUE_URL-->.<!--Start STARTPG-->&nbsp;pg.&nbsp;A.12<!--End STARTPG--></td></tr><!--End CITATION--></table><table cellpadding="10" cellspacing="0" border="0"><tr><td><table cellpadding="2" cellspacing="1" border="0"><tr><td class="textSmall">&nbsp;<font color="#CC0000" size="2" face="Verdana,Geneva,Arial,Helvetica,sans-serif"><strong>&raquo;</strong></font></td><td class="textSmall"><a href="#fulltext"><strong>Jump to full text</strong></a> &nbsp;<img align="absmiddle" border="0" height="14" width="13" alt="Full text" src="/images/common/ft.gif"></td></tr></table><table cellpadding="2" cellspacing="1" border="0"><tr><td class="textSmall">&nbsp;<font color="#CC0000" size="2" face="Verdana,Geneva,Arial,Helvetica,sans-serif"><strong>&raquo;</strong></font></td>                        <dnt><TD><table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td nowrap="nowrap" class="textSmall" width="56%">Translate document into: &nbsp;</td><td width="44%"><select onChange="javascript:doTranslation('/pqdlink?index=46&amp;sid=2&amp;srchmode=1&amp;vinst=PROD&amp;fmt=3&amp;clientid=9269&amp;vname=PQD&amp;RQT=309&amp;did=648962971&amp;scaling=FULL&amp;ts=1140537375&amp;vtype=PQD&amp;rqt=309&amp;TS=1140537513&amp;clientId=9269');" name="translang"><option selected="1" value="#">Select language</option><option value="zh-cn">Chinese (Simplified)</option><option value="zh-tw">Chinese (Traditional)</option><option value="fr">French</option><option value="de">German</option><option value="it">Italian</option><option value="ja">Japanese</option><option value="ko">Korean</option><option value="pt">Portuguese</option><option value="ru">Russian</option><option value="es">Spanish</option><option value="tr">Turkish</option></select></td></tr></table></TD></dnt></tr></table><table cellpadding="2" cellspacing="1" border="0"><tr><td class="textSmall">&nbsp;<font color="#CC0000" size="2" face="Verdana,Geneva,Arial,Helvetica,sans-serif"><strong>&raquo;</strong></font></td><td class="textSmall"><a href="#more"><strong>More Like This</strong></a> - Find similar documents</td></tr></table></td></tr></table>
+    	        <input value="305" name="RQT" type="hidden"><input name="SQ" type="hidden"><input value="PQ" name="querySyntax" type="hidden">                                                                <input value="1140537514" name="TS" type="hidden"><font size="4"><table cellspacing="1" cellpadding="2" border="0"><!--Start INDEX TERMS--><tr><td valign="top" nowrap="nowrap" class="textSmall">Subjects:</td><td valign="top" class="textSmall"><script>addSubject("<hHl>Furniture</hHl> industry")</script><script>addSubject("Dumping")</script><script>addSubject("US imports")</script><script>addSubject("Federal legislation")</script><script>addSubject("Competition")</script><script>addSubject("Editorials -- <hHl>Furniture</hHl> industry")</script><script>generateSubjectTerms()</script></td></tr><!--End INDEX TERMS--><!--Start CLASSCODES--><tr><td valign="top" nowrap="nowrap" class="textSmall">Classification Codes</td><td valign="top" class="textSmall"><a onclick="return searchSideWays(&quot;CC&quot;,&quot;9190&quot;);" href="javascript:void(0);">9190&nbsp;United States</a>,&nbsp;&nbsp;<a onclick="return searchSideWays(&quot;CC&quot;,&quot;8600&quot;);" href="javascript:void(0);">8600&nbsp;Manufacturing industries not elsewhere classified</a>,&nbsp;&nbsp;<a onclick="return searchSideWays(&quot;CC&quot;,&quot;4320&quot;);" href="javascript:void(0);">4320&nbsp;Legislation</a></td></tr><!--End CLASSCODES--><!--Start ARTICLE TYPE--><tr><td valign="top" nowrap="nowrap" class="textSmall">Document types:</td><td valign="top" class="textSmall">Editorial</td></tr><!--End ARTICLE TYPE--><!--Start COLUMN NAME--><tr><td valign="top" nowrap="nowrap" class="textSmall">Column Name:</td><td valign="top" class="textSmall"><i>REVIEW &amp; OUTLOOK (Editorial)</i></td></tr><!--End COLUMN NAME--><!--Start DOCUMENT LANGUAGE--><!--End DOCUMENT LANGUAGE--><!--Start PUB TITLE--><tr><td valign="top" nowrap="nowrap" class="textSmall">Publication title:</td><td valign="top" class="textSmall"><a href="/pqdlink?RQT=318&pmid=7510&TS=1140537514&clientId=9269&VType=PQD&VName=PQD&VInst=PROD">Wall Street Journal</a>.&nbsp;(Eastern edition).&nbsp;New York, N.Y.:&nbsp;<a href="/pqdlink?RQT=572&VType=PQD&VName=PQD&VInst=PROD&pmid=7510&pcid=12808881&SrchMode=3">Jun 9, 2004</a>.&nbsp;&nbsp;pg.&nbsp;A.12</td></tr><!--End PUB TITLE--><!--Start SOURCE TYPE--><tr><td valign="top" nowrap="nowrap" class="textSmall">Source type:</td><td valign="top" class="textSmall">Newspaper</td></tr><!--End SOURCE TYPE--><!--Start ISSN--><tr><td valign="top" nowrap="nowrap" class="textSmall">ISSN/ISBN:</td><td valign="top" class="textSmall">00999660</td></tr><!--End ISSN--><!--Start DOCID--><tr><td valign="top" nowrap="nowrap" class="textSmall">ProQuest document ID:</td><td valign="top" class="textSmall">648962971</td></tr><!--End DOCID--><!--Start WORD COUNT--><tr><td valign="top" nowrap="nowrap" class="textSmall">Text Word Count</td><td valign="top" class="textSmall">612</td></tr><!--End WORD COUNT--><!--Start ARTICLE URL--><tr><td valign="top" nowrap="nowrap" class="textSmall">Document URL:</td><td valign="top" class="textSmall">http://proquest.umi.com/pqdlink?did=648962971&amp;sid=2&amp;Fmt=3&amp;clientId=9269&amp;RQT=309&amp;VName=PQD</td></tr><!--End ARTICLE URL--></table></font><img border="0" height="10" width="1" src="/images/common/spacer.gif"><br><!--Start ABSTRACT--><a name="abstract"></a><table cellpadding="4" cellspacing="0" border="0" width="100%"><tr><td bgcolor="#E6E6E6" class="textSmall"><strong>Abstract</strong> (Document Summary)</td></tr><tr><td class="textMedium"><p>U.S. <font color='red'><b>furniture</b></font> producers have been importing from <font color='red'><b>China</b></font> for at least a decade, using a combination of imported and U.S.-made <font color='red'><b>furniture</b></font> to complete their lines. The Cato Institute's Dan Ikenson cites the testimony of Jeffrey Seaman, CEO of Rooms to Go, before the International Trade Commission (ITC): U.S. <font color='red'><b>furniture</b></font> makers "knew after traveling to <font color='red'><b>China</b></font> and seeing the infrastructure there that they could make certain bedrooms in <font color='red'><b>China</b></font>, bring it here, mark it up 30% to 40% to a retailer and still sell it for less than they could have made it for."</p><p>The ITC's preliminary report on the case says that 20 of the 40 producers it surveyed "imported Chinese merchandise during the period and that the 12 largest domestic producers of wooden bedroom <font color='red'><b>furniture</b></font> all imported reasonably substantial and increasing volumes of merchandise from <font color='red'><b>China</b></font>." What happened then is that U.S. retailers caught on and began importing Chinese-made <font color='red'><b>furniture</b></font> themselves, cutting out the middleman U.S. producers and their markup. The dumping suit is about raising prices for those importers.</p></td></tr></table><!--End ABSTRACT--><a name="fulltext"></a><!--Start FULL TEXT--><img alt="" border="0" height="5" width="1" src="/images/common/spacer.gif"><table cellpadding="4" cellspacing="0" border="0" width="100%"><tr><td bgcolor="#E6E6E6" class="textSmall"><strong>Full Text</strong>&nbsp;(612 &nbsp; words)</td></tr><tr><td class="textMedium"><i>Copyright (c) 2004, Dow Jones &amp; Company Inc. Reproduced with permission of copyright owner. Further reproduction or distribution is prohibited without permission.</i><p>Vietnam's Binh Duong Province may not sound like the home of traditional American furniture, but that's where Stickley, a classic American name, is building a new $6 million plant. According to Stickley partner Edward Audi, "The new 187,000 square-foot factory will provide an opportunity for Stickley to offer a more diversified product line and to open new markets globally."</p><p>But the Vietnam factory is only one part of Stickley's competitive strategy. The other is an anti-dumping suit -- filed in Washington along with 25 other U.S. <font color='red'><b>furniture</b></font> manufacturers -- against Chinese- made bedroom <font color='red'><b>furniture</b></font>. The petition is ostensibly about saving U.S. jobs, but knocking off the competition that makes <font color='red'><b>furniture</b></font> in <font color='red'><b>China</b></font> is what this high-profile dumping case is really about.</p><p>U.S. <font color='red'><b>furniture</b></font> producers have been importing from <font color='red'><b>China</b></font> for at least a decade, using a combination of imported and U.S.-made <font color='red'><b>furniture</b></font> to complete their lines. The Cato Institute's Dan Ikenson cites the testimony of Jeffrey Seaman, CEO of Rooms to Go, before the International Trade Commission (ITC): U.S. <font color='red'><b>furniture</b></font> makers "knew after traveling to <font color='red'><b>China</b></font> and seeing the infrastructure there that they could make certain bedrooms in <font color='red'><b>China</b></font>, bring it here, mark it up 30% to 40% to a retailer and still sell it for less than they could have made it for."</p><p>The ITC's preliminary report on the case says that 20 of the 40 producers it surveyed "imported Chinese merchandise during the period and that the 12 largest domestic producers of wooden bedroom <font color='red'><b>furniture</b></font> all imported reasonably substantial and increasing volumes of merchandise from <font color='red'><b>China</b></font>." What happened then is that U.S. retailers caught on and began importing Chinese-made <font color='red'><b>furniture</b></font> themselves, cutting out the middleman U.S. producers and their markup. The dumping suit is about raising prices for those importers.</p><p>The furniture makers are also hoping to cash in on what is known as the Byrd Amendment, which mandates that the proceeds of anti-dumping tariffs be dumped into the pockets of the "injured" parties -- i.e., the same companies that support the dumping suits. The Byrd maneuver has been ruled a trade violation by the World Trade Organization, and that body will soon decide on retaliation since Uncle Sam refuses to repeal it.</p><p>The Byrd Amendment promises to become a windfall for Stickley of New York and Vietnam and its dumping-suit partners. China annually sends $1 billion worth of headboards, beds, night tables, dressers, bureaus, armoires and some book cases and writing tables to the U.S., and the dumping tariffs can run as high as 440%. If you can't beat a competitor, get the government to tax his goods for you. This is trade law as an income redistribution scheme.</p><p>The ITC has already made a preliminary decision that there is a reasonable indication that the U.S. industry has been "harmed" by incoming Chinese beds. Commerce will make a preliminary determination on June 17 whether unfair pricing is the cause of that harm. If Commerce rules in favor of the petitioners, a final ruling would be due before the end of the year.</p><p>The economic harm would start immediately, however, as importers scramble to calculate catalog prices in an uncertain environment, insecurity rises among the 200,000 Americans who work in the furniture-retail industry, and consumers pay higher prices that pad the bottom lines of Stickley and friends.</p><p>In other words, all of this has nothing to do with bringing low-wage factory jobs back to the U.S. Those jobs are gone for good -- to Vietnam, if not to <font color='red'><b>China</b></font>. The <font color='red'><b>furniture</b></font> dumping suit is a classic Beltway game of greasing a squeaky wheel. Let's hope that between now and December the Bush Administration decides it doesn't want to play along.</p></td></tr></table><!--End FULL TEXT--><br><a name="more"></a><img alt="" border="0" height="5" width="1" src="/images/common/spacer.gif"><!--Start MORE LIKE THIS--><table bgcolor="#FFCC66" cellspacing="0" cellpadding="2" width="100%" border="0"><tr><td bgcolor="#FFCC66" class="textSmall">&nbsp;<strong>More Like This</strong>&nbsp;-&nbsp;Find similar documents</td></tr><tr><td width="100%"><table bgcolor="#FFFFFF" cellspacing="0" cellpadding="4" border="0" width="100%"><tr><td width="100%"><table cellspacing="1" cellpadding="2" border="0"><script>setSubjectName('Subjects:')</script><script>generateSubjectMLT()</script><tr><td valign="top" nowrap="nowrap" class="textMedium">Classification Codes</td><td valign="top" class="textMedium"><input value=" CC(9190) " name="moreLikeThis" type="checkbox">9190&nbsp;United States</input>&nbsp;<input value=" CC(8600) " name="moreLikeThis" type="checkbox">8600&nbsp;Manufacturing industries not elsewhere classified</input>&nbsp;<input value=" CC(4320) " name="moreLikeThis" type="checkbox">4320&nbsp;Legislation</input></td></tr><script>setTickerName('Ticker:')</script><script>setNaicsName('NAICS:')</script><script>setSicName('Sic:')</script><script>generateNSTMLT() </script><tr><td nowrap="nowrap" class="textMedium" valign="top">Document types:</td><td class="textMedium" valign="top"><input value=" AT(Editorial) " name="moreLikeThis" type="checkbox">Editorial</input></td></tr><tr><td nowrap="nowrap" class="textMedium" valign="top">Language:</td><td class="textMedium" valign="top"><input value=" LA(English) " name="moreLikeThis" type="checkbox">English</input></td></tr><tr><td nowrap="nowrap" class="textMedium" valign="top">Publication title:</td><td class="textMedium" valign="top"><input value=" SO(Wall Street Journal) " name="moreLikeThis" type="checkbox">Wall Street Journal</input></td></tr><tr><td nowrap="nowrap" class="textMedium">&nbsp;</td><td class="textMedium"><a href="javascript:searchMoreLikeThis()"><img border="0" alt="Search" src="/images/en/button_search.gif"></a>&nbsp;&nbsp;&nbsp;<a href="javascript:resetMoreLikeThis()"><img border="0" src="/images/en/button_clear.gif"></a></td></tr></table></td></tr></table></td></tr></table><!--End MORE LIKE THIS-->
+    
+  <hr size="1" color="#333333" noshade>
+<table width="100%" border="0" cellspacing="1" cellpadding="2">
+  <tr>
+   	<td class="textSmall"><span class="bold">&#94;</span> <a href="#top">Back to Top</a></td>
+  
+<script language="javascript">
+<!--
+function displaySelection(selectElement) {
+    for (var i=0; i < selectElement.options.length; i++) 
+        if (selectElement.options[i].selected)
+            url = selectElement.options[i].value;
+
+    if (url != "dummy")
+        top.location.href=url;
+}
+
+
+function MarkList(whichchk)
+    {
+     var markedsofar=parseInt(document.marked.numMarked.value,10);
+    if (whichchk.checked)
+        {
+        if (0 == 50)
+            {
+            alert("There are already 50 documents marked.");
+            whichchk.checked = false;
+
+            return;             
+            }
+        chk = 1;
+        markedsofar=markedsofar+1;
+        whichchk.checked = true;
+        //to make sure if another checkbox is checked as well
+         for(var i=0;i<document.article.marked.length;i++){
+            if(!document.article.marked[i].checked){
+                document.article.marked[i].checked=true;
+            }
+         }
+        }
+    else {
+        chk = 0;
+        markedsofar=markedsofar - 1;
+        whichchk.checked = false;
+         for(var i=0;i<document.article.marked.length;i++){
+            if(document.article.marked[i].checked){
+                document.article.marked[i].checked=false;
+            }
+         }
+
+    }
+    document.marked.numMarked.value=markedsofar;
+
+    var timeNow = new Date();
+        var qrystring = "/pqdlink?RQT=530&markedListInfo=";
+    var markedInfo = "key%3Ddid%253D648962971%26retrieveGroup%3D0%26VType%3DPQD%26VInst%3DPROD%26VName%3DPQD%26mark%3D"+chk;
+    qrystring += markedInfo + "&";
+    qrystring += "a="+timeNow.getTime();
+
+    if(whichchk.checked){
+    x = new Image();    
+    x.src = qrystring;
+   } else{
+    y = new Image();    
+    y.src = qrystring;
+   }
+      updateBannerMarkedCount(markedsofar);
+    }
+
+function updateBannerMarkedCount(numMarked) {
+      count = null;
+    if (document.all) {
+        count = document.all["MarkedCountSpan"];
+    } else if (document.getElementById) {
+        count = document.getElementById("MarkedCountSpan");
+    }
+
+    if (count) {
+        artString="$numMarked marked items";
+        if (numMarked == 1) {
+            artString="$numMarked marked item";
+        }
+        count.innerHTML = artString.replace(/\$numMarked/, numMarked);
+    }
+  }
+
+function changePage(index) {
+    var temp = '/pqdlink?RQT=309&Fmt=3&VType=PQD&VName=PQD&VInst=PROD&TS=1140537514&clientId=9269&did=648962971&SrchMode=1&sid=2&index=46&startPage='+index;
+  //alert(temp);
+  window.parent.location.href = temp;
+  return false;
+}
+function NewRefWin(link) {
+  parent.refWindow=window.open(link, "_REFPAGE", 
+                               'toolbar=no,location=no,directories=no,status=no,scrollbars=yes,resizable=1,width=760,height=450');
+  parent.refWindow.focus();
+}
+
+function newPQFTOWin(link) {
+  parent.refWindow=window.open(link, 'PqddFtoWin');
+  parent.refWindow.focus();
+  return false;
+}
+
+//-->
+</script>
+
+	
+
+	
+             	   		<td class="textSmall">
+			
+			
+			
+   		    					
+			    		    			<font face="Verdana,Geneva,Arial,Helvetica,sans-serif" size="2" color="#666666">
+    				<strong>&laquo;</strong>
+    			</font>		
+	            <a href="/pqdlink?sid=2&firstIndex=40&RQT=511&TS=1140537514&clientId=9269">
+        	 	Back to Results</a>
+		    											</td>
+		<td align="center" class="textSmall">
+		  	       			<a href="/pqdlink?index=45&did=649858801&SrchMode=1&sid=2&Fmt=7&retrieveGroup=0&VType=PQD&VInst=PROD&RQT=309&VName=PQD&TS=1140537513&clientId=9269">&lt; Previous</a>
+	       	       
+                                 
+                        &nbsp;Document  47                 of 184&nbsp;  	    
+           	                      <a href="/pqdlink?index=47&did=618525411&SrchMode=1&sid=2&Fmt=7&retrieveGroup=0&VType=PQD&VInst=PROD&RQT=309&VName=PQD&TS=1140537513&clientId=9269">Next &gt;</a>
+             	    		</td>
+		<td align="right" class="textSmall">
+             		        <a href="/pqdlink?RQT=318&pmid=7510&Tab=3&TS=1140537514&clientId=9269&VType=PQD&VName=PQD&VInst=PROD">Publisher Information</a>
+                &nbsp;
+		</td>
+	</tr>
+			<tr>
+		<td class="textSmall">
+		                    <a href="/pqdlink?index=46&sid=2&srchmode=1&vinst=PROD&fmt=3&startpage=-1&clientid=9269&vname=PQD&RQT=309&did=648962971&scaling=FULL&ts=1140537375&vtype=PQD&rqt=309&TS=1140537514&clientId=9269&cc=1&TS=1140537514"><img src="/images/en/button_print.gif" alt='Print' border="0"/></a>   &nbsp;&nbsp;&nbsp; <a href="/pqdlink?RQT=563&VInst=PROD&VName=PQD&VType=PQD&sid=2&Fmt=3&did=648962971&otherFmt=2|3"><img src="/images/en/button_email.gif" alt='Email' border="0"/></a>  
+		</td>
+				
+        			<td class="textSmall">
+			<input type="checkbox" name="marked" value="key%3Ddid%253D648962971%26retrieveGroup%3D0%26VType%3DPQD%26VInst%3DPROD%26VName%3DPQD%26mark%3D"  onClick="MarkList(this);"> Mark Document
+			</td>
+        			
+		<td colspan="2" align="right" class="textSmall">
+		      
+      		
+		 		            <a href="/pqdlink?index=46&sid=2&srchmode=1&vinst=PROD&fmt=2&startpage=-1&clientid=9269&vname=PQD&RQT=309&did=648962971&scaling=FULL&ts=1140537375&vtype=PQD&rqt=309&TS=1140537514&clientId=9269"><img src=	   	     "/images/common/ab.gif"
+	   	 alt="Abstract" border="0" align="absmiddle"/></a>&nbsp;<a href="/pqdlink?index=46&sid=2&srchmode=1&vinst=PROD&fmt=2&startpage=-1&clientid=9269&vname=PQD&RQT=309&did=648962971&scaling=FULL&ts=1140537375&vtype=PQD&rqt=309&TS=1140537514&clientId=9269">Abstract</a>
+			 	 	 	 ,&nbsp;
+	 		 	 <img src=	   	      "/images/common/ft.gif"
+	   	 alt="Full Text" border="0" align="absmiddle"/>&nbsp;Full Text	 
+	 	 	 			</td>
+	<td>
+     </td>
+	</tr>
+	</table>				
+
+
+</span>
+</form>
+
+
+
+ 
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td bgcolor="#FF9900"><img src="/images/common/spacer.gif" width="1" height="1" border="0" alt=""></td>
+  </tr>
+</table>
+
+<table border="0" cellspacing="0" cellpadding="4" align="center" width="100%">
+    <tr align="center">
+    <td class="textSmall" valign="top">
+      Copyright &copy;
+      2006
+      ProQuest Information and Learning Company.
+      All rights reserved.
+                            <a href="/pqdlink?RQT=428&TS=1140537514&clientId=9269">Terms and Conditions</a>
+          </td>
+  </tr>
+        <tr align="center" class="textSmall">
+              <td><a href="/pqdlink?did=648962971&index=46&TS=1140537375&SrchMode=1&sid=2&Fmt=3&VInst=PROD&VType=PQD&int=1&clientId=9269&RQT=309&VName=PQD">Text-only interface</a></td>
+          </tr>
+              <tr>
+        <td align="center" class="textSmall"></td>
+      </tr>
+      </table>
+<img src="/images/common/spacer.gif" alt="" width="1" height="5" border="0"><br>
+
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td align="center">
+        <a href="http://www.proquestcompany.com " target= "_blank"><img src="http://proquest.umi.com//images/common/logo_frompq.gif" width=150 height=40 border=0 alt="From ProQuest Company"></a>
+      </td>
+                </tr>
+  </table>
+<br>
+</table>
+</body>
+</html>

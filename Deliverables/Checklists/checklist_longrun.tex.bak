@@ -1,0 +1,413 @@
+\documentclass[letterpaper,12pt]{article}
+
+%\usepackage[hypertex]{hyperref}
+\usepackage{comment}
+\RequirePackage{GE05}
+% this inputs graphicx, too
+
+\newcommand{\GDP}{\mbox{\em GDP\/}}
+\newcommand{\NDP}{\mbox{\em NDP\/}}
+\newcommand{\GNP}{\mbox{\em GNP\/}}
+\newcommand{\NX}{\mbox{\em NX\/}}
+\newcommand{\NY}{\mbox{\em NY\/}}
+\newcommand{\CA}{\mbox{\em CA\/}}
+\newcommand{\NFA}{\mbox{\em NFA\/}}
+\newcommand{\Def}{\mbox{\em Def\/}}
+\newcommand{\CPI}{\mbox{\em CPI\/}}
+\newcommand{\phm}{\phantom{--}}
+
+\def\ClassName{The Global Economy}
+\def\Category{Professor David Backus}
+\def\HeadName{Final Exam}
+
+\begin{document}
+\parindent = 0.0in
+\parskip = \bigskipamount
+\thispagestyle{empty}%
+\Head
+
+\centerline{\large \bf \HeadName}%
+\centerline{Revised:  \today}
+
+\bigskip
+You have 100 minutes to complete this exam.  Please answer each question in the space provided.
+You may consult one page of notes and a calculator, but devices capable of wireless transmission
+are prohibited.
+
+I understand that the honor code applies: I will not lie, cheat, or
+steal to gain an academic advantage, or tolerate those who do.
+
+\begin{flushright}
+\rule{4in}{0.5pt} \\ (Name, block, and signature)
+\end{flushright}
+
+
+%\bigskip
+\begin{enumerate}
+
+\item {\it Real and nominal interest rates (25 points).} 
+Forward rates on inflation-indexed bonds can be used to infer future real interest rates, 
+just as forward rates on traditional nominal bonds 
+can be used to infer future nominal interest rates.  
+Since 1997, the US government has issued bonds with coupons and principle indexed to the consumer price index, 
+and other issuers have become increasingly common.  
+
+Consider these rates reported on March 31, 2006:   
+\begin{center}
+\begin{tabular}{ccccc}
+\hline
+    & \multicolumn{2}{c}{Nominal} & \multicolumn{2}{c}{Real}  \\
+    Maturity  &  Forward &  Mean &  Forward &  Mean  \\
+\hline
+     1      &   4.82     &    3.14    &  1.95  &  1.10    \\
+     2      &   4.77     &    3.70    &  2.17  &  1.72  \\
+     3      &   4.74     &    4.23    &  2.35  &  2.29  \\
+\hline      
+\end{tabular}
+\end{center}
+Source:  Huston McCulloch's web site.  
+Maturity is measured in years, rates are annual percentages.  
+% http://www.econ.ohio-state.edu/jhm/ts/ts.html
+
+\begin{enumerate} 
+\item Compute and describe the paths of future one-year interest rates
+implied by real and nominal forward rates.  (15~points) 
+\item What pattern of future inflation and GDP growth would be consistent 
+with such paths?  (10~points)
+\end{enumerate}
+
+
+Answer.  Expected future one-year rates look like this: 
+\begin{center}
+\begin{tabular}{ccccc}
+\hline
+    & \multicolumn{2}{c}{Nominal} & \multicolumn{2}{c}{Real}  \\
+  Maturity  &  Risk Prem &  Future Short &  Risk Prem 
+    &  Future Short  \\
+\hline
+     1   &  0.00  & 4.82  & 0.00  & 1.95  \\
+     2   &  0.56  & 4.21  & 0.62  & 1.55  \\
+     3   &  1.09  & 3.65  & 1.19  & 1.16  \\
+\hline 
+\end{tabular}
+\end{center}
+
+\begin{enumerate} 
+\item The usual expectations hypothesis logic suggests that 
+both real and nominal rates will fall over the next three years.   
+\item We have the usual issue with a falline real yield curve: 
+is this a prediction of slower growth, or is something else going on?  
+On the nominal yield curve:  this is expected to fall more than 
+the real yield curve (117 bps v 79 bps), so the market 
+seems to expect lower inflation (the difference between the two). 
+One possible reason:  increases in oil prices have led to 
+higher inflation in the recent past.  
+If we expect oil prices to stabilize or fall, 
+over inflation would likely fall, too.  
+\end{enumerate}
+
+
+%\pagebreak \phantom{bla} \pagebreak \phantom{bla} \pagebreak 
+\item {\it Prospects for Turkey (25 points).} 
+During a job interview with a European portfolio manager, 
+you are given  the following macroeconomic indicators for Turkey:  
+%\tabcolsep=0.25in
+\begin{center}
+\begin{tabular}{lcc}
+  {\it Indicator}  &  {\it Value}   & {\it Date}     \\
+  GDP growth (real) &  9.5\%    & 2005 Q4     \\
+  Inflation  &  8.2\%     & March 2006    \\
+  Short-term interest rate &  14\%  &  April 2006 \\
+  Fiscal balance:  total  (ratio to GDP) &  --3\%  & 2006 est\\
+  Fiscal balance:  primary  (ratio to GDP) &  +6\%  & 2006 est \\
+  Government debt (ratio to GDP) &  64\%  &  2006 est \\
+  Current account balance (ratio to GDP)&  --5\%  &  2006 est \\
+  Net foreign income (ratio to GDP)&  --1\%  &  2006 est \\
+  Foreign debt (ratio to GDP)      &    43\%   &  2006 est    \\
+  Net foreign assets (ratio to GDP) &   --30\%   &   2006 est    \\
+  Foreign reserves (ratio to GDP) &  29\%  & 2006 est \\
+\end{tabular}
+\end{center}
+Source:  Economist Intelligence Unit.  
+
+The recruiter asks you:  
+\begin{enumerate}
+\item Is Turkey's fiscal deficit a cause of concern for
+an investor in Turkish government debt?   (10~points)
+\item Is Turkey's current account deficit a cause for concern 
+for an investor in high-grade private Turkish debt?    (10~points)
+\item What is your overall assessment of the 
+macroeconomic risks to Turkish debt?  
+(5~points) 
+\end{enumerate}
+You understand that you will be assessed on both the rigor of your logic
+and your ability to convey it clearly.  
+
+
+Answer.  You have some room for creativity here, but one possibility is:  
+\begin{enumerate}
+\item Turkish government debt is 64\% of GDP, which is enough to think 
+about but not enormous.  
+But high interest rate means that interest on the debt eats up 9\% of GDP.  
+We can get a clearer picture if we look at debt dynamics:  
+\[
+    \frac{B_{t+1}}{Y_{t+1}} \;=\; \left( \frac{1+i}{1+g} \right) 
+     \frac{B_{t}}{Y_{t}} 
+     + (1+g)^{-1} \frac{D_{t}}{Y_{t}} ,
+\]
+With $i$ about 14\% and $g$ about 17\%, we can see that the debt to GDP ratio
+will fall slightly over the next year on its own --- largely the effect of 
+high GDP growth. 
+The primary surplus of 6\% will further reduce the debt to GDP ratio.
+In short, the country is in good shape right now.  
+
+\item Turkish NFA is 43\%, which again is enough to think about 
+but not enormous.  
+Ditto the current account deficit.  
+Net foreign income is --1\%, which seems modest.  
+A more formal analysis of NFA dynamics:  
+\[
+    \frac{\mbox{\em NFA}_{t+1}}{Y_{t+1}} \;=\; \left( \frac{1+i}{1+g} \right) 
+     \frac{\mbox{\em NFA}_{t}}{Y_{t}} + (1+g)^{-1} \frac{\mbox{\em NX}_{t}}{Y_{t}} .
+\]
+Again, the term $[(1+i)/(1+g)]$ is a little less than one, so that's reassuring, 
+but the current account will result in a (roughly) 2\% increase in the ratio 
+of NFA to GDP.  
+The issue, really, is whether the economy will continue to grow at this rate. 
+If so, it should be able to pay off the debt.  
+Questions to ask:  What is the form of foreign claims on Turkish companies?  
+Are they debt or equity?  How stable is the political situation?  
+
+\item  Despite modest government and current account deficits, I'd say there were no obvious signs of trouble.  
+
+\end{enumerate}
+
+
+%\pagebreak \phantom{bla} \pagebreak \phantom{bla} \pagebreak
+\item {\it Miscellany (50 points).}
+%
+\begin{enumerate} 
+\item Explain what a leading indicator is and give an example.  
+ (10~points)
+ 
+Answer.  Something whose ups and downs precede those of GDP.  
+Examples:  term spread (slope of yield curve), hours worked 
+in manufacturing, S\^P 500.  
+
+\item Grupo Modelo produces Corona, the leading imported beer in the US.  
+As part of a strategy exercise, they are working through the implications of 
+large fluctuations in the peso.  
+If the peso appreciated by 20\% relative to the dollar, 
+by roughly how much should they  change the US price of Corona?  Why?  (10~points)
+
+Answer.  You'll probably raise prices by less than 20\% (10\%?).
+Why?  (i)~Only about half of your cost of selling in the US consists
+of Mexican production costs; the rest are dollar costs of marketing
+and distribution.  
+(ii)~You may want to maintain market share if customers are ``sticky.''
+See the discussion of Group Project \#9.  
+
+\item An analyst suggested that the Chinese yuan renminbi  
+may suddenly collapse in a crisis along the lines of Mexico in 1994-95, 
+in which the peso fall sharply when the Banco de Mexico 
+ran out of foreign currency reserves.  
+Give two reasons why this scenario is likely or unlikely.   
+ (10~points)
+ 
+Answer.  (i)~China has enormous reserves:  they won't run out any time soon.  
+(ii)~The yuan renminbi seems to be undervalued:  people want to buy it, 
+not sell it, which results in the central bank accumulating reserves, 
+not losing them.  
+ 
+\item Can a country run a fiscal (government) deficit forever?  Explain why or why not.  
+ (10~points)
+ 
+ Answer.  The present value of future primary surpluses has to equal 
+ the current debt.  Thus past deficits must be countered by 
+ future surpluses --- you can't run a primary deficit forever.
+ The key word is primary:  you could run primary surplus and overall
+ deficit at the same time, as we see in (for example) Brazil.  
+
+\item Ben Bernanke, Chair of the Federal Reserve Board, has commented 
+that while the Fed controls the short-term interest rate, 
+it has only indirect influence on long-term interest rates. 
+Describe how the Fed might influence the 5-year bond rate.  
+(10~points)
+
+Answer.  Basically, through market expectations of future policy. 
+If we expect the Fed to raise interest rates in the future, 
+that should show up in higher bond yields, including the 5-year rate.  
+This past week, for example, there's been a lot of discussion 
+of Bernanke's public statements about future increases in the 
+Fed Funds rate.  
+
+\end{enumerate}
+%\pagebreak \phantom{bla} \pagebreak \phantom{bla} \pagebreak
+\end{enumerate}
+
+\end{document} 
+
+
+% ------------------------------------------------------------------------
+%  2005 exam ...
+\begin{enumerate}
+
+\item {\bf US economic conditions (30 points).}  How well is the US economy doing?  One source of
+information is the forward rate curve.   Forward rates on May 5, 2005, and averages over the last
+25 years, were
+%
+\begin{center}
+\begin{tabular}{ccc}
+  Maturity ($m$) & Forward Rate ($f_{m-1}$) & Mean Forward Rate \\
+     1      &   3.73       &    7.51        \\
+     2      &   4.33       &    8.10        \\
+     3      &   4.47       &    8.39          \\
+     4      &   4.62       &    8.57         \\
+     5      &   4.75       &    8.67
+\end{tabular}
+\end{center}
+Maturity is measured in years and forward rates are annually compounded percentages.
+%
+\begin{enumerate}
+
+\item Compute zero-coupon yields for maturities between 1 and 5 years.  (5~points)
+
+\item Use the forward rate curve to construct forecasts of future 1-year yields.  How do you see
+the 1-year rate evolving over the next four years? What does this suggest for output growth?  (15~points)
+
+\item Describe the Taylor Rule.  Under what conditions would it lead to the path of interest rates
+you described above?  Do you find these conditions plausible?  (10 points)
+
+\end{enumerate}
+
+%\begin{comment}
+%
+Answer.  Consider these calculations:
+\begin{center}
+\begin{tabular}{ccccc}
+  Maturity ($m$) &  Bond Price & Yield ($y_m$)  &  Risk Premium  &  Future Short Rate \\
+     1   &  96.40   &   3.73       &    0.00   &  3.73  \\
+     2   &  92.40   &   4.03       &    0.59   &  3.74  \\
+     3   &  88.45   &   4.18       &    0.88   &  3.59  \\
+     4   &  84.54   &   4.29       &    1.06   &  3.56  \\
+     5   &  80.71   &   4.38       &    1.16   &  3.59
+\end{tabular}
+\end{center}
+
+\begin{enumerate}
+\item See table. \item Ditto.  The flat to decreasing path of expected future short rates suggests
+modest to below-average growth of output. %
+\item The Taylor rule is
+\[
+    i_t  \;=\;  r^* + \pi_t + a_1 (\pi_t - \pi^*)  + a_2 \log (Y_t /\bar{Y}_t)  .
+\]
+It describes how the Fed sets the short-term interest rate.  The flat interest rate path above
+suggests flat inflation and output relative to trend, which is consistent with what we've seen
+recently.
+\end{enumerate}
+%\end{comment}
+
+%\pagebreak \phantom{bla} \pagebreak \phantom{bla} \pagebreak
+
+% *************************************************************************************************
+\item \textbf{Japanese fiscal policy (20 points).} Japan last year ran a government budget deficit
+of close to 7\% of GDP.  In addition, the ratio of public debt to GDP was over 100\%, GDP growth
+was below 1\%, inflation was slightly negative, and the current account surplus was 3.5\% of GDP.
+%
+\begin{enumerate}
+
+\item Why might a government deficit be associated with a current account surplus, when we see the
+opposite pattern in the US (government and current account deficits)?
+%[Hint:  Use the flow identity.]
+(10~points)
+
+\item The Japanese government is said to be considering three approaches to the government
+deficit: (i)~do nothing and hope it goes away, (ii)~raise tax rates, and (iii)~reduce purchases of
+goods and services.  How would each be likely to affect the Japanese economy?  Which one would you
+suggest? (10 points)
+
+\end{enumerate}
+
+Answer.
+\begin{enumerate}
+\item One version of the flow identity is:
+\[
+    S \;=\; I + \mbox{\em Def} + \mbox{\em CA} .
+\]
+In Japan, $\mbox{\em Def}$  (govt deficit) and $\mbox{\em CA}$ (current account balance) are both
+positive, so $S$ (personal saving) must be significantly greater than $I$ (investment).  In the
+US, $\mbox{\em CA}$ is negative:  $S$ is significantly smaller than $I$.
+
+\item The list:
+%
+\begin{enumerate}
+\item [(i)] Do nothing.  Debt will continue to build up, adding interest expense to the budget.
+The longer this goes on, the larger the debt burden will be.
+
+\item [(ii)]  Raise tax rates.  This may have adverse incentive effects, but it's not clear how
+large those are.  Japan still has a relatively small tax burden overall.
+
+\item[(iii)] Reduce spending. Depends what it is, but some cuts in spending are probably needed.
+\end{enumerate}
+\end{enumerate}
+
+%\pagebreak \phantom{bla} \pagebreak
+
+
+\item \textbf{Miscellany (50 points).}
+
+\begin{enumerate}
+
+\item {\it The Economist\/} reports that a Big Mac costs \$2.90 in the US, \$3.28 in the eurozone,
+and \$2.33 in Japan.  (These prices are averages for the various regional markets, expressed in US
+dollars using current spot exchange rates.)  What does this suggest about the likely change in
+value of the euro and yen v. the dollar over the coming 6 months?  6 years? (10 points)
+
+Answer.  PPP suggests that exchange rates will adjust to make prices the same across countries. In
+this case, that means the dollar will rise against the euro, fall against the yen.  Is this right?
+Over short periods of time, exchange rates are close to unpredictable by any means, PPP included.
+Over longer periods of time (5-20 years) PPP is a fairly reliable guide.
+
+
+\item Over the last year, Mexico had GDP growth of 5\%, a government budget deficit of less than
+1\% of GDP, and a current account deficit of \$100b (about 2\% of GDP).  Foreign exchange reserves
+are now about \$64b.  Do these indicators suggest possible difficulties in the Mexican economy? Be
+specific.  (10 points)
+
+Answer.  The ``Roubini indicators'' of trouble include a large current account deficit and a small
+quantity of reserves.  In this case, reserves are modest (less than one year's current account),
+but the current account deficit is small, esp for a country growing so rapidly.   In short: little
+sign of difficulty.
+
+\item In some countries, fear of collapse of the banking system has led people to hold more cash
+and fewer bank deposits.  For a given level of the monetary base, what is the impact on the money
+supply?  (10 points)
+
+Answer.  The money supply falls:  the currency-deposit ratio rises, so that a given monetary base
+leads to a smaller monetary aggregate.
+
+\item In Canada over the last year, inflation has been 2.3\% and money growth (M1) has been
+11.8\%.  Do you find the difference between the two numbers surprising? Why or why not?  (10
+points)
+
+Answer.  Not surprising because the short-run relation between money growth and inflation is weak.
+
+\item Contrast labor markets in South Africa, Pakistan, and Ireland.  Which, in your view, offers
+the most flexible market at the present time?  Why?  (10 points)
+
+Answer.  Much more flexible in Ireland.  Pakistan is a morass of regulations that inhibit job
+growth.  South Africa is burdened by (among other things) racial quasi-quotas.  History tells us
+why they're there, but that makes them no less onerous for employers.  [Comment:  These countries
+were the subjects of presentations.]
+
+\end{enumerate}
+
+
+\end{enumerate}
+
+%\pagebreak \phantom{bla} \pagebreak \phantom{bla}
+
+
+\vfill \centerline{\it \copyright \ \number\year \ NYU Stern School of Business}
+
+\end{document}

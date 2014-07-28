@@ -1,0 +1,18 @@
+Country,Subject Descriptor,Units,Scale,Country/Series-specific Notes,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,Estimates Start After,
+Peru,"Gross domestic product, constant prices",Percent change,,"See notes for:  Gross domestic product, constant prices (National currency).",2.951,0.215,5.016,4.037,4.977,6.827,7.74,8.906,9.803,0.862,8.794,6.245,5.571,5.999,2010,
+Peru,"Inflation, average consumer prices",Percent change,,"See notes for:  Inflation, average consumer prices (Index).",3.759,1.975,0.192,2.261,3.662,1.618,2.001,1.779,5.788,2.935,1.53,3.056,2.363,2.229,2010,
+Peru,General government revenue,Percent of GDP,,See notes for:  General government revenue (National currency).,18.536,17.764,17.34,17.641,17.574,18.647,20.074,20.906,21.111,18.85,19.986,20.367,20.599,21.002,2010,
+Peru,General government total expenditure,Percent of GDP,,See notes for:  General government total expenditure (National currency).,20.535,19.801,18.674,19.188,18.554,19.055,18.151,17.716,18.906,20.715,20.398,19.741,19.731,19.573,2010,
+Peru,General government net lending/borrowing,Percent of GDP,,See notes for:  General government net lending/borrowing (National currency).,-1.999,-2.037,-1.334,-1.547,-0.98,-0.407,1.922,3.19,2.205,-1.865,-0.412,0.626,0.868,1.429,2010,
+Peru,General government primary net lending/borrowing,Percent of GDP,,See notes for:  General government primary net lending/borrowing (National currency).,0.144,-0.005,0.647,0.373,0.947,1.374,3.696,4.859,3.708,n/a,n/a,n/a,n/a,n/a,2010,
+Peru,General government gross debt,Percent of GDP,,See notes for:  General government gross debt (National currency).,42.429,41.469,43.207,47.106,44.339,37.737,33.166,30.903,25.047,27.148,24.523,21.518,19.191,16.363,2010,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+"International Monetary Fund, World Economic Outlook Database, September 2011",,,,,,,,g,pi,rev,exp,surplus,prim_srpls,debt,srpls_check,iB/Y,DeltaB,(i-pi)B/Y,gB/Y,DeltaB_check
+,,,,,,,2002,5.016,0.192,17.34,18.674,-1.334,0.647,43.207,-1.334,1.981,,,,
+,,,,,,,2003,4.037,2.261,17.641,19.188,-1.547,0.373,47.106,-1.547,1.92,3.899,1.64868,1.74426659,-0.46858659
+,,,,,,,2004,4.977,3.662,17.574,18.554,-0.98,0.947,44.339,-0.98,1.927,-2.767,1.48756,2.34446562,-1.80390562
+,,,,,,,2005,6.827,1.618,18.647,19.055,-0.407,1.374,37.737,-0.408,1.781,-6.602,1.58684,3.02702353,-2.81418353
+,,,,,,,2006,7.74,2.001,20.074,18.151,1.922,3.696,33.166,1.923,1.774,-4.571,1.53388,2.9208438,-5.0829638
+,,,,,,,2007,8.906,1.779,20.906,17.716,3.19,4.859,30.903,3.19,1.669,-2.263,1.45552,2.95376396,-6.35724396
+,,,,,,,2008,9.803,5.788,21.111,18.906,2.205,3.708,25.047,2.205,1.503,-5.856,0.80844,3.02942109,-5.92898109

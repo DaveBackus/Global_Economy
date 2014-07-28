@@ -1,0 +1,182 @@
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage{ge05}
+\usepackage{comment}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage[dvipdfm]{hyperref}
+\urlstyle{rm}   % change fonts for url's (from Chad Jones)
+\hypersetup{
+    colorlinks=true,        % kills boxes
+    allcolors=blue,
+    pdfsubject={NYU Stern course GB 2303, Global Economy},
+    pdfauthor={Dave Backus @ NYU},
+    pdfstartview={FitH},
+    pdfpagemode={UseNone},
+%    pdfnewwindow=true,      % links in new window
+%    linkcolor=blue,         % color of internal links
+%    citecolor=blue,         % color of links to bibliography
+%    filecolor=blue,         % color of file links
+%    urlcolor=blue           % color of external links
+% see:  http://www.tug.org/applications/hyperref/manual.html
+}
+
+
+\def\ClassName{The Global Economy}
+\def\Category{Class Notes}
+\def\HeadName{Financial Markets}
+
+\begin{document}
+\thispagestyle{empty}%
+\Head
+
+\centerline{\large \bf \HeadName}%
+\centerline{Revised: \today}
+
+\bigskip
+Some of the most important markets for aggregate economic performance
+are those for labor and (financial) capital,
+which affect every industry and product.
+Countries differ markedly in their treatment of both markets,
+with (evidently) different outcomes as a result.
+
+Our focus here is on financial markets,
+which are perhaps the most difficult markets to manage effectively.
+
+
+\subsubsection*{Financial markets}
+
+Financial markets are central to economic performance,
+because they facilitate (if they work well)
+the allocation of resources to the most productive firms.
+In the US today,
+some firms borrow from banks,
+others issue bonds and equity in capital markets,
+and still others raise money through venture capitalists.
+Countries differ widely in how they do this,
+but they all have ways of channeling funds from
+households (savers) to firms (borrowers).
+
+
+The primary issue with financial markets is information,
+and we know that markets sometimes handle information poorly.  
+Here investors need to understand the risks faced by borrowers, 
+but borrowers typically know more about themselves than others do.  
+A bank, for example, needs to know enough about its borrowers to 
+assess the risk of default, 
+and its depositors need to know enough about the bank's ability to 
+do this well to assess the risk to their deposits.  
+
+None of this is easy to do.  
+All of these financial arrangements 
+require institutional support.
+An effective financial system requires some version of
+%
+\begin{itemize}
+\item Creditor protection.
+If A loans money to B, it's essential that A's claim be honored.
+That requires a legal system that makes
+the creditor's rights clear and enforces them if necessary.
+[You might be thinking about ``property rights'' and the ``rule of law''
+about now.]
+Without this, people will simply not make loans.
+Or they make loans only to friends and relatives.
+Weak ineffective financial systems follow naturally
+when creditors are not protected.
+
+\item Governance.
+The laws of most countries give creditors some
+say over the management of firms.
+Equity investors, for example,
+are represented (in principle) by boards of directors.
+There's endless debate about how best to do this,
+but there's no question doing it well is important.
+
+\item Disclosure.
+When people invest in securities, they need to understand what
+they're buying.
+In most countries with active securities markets,
+the law dictates disclosure of relevant financial information.
+Again, some countries do this better than others.
+\end{itemize}
+%
+Measures of these things are available from a number
+of sources,
+including the World Bank's Doing Business
+\href{http://www.doingbusiness.org/}{website}.
+
+
+\subsubsection*{Financial regulation and crises}
+
+The challenge of managing a financial system is not only
+to get capital allocated efficiently,
+but to avoid the periodic crises financial systems
+tend to experience.
+If financial development gets ahead of the institutional environment,
+the risk of a crisis is higher.
+That's one of the reasons China has resisted more rapid
+liberalization of its financial system:
+the risk of disruption is more than they're willing to bear.
+
+It's hard to strike the right balance here.
+In the US, bank panics were a common occurrence
+up through the 1930s.
+During the Depression,
+hundreds of banks went under.
+Some of them were insolvent.
+Others closed because depositors demanded their money back
+for fear that the bank would go under:
+what we call bank runs.
+It's hard to say for sure,
+but it looks like there's a degree of self-fulfilling
+prophecy here.
+
+So what do you do?
+One way to stop bank runs is to provide deposit insurance.
+Milton Friedman and Anna Schwartz called federal
+deposit insurance ``the most important structural change''
+made in the 1930s to deal with bank runs.
+And it worked:  bank runs pretty much ended.
+
+But like many solutions, it raised new problems.
+The problem with deposit insurance is what economists call ``moral hazard''
+and others might call the ``other people's money'' problem.
+Since banks don't face the risk of withdrawal,
+they have less reason to control the risk of their investments.
+We found out in the 1980s S\&L crisis that this problem could be pretty expensive.
+That's led to a complex regulatory structure intended
+to keep banks from taking excessive risks
+and thus protect the taxpayers who backstop the system.
+
+
+Evidently it's hard to get the right balance:
+an effective financial system without undue risk of crisis. ...
+
+
+
+\subsubsection*{Executive summary}
+
+\begin{enumerate}
+\item ...
+\end{enumerate}
+
+\begin{comment}
+\subsubsection*{Review questions}
+
+\begin{enumerate}
+
+\item ...
+\end{enumerate}
+\end{comment}
+
+\subsubsection*{If you're looking for more}
+
+Doing Business...
+
+
+\vfill \centerline{\it \copyright \ \number\year \ NYU Stern
+School of Business}
+
+
+\end{document}
+

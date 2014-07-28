@@ -1,0 +1,106 @@
+%% GE05.sty
+%% Written by: Backus and Clementi, Nov 04, based on template from Tim Van Zandt
+
+\oddsidemargin=0.25truein
+\evensidemargin=0.25truein
+%\topmargin=0.25truein
+\topmargin=-0.5truein
+\textwidth=6.0truein
+\textheight=8.75truein
+%\textheight=8.5truein
+
+\parskip=\bigskipamount
+\parindent=0.0in
+
+% ******************************************************************************
+% SecondPage page style
+% -- defines vertical page parameters and headers/footers for pages after the first one
+
+% TVZ version
+%\def\default@pageparameters{%
+%    \topmargin -1in       % To undo default margin of 1in
+%    \advance\topmargin 1.25cm
+%    \headheight .50cm
+%    \headsep   1.25cm
+%    \textheight\paperheight
+%    \advance\textheight -5cm  % Leaves bottom margin of 2cm
+%    }
+
+\def\default@pageparameters{%
+%    \topmargin=-0.5truein
+%    \textwidth=6.0truein
+%    \textheight=8.5truein
+%    \topmargin -1in       % To undo default margin of 1in
+%    \advance\topmargin 1.25cm
+    \headheight .50cm
+    \headsep   1.25cm
+%    \textheight\paperheight
+%    \advance\textheight -5cm  % Leaves bottom margin of 2cm
+    }
+
+
+\def\ps@secondpage{%
+    \let\@oddfoot\relax
+    \let\@evenfoot\relax
+    \def\@oddhead{%
+%        \vspace*{-0.15in}
+        \hbox to \textwidth{%
+%            \hss
+            \vbox to \z@{%
+%                \vspace*{0.25in}
+%                \vss
+                \hbox to \hsize{\HeadName \hfill \thepage}%
+                \kern 5pt
+            \hrule height1pt
+%            \vspace*{-.25in}
+            }%
+            \hss
+        }}
+    \let\@evenhead\@oddhead}
+
+\def\ps@SecondPage{%
+    \default@pageparameters
+    \ps@secondpage}
+
+\pagestyle{SecondPage}
+
+% ******************************************************************************
+% FirstPage page style is the logo and class name
+
+\def\ps@FirstPage{%
+    \def\@oddfoot{}%
+    \let\@evenfoot\@oddfoot
+    \def\@oddhead{\Head}%
+    \let\@evenhead\@evenfoot}
+
+
+% ******************************************************************************
+% For the header with NYU Stern logo:
+%\RequirePackage{epsf}
+%\RequirePackage{graphics}
+\RequirePackage{graphicx}
+
+\def\Head{%
+    \vspace*{-0.5in}
+    \hrule height1pt
+    \vspace{0.1in}
+    \vbox{%
+        \vss
+%        \def\baselinestretch{1.3}%
+        \hbox to \hsize{%
+        \vbox{%
+%            \hbox{\epsfxsize=2.5in\epsffile{stern_logo.eps}}
+            \hbox{\resizebox{2.5in}{!}{\includegraphics{stern_black1.png}}}
+%            \hbox{\includegraphics[width=2.5in]{stern_logo3.eps}}
+            }
+        \hfill
+        \vbox{%\
+%            {\bf \hfill \ClassName \\ \hfill \Category}
+            \llap{\bf\ClassName} \vspace{1pt}
+            \llap{\bf\Category}
+%            \kern 0.4cm
+        }}
+    \vspace{0.40in}
+    }}
+
+\endinput

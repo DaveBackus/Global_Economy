@@ -1,0 +1,503 @@
+\documentclass[12pt]{exam}
+
+\usepackage{ge13}
+%\usepackage{comment}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\urlstyle{rm}   % change fonts for url's (from Chad Jones)
+\hypersetup{
+    colorlinks=true,        % kills boxes
+    allcolors=blue,
+    pdfsubject={NYU Stern course GB 2303, Global Economy},
+    pdfauthor={Dave Backus @ NYU},
+    pdfstartview={FitH},
+    pdfpagemode={UseNone},
+%    pdfnewwindow=true,      % links in new window
+%    linkcolor=blue,         % color of internal links
+%    citecolor=blue,         % color of links to bibliography
+%    filecolor=blue,         % color of file links
+%    urlcolor=blue           % color of external links
+% see:  http://www.tug.org/applications/hyperref/manual.html
+}
+
+\usepackage{enumitem}
+    \setitemize{leftmargin=*, topsep=0pt}
+    \setenumerate{leftmargin=*, topsep=0pt}
+\usepackage{attachfile}
+    \attachfilesetup{color=0.5 0 0.5}
+\usepackage{needspace}
+% example:  \needspace{4\baselineskip} makes sure we have four lines available before pagebreak
+
+% for ge05.sty
+\def\ClassName{The Global Economy}
+\def\Category{Professor David Backus}
+\def\HeadName{Problem Set \#2}
+\newcommand{\phm}{\phantom{--}}
+\newcommand{\NX}{\mbox{\it NX\/}}
+\newcommand{\POP}{\mbox{\it POP\/}}
+\renewcommand{\log}{\ln}
+
+\printanswers
+
+\begin{document}
+\parindent = 0.0in
+\parskip = \bigskipamount
+\thispagestyle{empty}%
+\Head
+
+\centerline{\large \bf \HeadName: Long-Term Economic Performance}
+%\centerline{\large \bf Problem Set \#2:  Long-Term Economic Performance}
+\centerline{Revised:  \today}
+
+\medskip
+{\it You may do this assignment in a group.
+Whatever you hand in should be the work of your group
+and include the names of all of the contributors.}
+
+\begin{questions}
+
+\begin{solution}
+Brief answers follow,
+but see also the attached spreadsheet:
+download this pdf file, open it with the Adobe Reader or the equivalent,
+and click on the pushpin:
+\attachfile{ps2_f13_answerkey.xlsx} \\
+{\it If you don't see a pushpin above, my guess is you have a Mac.
+The pushpin doesn't appear in Preview,
+but you can use the Adobe Reader or the equivalent.}
+\end{solution}
+
+% --------------------------------------------------------------------
+\question {\it Sources of Korean success  (35~points).\/}
+The Republic of Korea (``South Korea'')
+has been one of the great economic success stories of world history.
+Since the end of the Korean War in 1953,
+GDP per capita has risen by a factor of almost 20.
+Over the same period, US income rose by a factor of 3.
+As a result, the gap between the two countries has shrunk dramatically.
+In 1953, average income in Korea was about 10\% of US income,
+but by 2010 (the most recent comparable number) it was about 65\%.
+
+Was Korea a classic productivity story,
+or did capital formation and hours worked play more important
+roles than in other countries?
+We know, for example, that the saving rate and hours worked
+are both unusually high.
+Let's check the numbers and see where the remaining difference
+in GDP per person comes from.
+
+%Go to the Penn World Table
+%\href{http://www.rug.nl/research/ggdc/data/penn-world-table|}{website},
+Use the Penn World Table summary spreadsheet,
+
+\vspace*{\parskip}
+\centerline{\url{http://pages.stern.nyu.edu/~dbackus/2303/pwt80_GlobalEconomy.xlsx},}
+
+to fill in this table for 2011:
+%
+\begin{center}
+%\tabcolsep = 0.2in
+\begin{tabular}{lcc}
+\toprule
+        &  South Korea & United States \\
+\midrule
+GDP per person ($Y/\POP$) \phantom{xxxx}&  \\
+GDP per worker ($Y/L$)    &  \\
+Capital-output ratio ($K/Y$)  & \\
+Capital per worker ($K/L$)    & \\
+Employment rate ($L/\POP$)      & \\
+\bottomrule
+\end{tabular}
+\end{center}
+\smallskip
+%Note that you may have to compute some of the entries
+%yourself from the numbers in the spreadsheet.
+
+\begin{parts}
+
+\part What is the ratio of GDP per person in the two countries
+(Korea over US)?
+(5~points)
+
+\part Use the production function to derive total factor productivity (TFP)
+ in each country from the numbers in the table.
+ What is the ratio of the two countries?  How does it compare to the ratio
+ you computed in (a)?
+ (10~points)
+
+\part Overall, what factors contribute to the difference in GDP per person?
+How important is capital?
+(10~points)
+
+\part You have heard that Koreans work exceptionally long hours.
+The OECD Employment Outlook reports that the average employee in Korea worked 2090 hours in 2011,
+while the average American employee worked only 1787 hours.
+How would this information change your calculation of TFP?
+How does it change your assessment of the relative productivity
+of Korea and the US?
+(10~points)
+\end{parts}
+
+\begin{solution}
+Brief answers follow.
+See the spreadsheet for the calculations.
+The table becomes
+\begin{center}
+%\tabcolsep = 0.2in
+\begin{tabular}{lrrr}
+\toprule
+        &  Korea & USA & \phantom{x}Ratio\\
+\midrule
+GDP per person ($Y/\POP$) \phantom{xxxx}& 29,272 & 42,140 & 0.695  \\
+GDP per worker ($Y/L$)                  & 58,864 & 93,038 & 0.633 \\
+Capital-output ratio ($K/Y$)            & 3.981 & 3.146 & 1.265 \\
+Capital per worker ($K/L$)              & 234,314 & 292,659 & 0.801 \\
+Employment rate ($L/\POP$)              & 0.497 & 0.453 & 1.097 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+%
+\begin{parts}
+\part The ratio is $0.695 = 29,272/42,140$:
+Korea has, by this measure, a living standard about 70\% of the US's.
+The rest of the question is devoted to explaining the sources
+of this difference.
+
+\part We compute productivity the usual way from measures in output and inputs.
+If the production function is $ Y/L = A (K/L)^\alpha$, then \\ $ A = (Y/L) / (K/L)^\alpha$
+with (as usual) $\alpha = 1/3$.
+Thus for Korea we have $A_{K} = 58,864/234,314^{1/3} = 955$.
+The ratio of productivities is 0.681,
+which is a little bit less than the ratio of GDP per capita.
+
+\part What we have in mind is a level comparison:
+\begin{eqnarray*}
+    \frac{(Y/\POP)_K}{(Y/\POP)_{US}} &=&
+            \left( \frac{(L/\POP)_K}{(L/\POP)_{US}} \right)
+            \left( \frac{A_K}{A_{US}} \right)
+            \left( \frac{(K/L)_K}{(K/L)_{US}} \right)^{1/3} \\
+            &=&  1.097 \times 0.681 \times 0.929
+                \;\;=\;\; 0.694 .\phantom{sum^K}
+\end{eqnarray*}
+You see here that most of the difference comes from productivity.
+
+\part This question is intentionally more demanding.
+We modify the production function to include hours of work.
+There's more than one route to this answer,
+among them $ Y = A K^\alpha (hL)^{1-\alpha} $.
+Productivity (``corrected'' for hours worked)
+is now 5.841 in Korea and 9.516 in the US.
+(The use of hours data changes the units, so they're not comparable to the previous numbers.)
+The ratio is 0.615, which is well below our earlier calculation of 0.681.
+In words:  part of what we attributed to productivity before
+was really a difference in hours worked.
+\end{parts}
+\end{solution}
+
+% --------------------------------------------------------------------
+\question {\it La Dolce Vita (35 points).\/}
+Like most of Western Europe, Italy grew rapidly after World War II.
+It differs from most other European countries in slowing
+almost to a halt over the last decade.
+The question is why.
+
+We'll start by looking at the numbers.
+Complete the following table using the same source as the previous question:
+%
+\begin{center}
+%\tabcolsep = 0.2in
+\begin{tabular}{lrrr}
+\toprule
+        &  1950 & 2000 & 2011 \\
+\midrule
+GDP per capita ($Y/\POP$) \phantom{xxxx}&  \\
+GDP per worker ($Y/L$)    &  \\
+Capital-output ratio ($K/Y$)  & \\
+Capital per worker ($K/L$)    & \\
+Employment rate ($L/\POP$)      & \\
+\bottomrule
+\end{tabular}
+\end{center}
+\medskip
+%
+
+\begin{parts}
+\part Compute the (average annual continuously compounded)
+growth rates of GDP per capita and GDP per worker
+over the periods 1950-2000 and 2000-2011.
+10~points)
+
+\part Use our growth accounting methodology to allocate growth in
+GDP per worker to growth in productivity and capital per worker.
+Which factor changed most between the two periods? (15~points)
+
+\part Use the World Bank's
+\href{http://www.doingbusiness.org/rankings}{Doing Business}
+rankings, and any other sources you deem relevant,
+to assess Italy's business environment.
+What are its strengths?  Its weaknesses?
+What factors would you blame for Italy's current malaise?
+(10~points)
+\end{parts}
+
+
+\begin{solution}
+The idea is to take a quick look at Italy's economic performance.
+To make the numbers easier to manage, I've divided
+$Y/L$ and $K/L$ by 1000, which changes the units of TFP, too.
+The growth rates, of course, are the same either way.
+See the spreadsheet for details.
+%
+\begin{parts}
+\part The numbers are
+%
+{\small
+\begin{center}
+%\tabcolsep = 0.2in
+\begin{tabular}{lrrrrr}
+\toprule
+&&&& \multicolumn{2}{c}{Growth Rates} \\
+\cmidrule(r){5-6}
+        &  1950 & 2000 & 2011 & 1950-2000 & 2000-11 \\
+\midrule
+$Y/\POP$ \phantom{xxxx}&
+          3.596 & 28.734 & 29.051 & 4.157 & 0.100 \\
+$Y/L$  & 10.105 & 72.449 & 71.678 & 3.94 & (0.097)  \\
+$K/Y$  & 2.718 & 3.446 & 4.769 & 0.475 & 2.954\\
+$K/L$  & 27.465 & 249.637 & 341.831 & 4.414 & 2.857 \\
+$L/\POP$  & 0.356 & 0.397 & 0.405 & 0.218 & 0.181 \\
+\bottomrule
+\end{tabular}
+\end{center}
+}
+\medskip
+%
+Growth rates are percentages.  Numbers in parentheses are negative.
+
+
+To take one number:  the (average annual continuously compounded)
+growth rate of GDP per capita for the period 1950-2000 is
+\[
+    \gamma \;=\; \log (28.734/3.596) / (2000 - 1950) \;=\; 4.157\%.
+\]
+(We give 3 digits here to allow you to compare your own numbers,
+but it's excessive accuracy, not justified by the quality of the data.)
+The other growth rates are computed the same way.
+If you're not sure why this works,
+refer to the discussion of growth rates in the math review.
+
+For the later period, the growth rate is 0.100\% (zero, really),
+so there's been a sharp drop in economic performance.
+If you look more closely, it's not simply a reflection
+of the financial crisis;
+growth stopped before that.
+
+\part We use the production function
+$    Y/L \;=\; A (K/L)^{1/3} $,
+so TFP is $ A = (Y/L) / (K/L)^{1/3}  $.
+In growth rates, this becomes
+\begin{eqnarray*}
+    && \phantom{xx} \gamma_{Y/L} \;\;=\;\;   \gamma_A  + \alpha \gamma_{K/L}  \\
+    \mbox{1950-2000}: && \phantom{-}3.940 \;\;=\;\; 2.468 + 1.471 \\
+    \mbox{2000-11}:   && -0.097 \;\;=\;\; -1.050 + 0.952 .
+\end{eqnarray*}
+We see here that almost all of the drop growth comes from productivity.
+For whatever reason, productivity stopped growing.
+In fact, it's going down. But why?
+
+\part Italy remains one of the more prosperous countries in the world,
+with a long and distinguished history and culture.
+The World Bank ranks it 24th in GDP per capita.
+Many of its institutions, however, are well below that.
+Doing Business ranks Italy 73rd in overall ease of doing business,
+84th in ease of starting a business,
+131st in difficulty and expense of paying taxes,
+and 160th in efficiency of enforcing contracts.
+This is a picture, in short, of a country with some
+fundamental economic problems.
+
+
+The Economist Intelligence Unit comments in its {\it Country Commerce\/} report:
+\begin{itemize}
+\item ``The main attraction for foreign companies to set up operations in Italy is the
+size of the domestic market. Deterrents include the complexity of Italy's legal
+system; inefficiencies in public administration; inadequate infrastructure,
+particularly in the south of the country; and often high regulatory barriers to
+entry.''
+\item ``Italy's rigid labour market consists mainly of two tiers of highly protected
+workers with lifetime jobs and those newly hired with short-term contracts that
+include little or no security. The European Commission has long called for
+changes to labour market legislation but the contentious nature of such reform
+in Italy resulted in very little progress.''
+\end{itemize}
+
+The World Economic Forum's {\it Global Competitiveness Report\/} says:
+``Italy was 49th this year, with a lack of clear political direction over the past year increasing business
+uncertainty. ...
+Its labor market remains extremely rigid, hindering employment creation.
+Italy's  financial markets are not sufficiently developed to provide
+needed finance for business development.
+Other institutional weaknesses include high levels of
+corruption and organized crime and a perceived lack of
+independence within the judicial system, which increase
+business costs and undermine investor confidence.''
+
+It's not hard to imagine that such things cut into productivity,
+with the results we noted earlier.
+\end{parts}
+\end{solution}
+
+% --------------------------------------------------------------------
+\question {\it Labor market conditions (30 points).\/}
+Your first day on the job at General Electric,
+you are given 4 hours to collect information for a 5-minute
+presentation to your group summarizing the labor market
+conditions a manufacturer would face in Brazil, the Czech Republic, and Singapore.
+Once you get over your initial panic, you contact your Global Economy
+professor, who suggests you look at the
+\href{http://pages.stern.nyu.edu/~dbackus/macro_resources.htm}{resource page},
+starting with:
+%
+\begin{itemize}
+\item The Bureau of Labor Statistics'
+\href{http://www.bls.gov/fls/}{International Labor Comparisons},
+especially the section titled
+\href{http://www.bls.gov/fls/ichcc.htm}{Hourly Compensation Costs},
+which includes wage costs in a number of countries,
+collected on a comparable basis.
+
+\item The World Bank's
+\href{http://data.worldbank.org/topic}{Global Development Indicators}
+and the
+\href{http://www.barrolee.com/}{Barro-Lee dataset},
+which include
+information about the education and literacy of the population.
+
+\item The World Bank's Doing Business website, which includes
+institutional information about the labor market,
+labeled
+\href{http://www.doingbusiness.org/data/exploretopics/employing-workers}
+{Employing Workers}.
+
+\item The Economist Intelligence Unit's {Country Commerce Reports},
+particularly the section on human resources,
+which describes the legal and business environment governing employment.
+To access the reports go to NYU's
+\href{http://library.nyu.edu/vbl/}{Virtual Business Library},
+click on Country Information, then EIU Country Commerce,
+login as directed using your NYU id and pw,
+click on Country Commerce again, and choose the country of interest.
+\end{itemize}
+%
+Use this information to put together a short report
+summarizing labor market conditions in these three countries.
+A summary table or chart would be ideal.
+
+\begin{solution}
+The basic tradeoff here is between cost (the wage data)
+and quality, including the skill of the labor force and
+the quality of the institutions you'll be dealing with.
+Here's a table of some of the numbers you might find,
+but yours may differ depending on the source:
+
+\begin{center}
+\begin{tabular}{lrrr}
+\toprule
+		& Brazil & Czecho  & Singapore  \\
+\midrule
+Hourly direct pay (USD)           & 5.95   & 7.23& 15.71 \\
+Hourly total compensation (USD)   & 11.20  & 11.95 & 24.16 \\
+\midrule
+Literacy of adults  (\%)    &  90 & 100 & 96 \\
+%Primary school enrollment (\%) & 127 & 97 & --- \\
+%Secondary school enrollment (\%) & 101 & 97 & --- \\
+\midrule
+Minimum wage (monthly, USD) & 350 & 440 & 0 \\
+Severance (weeks, 10 years experience)
+                    & 36 & 13 & 0 \\
+\midrule
+Strictness of employment protection (index)
+                & 1.75 & 2.66 & --- \\
+\midrule
+Average years of school (age $\geq$ 15) & 7.6 & 12.1 & 9.1 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The lines represent different sources;
+in the order they appear,
+BLS, World Bank GDI, Doing Business, OECD,
+and Barro-Lee.
+
+Some of the highlights from the human resources sections
+of the EIU's {\it Country Commerce\/} reports:
+\begin{itemize}
+\item Brazil:
+Brazil has a highly regulated and costly labour system for the formal sector, and
+there continues to be a sizeable informal sector that employs many workers.
+
+The 1988 federal constitution legalises unions, collective-bargaining negotiations
+and the right to strike in both the public and private
+sectors. The constitution also sets overtime rates, provides a monthly minimum
+wage and regulates working hours. It lists a variety of labour entitlements,
+including maternity leave, annual leave, worker's compensation,
+social services, medical assistance and unemployment benefits.
+
+Labour costs in Brazil are high. This is mainly because of the many mandatory
+charges and taxes attached to employment. Although wages remain quite
+moderate, they account for at most two-thirds of the total costs of hiring labour.
+
+\item Czecho:
+The Czech Republic has a highly skilled workforce, particularly in technology
+and engineering. Educational and literacy levels are high. Companies report
+few difficulties in recruiting skilled and unskilled workers, particularly in
+industrial areas.
+
+Czech labour law derives from the Communist-era Labour Code of
+1965, though it continues to evolve. ...
+Changes introduced in January 2011 exempt workers with tenure of
+less than two years from mandatory three-month severance pay in the event of
+involuntary termination. The revision, made with the goal of boosting
+job-creation, cut
+severance for newer employees to one month's wages for those with less than
+one year of service and two months' wages for those with 1–2 years on the job.
+
+\item Singapore:
+Singapore's workforce is among the most stable and productive in Asia.
+...
+The workforce is greying rapidly, and there are fewer economically
+active people in the younger age brackets. ...
+...
+Technically qualified local staff is available from local universities.
+
+Absent any agreed notice period in a collective agreement,
+an employee must receive one day of notice for fewer than 26 weeks of service,
+one week of notice for 26 weeks to two years of service, two weeks' notice for
+2–5 years of service, and four weeks' notice for five or more years of service.
+...  Severance is usually covered by labor contracts.
+
+\end{itemize}
+
+
+My summary:
+\begin{itemize}
+\item Brazil:  lowest education level of the three, somewhat rigid labor market,
+cost comparable to Czecho, much cheaper than Singapore.
+\item Czech Republic:  the most educated labor force of the three, labor available,
+comparable in price
+ to Brazil, more rigid labor market (but evolving), part of the EU.
+\item Singapore:  educated workers, limited supply of young workers,
+flexible labor market, expensive.
+\end{itemize}
+
+\end{solution}
+
+
+\end{questions}
+
+\vfill \centerline{\it \copyright \ \number\year \
+NYU Stern School of Business}
+
+\end{document}
+

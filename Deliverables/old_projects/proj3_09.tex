@@ -1,0 +1,716 @@
+\documentclass[letterpaper,12pt]{article}
+
+\RequirePackage{comment}
+\RequirePackage{GE05}
+% this inputs graphicx, too
+\RequirePackage[hypertex]{hyperref}
+    \hypersetup{colorlinks=true,urlcolor=blue,linkcolor=red}
+
+\newcommand{\POP}{\mbox{\it POP\/}}
+
+\def\ClassName{The Global Economy}
+\def\Category{Professor David Backus}
+\def\HeadName{Group Project \#3}
+
+\begin{document}
+\parindent = 0.0in
+\parskip = \bigskipamount
+\thispagestyle{empty}%
+\Head
+
+\centerline{\large \bf \HeadName:  Sources of Country Performance}%
+\centerline{Revised:  \today}
+
+\medskip
+{\it Submit via Blackboard by 9am February 17.}
+
+\begin{enumerate}
+
+\item {\it Japan and Korea. }   
+Japan and Korea are two of the most remarkable economic 
+success stories in human history.
+Having experienced unusually rapid economic growth over long periods of time, they have moved from the ranks of developed countries to 
+developed and middle income countries, respectively.  
+In Japan, per capita GDP rose from 30\% of the US in 1870 
+(similar to Mexico today) to about 75\% today.  
+In Korea, GDP per capita rose from about 10\% of the US in 1960 
+(similar to the Philippines at the time) 
+to over 50\% today.
+Your mission:  to determine the sources of the remaining differences
+between the two countries --- capital, productivity, and anything else 
+that you think is relevant.  
+
+The data for 2003 
+(the most recent year for which all of these numbers are available):
+\begin{center}
+%\tabcolsep = 0.12in
+\begin{tabular}{lcccccc}
+\hline\hline
+        &  POP  &  Y/POP  &  L/POP  &  K/Y     &  Education &  Hours \\
+\hline\hline
+Japan   & 127.7m &  24,036 &  0.534 & 4.003     & \phantom{1}9.6 & 1801 \\%
+Korea   &  \phantom{1}47.5m 
+                 &  17,600 &  0.494 & 3.366    & 11.0  &  2434  \\%
+\hline\hline
+\end{tabular}
+\end{center}
+POP is population (millions), Y is GDP (2000 US dollars), 
+K is capital (2000 US dollars), Education is years of school, 
+and Hours is annual hours worked.  
+Y and K are PPP-adjusted.  
+Education and Hours are from the OECD's {\it Employment Outlook\/};
+the other variables are from the Penn World Tables.  
+
+\begin{enumerate}
+\item Compute output per capita, output per worker, and output per
+hour worked.  How do they differ? (20~points)
+
+\item What are the primary sources of the difference in output per
+capita? (20~points)
+
+\item Using whatever resources you think appropriate, 
+comment on the likely performance of the two countries over the next 
+decade.  
+What do you see as the major opportunities?  Challenges?  (10~points) 
+\end{enumerate}
+
+
+%\newpage
+%\begin{comment}
+
+Answer.
+Per capita output is higher in Japan than Korea, but why?
+Is the Japanese economy more productive?  Other reasons?  
+What would it take for Korea to catch up?  
+\begin{enumerate}
+\item Calculations are reported below.  
+The most striking difference in the numbers:  
+a large difference in average hours worked means 
+that Japan's 26\% advantage in output per worker 
+increases to 71\% in output per hour.  
+In words:  Korea's gap in GDP per worker would be substantially 
+larger if they didn't work so much.  
+%
+\begin{center}
+\begin{tabular}{lccc}
+\hline\hline
+Country   &  GDP Per Capita &  GDP Per Worker &  GDP Per Hour \\
+\hline\hline
+Japan       &  24,036  & 45,011 &  24.99 \\
+Korea       &  17,600  & 35,628 &  14.64 \\
+Japan/Korea &  1.37 &  1.26 &  1.71 \\
+\hline\hline
+\end{tabular}
+\end{center}
+
+\item The idea is to dig a little deeper, 
+introducing (for example) capital and productivity.  
+You could do this in a variety of ways; 
+one is to use 
+\[
+    Y \;=\; A K^\alpha (h L)^{1-\alpha} 
+\]
+to account for the difference in output per hour worked.  
+A little multiplying and dividing gives us 
+\[
+    Y/\POP \;=\; (Y/L) (L/\POP) 
+            \;=\; (L/\POP) A (K/L)^\alpha h^{1-\alpha} .
+\]
+This isn't the only possible line of attack on this problem, but
+it's a reasonable one.  It tells us we can attribute differences
+in per capita GDP to differences in:  participation ($L/\POP$),
+total factor productivity ($A$), capital per worker ($K/L$), 
+and average hours per worker ($h$). 
+The math implies
+%
+\begin{eqnarray*}
+    \frac{(Y/\POP)_{J}}{(Y/\POP)_{K}} &=&
+             \left[ \frac{(L/\POP)_J}{(L/\POP)_{K}} \right]
+             \left[ \frac{A_J}{A_{K}} \right]
+             \left[ \frac{(K/L)_{J}}{(K/L)_{K}} \right]^\alpha
+             \left[ \frac{h_{J}}{h_{K}} \right]^{1-\alpha} \\
+             &=& \left[ \frac{.534}{.494} \right]
+                 \left[ \frac{0.0538}{0.0511} \right]
+                 \left[ \frac{180.2}{119.9} \right]^{1/3}
+                 \left[ \frac{1801}{2434} \right]^{2/3}_{\phantom{\sum_i}} \\
+      1.37   &=& (1.08)(1.37) (1.15) (0.82) .
+\end{eqnarray*}
+%
+Where does the 37\% difference in GDP per person come from?
+Most of the answer is capital: 
+Japan has only an 37\% TFP advantage, 
+and its higher capital per worker would (on its own) 
+adds another 15\% to the difference.  
+But hours worked, as we've seen, goes the other way:  
+higher in Korea.  
+
+Education also plays a role here.  
+Since average years of school are higher in Korea, this will increase the difference
+in TFP (what's left).  
+One approach (mentioned in the notes) is to measure $H$ by $S$.  
+Then a term $(H_J/H_K)^{2/3} = 0.913 $ will be added above.  
+Or you could approximate $H$ by $ \exp(0.07 \times S)$, which would give you a somewhat different answer (0.937).  
+Depending on your choice, the TFP difference will change, 
+since TFP is (by construction) whatever's left.  
+
+
+\item This part is up to you.  
+One possibility is to look at measures of institutional quality 
+and discuss the role you think they'll play in the future.
+Institutions, on the whole, are good indicators of the future, 
+since they tend not to change very quickly.  
+\end{enumerate}
+%\end{comment}
+
+
+%\end{enumerate} \end{document}
+% ===============================================================================
+\item {\it Argentina and Chile. } 
+Argentina and Chile have experienced both dramatic economic growth
+and painful reversals over the last century.  
+Argentina was one of the richest countries in the world in 1900, 
+but mixed economic performance since then has 
+dropped it back into the world of emerging markets.  
+Chile suffered a traumatic change in government in the 1970s, 
+but emerged a decade later as a fast-growing democracy 
+and now has the highest per capita GDP in Latin America.  
+Your mission is to tell us how --- and maybe why 
+--- their experiences have been different.  
+%
+\begin{center}
+%\tabcolsep = 0.12in
+\begin{tabular}{lccccc}
+\hline\hline
+Country   &  Year   &  POP   &  Employment &  Y/POP &  K/POP  \\
+\hline\hline
+Argentina \hspace*{0.1in} &  1960   &  20.6m &  \phantom{1}8.1m   
+                &  \phantom{1}7,838  &  12,713  \\
+Argentina &  2004   &  39.1m &  16.2m             &  10,939 &  24,343  \\
+Chile   &  1960  & 7.59m &  2.55m   
+                &  \phantom{1}5,086   &   16,666  \\
+Chile     &  2004   & 15.67m\phantom{1} &  6.57m   &  12,678  &  29,437  \\
+\hline\hline
+\end{tabular}
+\end{center}
+POP is population (millions), Employment is the number of people working 
+(millions), Y is GDP (2000 US dollars), 
+and K is capital (2000 US dollars).  
+Y and K are PPP-adjusted.  
+Data are from the Penn World Tables.  
+
+
+\begin{enumerate}
+\item Compute the (average annual continuously compounded) 
+growth rates of GDP per capita and GDP per worker in the two countries.  (15~points)
+
+\item Use our growth accounting methodology to allocate growth in
+output per worker to TFP and capital per worker.
+Which factor has been most important over the last 40+ years? (20~points)
+
+%\item Institutions??  
+
+\item Using whatever resources you think appropriate, 
+comment on the differences in performance in the two countries 
+and their likely performance over the next decade.  
+Which do you think grow faster?  
+(15~points) 
+
+\end{enumerate}
+
+
+%\begin{comment}
+Answer.  
+We've seen that GDP per capita in Chile has gone 
+from 35\% below Argentina in 1960 to 16\% above in 2004.
+How did this happen?
+Most of this problem is concerned with aggregate data:
+how much comes from capital, TFP, etc?  
+The last part is an opportunity to look further 
+into features of the two economies that might account 
+for what we find in the data analysis.  
+%
+\begin{enumerate}
+\item The (continuously compounded annual) 
+growth rate of GDP per capita for Argentina is 
+\[
+    \gamma \;=\; \log (10,939/7,838) / (2004 - 1960) \;=\; 0.76\%. (!) 
+\]
+Refer to the discussion of growth rates in ``Sources of Growth''
+if you're not sure why this works.
+A similar calculation gives us 2.08\% for Chile.  
+GDP per worker is GDP per capita times the population then
+divided by the number of workers.  
+Its growth rates are 0.64\% (Argentina) and 1.57\% (Chile).  
+Bottom line:  faster growth in Chile.  
+
+\item We use the production function 
+\[
+    Y/L \;=\; A (K/L)^{1/3} ,
+\]
+so TFP is $ A = (Y/L) / (K/L)^{1/3}  $. 
+In growth rates, with the adjustment for employment, 
+this translates into 
+\begin{eqnarray*}
+    \gamma_{Y/POP} &=&  \gamma_{L/POP}  + \gamma_A 
+                + \alpha \gamma_{K/L}  ,
+\end{eqnarray*}
+which allows us to divide growth in per capita GDP into 
+components due to the employment rate, productivity, 
+and capital per worker.  
+A few calculations give us 
+%
+\begin{center}
+%\tabcolsep = 0.12in
+\begin{tabular}{lcccc}
+\hline\hline
+            &  $Y/\POP$      &  $L/\POP$    &   $A$   &  $K/L$     \\
+\hline\hline
+\multicolumn{5}{l}{\it Argentina} \\
+1960        &    7,838    &  0.393  &   626  &  32,332      \\
+2004        &    10,939\phantom{1}   
+                          &  0.414  &   679  &  58,754    \\
+Growth rate (\%) &  0.76  &  0.12   &   0.19 &  1.36   \\
+Contribution to growth (\%) 
+                &   0.76  &  0.12   &   0.19 &  0.45  \\
+\hline                 
+\multicolumn{5}{l}{\it Chile} \\
+1960        &    5,086    &  0.336   &  412  & 49,616      \\
+2004        &    12,678\phantom{1}
+                          &  0.419   &  733  & 70,210    \\
+Growth rate (\%) &  2.08  &  0.50   &   1.31 &   0.79   \\
+Contribution to growth (\%) 
+                &   2.08  &  0.50   &  1.31  &   0.26  \\
+\hline\hline
+\end{tabular}
+\end{center}
+Here ``growth rate'' is computed as in (a).
+``Contribution'' modifies these growth
+rates as they occur in the formula:  the growth rate of $K/L$ gets
+multiplied by 1/3 (its exponent in the production function).
+The numbers tell us that almost all of the difference in growth 
+comes from TFP.  
+
+\item Almost all of the institutional indicators are stronger for Chile
+than Argentina, so perhaps it's not surprising that economic performance
+has been better.  
+Much of this has come in the last 25 years, as Chile has reestablished a 
+stable democracy with sensible economic policies, no matter who's in power.
+Argentina continues to fluctuate between policies that favor long-term 
+performance and those that focus on the short term.  
+
+\item Your call.  My own opinion is that the strong economic and political 
+foundations Chile has laid will continue to generate higher growth 
+than we'll see in Argentina. 
+For one thing, we've had different parties in power over the last 20 years, 
+yet the same basic economic policies are followed.  
+One that I find intriguing is a privatized social security system, 
+which helped build a domestic capital market.  
+A temporary factor is copper prices, which are unusually high right now. 
+It's a tricky measurement issue, but this tends to show up as high GDP 
+and therefore high TFP.  
+History tells us that probably won't last.
+
+\end{enumerate}
+%\end{comment}
+
+\end{enumerate} 
+
+\vfill \centerline{\it \copyright \ \number\year \  
+NYU Stern School of Business}
+
+\end{document}
+
+\begin{enumerate}
+
+\item {\it Japan and Korea. }   
+Japan and Korea are remarkable success stories, 
+having experienced unusually rapid economic growth over long periods of time.
+In Japan, per capita GDP rose from 30\% of the US in 1870 
+(similar to Mexico today) to about 75\% today.  
+In Korea, GDP per capita rose from about 10\% of the US in 1960 
+(similar to the Philippines at the time) 
+to over 50\% today.
+Your mission:  to determine the sources of the remaining differences
+between the two countries --- capital, productivity, and anything else 
+that you think is relevant.  
+
+The data for 2003 
+(the most recent year for which all of these numbers are available):
+\begin{center}
+%\tabcolsep = 0.12in
+\begin{tabular}{lcccccc}
+\hline\hline
+        &  POP  &  Y/POP  &  L/POP  &  K/Y     &  Education &  Hours \\
+\hline\hline
+Japan   & 127.7m &  24,036 &  0.534 & 4.003     & \phantom{1}9.6 & 1801 \\%
+Korea   &  \phantom{1}47.5m 
+                 &  17,600 &  0.494 & 1.608    & 11.0  &  2434  \\%
+\hline\hline
+\end{tabular}
+\end{center}
+POP is population (millions), Y is GDP (2000 US dollars), 
+K is capital (2000 US dollars), Education is years of school, 
+and Hours is annual hours worked.  
+Y and K are PPP-adjusted.  
+Education and Hours are from the OECD's {\it Employment Outlook\/};
+the other variables are from the Penn World Tables.  
+
+
+\begin{enumerate}
+\item Compute output per capita, output per worker, and output per
+hour worked.  How do they differ? (15~points)
+
+\item What are the primary sources of the difference in output per
+capita? (15~points)
+
+\item Using whatever resources you think appropriate, 
+comment on the likely performance of the two countries over the next 
+decade.  
+What do you see as the major opportunities?  Challenges?  (20~points) 
+\end{enumerate}
+
+
+%\newpage
+%\begin{comment}
+Answer.
+\begin{enumerate}
+\item As we know from class, GDP per capita, per worker, and per
+hour worked are simply the ratios of GDP to population, number of
+workers, and total hours worked, respectively. The numbers are:
+\begin{center}
+\begin{tabular}{lccc}
+\hline\hline
+Country   &  GDP Per Capita &  GDP Per Worker &  GDP Per Hour Worked \\
+\hline\hline
+France  &  26.673  & 65.01 &  0.0447 \\
+US      &  35.356  & 73.19 &  0.0408 \\
+France/US &  0.754 &  0.888 &  1.095 \\
+\hline\hline
+\end{tabular}
+\end{center}
+Note that the ratios (the bottom line) increase as we move to the
+right:  the difference in GDP per person is due to differences in the amount of work (workers and hours).
+
+\item A natural version of the production function in this case is
+\[
+    Y \;=\; A K^\alpha (H h L)^{1-\alpha} ,
+\]
+where $h$ is average hours worked and $L$ is the number of workers
+(employment).  We find $A$ by substituting in for all the other
+numbers:  $ A =Y / [ K^\alpha (H h L)^{1-\alpha}] $.  How do we
+use this to make sense of output per capita? If POP is the
+population, then
+\[
+    Y/\POP \;=\; (Y/L) (L/\POP) \;=\; (L/\POP) A (K/L)^\alpha (H
+    h)^{1-\alpha} .
+\]
+?? ** do more on education ??
+This isn't the only possible line of attack on this problem, but
+it's a reasonable one.  It tells us we can attribute differences
+in per capita GDP to differences in:  participation ($L/\POP$),
+total factor productivity ($A$), capital per worker ($K/L$), human
+capital ($H$), and average hours per worker ($h$). The math
+implies
+%
+\begin{eqnarray*}
+    \frac{(Y/\POP)_{F}}{(Y/\POP)_{US}} &=&
+             \left[ \frac{(L/\POP)_F}{(L/\POP)_{US}} \right]
+             \left[ \frac{A_F}{A_{US}} \right]
+             \left[ \frac{(K/L)_{F}}{(K/L)_{US}} \right]^\alpha
+             \left[ \frac{H_{F}}{H_{US}} \right]^{1-\alpha}
+             \left[ \frac{h_{F}}{h_{US}} \right]^{1-\alpha} \\
+             &=& \left[ \frac{.410}{.483} \right]
+                 \left[ \frac{.0158}{.0147} \right]
+                 \left[ \frac{232.7}{201.3} \right]^{1/3}
+                 \left[ \frac{11.9}{13.8} \right]^{2/3}
+                 \left[ \frac{1453}{1792} \right]^{2/3}_{\phantom{\sum_i}} \\
+             &=& (0.849)(1.074) (1.050) (0.862) (0.870) \;=\;
+             0.754 .
+\end{eqnarray*}
+%
+Where does the 25\% difference in GDP per person come from?
+In order of importance:  ratio of employment to population, education, 
+and hours worked.  
+Capital per worker and TFP go the other way ---
+they're higher in France. Obviously there are many caveats to this
+analysis.  A major one is about education, which we have measured
+with average numbers of completed years of schooling for the
+population older than 15. Obviously, this is not the only way. For
+example, we could try to correct this indicator for the quality of
+education. France boasts the lowest number of pupils per teacher
+in the world. If we accounted for this, the differences in human
+capital between the two countries would not be as stark.
+Another is that a lower employment rate may lead to a higher 
+average skill level, with the least skilled not working.  
+
+\item Evidently labor market outcomes are very different in the
+two countries. Our conjecture is that differences in the
+institutions and legislation that regulates the functioning of
+labor markets play a major role. The US is probably a better place
+to work, at least if you want to work long hours.  
+We still love France as a place to live and eat, though.
+
+\end{enumerate}
+%\end{comment}
+
+%\end{enumerate} \end{document}
+
+% ===============================================================================
+\item {\it Argentina and Chile. } 
+Argentina and Chile have both experienced dramatic economic growth
+and painful reversals over the last century.  
+Argentina was one of the richest countries in the world in 1900, 
+but mixed economic performance since then has 
+dropped it back into the developing world.  
+Chile suffered a traumatic change in government in the 1970s, 
+but emerged a decade later as a fast-growing democracy with 
+the highest per capita GDP in Latin America.  
+\begin{center}
+%\tabcolsep = 0.12in
+\begin{tabular}{lccccc}
+\hline\hline
+Country   &  Year   &  POP   &  Employment &  Y/POP &  K/POP  \\
+\hline\hline
+Argentina \hspace*{0.1in} &  1960   &  20.6m &  \phantom{1}8.1m   
+                &  \phantom{1}7,838  &  12,713  \\
+Argentina &  2004   &  39.1m &  16.2m             &  10,939 &  24,343  \\
+Chile   &  1960  & 7.59m &  2.55m   
+                &  \phantom{1}5,086   &   16,666  \\
+Chile     &  2004   & 15.67m\phantom{1} &  6.57m   &  12,678  &  29,437  \\
+\hline\hline
+\end{tabular}
+\end{center}
+POP is population (millions), Employment is the number of people working 
+(millions), Y is GDP (2000 US dollars), 
+and K is capital (2000 US dollars).  
+Y and K are PPP-adjusted.  
+Data are from the Penn World Tables.  
+
+
+\begin{enumerate}
+\item Compute the (average annual continuously compounded) 
+growth rates of GDP per capita and GDP per worker in the two countries.  (10~points)
+
+\item Use our growth accounting methodology to allocate growth in
+output per worker to TFP and capital per worker.
+Which factor has been most important over the last 40+ years? (15~points)
+
+\item Speculate on the differences in the two countries 
+that led to the observed differences in their performance.  (5~points)
+
+%\item Institutions??  
+
+\item Using whatever resources you think appropriate, 
+comment on the likely performance of the two countries over the next 
+decade.  
+What do you see as the major opportunities?  Challenges?  (20~points) 
+
+\end{enumerate}
+
+
+%\begin{comment}
+Answer.  NB:  the numbers used in class are based on more recent
+data for education and differ slightly from those reported in the
+assignment.
+\begin{enumerate}
+\item GDP per worker is GDP per capita times the population then
+divided by the number of workers:  4,576 in 1961 and 36,851 in
+2000.  Its continuously compounded growth rate is
+\[
+    \gamma \;=\; \log (36,851/4,576) / 39 \;=\; 5.35\%.
+\]
+Refer to the discussion of growth rates in ``Sources of Growth''
+if you're not sure why this works.
+
+\item We use the production function in output per worker form,
+\[
+    Y/L \;=\; A (K/L)^{1/3} H^{2/3} .
+\]
+TFP is then $ A = (Y/L) /[ (K/L)^{1/3} H^{2/3}]  $. The necessary
+data for growth accounting is
+%
+\begin{center}
+%\tabcolsep = 0.12in
+\begin{tabular}{lcccc}
+\hline\hline
+Year        &  $Y/L$      &   $A$   &  $K/L$    &  $H$   \\
+\hline\hline
+1961        &    4,576    &  769    &   11,676  & 4.25      \\
+2000        &    36,851   &  1,600  &  103,947  & 10.84     \\
+Growth rate (\%) &  5.35  &  1.88   &   5.61    &   2.40   \\
+Contribution to growth (\%) &   5.35   &  1.88  &  1.87   &   1.60  \\
+ \hline\hline
+\end{tabular}
+\end{center}
+The third row (``growth rate'') is computed as we described in
+(a):  the logarithm of the ratio of the 2000 number to the 1961
+number, divided by 39 (the number of years between 1961 and 2000).
+The next row (``contribution to growth'') modifies these growth
+rates as they occur in the formula:  the growth rate of $K/L$ gets
+multiplied by 1/3 (its exponent in the production function) and
+the growth rate of $H$ gets multiplied by 2/3 (its exponent).
+
+Where does growth in output per worker come from?  The 5.35\%
+average growth in output per worker has three components of
+comparable size:  TFP (1.88), capital per worker (1.87), and human
+capital (1.60).
+
+\item Per capita GDP grew by 5.98\% a year.  The difference of
+0.63\% reflects growth in the ratio of workers to population,
+which rose sharply in Korea over this period.
+\end{enumerate}
+%\end{comment}
+
+\end{enumerate} 
+
+\vfill \centerline{\it \copyright \ \number\year \  NYU Stern
+School of Business}
+
+\end{document}
+
+% ===============================================================================
+\item {\it China. } 
+China's remarkable economic growth and large
+population have created one of the world's largest economies. In
+2004, GDP in China was slightly greater than half the size of US
+GDP, but growing twice as fast. The question is how this is likely
+to change in the coming years. Will China become the world's
+largest economy?
+
+Your mission is to estimate the economic magnitudes of the US and
+China in 2020 using the Solow model and some inspired estimates of
+the parameters. In 2004, the economies had the following
+characteristics:
+%
+\begin{center}
+\tabcolsep = 0.17in
+\begin{tabular}{lccc}
+\hline\hline
+Country   &  GDP &  Capital &  Employment  \\
+\hline\hline
+China   &  5,592 &  22,276   &   747.36   \\%
+US      & 10,761 &  31,672   &   141.93  \\%
+\hline\hline
+\end{tabular}
+\end{center}
+%
+GDP and capital are reported in billions of 2000 US dollars,
+employment and population in millions.  Your economic consultants
+tell you that the parameter values are
+%
+\begin{center}
+%\tabcolsep = 0.1in
+\begin{tabular}{lcccc}
+\hline\hline
+Country \hspace{0.1in}  &  Saving &  Depreciation &  Empl. Growth &  TFP Growth    \\
+\hline\hline
+China   &  22\% &  6\%   &   1.0\%  & 4\%  \\%
+US      &  20\% &  6\%   &   0.5\%  & 2\%  \\%
+\hline\hline
+\end{tabular}
+\end{center}
+%
+\begin{enumerate}
+\item Compute TFP for each country in 2004 using the basic
+production function, $Y = A K^\alpha L^{1-\alpha}$. (5~points)
+
+\item Compute time paths for GDP in both countries starting in
+2004 and ending in 2020. How large is China relative to the US in
+2020? (25~points)
+
+\item Comment (briefly) on the strengths and weaknesses of your
+analysis.  What parameter values are you least certain about? What
+features of the world does the model miss? (10~points)
+\end{enumerate}
+Data sources. GDP and Employment are from the World Bank. Capital is
+our estimate, based on data on investment from the PWT and the World
+Bank.
+
+%\begin{comment}
+Answer.
+\begin{enumerate}
+\item A variant of the usual calculation:  $A = Y /(K^{\alpha}
+L^{1-\alpha})$. (We don't have education data, so its impact will 
+be inherited by $A$ --- ``everything else.'')  
+The numbers are 2.413 for China and 12.500 for the US.
+
+\item This is a dynamic simulation much like the one described in
+``Solow's Model of Economic Growth.''  The major difference is the
+addition of growth in TFP.
+
+We simulate the model like this.  At each date, we compute
+employment $L$ and productivity $A$ from their values at the
+previous date by using their (assumed constant) growth rates:
+\begin{eqnarray*}
+    L_{t+1} &=& (1+n) L_t \\
+    A_{t+1} &=& (1+a) A_t,
+\end{eqnarray*}
+where $n$ and $a$ are the growth rates of employment and TFP,
+respectively. Capital evolves as in the Solow model:
+\begin{eqnarray*}
+    K_{t+1} &=& s A_t K_t^\alpha L_t^{1-\alpha} + (1 - \delta) K_t .
+\end{eqnarray*}
+All we need are the parameters, which are given to us in the
+problem. 
+%
+The complete solution is
+\begin{center}
+\tabcolsep = 0.2in
+\begin{tabular}{lcc}
+\hline\hline Year   &  China   &  US  \\
+\hline\hline
+    2004  &  5,592   &  10,761  \\
+    2005  &  5,845   &  11,042  \\
+    2006  &  6,115   &  11,335  \\
+    2007  &  6,404   &  11,640  \\
+    2008  &  6,712   &  11,958  \\
+    2009  &  7.043   &  12,289  \\
+    2010  &  7,396   &  12,634  \\
+    2011  &  7,774   &  12,992  \\
+    2012  &  8,179  &  13,366  \\
+    2013  &  8,612  &  13,755  \\
+    2014  &  9,077  &  14,159  \\
+    2015  &  9,575  &  14,579  \\
+    2016  &  10,109  &  15,016  \\
+    2017  &  10,681  &  15,471  \\
+    2018  &  11,295  &  15,943  \\
+    2019  &  11,593  &  16,433  \\
+    2020  &  12,659  &  16,943  \\
+\hline\hline
+\end{tabular}
+\end{center}
+
+In this scenario, China overcomes about half the difference 
+between the two countries by 2020.  
+If you keep running the model, it surpasses the US in 2030.  
+In per capita terms, there remain large differences
+between the two countries even then.  
+
+
+\item All of the parameters could be questioned --- take your
+pick. For example, in a related exercise described in the Goldman
+Sachs report entitled ``Dreaming of BRICs,'' it is argued that the
+rate of TFP growth will fall as China approaches the world's
+``technology frontier.'' Another issue is foreign-financed capital
+formation. As you recall, in the context of the Solow model
+capital can grow faster only if the domestic saving rate
+increases. In reality, this is not true. Foreign residents can
+lend their savings to domestic companies, providing a further
+source of financing for capital expenditures. In the exercise we
+somewhat dealt with this by using numbers for the parameters $s$
+which are actually closer to the average investment rates, rather
+than the saving rates. Still, you you might imagine that changes
+in the climate for foreign investment could lead to more rapid
+accumulation of capital than the model allows for.
+
+\end{enumerate}
+%\end{comment} 
+
+\end{enumerate}
+
+
+\vfill \centerline{\it \copyright \ \number\year \  NYU Stern
+School of Business}
+
+
+\end{document}

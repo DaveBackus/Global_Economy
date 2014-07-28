@@ -1,0 +1,463 @@
+\documentclass[12pt]{exam}
+
+%\usepackage{ge05}
+%\usepackage{comment}
+\usepackage{booktabs}
+\usepackage[dvipdfm]{hyperref}
+\urlstyle{rm}   % change fonts for url's (from Chad Jones)
+\hypersetup{
+    colorlinks=true,        % kills boxes
+    allcolors=blue,
+    pdfsubject={NYU Stern course GB 2303, Global Economy},
+    pdfauthor={Dave Backus @ NYU},
+    pdfstartview={FitH},
+    pdfpagemode={UseNone},
+%    pdfnewwindow=true,      % links in new window
+%    linkcolor=blue,         % color of internal links
+%    citecolor=blue,         % color of links to bibliography
+%    filecolor=blue,         % color of file links
+%    urlcolor=blue           % color of external links
+% see:  http://www.tug.org/applications/hyperref/manual.html
+}
+
+% for ge05.sty
+%\def\ClassName{The Global Economy}
+%\def\Category{Backus \& Cooley}
+%\def\HeadName{Problem Set \#2}
+\newcommand{\phm}{\phantom{--}}
+\newcommand{\NX}{\mbox{\it NX\/}}
+\newcommand{\POP}{\mbox{\it POP\/}}
+
+\printanswers
+
+\begin{document}
+\parindent = 0.0in
+\parskip = \bigskipamount
+\thispagestyle{empty}%
+%\Head
+
+%\centerline{\large \bf \HeadName: Long-Term Economic Performance}
+\centerline{\large \bf Problem Set \#2:  Long-Term Economic Performance}
+\centerline{Revised:  \today}
+
+\medskip
+{\it I had software problems, had to kill off some of the formatting 
+to get this to work. } 
+
+\medskip
+{\it You may do this assignment in a group of up to five people.
+Whatever you hand in should be the work of your group.}
+
+\begin{questions}
+
+\begin{solution}
+Brief answers follow,
+but see also the spreadsheet posted on the course website.
+\end{solution}
+
+% --------------------------------------------------------------------
+\question Sources of Korean success  (35~points).
+The Republic of Korea (``South Korea'')
+has been one of the great economic success stories of world history.
+Since the end of the Korean War in 1953,
+GDP per capita has risen by a factor of 15.
+Over the same period, US income rose by a factor of 3.
+As a result, the gap between the two countries has shrunk.
+In 1953, average income in Korea was 11\% of US income,
+but by 2007 (the most recent comparable number) it was 56\%.
+
+
+Was Korea a classic productivity story,
+or did capital formation and hours worked play more important
+roles than in other countries?
+We know, for example, that the saving rate and hours worked
+are both unusually high.
+Let's check the numbers and see where the differences
+in GDP per person come from.
+
+The numbers:
+%
+\begin{center}
+\tabcolsep = 0.2in
+\begin{tabular}{lcc}
+\toprule
+        &  Korea & United States \\
+\midrule
+GDP per person (Y/POP) &  \$23,850  & \$42,887 \\
+GDP per worker (Y/L)    &  \$47,723  & \$84,342 \\
+Capital-output ratio (K/Y)    &  4.41 &  3.25 \\
+Capital per worker (K/L)      &  \$210,432  &  \$274,080 \\
+Employment rate (L/POP)      & 0.500 &  0.508 \\
+%Hour worked per year           &  2266 & 1799 \\
+\bottomrule
+\end{tabular}
+\end{center}
+%
+The numbers come from the Penn World Tables, Version 7.0.
+%The last one (hours worked) comes from the OECD.
+All of them are for 2007.
+%
+\begin{parts}
+
+\part What is the ratio of GDP per person in the two countries
+(Korea over US)?
+(5~points)
+
+\part Use the production function to derive total factor productivity (TFP)
+ in each country from the numbers in the table.
+ What is the ratio of the two countries?  How does it compare to the ratio
+ you computed in (a)?
+ (10~points)
+
+\part Overall, what factors contribute to the difference in GDP per person?
+How important is capital?
+What would the GDP ratio be if the capital-output ratio in Korea equalled that
+of the US?
+(10~points)
+
+\part You have heard that Koreans work exceptionally long hours.
+The OECD reports that the average employee in Korea worked 2266 hours in 2007,
+while the average American worked only 1799 hours.
+How would this information change your calculation of TFP?
+How does it change your assessment of the relative productivity
+of Korea and the US?
+(10~points)
+\end{parts}
+
+\begin{solution}
+Brief answers follow.
+See the spreadsheet for the calculations.
+%
+\begin{parts}
+\part The ratio is $0.556 = 23.850/42.887$:
+Korea has, by this measure, a living standard equal to 55.6\% of the US's.
+The rest of the question is devoted to explaining the sources
+of this difference.
+
+\part We compute productivity the usual way:  if the production
+function is $ Y/L = A (K/L)^\alpha$ then $ A = (Y/L) / (K/L)^\alpha$
+where (as usual) $\alpha = 1/3$.
+The ratio of productivities is
+$0.618 = 8.023/12.984$,
+which is a bit higher than the ratio of GDP
+per capita.
+
+\part What we had in mind was two level comparisons,
+one with the given capital data, the other when we
+give Korea the same capital-output ratio as the US.
+The traditional level comparison gives us
+\begin{eqnarray*}
+    \frac{(Y/\POP)_K}{(Y/\POP)_{US}} &=&
+            \left( \frac{(L/\POP)_K}{(L/\POP)_{US}} \right)
+            \left( \frac{A_K}{A_{US}} \right)
+            \left( \frac{(K/L)_K}{(K/L)_{US}} \right)^{1/3} \\
+            &=&  0.984 \times 0.618 \times 0.916
+                \;\;=\;\; 0.556 .\phantom{sum^K}
+\end{eqnarray*}
+
+The second comparison is optional.
+The idea is to redo the calculation when Korea's capital-output ratio is
+the same as the US.
+Since the ratio is $1.357 = 4.41/3.25 $, we divide Korea's $K/L$
+by 1.357.
+The new calculation (a ``counterfactual'') gives us
+\begin{eqnarray*}
+    \frac{(Y/\POP)_K}{(Y/\POP)_{US}}
+            &=&  0.984 \times 0.618 \times 0.827
+                \;\;=\;\; 0.503 .\phantom{sum^K}
+\end{eqnarray*}
+Note that only the last term changes.
+This tells us that the lower capital-output ratio
+drops GDP per person to 0.503.
+
+\part This question is intentionally more demanding.
+We modify the production function to include hours of work.
+There's more than one route to this answer,
+among them $ Y/L = A (K/L)^\alpha h^{1-\alpha} $
+and $ Y/hL = A (K/hL)^\alpha  $.
+Either way, productivity (``corrected'' for hours worked)
+is now 0.0465 in Korea and 0.0878 in the US
+(the use of hours data changes the units).
+The ratio is 0.530, well below our earlier calculation of 0.618.
+In words:  part of what we attributed to productivity before
+was really long hours.
+Put another way:  Korea looks better (relative to the US)
+in a comparison of output per worker than in a comparison
+of TFP, because output per worker includes a contribution
+from long hours.
+
+\end{parts}
+\end{solution}
+
+% --------------------------------------------------------------------
+\question Argentina and Chile (35 points).
+Argentina and Chile have each experienced
+dramatic growth and painful reversals over the last century.
+Argentina was one of the richest countries in the world in 1900,
+but mixed economic performance since then has
+dropped it back into the world of emerging markets.
+Chile suffered a traumatic change in government in the 1970s,
+but emerged a decade later as a fast-growing democracy.
+Chile now has the highest per capita GDP in Latin America.
+Your mission is to tell us how --- and maybe why
+--- their experiences have differed.
+
+\begin{center}
+%\tabcolsep = 0.12in
+\begin{tabular}{lccccc}
+\toprule
+Country   &  Year   &  POP   &  Employment &  Y/POP &  K/POP  \\
+\midrule
+Argentina \hspace*{0.1in} &  1960   &  20.6m &  \phantom{1}8.1m
+                &  \phantom{1}7,838  &  12,713  \\
+Argentina &  2004   &  39.1m &  16.2m             &  10,939 &  24,343  \\
+Chile   &  1960  & 7.59m &  2.55m
+                &  \phantom{1}5,086   &   16,666  \\
+Chile     &  2004   & 15.67m\phantom{1} &  6.57m   &  12,678  &  29,437  \\
+\bottomrule
+\end{tabular}
+\end{center}
+%
+In the table,
+POP is population (millions), Employment is the number of people working
+(millions), Y/POP is per capita GDP (2000 US dollars),
+and K/POP  is per capita capital (2000 US dollars).
+Data are from the Penn World Tables, version 6.3.
+
+\begin{parts}
+\part Compute the (average annual continuously compounded)
+growth rates of GDP per capita and GDP per worker in the two countries
+over the period reported in the table.  (10~points)
+
+\part Use our growth accounting methodology to allocate growth in
+output per worker to growth in TFP and capital per worker.
+Which factor has been most important over the last 40+ years? (15~points)
+
+\part Use the World Bank's
+\href{http://info.worldbank.org/governance/wgi/sc_country.asp}{Governance Indicators}
+to comment on the differences in the political environment between the two countries.
+(Click on the chart for each country for a nice visual summary.)
+What role do you think these institutional differences played in the countries'
+economic performance?
+(10~points)
+\end{parts}
+
+
+\begin{solution}
+GDP per capita in Chile has gone
+from well below Argentina in 1960 to significantly above in 2004.
+How did this happen?
+Most of this problem is concerned with aggregate data:
+how much comes from capital, TFP, etc?
+The last part is an opportunity to look further
+into features of the two economies that might account
+for what we find in the production function numbers.
+%
+\begin{parts}
+\part The (continuously compounded annual)
+growth rate of GDP per capita for Argentina is
+\[
+    \gamma \;=\; \log (10.939/7.838) / (2004 - 1960) \;=\; 0.758\%. \; (!)
+\]
+(We give 3 digits here to allow you to compare your own numbers,
+but it's excessive accuracy, not justified by the quality of the data.)
+Refer to the discussion of growth rates in ``Sources of Growth''
+if you're not sure why this works.
+A similar calculation gives us 2.076\% for Chile.
+GDP per worker is GDP per capita times the population then
+divided by the number of workers.
+Its growth rates are 0.639\% (Argentina) and 1.572\% (Chile).
+Bottom line:  faster growth in Chile, in part because a larger
+fraction of the population is working.
+
+\part We use the production function
+\[
+    Y/L \;=\; A (K/L)^{1/3} ,
+\]
+so TFP is $ A = (Y/L) / (K/L)^{1/3}  $.
+In growth rates, with the adjustment for employment,
+this translates into
+\begin{eqnarray*}
+    \gamma_{Y/POP} &=&  \gamma_{L/POP}  + \gamma_A
+                + \alpha \gamma_{K/L}  ,
+\end{eqnarray*}
+where $\alpha = 1/3$ as usual.
+This allows us to decompose growth in per capita GDP into
+components due to the employment rate, productivity,
+and capital per worker.
+A few calculations give us
+
+\medskip
+\begin{center}
+%\tabcolsep = 0.12in
+\begin{tabular}{lcccc}
+\toprule
+            &  $Y/\POP$      &  $L/\POP$    &   $A$   &  $K/L$     \\
+\midrule
+\multicolumn{5}{l}{\it Argentina} \\
+Growth rate (\%) &  0.758  &  0.119   &   0.186 &  1.358   \\
+Contribution to growth (\%)
+                &   0.758  &  0.119   &   0.186 &  0.453  \\
+\midrule
+\multicolumn{5}{l}{\it Chile} \\
+Growth rate (\%) &  2.076  &  0.503   &   1.309 &   0.789   \\
+Contribution to growth (\%)
+                &   2.076  &  0.503   &  1.309  &   0.263  \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\medskip
+Here ``growth rate'' is computed as in (a) and multiplied
+by 100 to give us a percentage.
+``Contribution'' modifies these growth
+rates as they occur in the formula:  the growth rate of $K/L$ gets
+multiplied by $\alpha = 1/3$ (its exponent in the production function).
+The numbers tell us that most of the difference in growth
+reflects differences in TFP growth.
+
+
+The question calls for a slightly simpler calculation:
+to compute the components in growth of GDP per worker.
+It's the same, except we skip the growth rate of $L/\POP$.
+In Argentina, for example, the growth rate of GDP per worker (0.639\%)
+consists of growth in capital per worker (0.453\%)
+and growth in TFP (0.186\%).
+
+\part The World Bank's Governance Indicators include these
+percentile ranks:
+
+\begin{center}
+\begin{tabular}{lcc}
+\toprule
+                        & Argentina & Chile \\
+\midrule
+Voice and accountability	& 57.3	& 82.0  \\
+Political stability	& 45.3 & 	67.5 \\
+Govt effectiveness	& 46.9 & 	83.7 \\
+Regulatory quality	& 26.8 & 	91.4 \\
+Rule of law		   & 32.7 & 	87.7 \\
+Control of corruption	&	39.7 & 90.9 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\bigskip
+Almost all of the institutional indicators are stronger for Chile
+than Argentina, so perhaps it's not surprising that economic performance
+has been better.
+Much of this has come in the last 25 years, as Chile has reestablished a
+stable democracy with sensible economic policies.
+Argentina continues to fluctuate between policies that favor long-term
+performance and those that focus on the short term to the detriment of
+the long term.
+
+Our belief is that the strong economic and political
+foundations Chile has laid will continue to generate higher growth
+than we'll see in Argentina.
+For one thing, we've had different parties in power over the last 20 years,
+yet the same basic economic policies have been followed.
+One we find intriguing is a privatized social security system,
+which helped them develop a domestic capital market.
+
+A temporary factor is copper prices,
+which play an unusually important role in Chile.
+It's a tricky measurement issue, since
+high prices  tend to show up as high GDP
+and therefore high TFP.
+History tells us that probably won't last.
+With that in mind, the government saved revenue from copper
+for several years,
+despite intense political pressure to spend it.
+When the crisis hit, they had a pot of money they could use to mitigate
+its effects.
+\end{parts}
+\end{solution}
+
+% --------------------------------------------------------------------
+\question Labor market conditions (30 points).
+Your first day on the job at General Electric,
+you are given 4 hours to collection information for a 5-minute
+presentation to your group summarizing the labor market
+conditions a manufacturer would face in Brazil, Poland, and Singapore.
+Once you get over your initial panic, you contact your Global Economy
+professor, who suggests you look at the
+\href{http://pages.stern.nyu.edu/~dbackus/macro_resources.htm}{resource page},
+especially
+%
+\begin{itemize}
+\item The Bureau of Labor Statistics'
+\href{http://www.bls.gov/fls/}{International Labor Comparisons}
+page includes wage rates in a number of different countries,
+collected on a comparable basis.
+Click on a country name to get a summary table.
+
+\item The World Bank's
+\href{http://data.worldbank.org/topic}{Global Development Indicators}
+includes
+information about the education and literacy of the population.
+
+\item The World Bank's Doing Business website includes
+institutional information about the labor market,
+labeled
+\href{http://www.doingbusiness.org/data/exploretopics/employing-workers}
+{Employing Workers}.
+
+\end{itemize}
+%
+Use this information to put together a short report
+summarizing labor market conditions in these three countries.
+
+
+\begin{solution}
+The basic tradeoff here is between cost (the wage data)
+and quality, including the quality of the institutions
+in which you'd be operating.  Here's a table:
+
+\begin{center}
+\begin{tabular}{lrrr}
+\toprule
+		& Brazil & Poland  & Singapore  \\
+\midrule
+Hourly compensation (USD)   & 10.08  & 8.01 & 19.10 \\
+\midrule
+Literacy of adults  (\%)    &  90 & 100 & 95 \\
+Primary school enrollment (\%) & 127 & 97 & --- \\
+Secondary school enrollment (\%) & 101 & 97 & --- \\
+\midrule
+Minimum wage (monthly, USD) & 300 & 386 & --- \\
+Severance (weeks, 20 years experience)
+                    & 33.3 & 0  & 0 \\
+\midrule
+Strictness of employment protection (index)
+                & 2.75 & 1.9 & --- \\
+\midrule
+Average years of school  & 4.9 & 9.7 & 7.0 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The lines represent different sources;
+in the order they appear,
+BLS, World Bank, Doing Business, OECD,
+and UN via Nationmaster.
+
+A quick summary:
+\begin{itemize}
+\item Singapore:  educated workers, flexible labor market, most expensive.
+\item Brazil:  the least educated of the three, also the least flexible labor market,
+but less expensive.
+\item Poland:  similar cost to Brazil, better educated workers,
+somewhat more flexible labor market.
+\end{itemize}
+
+\end{solution}
+
+
+\end{questions}
+
+\vfill \centerline{\it \copyright \ \number\year \
+NYU Stern School of Business}
+
+\end{document}
+

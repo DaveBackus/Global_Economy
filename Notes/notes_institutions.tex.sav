@@ -1,0 +1,219 @@
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage{ge05}
+\usepackage{comment}
+\usepackage{booktabs}
+\usepackage[dvipdfm]{hyperref}
+\urlstyle{rm}   % change fonts for url's (from Chad Jones)
+\hypersetup{
+    colorlinks=true,        % kills boxes
+    allcolors=blue,
+    pdfsubject={NYU Stern course GB 2303, Global Economy},
+    pdfauthor={Dave Backus @ NYU},
+    pdfstartview={FitH},
+    pdfpagemode={UseNone},
+%    pdfnewwindow=true,      % links in new window
+%    linkcolor=blue,         % color of internal links
+%    citecolor=blue,         % color of links to bibliography
+%    filecolor=blue,         % color of file links
+%    urlcolor=blue           % color of external links
+% see:  http://www.tug.org/applications/hyperref/manual.html
+}
+
+\newcommand{\GDP}{\mbox{\em GDP\/}}
+\newcommand{\NDP}{\mbox{\em NDP\/}}
+\newcommand{\GNP}{\mbox{\em GNP\/}}
+\newcommand{\NX}{\mbox{\em NX\/}}
+\newcommand{\NY}{\mbox{\em NY\/}}
+\newcommand{\CA}{\mbox{\em CA\/}}
+\newcommand{\NFA}{\mbox{\em NFA\/}}
+\newcommand{\Def}{\mbox{\em Def\/}}
+\newcommand{\POP}{\mbox{\em POP\/}}
+
+\def\ClassName{The Global Economy}
+\def\Category{Class Notes}
+\def\HeadName{Institutions}
+
+\begin{document}
+\thispagestyle{empty}%
+\Head
+
+\centerline{\large \bf Institutions \& Policies}%
+\centerline{Revised:  \today}
+
+\bigskip
+The enormous international differences in GDP per person
+reflect, for the most part, enormous differences in
+productivity.
+But where do these differences in productivity come from?
+It's tempting to attribute them to the ability and dedication
+of the people who live there,
+but (on second thought) there are smart dedicated people everywhere.
+We now believe that productivity reflects, in large part,
+the quality of the local institutions and policies.
+Stated differently:
+it's not Steve Jobs that makes an economy productive,
+it's the institutions that allow and encourage someone like Jobs to
+operate effectively.
+Some countries have environments that encourage productive
+activity, and others do not.
+What's striking is not that this could be true,
+but how big a difference it seems to make.
+
+
+\subsubsection*{Good institutions}
+
+So what do we mean by good institutions?
+The world's a complicated place, and it doesn't come
+with any simple recipes.
+But countries with good economic performance
+ share some features.
+Here's a summary.
+
+{\it Good governance.\/}
+It's essential that the government be strong enough
+to guarantee the security and safety of the country
+and people,
+but not so strong that those in power abuse others for their own benefit.
+It's a delicate balance.
+It's also helpful for there to be consistency in policy over time,
+so that the business environment doesn't change every time
+there's a change of government.
+This reduction in uncertainty is itself an important
+contributor to economic activity.
+
+% ? stability?
+
+{\it Rule of law.\/}
+It's also important that the legal system enforce the law:
+that the police and judiciary are honest and effective,
+and enforce the laws of the land.
+
+{\it Property rights.\/}
+We sometimes take this for granted,
+but the laws should be clear about who owns what.
+Without that, effective economic activity is impossible:
+How can you sell something you don't own?
+Imaginative people may be able to do just that,
+but it's not the basis for a productive economy.
+How can you get a mortgage if you can't establish
+that you own real estate?
+Why would anyone lend on those terms?
+
+{\it Open and competitive markets.\/}
+You often hear about ``free markets,''
+but what seems to work best are honest, open, flexible, competitive markets
+for products as well as capital and labor.
+That's different from what you might term business-friendly government:
+markets that protect sellers from competition or fraud.
+
+We'll give examples of each in class, but you might try to think of your own.
+
+
+\subsubsection*{Institutions or policies?}
+
+Institutions bring to mind the difference between North and South Korea.
+The two countries have the same culture and history until 1950.  
+At that time, living standards were similar, 
+probably a little higher in the North.
+Today, best estimates suggest that GDP per capita in the North
+is less than 10\% of the South.
+The difference in performance reflects the difference
+in institutions between the countries:
+the form of government and the economic environment.  
+
+
+In other cases, policies may play a more important role.  
+We think of policies as less fundamental aspects of
+the economic environment than institutions.
+An honest judicial system is an institution,
+but tax rates and government spending are policies.
+There's a fuzzy line between the two,
+but the idea is that policies are more easily
+changed than institutions.
+
+Peter Henry (link below) illustrates the role of policies in a comparison
+of Barbados and Jamaica.
+The two countries have similar backgrounds and institutions:
+\begin{quote}
+Both [are] former British colonies, 
+small island economies, 
+and predominantly inhabited by the descendants of Africans. ...
+As former British colonies, Barbados and
+Jamaica inherited almost identical political,
+economic, and legal institutions: Westminster
+Parliamentary democracy, constitutional protection of property rights, 
+and legal systems rooted in English common law.
+\end{quote}
+Nevertheless, 
+Barbados grew by 1.3\% a year faster between 1960 and 2002,
+giving it a substantially higher standard of living.  
+
+
+One clear difference between the two countries was their 
+macroeconomic policies.  
+In the 1970s, Jamaica increased government spending 
+on job creation programs, housing, food subsidies, and many other things.  
+When tax revenue failed to keep up, the government found itself 
+with large persistent budget deficits, which they financed by 
+borrowing from the central bank.  
+This, in turn, led to inflation rates of 20\% and higher.  
+A fixed exchange rate raised the price of Jamaican goods relative to imports, 
+which led to restrictions on imports and wage and price controls.  
+
+Barbados also had a fixed exchange rate, 
+but combined it with fiscal discipline, monetary restraint, 
+and openness to trade.
+The result was much different macroeconomic outcomes.  
+Could other factors have played a role?  
+
+
+\subsubsection*{Executive summary}
+
+\begin{enumerate}
+\item Good institutions are the primary source of good economic performance.
+\item A short list would include:  governance, rule of law,
+property rights, and open competitive markets.
+
+\end{enumerate}
+
+
+\begin{comment}
+\subsubsection*{Review questions}
+
+\begin{enumerate}
+\item ...
+\end{enumerate}
+\end{comment}
+
+\subsubsection*{If you're looking for more}
+
+Here are some good summaries, listed by increasing length:
+\begin{itemize}
+\item The comparison of Barbados and Jamaica comes from Peter Henry's
+``\href{http://web-docs.stern.nyu.edu/old_web/aboutstern/publications/Tale_of_Two_Islands-AER.pdf}
+{A tale of two islands}.''
+
+\item Ben Bernanke,
+``\href{http://www.federalreserve.gov/newsevents/speech/bernanke20110928a.htm}
+{Lessons from emerging markets}.''
+Nice short summary of what good institutions look like, a transcript of a speech.
+
+\item Bill Easterly,
+\href{http://www.amazon.com/Elusive-Quest-Growth-Economists-Misadventures/dp/0262550423}
+{\it The Elusive Quest for Growth}.
+Essentially a collection of essays on topics related to helping poor countries,
+unusually witty for an economist.
+
+\item David Landes,
+\href{http://www.amazon.com/Wealth-Poverty-Nations-Some-Rich/dp/0393318885}
+{\it The Wealth and Poverty of Nations}.
+Less witty than Easterly, but he gives us an interesting historical
+perspective on the major countries of the world:  Europe, India, China, etc.
+\end{itemize}
+
+\vfill \centerline{\it \copyright \  \number\year \  NYU Stern
+School of Business}
+
+
+\end{document}

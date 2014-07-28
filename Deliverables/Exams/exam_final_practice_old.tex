@@ -1,0 +1,433 @@
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage[hypertex]{hyperref}
+\RequirePackage{GE05}
+% this inputs graphicx, too
+\RequirePackage{comment}
+
+\newcommand{\GDP}{\mbox{\em GDP\/}}
+\newcommand{\NDP}{\mbox{\em NDP\/}}
+\newcommand{\GNP}{\mbox{\em GNP\/}}
+\newcommand{\NX}{\mbox{\em NX\/}}
+\newcommand{\NY}{\mbox{\em NY\/}}
+\newcommand{\CA}{\mbox{\em CA\/}}
+\newcommand{\NFA}{\mbox{\em NFA\/}}
+\newcommand{\Def}{\mbox{\em Def\/}}
+\newcommand{\CPI}{\mbox{\em CPI\/}}
+\newcommand{\phm}{\phantom{--}}
+
+\def\ClassName{The Global Economy}
+\def\Category{Professor David Backus}
+\def\HeadName{Practice Final Examination}
+
+\begin{document}
+\parindent = 0.0in
+\parskip = \bigskipamount
+\thispagestyle{empty}%
+\Head
+
+\centerline{\large \bf \HeadName}%
+\centerline{Revised:  \today}
+
+\bigskip
+You have 100 minutes to complete this exam.  Please answer each
+question in the space provided. You may consult one page of notes
+and a calculator, but devices capable of wireless transmission are
+prohibited.
+
+I understand that the honor code applies: I will not lie, cheat, 
+or steal to gain an academic advantage, or tolerate those who do.
+
+\begin{flushright}
+\rule{4in}{0.5pt} \\ (Name and Signature)
+\end{flushright}
+
+
+%\bigskip
+{\it Most of these questions come from old exams.  
+The data may be outdated for that reason. } 
+
+\begin{enumerate}
+\item {\it US monetary policy (30 points).} 
+
+% *************************************************************************************************
+\item {\it Japanese fiscal policy (20 points).} Japan last year ran a government budget deficit
+of close to 7\% of GDP.  In addition, the ratio of public debt to GDP was over 100\%, GDP growth
+was below 1\%, inflation was slightly negative, and the trade surplus was 3.5\% of GDP.
+%
+\begin{enumerate}
+
+\item Why might a government deficit be associated with a trade surplus, when we see the
+opposite pattern in the US (government and trade deficits)?
+%[Hint:  Use the flow identity.]
+(10~points)
+
+\item The Japanese government is said to be considering three approaches to the government
+deficit: (i)~do nothing and hope it goes away, (ii)~raise tax rates, and (iii)~reduce purchases of
+goods and services.  Which one would you suggest? Why?  (10~points)
+
+\end{enumerate}
+
+\begin{comment}
+Answer.
+\begin{enumerate}
+\item The answer revolves around (private) saving and investment, which are much different in 
+the two countries.  
+One version of the flow identity is:
+\[
+    S_p + S_g \;=\; I + \mbox{\em NX} .
+\]
+In Japan, $S_g$  (govt saving or surplus) is negative and $\mbox{\em NX}$ (net exports = trade balance) is positive, so $S_p$ (private saving) must be significantly greater than $I$ (investment).  In the
+US, both $\mbox{\em NX}$ and $S_g$ are negative, the former more so, 
+therefore $S_p$ is less than $I$.
+Roughly speaking, the difference is that investment has been low in Japan, 
+which isn't surprising since the economy is growing slowly.  
+
+\item The list:
+%
+\begin{enumerate}
+\item [(i)] Do nothing.  Debt will continue to build up, adding interest expense to the budget.
+The longer this goes on, the larger the debt burden will be.
+Right now interest rates are very low, so this isn't an immediate concern, but
+if interest rates rise the situation could change quickly.  
+All of these factors could be discussed using the sustainability  
+relation,  
+\[
+    \frac{B_{t+1}}{Y_{t+1}} \;=\; \left( \frac{1+i}{1+g} \right) 
+     \frac{B_{t}}{Y_{t}} 
+     + (1+g)^{-1} \frac{D_{t}}{Y_{t}} ,
+\]
+where $B$ is the government debt and $D$ the primary deficit.  
+
+
+\item [(ii)]  Raise tax rates.  This may have adverse incentive effects, but it's not clear how
+large those are.  Japan still has a relatively small tax burden overall.
+
+\item[(iii)] Reduce spending. Depends what it is, but some cuts in spending are probably needed.
+\end{enumerate}
+\end{enumerate}
+\end{comment}
+
+%\pagebreak \phantom{bla} \pagebreak
+
+
+\item {\it Miscellany (50 points).}
+
+\begin{enumerate}
+
+\item {\it The Economist\/} reports that a Big Mac costs \$2.90 in the US, \$3.28 in the eurozone,
+and \$2.33 in Japan.  (These prices are averages for the various regional markets, expressed in US
+dollars using current spot exchange rates.)  What does this suggest about the likely change in
+value of the euro and yen v. the dollar over the coming 6 months?  6 years? (10 points)  
+
+\begin{comment}
+Answer.  PPP suggests that exchange rates will adjust to make prices the same across countries. In
+this case, that means the dollar will rise against the euro, fall against the yen.  Is this right?
+Over short periods of time, exchange rates are close to unpredictable by any means, PPP included.
+Over longer periods of time (5-20 years) PPP is a reasonable indicator.  
+\end{comment}
+
+\item In Canada over the last year, inflation has been 2.3\% and money growth (M1) has been 11.8\%.  Do you find the difference between the two numbers surprising? Why or why not?  (10~points)
+
+\begin{comment}
+Answer.  Not surprising because the short-run relation between money growth and inflation is weak.
+\end{comment}
+
+\item For each of the following variables, say whether they are leading, lagging, or coincidental:
+employment, hours worked, consumption, investment. (10 points)
+
+\begin{comment}
+Answer.  Consumption and investment are coincidental, hours leads, and employment lags.
+\end{comment}
+
+\item Describe in some detail how the Federal Reserve manages to keep the Federal Funds rate at
+its target level. (10 points)
+
+\begin{comment}
+Answer.  The Fed increases the monetary base to reduce the Fed Funds rate, the opposite to
+increase it.  It does this by purchasing government securities, which credits securities dealers
+with deposits at the Fed.  These deposits are part of the monetary base, which therefore rises.  
+\end{comment}
+
+\item The US trade deficit is now about 7\% of GDP.  Is the deficit ``sustainable''?  (10~points)
+
+\begin{comment}
+Answer.  By sustainable, we mean can it stay this way forever without the ratio of net foreign assets
+to GDP exploding.  The answer is no.  Even though the current rate paid on foreign assets is close to zero,
+at present, 
+adding 7\% to the debt every year will raise the ratio of net foreign assets to GDP by about 1\% 
+if nominal GDP grows at 6\%.  If the interest rate rises, net foreign assets will increase more rapidly.      
+The relevant equation is 
+\[
+    \frac{\mbox{\em NFA}_{t+1}}{Y_{t+1}} \;=\; \left( \frac{1+i}{1+g} \right) 
+     \frac{\mbox{\em NFA}_{t}}{Y_{t}} + (1+g)^{-1} \frac{\mbox{\em NX}_{t}}{Y_{t}} .
+\]
+If the economy slows down ($g$ gets smaller), the situation may be worse,  
+although slow growth is associated with higher values of $\mbox{\em NX}$.
+\end{comment}
+
+\end{enumerate}
+
+\end{enumerate}
+
+%\pagebreak \phantom{bla} \pagebreak \phantom{bla}
+
+
+\vfill \centerline{\it \copyright \ \number\year \ 
+NYU Stern School of Business}
+
+\end{document} 
+
+
+%  ****************************************************************************************
+%  2005 practice exam follows 
+
+\begin{enumerate}
+
+\item \textbf{The US business cycle.} What follows is an excerpt from the article entitled
+``Another hangover in the making?" published in the print edition of {\it The Economist\/} on
+November 6, 2003:
+
+\textit{Ever since America's stock market bubble burst in 2000, The Economist has argued that
+America faced several years of sluggish growth, if not a deep recession, as the economy worked off
+the excesses that built up in the late 1990s. Yet the economy has come roaring back, with GDP
+rising by 7.2\% at an annual rate in the third quarter -— its fastest sprint for 19 years. Do we
+look a bit silly? Indeed. But there are still big risks ahead.}
+
+\textit{Certainly, the recent recovery has been startling. Over the past year, America's GDP grew
+by 3.3\%. Growth is becoming more balanced. In the third quarter, consumer spending rose by 6.6\%
+at an annual rate, but business investment was also up by an impressive 11\%, housing investment
+grew by 20\%, and even exports jumped by 9\%. Corporate profits are rebounding and figures due on
+November 6th were widely tipped to show that business productivity grew at an astonishing 8\% or
+thereabouts in the third quarter.}
+
+\textit{Many pundits have argued that America's brisk rebound, despite all that it has suffered -—
+the bursting of the bubble, September 11th, corporate scandals and the Iraq war -- proves just how
+wonderfully flexible and resilient its economy is. Flexibility played a part, but a smaller one
+than many believe. The main reason why the economy has held up better than expected is that it has
+enjoyed the biggest fiscal and monetary stimulus in decades.}
+
+\textit{No other country has experienced such a huge increase in its structural-budget balance
+(i.e., excluding the automatic effect of the economic cycle). Thanks partly to tax cuts, it has
+swung from a structural surplus of 1\% of GDP in 2000 to a deficit of 5\% this year. Meanwhile,
+historically low interest rates sparked a boom in mortgage refinancing, giving households lots
+more extra cash to spend. And spend they have.}
+
+\textit{But the government cannot carry on handing out such largesse for ever. America's
+deteriorating fiscal finances rule out further big net tax cuts. Long-term interest rates have
+also risen, and as a result mortgage refinancing has fallen by around 80\% from its peak. In
+September real consumer spending dipped by 0.6\%. If job lay-offs continue, consumers may also
+tighten their belts.}
+
+\textit{Business investment is picking up, but ample spare capacity will continue to discourage
+new spending. In September, manufacturing output was running at only 73\% of capacity, well below
+the average of 81\% over the past half century. In any case, business investment is too small a
+share of the economy to keep it aloft in the absence of robust consumer spending.}
+
+\textit{But the main reason for doubting that America is back on a path of strong, sustainable
+growth is that it has failed to purge the excesses of its previous boom. It is, to say the least,
+odd that at the beginning of an economic recovery many indicators -- low saving, rampant household
+borrowing, record house-building and uncomfortably high stock market p/e ratios to name but a few
+-- have more the look of a cycle that is drawing to a close.}
+
+\textit{Debt provides the best example. In the year to the second quarter (the latest figures
+available), borrowing by households rose by 11\%, its fastest pace in real terms since 1985.
+Economists wearing rose-tinted spectacles point out that interest rates today are low, so
+households can afford to borrow more. The main snag with this argument (but by no means the only
+one) is that, despite low interest rates, households' debt-service payments are alarmingly high as
+a percentage of their income. The Federal Reserve has recently revised its measure of household
+debt-service. In contrast to the old figures, this now shows that the debt-service ratio is higher
+than at its previous peak in the 1980s.}
+
+\textit{When interest rates inevitably rise to normal levels, debt-service ratios will rise higher
+still. But even while interest rates remain low, debt service will eat up a rising share of income
+if households keep borrowing more. Sooner or later, consumers will need to save more and spend
+less.}
+
+\begin{enumerate}
+
+\item The article alleges that the increase in the federal budget deficit is (at least in part)
+responsible for the decline in the household saving rate.  Do you agree? Explain why or why not.
+(10 points)
+
+\item The editorial also argues that households are borrowing \textit{too much}:  that debt
+service will eat up a rising share of income, so that sooner or later consumers will need to raise
+their saving rates.  Do you agree? Explain why or why not. (10 points)
+
+\item It is also argued that ``\textit{business investment is too small a share of the economy to
+keep it aloft in the absence of robust investment spending}". Do you agree?  Explain why or why
+not. (10 points)
+
+\end{enumerate}
+
+Answer.
+\begin{enumerate}
+\item There are two issues here. The first is that lower taxes (say) may raise households' current
+income and lead them to consume more.  Whether this results in lower saving {\it rate\/} depends
+on whether the increase in income is smaller proportionately than the increase in consumption.
+Mathematically,
+\[
+    s \;=\;  (Y - C) / Y \;=\; 1 - C/Y,
+\]
+where $Y$ in this case is household income. The second issue is more subtle but probably more
+important.  Households know (or should know) that a deficit now has to be paid for by running a
+surplus later.  (Either that or default on the debt, but we'll assume the US is not considering
+that.)  If households expect the government to collect higher tax revenue in the future, then
+(other things equal) they might consume less now since the present value of their future income is
+lower by that amount of the future increase in tax revenue.  That would raise the current savings
+rate.
+
+You might think of it this way.  Suppose you hear that Social Security is in financial difficulty.
+(It's probably not, but that's another story.)  Then you might expect your benefits to be lower
+than specified by current law and (as a result) save more of your own money for retirement.
+
+\item You need more evidence than you're given to do justice to this, but the issue is whether the
+debt could cause trouble for households, causing them to reduce spending in the future.  One way
+this could happen is that output falls.  Another is for interest rates to rise, making debt more
+expensive and (possibly) asset values to fall.  Either could happen.  What's missing, though, is
+that households currently have very high net worth:  the debts are more than balanced by assets.
+
+\item Simple answer:  investment may be a small fraction of output, but it's very volatile, with a
+standard deviation of fluctuations 3-4 times that of output as a whole.  Complex answer:  Does
+high spending cause the economy to boom, or does a boom generate high spending? It probably works
+both ways, but (i) businesses invest when they think they'll make money from it (ie, boom
+generates investment) and (ii) households consume when they expect future income to be high
+(ditto).  Could it work the other way, too?  Possibly, but the evidence is mixed.
+
+\end{enumerate}
+
+% *************************************************************************************************
+\item \textbf{Germany's fiscal policy.} Read carefully the article entitled ``The Keynesian
+Temptation," published in the May 6, 2004 print edition of {\it The Economist\/}:
+
+{\it
+
+DEMONSTRATING independence over Iraq paid off handsomely for Gerhard Schroder, the German
+chancellor, in the September 2002 election. Without his unwavering opposition to America's
+pre-emptive war, he would surely have lost. Might he now be tempted to show a similar
+popularity-winning independence over fiscal policy --— even if this kills, once and for all, the
+euro's stability-pact limits on budget deficits?
+
+The idea is certainly germinating, even if both Mr Schroder and Hans Eichel, his finance minister,
+took pains this week to deny press reports of a Keynesian conversion. These two and others met on
+April 28th to discuss saying “farewell to budget tightening”, according to Der Spiegel, which
+broke the story. The weekly also ran an interview with Joschka Fischer, the foreign minister, in
+which he said that spending cuts alone would not generate badly needed growth.
+
+Early this year, Mr Schroder had what seemed a reasonable game plan. After pushing through his
+Agenda 2010 reforms, he hoped to regain popularity on the back of economic revival. Yet last week,
+the economics ministry cut its growth forecast for 2004 from 2.25\% to a meagre 1.5\%. This week's
+figures also showed a rise in unemployment, which is around 4.4m or over 10\% of the workforce.
+
+Mr Schroder's decision to step down as chairman of the ruling Social Democrats (SPD) and hand over
+to Franz Muntefering has also failed to improve his party's poll ratings. The SPD hovers below
+30\%, compared with nearly 50\% for the opposition Christian Democrats. This bodes ill for the
+party in the 12 local and regional elections this year, and for the European elections on June
+13th, the results of which could be disastrous for the SPD. Germany's fiscal situation is also
+deteriorating. The federal coffers are short by E18 billion (\$22 billion) this year and E15
+billion next, compared with budget projections. And these deficits come on top of already planned
+shortfalls of E29 billion in 2004 and E21 billion in 2005. If no action is taken, the government
+will have to borrow even more, keeping Germany's budget deficit well above the stability-pact
+ceiling of 3\% of GDP again next year (see chart).
+
+What to do next was the main issue at the secret meeting. Mr Schroder reportedly argued that
+simply cutting the budget will merely fuel the anxieties of German consumers, and so weaken the
+economy further. Instead, he wants to make a “strategic reply”, which could include spending some
+real money on his so-called “innovation offensive”. To finance this, the government could sell
+more assets, such as stakes in companies and parts of the country's gold reserves—and borrow more,
+like George Bush in America. Mr Eichel prefers to stick to budgetary rigour, however.
+
+In contemplating a Keynesian shift, Mr Schroder may be taking a lead from Peter Bofinger, an
+economist at Wurzburg University. The government has focused too much on structural reform and not
+enough on sustaining demand, argues Mr Bofinger, who was recently appointed to the German council
+of economic experts. Yet most other economists make a case that any shift would be harmful. The
+country's problem is not growth itself, but low growth potential, says Hans-Werner Sinn, president
+of IFO, an economic think-tank.
+
+Whatever the effects of a change in Germany's fiscal policy, the political fallout is predictable.
+The stability pact would surely wither if its chief sponsor defied it for a fourth year running.
+Ironically, Nicolas Sarkozy, finance minister of the other big pact-breaker, France, this week
+promised to do more to cut spending to get back below the ceiling. At home, too, Keynesianism
+might come with costs. It would surely seal the fate of Mr Eichel. His departure would trigger a
+cabinet reshuffle, which could spark renewed conflict within the ruling coalition. On top of this,
+being fiscal conservatives, Germans dislike public debt almost as much as they do wars. Going
+Keynesian may tempt Mr Schroder, but it might not pay off.
+
+}
+
+\begin{enumerate}
+
+\item Recent figures show that the German unemployment rate is still rising, and is now over 10\%.
+The article suggests that influential cabinet members were contemplating addressing this problem
+by employing public funds to hire unemployed individuals. How effective would such a policy be?
+Can you think of alternative policy reforms that could successfully tackle the problem? (10
+points)
+
+\item In 2002 and 2003, the ratio of Germany's federal budget deficit to GDP exceeded the 3\%
+ceiling established in the stability pact signed by the European countries that adopted the Euro.
+Which are the main motivations that led to the introduction of such ceiling? (10 points)
+
+\item Do you agree with the German economist Peter Bofinger when he argues that the German
+government has focused too much on structural reform and not enough on sustaining demand? Why? (10
+points)
+
+\end{enumerate}
+
+
+Answer.
+\begin{enumerate}
+
+\item The central difficulty is that current tax rates make Germany an unattractive place to hire
+workers --- not just because of employment protection but because corporate tax rates are high
+relative to many other countries in the EU.  Public employment would simply increase the need for
+tax revenue, driving tax rates up further.  The alternative is to cut government spending and
+taxes on (esp) businesses.  This isn't giving in to the business lobby, it's an economic necessity
+given the ready availability of better terms nearby.
+
+\item The ceiling was intended to eliminate the possibility that a government would get into
+financial difficulties, leading to pressure on the central bank to inflate or the EU to bail the
+country out.  Now that it's more or less gone, we'll see if either of these happens.
+
+\item No!  Jobs come from firms:  you need to create an environment in which they want to hire
+workers.  Nothing else works in a market-based system.
+
+\end{enumerate}
+
+
+\item \textbf{Miscellany.}
+
+\begin{enumerate}
+
+\item For each of the following variables, say whether they are leading, lagging, or coincidental:
+employment, hours worked, consumption, investment. (10 points)
+
+Answer.  Consumption and investment are coincidental, hours leads, and employment lags.
+
+\item In which respects does dollarizing (ie,  adopting the US dollar as your official currency)
+differ from pegging the exchange rate to the dollar? (10 points)
+
+Answer.  The question is always how to make sure a peg sticks, given how many in the past have
+blown up in spectacular fashion.  If you move to dollars, presumably it's less likely you can go
+back to having your own currency.
+
+\item Describe in some detail how the Federal Reserve manages to keep the Federal Funds rate at
+its target level. (10 points)
+
+Answer.  The Fed increases the monetary base to reduce the Fed Funds rate, the opposite to
+increase it.  It does this by purchasing government securities, which credits securities dealers
+with deposits at the Fed.  These deposits are part of the monetary base, which therefore rises.  
+
+\item What is the monetary base? Is it different from the money supply?  (10 points)
+
+Answer.  It's the narrowest definition of money:  currency held by the households and firms plus
+reserves (cash + deposits) held by financial institutions.
+
+\end{enumerate}
+
+\end{enumerate}
+
+
+\vfill \centerline{\it \copyright \ \number\year \ NYU Stern
+School of Business}
+
+\end{document}

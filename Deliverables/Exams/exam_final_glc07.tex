@@ -1,0 +1,365 @@
+\documentclass[letterpaper,12pt]{exam}
+
+\usepackage{amsmath}
+\usepackage{natbib}
+\usepackage[dvips]{graphicx}
+
+\newcommand{\GDP}{\mbox{\em GDP\/}}
+\newcommand{\CPI}{\mbox{\em CPI\/}}
+\newcommand{\GNP}{\mbox{\em GNP\/}}
+\newcommand{\NX}{\mbox{\em NX\/}}
+\newcommand{\NY}{\mbox{\em NY\/}}
+\newcommand{\CA}{\mbox{\em CA\/}}
+\newcommand{\NFA}{\mbox{\em NFA\/}}
+\newcommand{\Def}{\mbox{\em Def\/}}
+\newcommand{\NIPA}{\mbox{\em NIPA\/}}
+\newcommand{\TFP}{\mbox{\em TFP\/}}
+
+\addtolength{\oddsidemargin}{-15pt} \evensidemargin\oddsidemargin
+\addtolength{\topmargin}{-25pt} \addtolength{\textheight}{250pt}
+\addtolength{\textwidth}{45pt}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}{Example}[section]
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+%\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+%\citestyle{chicago}
+
+\RequirePackage{GE05}
+% this inputs graphicx, too
+
+\def\ClassName{The Global Economy}
+\def\Category{Gian Luca Clementi}
+\def\HeadName{Practice Final}
+
+\begin{document}
+
+% Headline
+
+\thispagestyle{empty}%
+\Head
+
+\vspace{15pt}
+
+\centerline{\Large \bf Final Exam}%
+\vspace{12pt}%
+%\centerline{\large \bf Thomas Cooley and Gian Luca Clementi}
+
+
+\vspace{.3cm}
+
+\setlength{\baselineskip}{15pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\noindent Name \vspace{0.4cm} \noindent\rule{5.5in}{0.1mm} %
+
+\noindent \textbf{Instructions.} You have one hour and fifteen
+minutes to complete this exam. Please read the whole text carefully
+and then write legibly in the allotted space. I wish you good luck.
+I hope you will do well.\vspace{.2in}
+
+\begin{questions}
+\question \textbf{Spain.} In recent years, with its larger neighbors
+struggling, Spain's economy grew at remarkable rates. Economists and
+finance analysts have been investigating the causes of this outcome,
+with the main purpose of understanding whether we should expect
+similar achievements in the near future. Here are some recent
+macroeconomic data about Spain.
+
+\begin{table}[h]
+%\caption{Long--Horizon Regressions of Equity Returns and Dividend Growth} \label{tab:long_hor_equity_div}%
+\vspace{1em}%
+\centering%
+\hspace{-3cm}%
+\begin{minipage}
+{0.52\textwidth}%
+\begin{center}{\small
+\begin{tabular}{lccccccc}%
+\vspace{-0.6cm}\\
+%\multicolumn{2}{c}{Seedorf Bank} \\%
+\hline%
+\vspace{-.3cm}\\
+                     & 2000  &  2001  &  2002   & 2003  & 2004 &  2005  &  2006 \\%
+\vspace{-.3cm}\\
+\hline%
+\vspace{-.2cm}\\
+GDP Growth           &  5.0   &   3.6  &   2.7   &  3.0  &  3.3  &   3.5  &  3.9 \\%
+Population Growth    &  0.6   &   1.1  &    1.2  &  2.0  &  2.2  &   2.3  &  2.2 \\
+Investment Rate      &  25.9  &   26.2 &   26.2  &  27.1 &  27.4 &   28.4 &  29.1\\%
+Saving Rate          &  22.3  &   22.4 &   23.4  &  23.9 &  23.0 &   22.2 &  21.8\\%
+TFP Growth           &  --0.1 &  --0.4 &   --0.4 &  --0.7&  --0.5&   --1.1&  --0.2\\%
+Budget Balance       &  --0.9 &  --0.5 &   --0.3 &  --0.1&  --0.2&    1.1 &  1.4 \\%
+Public Debt          &  59.2  &  55.6  &   52.5  &  48.8 &  46.2 &   43.1 &  39.8\\%
+Current Account      &  --4.0 &  --3.9 &   --3.2 &  --3.5&  --5.3&   --7.4&  --8.8\\%
+Foreign Debt         &  74.9  &  77.1  &   92.4  &  97.2 &  90.1 &   86.3 &  81.3 \\%
+\hline%
+\vspace{-3mm}\\
+\end{tabular}
+}
+\end{center}
+\end{minipage}
+\end{table}
+
+[Note: {\it GDP Growth} is yearly growth in GDP in constant Euros;
+the {\it Investment Rate} is the ratio of gross domestic investment
+to GDP; the {\it Saving Rate} is national savings divided by GDP,
+where national savings are the sum of government, household, and
+corporate savings; the {\it Budget Balance} is net Government'
+savings divided by GDP; the {\it Public Debt} is the ratio of
+Government Debt to GDP; the {\it Current Account} is the actual
+current account divided by GDP; similarly, for the country's {\it
+Foreign Debt}.]
+
+\begin{parts}
+
+\part In spite of a continuing drop in TFP, Spain's GDP and per capita GDP have been
+growing throughout the period. Which, according to you, are the most
+likely causes of such growth? \underline{Why}? (10 points)
+
+%{\bf Answer.}
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\part What is the outlook for the Spanish economy in case TFP growth keeps on being negative in the
+foreseeable future? \underline{Why}? (10 points)
+
+%{\bf Answer.}
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\part Spain's current account deficit is now among the largest in the entire world. Since
+it mostly reflects a trade balance deficit, many analysts have
+argued that it is likely due to lack of competitiveness of Spanish
+products on international markets. The same analysts conjecture that
+this is an early sign of the decline that is about to come. Do you
+agree with this view? \underline{Why}? (10 points)
+
+%{\bf Answer.}
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+
+\end{parts}
+
+\question \textbf{Hyperinflation in Zimbabwe.} Please, read the
+enclosed article entitled ``Bags of bricks," which appeared on the
+print edition of ``The Economist" on August 24, 2006.
+
+\begin{parts}
+
+\part Do you expect that, by exchanging 1,000 Zimbabwean dollars
+for 1 new Zimbabwean dollar, the Central Back had (or will have) any
+impact on inflation? \underline{Why}? Will the same policy have any
+positive impact whatsoever on Zimbabwe's economy? \underline{Why}?
+If yes, how long--lasting you think will it be? (10 points)
+
+%{\bf Answer.}
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\part The article mentions the project of creating a monetary union in Africa by 2018,
+modeled on the Euro--zone. Please, provide one reason for and one
+reason against this proposal. (10 points)
+
+%{\bf Answer.}
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+
+\part Assume that Zimbabwe's government decides to shut down the
+Central Bank and adopt the US dollar as official currency. What do
+you expect the effects on inflation and on seignorage revenues to
+be? \underline{Why}? (10 points)
+
+%{\bf Answer.}
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+
+\end{parts}
+
+
+\question \textbf{The Amateur Economist.}
+
+It is quite common, in particular in New York, to end up at dinner
+with someone that believes to master economics and finance. To have
+figured it all out. Here are statements that may have been uttered
+in front of you by one of these self--proclaimed experts. For each
+one of them, please explain why you agree or disagree.
+
+\begin{parts}
+
+\part Most technological progress is labor--saving. We now produce one unit of every given product using a small
+fraction of the man--hours that were needed only a few years ago. It
+is obvious that such innovations increase the share of aggregate
+income accruing to capital, at the expense of the quota accruing to
+labor. (10 points)
+
+%{\bf Answer.}
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\part For small, developing countries, liberalizing capital flows with the rest of the
+world is always a detrimental policy. If the economy grows at a
+healthy rate, foreigners will go in and buy all profitable assets
+for very cheap, therefore ending up expropriating locals for
+generations to come. If, on the other hand, the economy is afflicted
+by structural problems that severely limit its growth, we will
+witness a capital flight that will dramatically impoverish the
+country. (10 points)
+
+%{\bf Answer.}
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\part While most people understand the perils of monopoly in a
+variety of markets, very few appreciate how dangerous it is to
+entrust the Fed alone with the process of money creation. All
+commercial banks should be authorized to create money. (10 points)
+
+%{\bf Answer.}
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\part There is at least one reason why eliminating Government debt
+would be detrimental to the nation: the Fed would no longer be able
+to conduct open market operations. (10 points)
+
+%{\bf Answer.}
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+\vspace{0.4cm} \noindent\rule{5.5in}{0.1mm}%
+
+
+\end{parts}
+
+\end{questions}
+
+
+\vfill \centerline{\it \copyright \ \number\year \ NYU Stern School
+of Business}
+
+\end{document}

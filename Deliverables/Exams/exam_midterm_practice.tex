@@ -1,0 +1,412 @@
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage{hyperref}
+\RequirePackage{GE05}
+% this inputs graphicx, too
+\RequirePackage{comment}
+
+\newcommand{\GDP}{\mbox{\em GDP\/}}
+\newcommand{\NDP}{\mbox{\em NDP\/}}
+\newcommand{\GNP}{\mbox{\em GNP\/}}
+\newcommand{\NX}{\mbox{\em NX\/}}
+\newcommand{\NY}{\mbox{\em NY\/}}
+\newcommand{\CA}{\mbox{\em CA\/}}
+\newcommand{\NFA}{\mbox{\em NFA\/}}
+\newcommand{\Def}{\mbox{\em Def\/}}
+\newcommand{\CPI}{\mbox{\em CPI\/}}
+\newcommand{\phm}{\phantom{--}}
+
+\def\ClassName{The Global Economy}
+\def\Category{Professor David Backus}
+\def\HeadName{Practice Midterm Exam}
+
+\begin{document}
+\parindent = 0.0in
+\parskip = \bigskipamount
+\thispagestyle{empty}%
+\Head
+
+\centerline{\large \bf \HeadName}%
+\centerline{Revised:  \today}
+
+\bigskip
+You have 75 minutes to complete this exam.  Please answer each
+question in the space provided. You may consult one page of notes
+and a calculator, but devices capable of wireless transmission are
+prohibited.
+
+I understand that the honor code applies: I will not lie, cheat, or
+steal to gain an academic advantage, or tolerate those who do.
+
+\begin{flushright}
+\rule{4in}{0.5pt} \\ (Name and Signature)
+\end{flushright}
+
+
+\begin{enumerate}
+% ======================================================================
+\item {\it China and India.\/}  
+As an experienced consultant, you have worked extensively with clients 
+in China and India.
+A senior Indian official asks you over dinner about the key differences
+between the two economies.  
+Why, he asks, has China grown more rapidly over the last two decades?  
+He suggests two possibilities:  China's higher saving and investment rates, 
+and its larger investment in education.  
+%
+\begin{center}
+\tabcolsep = 0.05in
+\begin{tabular}{lccccc}
+\hline\hline
+Country \phantom{x}
+    &  \phantom{x} Year  \phantom{x} 
+    &  Output Per Worker & Capital Per Worker &  Education \\
+\hline\hline
+China   &  1985   & 1,986  & 4,345  &  4.9        \\
+China   &  2003   & 8,284  & 18,015\phantom{1}  &  6.5        \\
+India   &  1985   & 3,674  & 4,292  &  3.6        \\
+India   &  2003   & 6,725  & 7,892  &  5.1   \\
+\hline\hline
+\end{tabular}
+\end{center}
+Output is GDP measured in 2000 US dollars (PPP adjusted).  
+Education is the average number of
+years of school of the adult population.
+
+
+You take a quick look at some data on hand from the Penn World Tables
+(reported above) and reply to him the next day. 
+Your answer is based on these calculations:   
+\begin{enumerate}
+
+
+\item Which country's output per worker grew more rapidly?   
+Use continuously-compounded annual growth rates and explain 
+how they are computed.  (10~points)
+
+\item How do the levels and growth rates of total factor productivity compare?  
+(10~points)
+
+\item Which factors are responsible for the difference in
+growth rates of output per worker? (20~points)
+
+\item How would you answer the Indian official?   
+
+\end{enumerate}
+
+\begin{comment}
+Answer.
+\begin{enumerate}
+
+\item Continuously-compounded growth rates of output per worker were 7.93\% (China) and 3.36\% (India).  The first is computed from
+\[
+    \gamma_{Y/L} \;=\; \frac{\log(8284/1986)}{2003-1985} \;=\; 0.0793 .
+\]
+The second applies the same method to data for India.
+
+
+\item We compute TFP from $ A = (Y/L)/(K/L)^\alpha $. Using $\alpha = 1/3$, the
+answers are: 
+\begin{center}
+\tabcolsep = 0.05in
+\begin{tabular}{lccccc}
+\hline\hline
+Country \phantom{x}
+    &  \phantom{x} Year  \phantom{x} 
+    &  TFP  \\
+\hline\hline
+China   &  1985   & 122  \\
+China   &  2003   & 316  \\
+India   &  1985   & 226  \\
+India   &  2003   & 338  \\
+\hline\hline
+\end{tabular}
+\end{center}
+
+
+\item The work is mainly computing growth rates for the various components.  Once we do this, we
+can compute the various contributions to growth from the growth accounting relation for output per
+worker:
+\[
+        \gamma_{Y/L} \;=\; \gamma_A + \alpha \gamma_{K/L}  .
+\]
+With our numbers, the answer is 
+\begin{eqnarray*}
+    \mbox{China:} &&  7.93 \;=\; 5.30 \mbox{ (A)} +  2.63 \mbox{ (K/L)}   \\
+    \mbox{India:} &&  3.36 \;=\; 2.23 \mbox{ (A)} +  1.13 \mbox{ (K/L)} .
+\end{eqnarray*}
+In words:  most of the difference is in TFP growth.  
+There's also a difference in capital per worker, but the magnitude is much smaller.  
+
+\item Since most of the difference is in TFP, 
+a formal answer would incorporate human capital into the analysis, 
+but it seems clear for the numbers that there's not enough difference in 
+education for this to be a dominant factor.  
+Education isn't a bad idea, but it doesn't seem to have been a major source
+of difference between the two countries.  
+The key issue is TFP, which suggests that they explore institutional factors
+that might keep TFP low.  A look at various institutional indicators 
+might point out some specific issues.  
+
+\end{enumerate}
+\end{comment}
+
+
+%\pagebreak \phantom{xx} \pagebreak \phantom{xx} \pagebreak
+% ======================================================================
+\item {\it Laos.\/}  Like neighboring Vietnam, 
+Laos is integrating itself into the global economy.  
+See the article from the {\it New York Times\/} attached at the end of the exam.  
+Additional information:
+%
+\begin{center}
+%\tabcolsep = 0.1in
+\begin{tabular}{lccc}
+\hline\hline 
+Country  \phantom{xxxx}   
+    &   GDP Per Capita  &   Labor Market Rigidity  &  Corruption  \\
+\hline\hline 
+Laos        &   1791  &  50  &  2.6  \\
+China       &   5085  &  30  &  3.3  \\
+Vietnam     &   2502  &  51  &  2.6  \\
+\hline\hline 
+%
+\end{tabular}
+\end{center}
+GDP Per Capita is for 2004, PPP adjusted, expressed in 2000 US dollars.  
+Labor market rigidity is an index computed by the World Bank.  
+Corruption is an index computed by Transparency International
+(high numbers indicate low perceptions of corruption).  
+%
+\begin{enumerate}
+
+\item What are the major obstacles to Laos producing textiles for 
+developed countries?  (10~points)
+
+\item Can businesses in Laos afford to pay wages as high as those in  
+China?   Why or why not?  (10~points)
+
+\item What policies would you recommend to increase economic performance
+in Laos over the next 10-20 years?  Why? (10~points)
+\end{enumerate}
+
+\begin{comment}
+Answer.  You have some room for creativity here, but the main points include:
+%
+\begin{enumerate}
+\item Among the obstacles noted:  
+phase-out of trade preferences, high wages (possibly bid up by UN agencies), 
+low productivity, inflexible labor market, lack of infrastructure to get 
+goods to market, and corruption.  
+
+\item It seems not:  they're not as productive, and there are additional costs
+getting in and out of the country.  
+
+\item Build basic institutions:  reduce corruption, 
+educate the workforce, add better infrastructure... 
+
+\end{enumerate}
+\end{comment}
+
+
+%\pagebreak \phantom{xx} \pagebreak \phantom{xx} \pagebreak
+% ======================================================================
+\item {\it Miscellany.\/}
+\begin{enumerate}
+
+\item {\it Innovation and prices.\/}  
+Many analysts have argued that inflation is overstated, 
+because some price increases reflect improvements in product quality.  
+They argue further that this leads us to understate the growth 
+of real output and TFP.  
+Do you find this argument persuasive?  Why or why not?  (10~points)
+
+\item {\it Competition.\/}
+The Mexican Business Association states:  
+``Competition is a problem in Mexico, since local firms often have difficulty 
+competing with large foreign firms.  
+We think restrictions on foreign competition would be good for 
+the Mexican economy and workers.''
+Do you find this argument persuasive?  Why or why not?  (10~points)
+
+\item {\it Trade deficits.\/}
+A financial strategist argues:  ``A trade deficit is a sign that 
+national investment is greater than national saving.  Since investment 
+is a good thing, that must be good for the country.''
+What could the logic be for these statements?  Do you find them persuasive?  
+(10~points)
+
+\end{enumerate}
+
+\begin{comment}
+Answer.  
+\begin{enumerate}
+
+\item We find the argument persuasive:  lots of products are 
+better than they were, 
+and this may not be adequately 
+taken into account in measures of prices used (for example) to deflate GDP.  
+Since GDP at current prices is relatively well measured, 
+and is the product of real GDP and a price index, 
+overstatement of the price index leads naturally to understatement
+of real GDP.  
+
+\item We think they're wrong:  competition would be good for Mexican 
+consumers, and likely good for workers, too, although there may
+be some initial disruption.  
+These kinds of statements are almost always self-serving: 
+it's the managers and owners the policy is protecting.  
+More than that, lots of evidence suggests that local firms 
+have a substantial advantage in competing with foreign firms.  
+
+\item The first sentence is correct as a matter of accounting:
+Since $ S = I + \NX$, a trade deficit ($\NX<0$) means $ I>S$.  
+The second there are different opinions about.  
+Certainly investment will raise capital and GDP.  
+But since the deficit is financed by selling claims on 
+the economy to the rest of the world (borrowing, in other words), 
+the question is whether the return on the investment (the extra output) 
+is enough to cover the cost of borrowing.  
+
+\end{enumerate}
+\end{comment}
+
+\end{enumerate}
+
+%\pagebreak \phantom{xx} \pagebreak \phantom{xx} 
+%\end{document}
+% ----------------------------------------------------------------------------------------
+\newpage
+New York Times, February 28, 2006 \\
+Ending Tariffs Is Only the Start \\
+By KEITH BRADSHER
+
+VIENTIANE, Laos — The Venture International factory here, where rows of Laotian women sew flame-retardant cloth into 
+coveralls for oil rig workers, should, in theory, benefit from a global agreement in December to eliminate almost all
+ barriers imposed by rich nations on exports from the world's 50 poorest countries.
+
+The coveralls fashioned at Venture's garment plant, several blocks from a secret military base where 
+American officers once planned bombing raids against North Vietnam, are already worn by Halliburton and Schlumberger 
+workers all over Southeast Asia. But because of tariffs up to 28 percent, the coveralls are not sold in the United States.
+
+Such tariffs will probably disappear under a plan approved at the World Trade Organization's conference in Hong Kong. 
+The plan, the biggest trade concession by the advanced industrial economies to the poorest countries in many years, 
+is intended to help the poor lands compete with China's ever-growing export machine and, in the process, 
+transform the lives of many in Africa and here in Southeast Asia whom the world has passed by.
+
+But the coveralls factory, like many businesses in the least developed countries, will continue to struggle, 
+even if the tariffs are gone. Practically all the poor countries face a host of other problems, from weak transport 
+links to shortages of skilled labor to virtually nonexistent credit markets.
+
+It costs Venture as much as 45 percent more than a Chinese company to ship each 40-foot container to Los Angeles, 
+because the containers must go by road across Thailand before they can be loaded onto a ship, said John F. Somers, 
+the company's Dutch managing director. Venture cannot use its factory and equipment as collateral for loans in 
+Laos's modest banking market, making it costly and difficult to borrow.
+
+The hourly productivity of labor here is a third lower than in China or in neighboring Vietnam, 
+even after training, because workers coming straight from small villages have little experience with machines. 
+And English-speaking office workers who can communicate with vendors and customers are in short supply, 
+and United Nations agencies with large budgets have bid up the salaries of those who are available to 
+as much as eight times what a Laotian teacher earns.
+
+With all these expenses, it costs Mr. Somers around \$4 to cut and sew a winter jacket with a synthetic sheepskin lining, 
+for example — more than American retailers are willing to pay. 
+``They are offering \$2.65, and why?" he asked. ``That is what they are paying in China."
+
+At the same time, the W.T.O. agreement to dismantle trade barriers is drawing criticism, 
+particularly from groups in the United States fearing low-wage competition. 
+American textile companies and farmers of long-protected crops like tobacco and sugar, 
+which are especially unhappy, are situated in Republican states in the South 
+where they could yet turn the agreement into a political issue.
+
+They are particularly upset that the plan allows each country to preserve tariffs and quotas on 
+just 3 percent of all categories of imports from the poorest countries. 
+The categories are so limited that traditional allies in protectionism will compete over 
+who continues to receive protection and who will lose it and be exposed to global competition.  ...
+
+\begin{comment}
+``You end up with a rather nasty debate," said Augustine D. Tantillo, 
+head of the American Manufacturing Trade Action Coalition in Washington, 
+which represents industries struggling to cope with imports, especially textiles and apparel.
+
+The agreement to eliminate trade barriers on the poorest countries' exports is dependent on the completion of global trade talks in which tough issues remain, notably whether the European Union will agree to reduce its farm subsidies. 
+But the Hong Kong plan goes a long way toward meeting the poor countries' objections, 
+which have been the biggest stumbling block for the last six years, repeatedly bringing talks to a standstill.
+\end{comment}
+
+Countries like India, China and Brazil are not poor enough to qualify for the special treatment. 
+But textile producers like Bangladesh and Cambodia do, along with tobacco and sugar growers like Zimbabwe and 
+Malawi and cotton producers like Chad and Burkina Faso.  ...
+
+\begin{comment}
+The W.T.O.'s record in helping the poor has been spotty until now. At the start of last year, 
+it erased almost all quotas on textiles and apparel around the globe, a move originally intended in 1993, 
+when it was negotiated, to help very poor countries. 
+But the quota removal has mainly benefited China, a W.T.O. member since 2001. 
+Other developing countries have been forced to try to promote other exports, often commodities, 
+in which they are competitive. The European Union and the United States have reimposed quotas 
+on some shipments from China, but at much higher levels than before.
+
+Only a quarter of the \$47 billion in the poor countries' exports to the industrial economies 
+were subject to tariffs in 2003, the most recent year available, because commodities like oil 
+from Angola and copper from Zaire were exempt. 
+The United States alone accounts for half the purchases subject to tariffs from the least developed countries. 
+Those purchases are expected to rise quickly if the trade barriers are lifted.
+\end{comment}
+
+For poor seamstresses and farmers in large areas of Asia and Africa, 
+the provision to eliminate most tariffs and quotas from the world's least developed countries holds the possibility of higher incomes.
+
+These are people like Nang Pajik, 25, who was sewing collars on green work shirts at 
+Venture's factory on a recent morning. Her six brothers and sisters still live in her 
+home village tending the family's rice plot, but there is little other work there. 
+Here, in the capital of Laos, she has found a husband, a salesman in a nearby store, and sends home part of her pay to her extended family.
+
+``It's better in Vientiane," she said. ``I can earn money here."
+
+Indeed, the governments of many poor countries say that the removal of tariffs and quotas should go beyond the Hong Kong agreement.
+
+``It's just the starting point," said Love Mtesa, 
+Zambia's delegate to the W.T.O. and leader of the 49-member caucus of least developed countries. 
+``We do believe that by 2013, we should be able to reach 99.9 percent" of exports free from trade barriers."
+
+Some of the greatest effect from the tariff-free, quota-free deal approved in Hong Kong could come in Laos, 
+which is now negotiating its entry into the W.T.O.
+
+And Venture International should be among the biggest gainers. 
+In addition to coveralls, it makes firefighters' uniforms, work shirts and other garments bought by companies for their employees. 
+It is the only one of Laos's 55 garment factories accredited by Social Accountability International, 
+a New York nonprofit group, as enforcing basic standards for the fair treatment of labor. 
+Image-conscious Western multinationals are increasingly cautious about buying from factories that abuse workers, 
+although some advocacy groups say that even greater vigilance is needed.
+
+Yet the extra costs faced by Venture's managing director, Mr. Somers, while doing business in Laos illustrate how difficult it is 
+for companies in the world's poorest countries to compete with those in China.
+
+He stays in business by sticking to niches like fire-retardant clothing and restaurant waiters' uniforms and by exporting heavily 
+to the European Union, which exempts Laos, as a least developed country, 
+from the 13 percent tax it levies on many garments from China.
+
+Mr. Somers has no such advantage in selling to American retailers and does not try to do so, even when American companies ask him to bid on orders. 
+When the European Union imposed import restrictions 
+on a range of Chinese garments last summer and the United States began preparing to do likewise, 
+many American importers frantically called companies in Laos and other countries to arrange backup supplies.
+
+``I suddenly had 20 to 30 e-mails a day from Wal-Mart and Wal-Mart-affiliated suppliers," Mr. Somers said, 
+adding that he had refused even to quote prices 
+because he knew that he would not be able to compete on price with the Chinese suppliers.
+
+Meeting Social Accountability International's labor standards is not what drives up the cost. Mr. Somers said that his factory, 
+with 800 employees, used careful scheduling to avoid excessive overtime 
+and did not hire the 15- to-17-year-olds legally employed by other Laotian garment factories, 
+though the factory must pay a little more for slightly older workers.
+
+Mr. Somers pays about \$50 a month, slightly more than teachers earn in Laos and comparable to what garment workers make in Chinese interior provinces or coastal Vietnam. 
+That competitive edge is negated by the lower productivity of Laotian workers. 
+The removal of tariffs is crucial in persuading buyers to visit a remote country like Laos. 
+Even the exemption from the 13 percent European tariff leaves Venture able to 
+undercut Chinese manufacturers by only 2 or 3 percent, Mr. Somers said, adding, 
+``Few want to fly out of Hong Kong for that."
+
+\end{document} 
+

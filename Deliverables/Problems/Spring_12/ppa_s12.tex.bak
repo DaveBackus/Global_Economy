@@ -1,0 +1,267 @@
+\documentclass[12pt]{exam}
+
+\usepackage{ge05}
+\usepackage{comment}
+\usepackage{booktabs}
+\usepackage[dvipdfm]{hyperref}
+\urlstyle{rm}   % change fonts for url's (from Chad Jones)
+\hypersetup{
+    colorlinks=true,        % kills boxes
+    allcolors=blue,
+    pdfsubject={NYU Stern course GB 2303, Global Economy},
+    pdfauthor={Dave Backus @ NYU},
+    pdfstartview={FitH},
+    pdfpagemode={UseNone},
+%    pdfnewwindow=true,      % links in new window
+%    linkcolor=blue,         % color of internal links
+%    citecolor=blue,         % color of links to bibliography
+%    filecolor=blue,         % color of file links
+%    urlcolor=blue           % color of external links
+% see:  http://www.tug.org/applications/hyperref/manual.html
+}
+
+% for ge05.sty
+\def\ClassName{The Global Economy}
+%\def\Category{Professor David Backus}
+\def\Category{Backus \& Cooley}
+\def\HeadName{Practice Problems A}
+\newcommand{\NX}{\mbox{\it NX\/}}
+
+\printanswers
+
+\begin{document}
+\parindent = 0.0in
+\parskip = \bigskipamount
+\thispagestyle{empty}%
+\Head
+
+\centerline{\large \bf \HeadName: Production \& Capital Formation}
+\centerline{Revised:  \today}
+
+\medskip
+{\it This will not be collected or graded,
+but it's a good way to make sure you're up to speed.
+We recommend you do it before the next class.}
+
+\begin{questions}
+
+\begin{solution}
+Brief answers follow,
+but see also the spreadsheet posted on the course website.
+\end{solution}
+
+% --------------------------------------------------------------------
+\question Labor productivity.
+Consider our production function,
+\begin{eqnarray*}
+    Y &=& A K^\alpha L^{1-\alpha} .
+\end{eqnarray*}
+When needed, we'll use these numerical values:
+$\alpha = 1/3$, $A=1$, $L=100$, and $K=250$.
+
+\begin{parts}
+\part What are the components of the production function?  What does it tell us?
+
+\part A common summary number is the average product of labor,
+ $Y/L$, often referred to simply as labor productivity.
+Using the numbers given, what are output $Y$ and labor productivity $Y/L$?
+
+\part Suppose $A$ rises from 1 to 1.25.
+What happens to output?  Labor productivity?
+\end{parts}
+
+\begin{solution}
+\begin{parts}
+\part In order:  $Y$ is output, total production in a country, usually measured by real GDP;
+$A$ is total factor productivity (TFP), a measure of how effectively inputs are used to produce output;
+$K$ the quantity of physical capital, plant and equipment;
+$L$ the number of employees working to produce output;
+$\alpha$ is a parameter, which we set equal to 1/3
+(one-third of output is paid to capital, two-thirds to labor).
+\part We get $Y = 135.7$ and $Y/L = 1.357$.
+\part If $A$ rises 25\%, output and output-per-worker rise proportionately:
+$Y = 36.55$ and $Y/L = 0.366$.
+\end{parts}
+\end{solution}
+
+
+% --------------------------------------------------------------------
+\question Dynamics of the capital-output ratio.
+We often express the capital stock as a ratio to GDP ---
+the so-called capital-output ratio.
+Both are real variables in this ratio;
+the idea is that it summarizes the capital intensity
+of the economy.
+Most countries --- rich, poor, and in between ---
+have ratios between 2 and 3.
+
+Over time, the capital-output ratio reflects changes
+in both its numerator and denominator.
+The idea here is to run through some simple calculations
+to remind ourselves how this works.
+We'll use these numbers:
+
+\begin{center}
+%\tabcolsep = 0.2in
+\begin{tabular}{lcc}
+\toprule
+Year \phantom{xxxxx}   & Real Investment ($I$)  &  Real GDP ($Y$) \\
+\midrule
+2005    &  23  &  107 \\
+2006    &  25  &  110 \\
+2007    &  25  &  114 \\
+2008    &  27  &  116 \\
+2009    &  15  &  110 \\
+2010    &  18  &  113 \\
+\bottomrule
+\end{tabular}
+\end{center}
+%
+
+\begin{parts}
+\part Suppose the capital stock at the start of 2005 is $K = 210$
+and depreciation is $\delta = 0.10$.
+How does the capital stock evolve from 2006 to 2010?
+The capital-output ratio?
+
+\part Take as given the following:  if the growth rate $g$ and investment rate $I/Y$
+are constant, then the capital-output ratio tends toward
+\begin{eqnarray*}
+    K/Y &=& [1/(\delta+g)] \ I/Y .
+\end{eqnarray*}
+We refer to this as its ``steady state'' value.
+Using mean values from the table you constructed in (a),
+what is the steady state capital-output ratio.
+How close is it to the 2010 value?
+\end{parts}
+
+
+\begin{solution}
+This problem is partly drill, partly an illustration of a broader
+point:  that when we look at changes in $K/Y$ (or similar object),
+a lot of the action comes from the denominator.
+As a concrete illustration, China has very high saving and investment rates,
+yet nevertheless has a value of $K/Y$ not much different from the US.
+How can this be?  The answer is the growth rate of output $g$.
+When you grow that fast, you need a lot of investment just to keep
+$K/Y$ constant.
+We'll see the same thing when we look at the ratio of
+government debt to GDP.
+
+\begin{parts}
+
+\part The table below is based on the formula,
+$K_{t+1} = (1-\delta)K_t + I_t$.
+For details, see the spreadsheet.
+
+\pagebreak
+\begin{center}
+\tabcolsep = 0.1in
+\begin{tabular}{lcccc}
+\toprule
+Year \phantom{xx}   & $I$  &  $Y$ & $K$  & $K/Y$ \\
+\midrule
+2005    &  23  &  107 &  210.00  &  1.963 \\
+2006    &  25  &  110 &  212.00  &  1.927 \\
+2007    &  25  &  114 &  215.80  &  1.893 \\
+2008    &  27  &  116 &  219.22  &  1.890 \\
+2009    &  15  &  110 &  224.30  &  2.039 \\
+2010    &  18  &  113 &  216.87  &  1.919 \\
+\bottomrule
+\end{tabular}
+\end{center}
+%
+
+\part We calculate means of $g=1.150\%$ and $I/Y = 0.198$.
+That gives us $K/Y = [1/(0.10 + 0.0150)] \times 0.198 = 1.778$,
+which is (a little?) below what we see above.
+
+This wasn't part of the question, but you might ask where the
+steady state relation comes from.
+Recall that the capital stock follows
+\begin{eqnarray*}
+    K_{t+1} &=& (1-\delta) K_t + I_t ,
+\end{eqnarray*}
+and the growth rate of output is
+\begin{eqnarray*}
+    Y_{t+1} &=& (1+g_{t+1}) Y_t .
+\end{eqnarray*}
+Taking the ratio of the first to the second, we have
+\begin{eqnarray*}
+    (1+g_{t+1})\frac{K_{t+1}}{Y_{t+1}}  &=& (1-\delta)\frac{ K_t}{Y_t}
+                    + \frac{I_t}{Y_t} .
+\end{eqnarray*}
+In the steady state, $K_{t+1}/Y_{t+1} = K_t/Y_t = K/Y$, $I_t/Y_t = I/Y$, and $g_{t+1} = g$
+are all constant.
+That gives us the steady state relation used above.
+
+The idea is that the capital-output ratio is affected by three things:
+depreciation $\delta$, which reduces future capital; growth $g$,
+which increases the denominator and decreases the capital-output ratio;
+and investment, which increases future capital.
+We haven't given much attention to $g$ so far,
+but it will reappear when we study debt dynamics.
+
+\end{parts}
+\end{solution}
+
+% --------------------------------------------------------------------
+\question Recovering from war in Solow's model.
+Solow's analysis tells us that productivity growth
+is more important than capital formation for the long-term
+performance of countries,
+but it's a mistake to disregard capital formation altogether.
+The standard example is war,
+which typically destroy a lot of the physical capital.
+The subsequent recoveries often follow the Solow model pretty well,
+with growth rates high at first, then declining.
+
+We'll consider an economy that starts at its long-run
+``stationary'' level of capital, then go on
+to study its recovery following a 20\% drop.
+%
+\begin{parts}
+\part Consider an economy whose parameters include
+$A = 1$, $L=100$, $\alpha = 1/3$, $\delta = 0.1$, and $s = 0.2$.
+Explain what each of these does.
+
+\part
+Suppose we start out with $K = 250$.
+If you adapt the spreadsheet and compute $K$ for many periods,
+what value does it seem to be heading toward?
+
+\part Suppose you start at the steady state computed in (b),
+but  the capital stock falls suddenly by 20\% (think:  war).
+Enter this in the spreadsheet and see what happens.
+What happens to the growth rate of GDP in subsequent years?
+How many periods does it take for the capital stock to recover to
+90\% of its steady state value?
+\end{parts}
+
+\begin{solution}
+\begin{parts}
+\part Most of these were covered in Question 1.
+The new elements are the depreciation rate $\delta$
+(depreciation equals $\delta$ times the current stock of capital)
+and the saving rate (the fraction of income that's saved, which equals
+the fraction of output devoted to investment in this model).
+\part After 100 years, $K=282.81$.
+[Not required, but the steady state calculation gives us
+$ K = (sA/\delta)^{1/(1-\alpha)} L = 282.84$,
+so we're pretty close.]
+
+\part If we start at 226 (about 20\% lower than the steady state),
+we get to 254 (halfway to the steady state) in 10-11 years.
+The GDP growth rate declines steadily, much as we saw in Japan and Germany
+following World War II.
+
+\end{parts}
+\end{solution}
+
+\end{questions}
+
+\vfill \centerline{\it \copyright \ \number\year \
+NYU Stern School of Business}
+
+\end{document}
+

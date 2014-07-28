@@ -1,0 +1,184 @@
+\documentclass[12pt]{article}
+
+\usepackage{GE13}
+\usepackage{comment}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\urlstyle{rm}   % change fonts for url's (from Chad Jones)
+\hypersetup{
+    colorlinks=true,        % kills boxes
+    allcolors=blue,
+    pdfsubject={NYU Stern course GB 2303, Global Economy},
+    pdfauthor={Dave Backus @ NYU},
+    pdfstartview={FitH},
+    pdfpagemode={UseNone},
+%    pdfnewwindow=true,      % links in new window
+%    linkcolor=blue,         % color of internal links
+%    citecolor=blue,         % color of links to bibliography
+%    filecolor=blue,         % color of file links
+%    urlcolor=blue           % color of external links
+% see:  http://www.tug.org/applications/hyperref/manual.html
+}
+
+\usepackage{enumitem}
+\setitemize{leftmargin=*, topsep=0pt}
+\setenumerate{leftmargin=*, topsep=0pt}
+
+% for ge05.sty
+\def\ClassName{The Global Economy}
+\def\Category{Mini-Case}
+\def\HeadName{A Crisis of Confidence?}
+
+\begin{document}
+\parindent = 0.0in
+\parskip = 0.5\bigskipamount
+\thispagestyle{empty}%
+\Head
+
+\centerline{\large \bf \HeadName}%
+\centerline{Revised:  \today}
+
+\bigskip
+You have rotated into the economic analysis group at JP Morgan Chase,
+reporting to US Chief Economist Michael Feroli.
+As your first assignment, he asks you to work through the possible impact
+on the US economy of further deterioration in Europe.
+He suggests that this might affect the US economy through three channels.
+First, Europeans may buy fewer US products.
+Second, financial conditions in Europe might spill over to the US,
+making it more difficult, for example, for US firms to finance expansion.
+And third, the loss of confidence there might lead to a fall
+in confidence of US business leaders.
+
+
+You go back to your Global Economy notes, in particular the
+chapters on the aggregate supply and demand model,
+where you find this figure:
+
+\begin{center}
+\setlength{\unitlength}{0.075em}
+%\setlength{\unitlength}{0.1em}
+\begin{picture}(280,200)(0,-10)
+%\footnotesize
+\thicklines
+
+% horizontal axis
+\put(-30,0){\vector(1,0){300}}
+\put(255,-16){$Y$}
+
+% vertical axis
+\put(0,-20){\vector(0,1){200}}
+\put(-15,155){$P$}
+
+% demand
+\put(25,165){\line(4,-3){200}}\put(230,10){AD}
+%\put(65,165){\line(4,-3){200}}\put(270,10){AD}
+
+% supply
+\put(25,13){\line(4,3){200}} \put(230,160){AS}
+%\put(65,13){\line(4,3){200}} \put(270,160){AS$'$}
+\put(126.4,0){\line(0,1){170}} \put(118,175){AS$^*$}\put(122,-16){$Y^*$}
+
+% equilibrium labels
+%\put(105,85){\footnotesize B}
+%\put(150,115){\footnotesize A}
+%\put(138,64){\footnotesize C}
+% dotted lines
+%\qbezier[31]{(133,0)(133,46)(133,92)}
+%\qbezier[45]{(0,92)(67,92)(133,92)}
+%\qbezier[45]{(0,72)(67,72)(133,72)}
+
+\end{picture}
+\end{center}
+
+
+
+You remind yourself what it means and write down some questions:
+%
+\begin{itemize}
+\item Where is the current short-term equilibrium in this diagram?
+Does that seem right to you?
+\item Do Feroli's channels correspond to changes in supply or demand?
+\item If you decide the primary effect is on demand, how would you expect
+GDP growth and inflation to respond in the short run?  In the long run?
+\item What, if anything, do you think is missing from this analysis?
+\end{itemize}
+
+\vfill
+{
+%More of this kind of thing at \url{https://sites.google.com/site/nyusternglobal/}
+\vspace*{0.1in}
+\centerline{\it \copyright \ \number\year \ NYU Stern School of Business}
+}
+
+
+
+\end{document}
+
+
+\pagebreak
+%
+{\bf Exhibit 1 \\
+Indicators for Ghana and India}
+\begin{center}
+\tabcolsep = 0.14in
+\begin{tabular}{lrrr}
+\toprule
+Indicator   &  Ghana    &  India   &  Source  \\
+
+\midrule
+\multicolumn{3}{l}{\it Governance indicators\/} \\
+Political stability (percentile) & 40    &    10  & WB, WGI \\
+Govt effectiveness (percentile)  & 57  & 54  & WB, WGI \\
+Regulatory quality (percentile)  & 53  & 42  & WB, WGI \\
+Rule of law (percentile)         & 53  & 56  & WB, WGI \\
+Control of corruption (percentile)& 60 & 47  & WB, WGI \\
+
+\midrule
+\multicolumn{4}{l}{\it Economic and business indicators\/} \\
+GDP per capita (USD)        &  3,081 & 3,703 &  IMF \\
+Employment rigidity (percentile)   & 27 & 30 & WB, Doing Business \\
+Severance costs (weeks of pay) & 178  & 56 & WB, Doing Business \\
+Paying taxes:  hours spent     & 224  & 254 & WB, Doing Business \\
+Paying taxes:  gross rate (\%) &  34  &  62 & WB, Doing Business \\
+Enforcing contracts (cost, \%) &  23  &  40 & WB, Doing Business \\
+Investor protection (percentile)    &  60  &  60 & WB, Doing Business \\
+
+\midrule
+\multicolumn{4}{l}{\it Education indicators\/} \\
+Literacy of adults  (\%)       &    67     &  63   &  WB, WDI \\
+Literacy of young (15-24)  (\%) &    67     &  63  & WB, WDI  \\
+Primary school completion (\%)  & 87    & 96    & WB, WDI  \\
+Average education of adults (years)  & 7.0 & 4.4 & Barro-Lee \\
+
+\midrule
+\multicolumn{4}{l}{\it Infrastructure indicators\/} \\
+Infrastructure quality (percentile) & 43 & 33 &  WEF \\
+Quality of electricity (percentile)  &  20 & 24  & WEF \\
+Internet users (\%)   & 8.6 & 7.8 & WB, WDI \\
+Broadband penetration (\%) &  0.2 & 0.9 & WB, WDI \\
+
+\bottomrule
+\end{tabular}
+\end{center}
+%
+\vspace{-0.15in}
+Sources include:  the World Bank (WB),
+including their World Development Indicators (WDI),
+World Governance Indicators (WGI), and Doing Business;
+the International Monetary Fund (IMF);
+and the World Economic Forum (WEF).
+Percentiles range from 0 (bad) to 100 (good).
+
+\vfill
+{
+More of this kind of thing at \url{https://sites.google.com/site/nyusternglobal/}
+%\url{http://goo.gl/EDybU}
+
+\vspace*{0.25in}
+\centerline{\it \copyright \ \number\year \
+NYU Stern School of Business}
+}
+
+\end{document}
+

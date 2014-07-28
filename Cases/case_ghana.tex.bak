@@ -1,0 +1,222 @@
+\documentclass[12pt]{article}
+
+\usepackage{GE13}
+\usepackage{comment}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\urlstyle{rm}   % change fonts for url's (from Chad Jones)
+\hypersetup{
+    colorlinks=true,        % kills boxes
+    allcolors=blue,
+    pdfsubject={NYU Stern course GB 2303, Global Economy},
+    pdfauthor={Dave Backus @ NYU},
+    pdfstartview={FitH},
+    pdfpagemode={UseNone},
+%    pdfnewwindow=true,      % links in new window
+%    linkcolor=blue,         % color of internal links
+%    citecolor=blue,         % color of links to bibliography
+%    filecolor=blue,         % color of file links
+%    urlcolor=blue           % color of external links
+% see:  http://www.tug.org/applications/hyperref/manual.html
+}
+
+% for ge05.sty
+\def\ClassName{The Global Economy}
+\def\Category{Mini-Case}
+\def\HeadName{Opportunity in Ghana?}
+
+\begin{document}
+\parindent = 0.0in
+\parskip = \bigskipamount
+\thispagestyle{empty}%
+\Head
+
+\centerline{\large \bf \HeadName}%
+\centerline{Revised:  \today}
+
+\bigskip
+As a junior associate at Booz \& Company, you have been asked to
+prepare a short report on the possibility of
+opening business centers in Ghana.
+Your report would serve as input for a sales pitch to Genpact.
+
+Genpact is a global leader in business process management,
+a term that now covers a broad range of services:
+data entry, customer service, accounting, human resources,
+and many more,
+together with their overall management.
+Genpact began as a unit of GE, where it delivered services to
+the rest of the company, many of them performed in India.
+It became an independent company in 2007,
+trading on the NYSE under ticker symbol G.
+It now has operations in India, China, Poland, Morocco, Brazil,
+South Africa, and other locations around the globe.
+
+You see Ghana as a potential location for call centers,
+data entry, and similar basic business processing,
+most of it aimed at the US market,
+with more to come if things work out.
+Ghana is a former British colony that has been growing rapidly
+in recent years after a period of unusually stable politics.
+The Economist Intelligence Unit refers to it as a ``robust democracy.''
+Its official language is English.
+The World Economic Forum ranked Ghana 114th (of 133)
+in their Global Competitiveness Report.
+They continue:
+``The country continues to display strong public institutions and
+governance indicators,
+particularly in regional comparison. Some
+aspects of its infrastructure are also good
+by regional standards, particularly the state of its ports.
+On the other hand, education levels continue to lag
+behind international standards [and]
+labor markets continue to be characterized by inefficiencies.''
+
+Using the information on the next page ---
+and your own experience and insight ---
+jot down your thoughts about these questions:
+%
+\begin{itemize}
+%\item What do we know about this business?  
+\item What features of a country would make it a good location for this business?
+\item Based on the evidence here, how do India and Ghana compare?
+What are their strengths and weaknesses along the important dimensions?  
+\item What other information would you like to have?
+\item Overall, would you favor expansion into Ghana?
+Why or why not?
+%\item Suppose Ghana set up a Special Economic Zone,
+%free from some of the laws and practices operating elsewhere in the country.
+%What different laws and practices would be most attractive to Genpact?
+\end{itemize}
+
+
+\pagebreak
+%
+{\bf Exhibit 1 \\
+Indicators for Ghana and India}
+\begin{center}
+\tabcolsep = 0.14in
+\begin{tabular}{lrrr}
+\toprule
+Indicator   &  Ghana    &  India   &  Source  \\
+
+\midrule
+\multicolumn{3}{l}{\it Governance indicators\/} \\
+Political stability (percentile) & 40    &    10  & WB, WGI \\
+Govt effectiveness (percentile)  & 57  & 54  & WB, WGI \\
+Regulatory quality (percentile)  & 53  & 42  & WB, WGI \\
+Rule of law (percentile)         & 53  & 56  & WB, WGI \\
+Control of corruption (percentile)& 60 & 47  & WB, WGI \\
+
+\midrule
+\multicolumn{4}{l}{\it Economic and business indicators\/} \\
+GDP per capita (USD)        &  3,081 & 3,703 &  IMF \\
+Employment rigidity (percentile)   & 27 & 30 & WB, Doing Business \\
+Severance costs (weeks of pay) & 178  & 56 & WB, Doing Business \\
+Paying taxes:  hours spent     & 224  & 254 & WB, Doing Business \\
+Paying taxes:  gross rate (\%) &  34  &  62 & WB, Doing Business \\
+Enforcing contracts (cost, \%) &  23  &  40 & WB, Doing Business \\
+Investor protection (percentile)    &  60  &  60 & WB, Doing Business \\
+
+\midrule
+\multicolumn{4}{l}{\it Education indicators\/} \\
+Literacy of adults  (\%)       &    67     &  63   &  WB, WDI \\
+Literacy of young (15-24)  (\%) &    67     &  63  & WB, WDI  \\
+Primary school completion (\%)  & 87    & 96    & WB, WDI  \\
+Average education of adults (years)  & 7.0 & 4.4 & Barro-Lee \\
+
+\midrule
+\multicolumn{4}{l}{\it Infrastructure indicators\/} \\
+Infrastructure quality (percentile) & 43 & 33 &  WEF \\
+Quality of electricity (percentile)  &  20 & 24  & WEF \\
+Internet users (\%)   & 8.6 & 7.8 & WB, WDI \\
+Broadband penetration (\%) &  0.2 & 0.9 & WB, WDI \\
+
+\bottomrule
+\end{tabular}
+\end{center}
+% 
+\vspace{-0.15in}
+Sources include:  the World Bank (WB),
+including their World Development Indicators (WDI), 
+World Governance Indicators (WGI), and Doing Business;
+the International Monetary Fund (IMF);
+and the World Economic Forum (WEF).
+Percentiles range from 0 (bad) to 100 (good).  
+
+\vfill
+{
+More of this kind of thing at \url{https://sites.google.com/site/nyusternglobal/} 
+%\url{http://goo.gl/EDybU} 
+
+\vspace*{0.25in}
+\centerline{\it \copyright \ \number\year \
+NYU Stern School of Business}
+}
+
+\end{document}
+
+From Peter:  \href{http://www.technologyreview.com/computing/12908/}{Ghana}
+(Good story, paywall...)
+
+
+\begin{solution}
+The challenge here is to take a random collection
+of data and use it to form a coherent view of
+the quality of the local business environment
+{\it for this particular business\/}.
+Good answers tied these measures to the needs of call centers,
+less good answers typically listed the measures and
+simply noted which country looked better.
+%
+\begin{parts}
+\part Here's a guess of the main issues
+in (roughly) declining order of importance:
+wages, English-speaking, literate and somewhat educated,
+flexible labor market, good telecommunications infrastructure,
+and general business-friendly environment.
+Most of the indicators can be mapped into these categories.
+
+Grading:  10 points for something close to this or
+something logically coherent
+on its own terms, partial credit otherwise.
+It's essential that the answer address this specific business.
+
+\part Overall they're pretty similar.
+Wages are likely lower in Ghana, since GDP per capita is.
+English isn't the official language India, but it's a common
+second language and many Indians speak English.
+In Ghana, English is the official language.
+Literacy and education are a little lower in Ghana, but there's not much difference.
+It's not clear how good the infrastructure is, but related measures
+(electricity, general infrastructure) are similar or somewhat better
+in Ghana.
+The countries are similar on employment rigidity
+(Ghana is slightly less rigid), but Ghana has higher severance costs.
+(It's not reported in the table, but
+severance payments here are for workers with 20+ years of employment,
+so the number may not be typical for this business.)
+As for the general environment:
+rule of law, control of corruption, and effectiveness of government
+are all similar in the two countries.
+
+Grading:  10 points for similar discussion.
+
+\part I'd say the two countries are similar in most respects.
+If you can run this business in India, you can probably run it in Ghana,
+where wages are lower.
+The one source of concern is severance costs --- we might
+want to look more closely at this.
+
+Things I'd want to collect more information about:
+wages for the appropriate skilled people,
+political situation, how severance works,
+whether this quality of education measure is relevant to me.
+
+Grading:  10 points for this or other logical argument.
+
+\end{parts}
+\end{solution}
+
+
+

@@ -1,0 +1,388 @@
+\documentclass[letterpaper,12pt]{exam}
+
+\usepackage{ge05}
+\usepackage{comment}
+\usepackage{booktabs}
+\usepackage[dvipdfm]{hyperref}
+\urlstyle{rm}   % change fonts for url's (from Chad Jones)
+\hypersetup{
+    colorlinks=true,        % kills boxes
+    allcolors=blue,
+    pdfsubject={NYU Stern course GB 2303, Global Economy},
+    pdfauthor={Dave Backus @ NYU},
+    pdfstartview={FitH},
+    pdfpagemode={UseNone},
+%    pdfnewwindow=true,      % links in new window
+%    linkcolor=blue,         % color of internal links
+%    citecolor=blue,         % color of links to bibliography
+%    filecolor=blue,         % color of file links
+%    urlcolor=blue           % color of external links
+% see:  http://www.tug.org/applications/hyperref/manual.html
+}
+
+\newcommand{\NX}{\mbox{\em NX\/}}
+\newcommand{\POP}{\mbox{\em POP\/}}
+
+\def\ClassName{The Global Economy}
+\def\Category{David Backus}
+\def\HeadName{Midterm Examination}
+
+\printanswers
+
+\begin{document}
+\parindent = 0.0in
+\parskip = \bigskipamount
+\thispagestyle{empty}%
+\Head
+
+\centerline{\large \bf \HeadName}%
+%\centerline{March 9, 2005}
+\centerline{Revised:  \today}
+
+\bigskip
+You have 90 minutes to complete this exam.  Please answer each
+question in the space provided and show all of your work.
+You may consult one page of notes and a calculator,
+but devices capable of wireless transmission are prohibited.
+
+I understand that the honor code applies: I will not lie, cheat,
+or steal to gain an academic advantage, or tolerate those who do.
+
+\begin{flushright}
+\rule{4in}{0.5pt} \\ (Name and Signature)
+\end{flushright}
+
+
+\begin{questions}
+% ======================================================================
+\question {\it Indonesia.\/}
+Indonesia is one of the world's most populous countries,
+but it remains a poor one,
+with GDP per capita of about 6 thousand US dollars.
+Its recent trajectory, however, has been strong,
+with average GDP growth over 5\% between 2000 and 2011
+and a barely perceptible impact from the global financial crisis.
+
+From EIU reports,
+we find that Indonesia's recent success comes after a tumultuous history.
+Following independence from the Dutch after World War II,
+it had several decades of authoritarian rule.
+The bloody transition from Sukarno to Suharto in 1965 is vividly portrayed in
+Peter Weir's 1982 film, ``The Year of Living Dangerously.''
+Economic performance improved under Suharto, but dissatisfaction
+with authoritarian rule peaked after the Asian Crisis of 1997,
+when the currency fell by 80\% against the dollar
+and real GDP  fell 14\%.
+
+After the crisis, Indonesia made a rapid transition to
+multi-party democracy,
+with the first democratic elections in 34 years in 1999
+and several more since then.
+
+Your mission is to examine the economic roots of recent success using
+the data in Table \ref{tab:indonesia}.
+
+\begin{parts}
+
+\part What is the average annual growth rate of GDP per capita between
+2000 and 2011?
+GDP per worker?
+(Here and elsewhere in this question,
+growth rates are understood to be continuously-compounded.)
+(10~points)
+
+\part What was total factor productivity in 2000 and 2011?
+Its average annual growth rate?
+(10~points)
+
+\part What are the other sources of growth?
+What factors account for the growth rate of GDP per worker
+you computed in (a)?
+GDP per capita?
+(10~points)
+\end{parts}
+
+\begin{table}
+    \centering
+    \tabcolsep = 0.2in
+    \begin{tabular}{lrrrr}
+    \toprule
+    Year     &  $ \POP $   &  $Y/\POP$   &  $Y/L$  &  $K/L$  \\
+    \midrule
+    2000 &   220.0   &   4,151  & 8,828  & 21,408  \\
+    2011 &   245.6   &   6,209  & 12,672 & 23,471  \\
+    \bottomrule
+    \end{tabular}
+    \caption{Indonesia: aggregate data on output and inputs.
+    Population is in millions.  The other numbers are 2005 US dollars
+    (PPP adjusted, from Penn World Tables and EIU CountryData).}
+    \label{tab:indonesia}
+\end{table}
+
+
+\begin{solution}
+Short answers follow, see the accompanying spreadsheet for specific calculations.
+\begin{parts}
+\part The growth rate of GDP per capita is
+\begin{eqnarray*}
+    \gamma &=& \log (6.209/4.151)/(2011-2000) \;\;=\;\; 3.660\%.
+\end{eqnarray*}
+As always, $\log$ means the natural logarithm,
+sometimes denoted {\tt LN}.
+I moved the decimal point for convenience, but it has no affect on the growth rate.
+Using the same method, the growth rate of GDP per worker is 3.286\%.
+
+Grading:  5 points for correctly computing each number.
+
+\part Productivity we find indirectly from
+$ A = (Y/L)/(K/L)^\alpha$.
+In 2000, we find
+\begin{eqnarray*}
+    A &=& (Y/L)/(K/L)^{1/3} \;\;=\;\; 8.828/21.408^{1/3}
+    \;\;=\;\; 3.179 .
+\end{eqnarray*}
+If you don't move the decimal point, your numbers will be multiplied by 100.
+In 2011, the same calculation gives us $A = 4.426$.
+The growth rate is 3.007\%.
+
+Grading:  4 points for each TFP number, 2 for its growth rate.
+
+\part Growth in GDP per worker has these components:
+\begin{eqnarray*}
+    \gamma_{Y/L} &=&   \gamma_A  + \alpha \gamma_{K/L}  \\
+    3.286     &=& 3.007  + 0.279 .
+\end{eqnarray*}
+Similarly, growth in GDP per capita is
+\begin{eqnarray*}
+    \gamma_{Y/POP} &=&  \gamma_{L/POP}  + \gamma_A
+                + \alpha \gamma_{K/L}  \\
+    3.660     &=& 0.374 + 3.007  + 0.279 .
+\end{eqnarray*}
+It's evident in both cases that productivity is the primary force
+behind economic growth.
+The bigger question, of course, is where the productivity came from.
+That wasn't part, but it's not hard to imagine some improvement in institutions.
+Some of that is evident in the next question.
+
+Grading:  6 points for growth in GDP per worker and its components,
+4 for the same with GDP per capita.
+\end{parts}
+\end{solution}
+
+
+%\pagebreak \phantom{xx} \pagebreak \phantom{xx} \pagebreak
+% ======================================================================
+\question {\it Indonesia and Kazakhstan.\/}
+As the junior member of a consulting team,
+you have been asked to collect information on the pros and cons
+of building a small manufacturing operation
+in Indonesia or Kazakhstan.
+The plant would produce toys aimed at the growing Asian market.
+Both countries have shown recent signs of economic progress.
+Both are actively recruiting foreign manufacturers,
+Indonesia to continue its growth, Kazakhstan to diversify beyond its resource-based economy.
+
+A collection of institutional indicators is given in Table \ref{tab:i-v-k}.
+In addition, the political situations are quite different.
+Indonesia is an emerging democracy.
+The EIU describes Kazakhstan's political structure as authoritarian:
+%
+\begin{quote}
+Nursultan Nazarbayev, the current president and formerly the first secretary of
+the Communist Party of the Kazakh Soviet Socialist Republic, has ruled
+Kazakhstan since independence.
+He has steadily increased his control over Kazakhstan's political
+structures, which has allowed him to secure re-election several times, the
+most recent presidential election being in December 2005. Parliament
+approved amendments that pave the way for
+him to remain president for life.
+His party, Nur Otan (Light-Fatherland),
+won every seat available for
+election in the new parliament.
+\end{quote}
+As a result, the political situation is thought to be stable.
+
+
+\begin{table}[t]
+\centering
+\begin{tabular}{lrrrr}
+\toprule
+        &  \multicolumn{2}{c}{Indonesia} & \multicolumn{2}{c}{Kazakhstan}  \\
+Indicator   &  1996   & 2010    & 1996  & 2010 \\
+\midrule
+\multicolumn{2}{l}{\it Governance} \\
+Political stability (percentile)  &  13.5  &  18.9 & 28.4 & 61.8 \\
+Govt effectiveness (percentile)   &  40.0  & 47.8  & 13.2 & 44.5 \\
+Control of corruption (percentile) & 30.7  & 27.3  & 9.3  & 15.3 \\
+\midrule
+\multicolumn{2}{l}{\it Labor} \\
+Minimum wage (ratio to average) & & 0.41 & & 0.13 \\
+Severance after 10 years (weeks of pay) & & 56 & & 4 \\
+Mandatory vacation (days per year)  && 0 & & 13 \\
+Flexible hours?  (yes, no)  && yes & & yes \\
+%Educational quality (percentile) && 69 && 25 \\
+\midrule
+\multicolumn{2}{l}{\it Transportation infrastructure} \\
+Overall quality (percentile)  &&  42 && 40 \\
+\midrule
+\multicolumn{2}{l}{\it International trade} \\
+Documents required (number) & & 4 & & 9 \\
+Delay (days) &  & 17 & & 76 \\
+Cost (USD per container) & & 644 & & 3130 \\
+\bottomrule
+\end{tabular}
+\caption{Institutional indicators for Indonesia and Kazakhstan.}
+\label{tab:i-v-k}
+\end{table}
+
+
+\begin{parts}
+\part Which of these indicators are most important to your venture?
+How do the two countries compare on them?
+(10~points)
+\part Which country or countries would you recommend to your clients?
+What are the challenges they would face?
+(10~points)
+\end{parts}
+
+\begin{solution}
+\begin{parts}
+\part All of these matter somewhat.  I'd say
+labor is important in a manufacturing operation,
+and also infrastructure and trade,
+because you plan to export your product.
+And political stability is important because
+you want to know the climate won't quickly change for the worse.
+
+Grading:  10 points for a clear logical argument that connects
+the institutions to the demands of the business,
+either this one or something else.
+Partial credit for part thereof.
+
+\part One thing you might do is rate the two countries along all
+of these dimensions,
+then come up with an overall grade based on your weighting of their importance.
+A quick summary might be:
+\begin{itemize}
+\item Governance.  Both look ok.  The numbers aren't great,
+but that's the challenge of operating in an emerging market.
+(The benefit, of course, is low price.)
+Curiously, Kazakhstan gets a better grade on political stability.
+It's a bit worse, though, on corruption.
+
+\item Labor.  Both countries have reasonably flexible
+labor markets, although severance is higher in Indonesia.
+
+\item Infrastructure and trade.
+The big issue here is the delay in exporting (76 days!)
+and cost of shipping a container --- both worse for Kazakhstan.
+\end{itemize}
+You could go either way, but I lean toward Indonesia,
+which has become something
+of a darling among emerging markets.
+
+The World Economic Forum says:
+``Indonesia remains one of the best-performing countries
+within the developing Asia region.
+Sound fiscal management has brought the budget deficit and
+public debt down to very low levels, attributes that
+contribute to further upgrading the country’s credit rating.
+The situation is also improving,
+albeit from a much lower base,
+in the area of physical infrastructure.''
+They also note that ``the quality of port facilities remains alarming''
+and ``the electricity supply continues to be unreliable and scarce.''
+As usual, some good, some bad.
+They rate Indonesia 46th (of 142 countries), Kazakhstan 76th.
+They're using information that goes beyond the question,
+but I include it for background.
+
+Grading:  10 points for a clear logical argument,
+either this one or something else,
+partial credit for part thereof.
+
+\end{parts}
+\end{solution}
+
+%\pagebreak \phantom{xx} \pagebreak %\phantom{xx} \pagebreak
+% ======================================================================
+\question {\it True/false.\/}
+Please explain why each statement is true, false, or uncertain.
+The explanation is essential.
+%
+\begin{parts}
+\part If a product is made in the Mexico but sold to consumers in the US,
+it is not included in Mexican GDP.
+(10~points)
+
+\part If the unemployment rate falls, employment has risen.
+(10~points)
+
+\part Firms find it costly to search for workers with the right skills.
+For that reason, regulations that discourage labor turnover are good for the economy.
+(10~points)
+
+\part A tax on labor tends to reduce employment.
+(10~points)
+
+\part In Ricardo's model, free trade is good for consumers but bad for workers.
+(10~points)
+\end{parts}
+
+\begin{solution}
+\begin{parts}
+\part False.  GDP measures production in a country.  It doesn't matter who buys it.
+\part Uncertain.  The issue here is that there are three categories:
+employed, unemployed, and not in the labor force.
+A lot of the action is in the last category.
+So if some of the unemployed get jobs,
+that lowers the unemployment rate and raises employment and the statement is true.
+But if some of the unemployed leave the labor force,
+we could see employment flat and the statement is false.
+Or employment could fall, too, if the workers
+leave the labor force without ever being unemployed.
+In short, employment and unemployment can (and do) point in
+different directions.
+
+
+\part False.
+Since the cost is borne by firms, they're in the best position
+to act accordingly.
+But reducing turnover by regulation will force firms to retain
+workers even when that cost is outweighed by the benefits of a flexible workforce.
+
+Think of the example of Spain where high severance and related requirements
+discourages firms from hiring during expansions. This leads to a lower
+level of employment on average.
+It also leads to greater use of temporary workers who are
+not subject to this requirement but must leave their jobs when their contracts expire.
+In this case, raising the cost of firing workers actually increases turnover.
+
+\part True.  Think of a supply/demand setup.
+Consider a tax on labor paid by firms
+(that's not essential, but it's helpful to be precise).
+That will shift the demand curve down by the amount of the tax.
+If demand slopes down and supply slopes up,
+we'll see a decline in employment.
+This isn't all that different from other products:
+we tax cigarettes, for example, because we want to reduce the quantity.
+This is the same logic.
+
+\part False.
+It's good for everyone.
+More to the point:  workers and consumers are the same people,
+both in Ricardo's model and the real world.
+
+\end{parts}
+%
+Grading:  10 points for something like the answers above.
+\end{solution}
+
+\end{questions}
+
+%\pagebreak \phantom{xx} %\pagebreak \phantom{xx}
+
+\vfill \centerline{\it \copyright \ \number\year \ NYU Stern
+School of Business}
+
+\end{document} 

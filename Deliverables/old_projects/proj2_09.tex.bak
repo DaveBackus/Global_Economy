@@ -1,0 +1,234 @@
+\documentclass[letterpaper,12pt]{article}
+
+\RequirePackage{GE05} % this inputs graphicx, too
+\RequirePackage[hypertex]{hyperref}
+    \hypersetup{colorlinks=true,urlcolor=blue,linkcolor=red}
+
+\def\ClassName{The Global Economy}
+\def\Category{Professor David Backus}
+\def\HeadName{Group Project \#2}
+
+\begin{document}
+\parindent = 0.0in
+\parskip = 1.0\bigskipamount
+\thispagestyle{empty}%
+\Head
+
+\centerline{\large \bf \HeadName:  Argentine Wine}%
+\centerline{Revised:  \today}
+
+\medskip
+{\it Submit via Blackboard by 9am February 10.}
+\medskip
+
+You are the head of strategic planning for an international wine producer and distributor
+with sales primarily in the US and Europe.
+Noting the success of Chilean wines in both markets,
+your CEO wonders whether an investment in an Argentine vintner would make sense.
+The upside:  the potential to produce high-quality wine at a cost
+significantly below California and France.
+The downside:  the risk of doing business in a country
+with a long history of political instability and 
+poor economic performance.
+
+
+Your assignment:  write a preliminary report (5 pages maximum,
+including tables, charts, and executive summary) that outlines the primary opportunities of the proposed venture.  
+Your report should look like a professional business document 
+and include:  
+%
+\begin{itemize}%
+
+\item A description of the major opportunities and challenges
+you would face.  It is advisable to focus on the differences between
+Argentina and one or two developed countries with which the CEO is familiar.
+
+\item A brief comparison of Argentina with one or two other developing
+economies also suitable for your investment.
+
+\item An overall summary description of the risks the venture would
+face, along with suggestions for minimizing them. 
+[We suggest you summarize the magnitude and likelihood of the primary
+sources of risk in a ``risk map".  A risk map is a consultant's tool:
+a ``2 by 2 matrix'' with probability (low to high) on the
+vertical axis and magnitude (also low to high) on the horizontal
+axis.] 
+
+\item A recommendation on whether or not to pursue this opportunity.  
+
+\end{itemize}
+%
+The report should not simply be your opinion:  you should 
+use as much evidence as you can to support your case.  
+You can expect the CEO to ask for both your 
+assessments and the reasoning behind them.  
+
+You immediately check the Global Economy 
+\href{http://www.stern.nyu.edu/eco/b012303/Backus/ge_resources_db.htm}
+{resource page},
+starting with its links to the 
+\href{https://www.cia.gov/library/publications/the-world-factbook/index.html}
+{CIA Factbook}, 
+the Economist Intelligence Unit's 
+\href{http://db.eiu.com/index.asp?layout=AllTitles}{Country Intelligence},
+the World Bank's 
+\href{http://www.doingbusiness.org/}
+{Doing Business} 
+and 
+\href{http://web.worldbank.org/WBSITE/EXTERNAL/DATASTATISTICS/0,,contentMDK:20398986~menuPK:64133163~pagePK:64133150~piPK:64133175~theSitePK:239419,00.html}
+{World Development Indicators}, 
+and the World Economic Forum's set of 
+\href{http://www.weforum.org/en/index.htm}
+{Global Competitiveness Report}.
+Then you call a former classmate at McKinsey,
+who sends you a copy of 
+``%\href{http://weblinks1.epnet.com/externalframe.asp?tb=1&_ua=bt+ID++%22MCK%22+shn+1+db+buhjnh+bo+B%5F+88FC&_ug=sid+A5AEB81B%2D5A73%2D4D0C%2DA8B4%2DBD67F63C79D6%40sessionmgr2+dbs+buh+cp+1+D4A0&_us=hd+False+fcl+Aut+or+Date+frn+11+sm+ES+sl+%2D1+dstb+ES+ri+KAAACBZD00036509+9874&_uh=btn+N+6C9C&_uso=st%5B0+%2DJN++%22McKinsey++Quarterly%22++and++DT++20020601+tg%5B0+%2D+db%5B0+%2Dbuh+op%5B0+%2D+hd+False+C8DD&fi=buh_6586173_AN&lpdf=true&pdfs=1.5MB&bk=R&tn=22&tp=CAP&es=cs%5Fclient%2Easp%3FT%3DP%26P%3DAN%26K%3D6586173%26rn%3D18%26db%3Dbuh%26is%3D00475394%26sc%3DR%26S%3DR%26D%3Dbuh%26title%3DMcKinsey%2BQuarterly%26year%3D2002%26bk%3D&fn=11&rn=18}
+{Micro lessons for Argentina}'' (posted on Blackboard).  
+Finally, you search the student directory for 
+classmates from Argentina.  
+
+%**** Risk map a la Daniel Oriesek 
+
+
+\subsubsection*{Creating professional business documents} 
+
+You'll see a wide range of formats and structures 
+for business communications:
+memos, reports, slides, flip charts, and so on.
+There's no definitive best model,
+but my favorite examples have the following elements:  
+%
+\begin{itemize}
+\item Reader-friendly.  
+The important information should be easy to find and read.  
+If you don't know what the important information is, 
+sit down and think before writing. 
+Then you should make sure that this information is 
+apparent to even a casual reader.
+Remember:  everyone's busy these days, make it easy for them.  
+
+\item Executive summary.  Start with a short focused summary.  
+It could be 3-5 sentences, bullet points, or something else.  
+    
+\item Clear headings.  
+If done well, the title and section headings should 
+give you an outline of the argument.  
+You don't want to overdo bold and italics, 
+but selective use can help here.  
+And don't forget to include your names at the beginning.  
+
+\item Effective graphics.  Attractive and informative graphics 
+can be extremely helpful in getting your ideas across.
+Try to make them understandable
+on their own without reference to the text.  
+Good titles and labels help.  
+
+\item Clear conclusion.  Make sure there's no confusion 
+about the point you're trying to make.
+It should show up at the start and at the end, 
+and be supported by the information you develop in the middle. 
+
+\end{itemize}
+%
+Last piece of advice:  when you read business (or other) writing, 
+pay attention to format and structure.  
+If you see good ideas, copy them.  
+
+For further information, see:   \\ 
+Guide to business reports:  \url{http://www.businessballs.com/writing.htm} \\
+Samples:  \url{http://www.stern.nyu.edu/eco/B012303/Backus/Writing_samples/}
+
+
+\vfill \centerline{\it \copyright \ \number\year \ NYU Stern
+School of Business}
+
+%\end{document}
+
+% Answers *************************************************
+\newpage
+
+{\bf Sketch of an answer. } 
+We'll focus on the potential problems, but a good report 
+would also explore ways to mitigate them.  
+We discussed most of this in class, 
+but here's an outline:  
+\begin{itemize}
+\item A thoughtful, 
+professional-looking document that an executive would be pleased to receive.  
+
+\item A sensible identification of the major risks and 
+a quantitative basis for judging their probability and magnitude.
+
+\item This is likely a long-term investment, esp if it's a startup (new vines) rather than a purchase of an existing winery.  
+If so, long-term  political and economic stability are very important. 
+Conversely, you might decide to enter in a way that leaves 
+you some future flexibility.
+
+\item Possible comparisons:  US or France for developed countries, 
+Chile or South Africa for developing.  Examples only --- many other choices would be possible.  
+
+\item Some of the risks:  
+\begin{itemize}
+\item Corruption.  Might include bribes for the various approvals needed to 
+run a business.  
+\item Political risk to property rights.  
+Could a new government change 
+the property rights of foreign investors?  
+\item Taxes.  Could we be subject to high taxes? 
+Will the export tax continue?  
+\item Currency risk.  The value of the peso may vary through time, 
+which might work in your favor or against.  
+Related to inflation, which might also affect your costs.  
+\item Inspections.  Are there mandated government inspections
+in this business that could increase costs and lead to 
+opportunities for corruption?  
+\item Security.  Do we need our own?  Is it expensive?  
+\item Labor costs.  Labor is relatively cheap, but the institutions
+make hiring and firing difficult.  
+\item Skill level of the labor force.  
+Highly educated society, not clear how useful that is in this business.  
+\item Environment.  Could pollution from local mining 
+lead to contaminants in the product?  
+Is bad weather (hail, for example) an issue?  
+Earthquakes?
+
+\item Energy.  Are regular power outages an issue for our business?  
+
+\end{itemize}
+
+\item Some ways to mitigate them:   
+\begin{itemize}
+\item Organizational structure.  A direct investment in a startup 
+is probably the most risky.  
+Other arrangements you could consider:  
+buy a local producer, form a joint venture, 
+or enter into a marketing agreement.  
+As you move through the list, the risk goes down, 
+but so does your control over the operation.  
+In a business like this, where quality is important, 
+that could be an important consideration.  
+
+\item Financial arrangements.  
+You have country risk (taxes or even ownership could change) 
+and currency risk, among others.  
+For the former, local financing may help, as would the 
+organizational issues mentioned above.
+With currency risk, 
+you might want to match assets and liabilities:  
+eg, borrow in local currency.  
+\end{itemize}
+
+General discussion.  From the perspective of someone running a business, 
+the point is that price (crudely approximated by GDP per capita) 
+is not the only factor.  Other things (hidden costs) can crop up that may 
+make a low price look less attractive.  
+From the perspective of understanding where TFP comes from, 
+the point is that institutions that increase the difficulty and cost
+of running a business often translate into lower productivity.
+That's the point of the McKinsey piece:
+that institutional features of the Argentine economy raise 
+costs of producers and lower productivity for the economy.  
+
+\end{itemize}
+
+\end{document}

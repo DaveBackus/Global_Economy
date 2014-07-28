@@ -1,0 +1,253 @@
+\documentclass[letterpaper,12pt]{article}
+
+\RequirePackage{GE05}
+% this inputs graphicx, too
+\RequirePackage{comment}
+\RequirePackage[hypertex]{hyperref}
+    \hypersetup{colorlinks=true,urlcolor=blue,linkcolor=red}
+
+\def\ClassName{The Global Economy}
+\def\Category{Professor David Backus}
+\def\HeadName{Group Project \#4}
+
+\begin{document}
+\parindent = 0.0in
+\parskip = \bigskipamount
+\thispagestyle{empty}%
+\Head
+
+\centerline{\large \bf \HeadName:  Labor and Trade}%
+\centerline{Revised:  \today}
+
+\medskip
+{\it Submit via Blackboard by 9am March 4.}
+
+%{\it Answer TWO (2) of the following questions.}
+
+\begin{enumerate}
+
+\item {\it Labor market theory.\/} As background to a
+consulting assignment, you have been asked to work through an
+example to illustrate the impact of
+minimum wage legislation and payroll taxes on employment and
+unemployment. You decide to adapt the framework of your 
+{Global Economy} class notes, 
+working through the demand for labor
+of a single firm producing widgets according to the production
+function $Y= A K^{1/3}L^{2/3}$. For simplicity, you assume that
+$A=K=1$ and that the price of widgets is 1, too.  The supply of
+labor rises with the wage $w$: $L^{s}=w^{2}$.
+%
+\begin{enumerate}
+
+\item Describe, first, how the labor market might work in this
+economy if there were no labor market regulation.  
+What is the wage?
+Employment? Unemployment?  (15~points)
+
+\item Now consider the effect of introducing a minimum wage
+$w_{m}$.  What are employment and unemployment rates if $w_{m}=1$?
+If $w_{m}=0.5$?  How does this market differ from the one above?
+How much would an unemployed person be willing to pay a recruiter
+to find a job?  
+(15~points)
+
+\item Suppose workers differ in productivity, 
+with some contributing effectively 1.5 units of labor 
+per unit paid, and others contributing only 0.5 units.  
+Describe qualitatively how  you would expect a minimum wage of 0.75 
+to affect the two types.  
+(10~points)
+
+\end{enumerate}
+
+%\begin{comment}
+Answer. The firm's optimal level of labor (its labor demand) is
+such that the gain of adding one more worker is equal to its cost.
+The marginal gain is the derivative of sales with respect to
+labor: $\frac{2}{3}pAK^{1/3}L^{-1/3}$. The marginal cost is simply
+the wage $w$. Therefore, since $p=K=A=1$, the demand for labor is
+\[
+    L^{d} \;=\; \left(\frac{3}{2}w\right)^{-3}.
+\] 
+
+\begin{enumerate}
+\item The equilibrium is reached when demand equals supply. That
+is:
+\[ 
+    \left(\frac{3}{2}w\right)^{-3} \;=\; w^{2}.
+\] 
+Solving for $w$, we obtain that the equilibrium wage is
+\[ 
+    w^{*} \;=\; \left(\frac{3}{2}\right)^{-3/5}=.78.
+\] 
+The level of employment is
+\[ 
+    L^{*} \;=\; \left(\frac{3}{2}w^{*}\right)^{-3}={w^{*}}^{2}=.61.
+\] 
+The unemployment rate is $0$. Since there is no distortion, all
+individuals that would like to work at the equilibrium wage rate
+get a job.
+
+\item If $w_{m}=1$, the demand for labor is
+$L^{d}=\left(\frac{3}{2}\times 1\right)^{-3}=.30$. Instead the
+supply is $L^{s}=1^{2}=1$. Therefore the level of employment is
+$.30$. The unemployment rate is $\frac{1-.3}{1}=70\%$. Every
+unemployed will be willing to pay a recruiter up to the difference
+between the ongoing wage ($1$) and his/her reservation wage. The
+reservation wage is different across unemployed, and can be read
+off the labor supply curve.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}[h]
+\begin{center}
+\begin{picture}(300,200)(-30,-20)%
+
+\footnotesize%
+\put(-30,0){\vector(1,0){300}}%
+\put (0,-20){\vector(0,1){200}}%
+\put(265,-14){$L$}%
+\put(-15,175){$w$}%
+\put (154,157){$L^{s}(w)$}%
+\put(44,157){$L^{d}(w)$}%
+
+% Demand Curve
+\qbezier(45,145)(90,41)(165,10)%
+
+% Supply Curve
+\qbezier(45,25)(80,41)(175,140)%
+
+\qbezier[60] (0,92)(65,92)(128,92)%
+\qbezier[40] (71,0)(71,46)(71,93)%
+\qbezier[40] (128,0)(128,46)(128,93)%
+
+\qbezier[40] (0,62)(50,62)(95,62)%
+\qbezier[30] (95,0)(95,31)(95,62)%
+
+\put(-38,60){$w^{*}=.76$}%
+\put(-33,90){$w_{m}=1$}%
+
+\put(95,-18){$.61$}%
+
+\put(65,-18){$.30$}%
+\put(130,-18){$1$}%
+
+\end{picture}
+\end{center}
+\caption{With and without unemployment.} \label{fig:minimum1}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The wage $w_{m}=.5$ is below the equilibrium rate. This means that
+the minimum wage is not binding. The outcome in terms of wage and
+employment is going to be the same as in part (a).
+
+\item You might guess that the minimum wage would  affect 
+the low-skilled workers more than the high-skilled. 
+Why?  Because the high-skilled are worth more than the minimum 
+wage, so they will be hired (presumably) something close to their 
+productivity.
+But if the productivity of the low-skilled is below the minimum wage, 
+they won't be hired. 
+The result is that the unemployed will consist predominantly 
+(perhaps entirely in this setup) 
+on the low-skilled. 
+
+\end{enumerate}
+%\end{comment}
+
+
+% ----------------------------------------------------------------------
+\item {\it Labor market practice.\/}  
+Your first day on the job at General Electric, 
+you are given 4 hours to prepare
+a 5-minute presentation to your group summarizing the 
+labor market issues a manufacturer would face in 
+Brazil, the Czech Republic, and Hong Kong.    
+Once you get over your initial panic, you contact your Global Economy 
+professor, who suggests you look at:    
+%
+\begin{itemize}
+
+\item The Bureau of Labor Statistics'
+\href{http://www.bls.gov/fls/}{Foreign Labor Statistics};
+
+
+\item The World Bank's
+\href{http://www.doingbusiness.org/}
+{Doing Business};   
+
+\item The Economist Intelligence Unit's various 
+\href{http://db.eiu.com/topic_view.asp?pubcode=CP&title=Country+Profile}{reports} 
+and 
+\href{http://www.countrydata.bvdep.com/cgi/template.dll?product=101&user=ipaddress}
+{databases}.  
+
+\end{itemize}
+%
+You quickly turn this information into a series of charts and bullet points 
+that highlight the salient differences across these countries.  (40~points) 
+
+%\begin{comment}
+Answer.  Here's an example of the kind of data you
+might collect:  
+
+\begin{center}
+\begin{tabular}{lcccc}
+\hline\hline
+Indicator   & Brazil & Czech Rep & Hong Kong  \\
+\hline\hline 
+Hourly direct pay (USD) & 3.30 & 4.96   & 5.29  \\
+Hourly total comp (USD) & 4.91 & 6.77   & 5.78  \\
+Non-wage cost (\%)       &  37  &   35   &  5    \\
+Difficulty of firing (index)   &  0   & 20     &  0  \\
+Employment rigidity (index)    & 46   & 31     &  0  \\
+Education of adults (yrs) &  5.1  &  9.6  & --- \\
+\hline\hline 
+\end{tabular}
+\end{center}
+Sources:  EIU, BLS, Doing Business, and NationMaster.com.  
+Most recent year available.   
+
+What do we make of this?  
+Labor is cheap in all of these countries relative 
+to the US (total comp is \$23.82).  
+Note that the non-wage component of total compensation 
+changes the ranking of Hong Kong; 
+it's a reminder that taxes and benefits are an important expense.  
+Education seems to be higher in Czecho.  
+Labor markets are most flexible in HK.
+In a real report, you'd want to flesh out what these factors mean
+to GE.  
+%\end{comment}
+
+
+% ----------------------------------------------------------------------
+\item {\it Trade liberalization.} You have been asked to explain
+to an audience of Latin American business 
+consultants why trade liberalization is win-win:  
+why all countries can benefit.  
+After talking to a few of them, you realize that their major concerns 
+are the impact of trade on  their clients' businesses.
+What can you say to persuade them that intra-American
+trade could be good for business?  
+Use examples where possible.  
+Two pages maximum.     
+(20~points) 
+
+%\begin{comment}
+Answer.  
+You could answer this a variety of ways, ranging from working 
+through a numerical example, as we did in class, 
+to describing how specific clients might benefit. 
+%\end{comment}
+
+\end{enumerate}
+
+
+\vfill \centerline{\it \copyright \ \number\year \ NYU Stern
+School of Business}
+
+\end{document}

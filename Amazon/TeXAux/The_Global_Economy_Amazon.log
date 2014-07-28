@@ -1,0 +1,1428 @@
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2011.6.11)  16 JUL 2013 16:06
+entering extended mode
+**The_Global_Economy_Amazon.tex
+
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\The_Global_Economy_Am
+azon.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, lao, latin, lat
+vian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerm
+an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, 
+romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
+sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
+senglishmax, welsh, loaded.
+
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\a_notes_preamble_amaz
+on.tex ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\book.cls"
+Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\bk10.clo"
+File: bk10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsmath.sty"
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amstext.sty"
+Package: amstext 2000/06/29 v2.01
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks14
+\ex@=\dimen103
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen104
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsopn.sty"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
+\dotsspace@=\muskip10
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
+\tag@help=\toks15
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
+\andhelp@=\toks16
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks17
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2009/06/22 v3.00
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\classes\amsthm.sty"
+Package: amsthm 2004/08/06 v2.20
+\thm@style=\toks19
+\thm@bodyfont=\toks20
+\thm@headfont=\toks21
+\thm@notefont=\toks22
+\thm@headpunct=\toks23
+\thm@preskip=\skip46
+\thm@postskip=\skip47
+\thm@headsep=\skip48
+\dth@everypar=\toks24
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks25
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/04/25 v0.06b Graphics/color for pdfTeX
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count100
+))
+\Gin@req@height=\dimen112
+\Gin@req@width=\dimen113
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\color.sty"
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\comment\comment.sty"
+\CommentStream=\write3
+
+Excluding comment 'comment')
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\layout.sty"
+Package: layout 2000/09/25 v1.2c Show layout parameters
+\oneinch=\count101
+\cnt@paperwidth=\count102
+\cnt@paperheight=\count103
+\cnt@hoffset=\count104
+\cnt@voffset=\count105
+\cnt@textheight=\count106
+\cnt@textwidth=\count107
+\cnt@topmargin=\count108
+\cnt@oddsidemargin=\count109
+\cnt@evensidemargin=\count110
+\cnt@headheight=\count111
+\cnt@headsep=\count112
+\cnt@marginparsep=\count113
+\cnt@marginparwidth=\count114
+\cnt@marginparpush=\count115
+\cnt@footskip=\count116
+\fheight=\count117
+\ref@top=\count118
+\ref@hoffset=\count119
+\ref@voffset=\count120
+\ref@head=\count121
+\ref@body=\count122
+\ref@foot=\count123
+\ref@margin=\count124
+\ref@marginwidth=\count125
+\ref@marginpar=\count126
+\Interval=\count127
+\ExtraYPos=\count128
+\PositionX=\count129
+\PositionY=\count130
+\ArrowLength=\count131
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty"
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen114
+\lightrulewidth=\dimen115
+\cmidrulewidth=\dimen116
+\belowrulesep=\dimen117
+\belowbottomsep=\dimen118
+\aboverulesep=\dimen119
+\abovetopsep=\dimen120
+\cmidrulesep=\dimen121
+\cmidrulekern=\dimen122
+\defaultaddspace=\dimen123
+\@cmidla=\count132
+\@cmidlb=\count133
+\@aboverulesep=\dimen124
+\@belowrulesep=\dimen125
+\@thisruleclass=\count134
+\@lastruleclass=\count135
+\@thisrulewidth=\dimen126
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption.sty"
+Package: caption 2012/02/19 v3.2f Customizing captions (AR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption3.sty"
+Package: caption3 2012/01/12 v1.4b caption3 kernel (AR)
+\captionmargin=\dimen127
+\captionmargin@=\dimen128
+\captionwidth=\dimen129
+\caption@indent=\dimen130
+\caption@parindent=\dimen131
+\caption@hangindent=\dimen132
+)
+\c@ContinuedFloat=\count136
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
+Package: setspace 2000/12/01 6.7 Contributed and Supported LaTeX2e package
+
+Package: `setspace' 6.7 <2000/12/01>
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count137
+\float@exts=\toks26
+\float@box=\box28
+\@float@everytoks=\toks27
+\@floatcapt=\box29
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+Package: hyperref 2011/04/17 v6.82g Hypertext links for LaTeX
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+Package: hobsub-hyperref 2011/04/23 v1.4 Bundle oberdiek, subset hyperref (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
+Package: hobsub-generic 2011/04/23 v1.4 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2011/04/23 v1.4 Subsetting bundle oberdiek (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2010/03/01 v1.5 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2007/09/27 v1.1 Expandable integer calculations (HO)
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+Package: etexcmds 2011/02/16 v1.5 Prefix for e-TeX command names (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2011/04/07 v1.13 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Defining keys (HO)
+Package: pdftexcmds 2011/04/22 v0.16 Utilities of pdfTeX for LuaTeX (HO)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/04/04 v1.12 Provides string conversions (HO)
+Package: bigintcalc 2011/01/30 v1.2 Expandable big integer calculations (HO)
+Package: bitset 2011/01/30 v1.1 Data type bit set (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provides unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2011/01/30 v1.0 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/04/23 v1.7 Hooks at very end of document (HO)
+Package atveryend Info: \enddocument detected (standard).
+Package: atbegshi 2011/01/30 v1.15 At begin shipout hook (HO)
+Package: refcount 2010/12/01 v3.2 Data extraction from references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options of hyperref/bookmark (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2010/12/23 v3.10 Keyval support for LaTeX options (HO)
+)
+\@linkdim=\dimen133
+\Hy@linkcounter=\count138
+\Hy@pagecounter=\count139
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+File: pd1enc.def 2011/04/17 v6.82g Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count140
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 3905.
+Package hyperref Info: Option `bookmarks' set `false' on input line 3905.
+Package hyperref Info: Hyper figures OFF on input line 4026.
+Package hyperref Info: Link nesting OFF on input line 4031.
+Package hyperref Info: Hyper index ON on input line 4034.
+Package hyperref Info: Plain pages OFF on input line 4041.
+Package hyperref Info: Backreferencing OFF on input line 4046.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks OFF on input line 4270.
+\c@Hy@tempcnt=\count141
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ltxmisc\url.sty"
+\Urlmuskip=\muskip11
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4617.
+\Fld@menulength=\count142
+\Field@Width=\dimen134
+\Fld@charsize=\dimen135
+Package hyperref Info: Hyper figures OFF on input line 5701.
+Package hyperref Info: Link nesting OFF on input line 5706.
+Package hyperref Info: Hyper index ON on input line 5709.
+Package hyperref Info: backreferencing OFF on input line 5716.
+Package hyperref Info: Link coloring ON on input line 5719.
+Package hyperref Info: Link coloring with OCG OFF on input line 5726.
+Package hyperref Info: PDF/A mode OFF on input line 5731.
+LaTeX Info: Redefining \ref on input line 5771.
+LaTeX Info: Redefining \pageref on input line 5775.
+\Hy@abspage=\count143
+\c@Item=\count144
+\c@Hfootnote=\count145
+)
+
+Package hyperref Message: Driver: hpdftex.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+File: hpdftex.def 2011/04/17 v6.82g Hyperref driver for pdfTeX
+\Fld@listcount=\count146
+\c@bookmark@seq@number=\count147
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip49
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\titlesec\titlesec.sty"
+Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
+\ttl@box=\box30
+\beforetitleunit=\skip50
+\aftertitleunit=\skip51
+\ttl@plus=\dimen136
+\ttl@minus=\dimen137
+\ttl@toksa=\toks28
+\titlewidth=\dimen138
+\titlewidthlast=\dimen139
+\titlewidthfirst=\dimen140
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\needspace\needspace.sty"
+Package: needspace 2010/09/12 v1.3c reserve vertical space
+)
+\oldleftmargini=\skip52
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tocloft\tocloft.sty"
+Package: tocloft 2010/10/13 v2.3e parameterised ToC, etc., typesetting
+Package tocloft Info: The document has chapter divisions on input line 43.
+\cftparskip=\skip53
+\cftbeforetoctitleskip=\skip54
+\cftaftertoctitleskip=\skip55
+\cftbeforepartskip=\skip56
+\cftpartnumwidth=\skip57
+\cftpartindent=\skip58
+\cftbeforechapskip=\skip59
+\cftchapindent=\skip60
+\cftchapnumwidth=\skip61
+\cftbeforesecskip=\skip62
+\cftsecindent=\skip63
+\cftsecnumwidth=\skip64
+\cftbeforesubsecskip=\skip65
+\cftsubsecindent=\skip66
+\cftsubsecnumwidth=\skip67
+\cftbeforesubsubsecskip=\skip68
+\cftsubsubsecindent=\skip69
+\cftsubsubsecnumwidth=\skip70
+\cftbeforeparaskip=\skip71
+\cftparaindent=\skip72
+\cftparanumwidth=\skip73
+\cftbeforesubparaskip=\skip74
+\cftsubparaindent=\skip75
+\cftsubparanumwidth=\skip76
+\cftbeforeloftitleskip=\skip77
+\cftafterloftitleskip=\skip78
+\cftbeforefigskip=\skip79
+\cftfigindent=\skip80
+\cftfignumwidth=\skip81
+\c@lofdepth=\count148
+\c@lotdepth=\count149
+\cftbeforelottitleskip=\skip82
+\cftafterlottitleskip=\skip83
+\cftbeforetabskip=\skip84
+\cfttabindent=\skip85
+\cfttabnumwidth=\skip86
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+Package: geometry 2010/09/12 v5.6 Page Geometry
+\Gm@cnth=\count150
+\Gm@cntv=\count151
+\c@Gm@tempcnt=\count152
+\Gm@bindingoffset=\dimen141
+\Gm@wd@mp=\dimen142
+\Gm@odd@mp=\dimen143
+\Gm@even@mp=\dimen144
+\Gm@layoutwidth=\dimen145
+\Gm@layoutheight=\dimen146
+\Gm@layouthoffset=\dimen147
+\Gm@layoutvoffset=\dimen148
+\Gm@dimlist=\toks29
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
+\fancy@headwidth=\skip87
+\f@ncyO@elh=\skip88
+\f@ncyO@erh=\skip89
+\f@ncyO@olh=\skip90
+\f@ncyO@orh=\skip91
+\f@ncyO@elf=\skip92
+\f@ncyO@erf=\skip93
+\f@ncyO@olf=\skip94
+\f@ncyO@orf=\skip95
+))
+
+LaTeX Warning: Unused global option(s):
+    [8pt].
+
+
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\The_Global_Eco
+nomy_Amazon.aux
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\a_notes_front_
+matter.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_review_p
+relim.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_math_201
+2.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_data_201
+2.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_review_l
+ong.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_producti
+on_2012.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_solow_20
+12.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_growth_2
+012.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_institut
+ions_2012.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_labor_20
+12.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_finance_
+2012.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_trade_20
+12.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_review_s
+hort.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_cycles_2
+012.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_indicato
+rs_2012.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_inflatio
+n_2012.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_asad_201
+2.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_asadpoli
+cy_2012.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_monpol_2
+012.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_review_o
+ther.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_taxes_20
+12.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_deficits
+_2012.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_bop_2012
+.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_fx_2012.
+aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_fxregime
+s_2012.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_crises_2
+012.aux))
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count153
+\scratchdimen=\dimen149
+\scratchbox=\box31
+\nofMPsegments=\count154
+\nofMParguments=\count155
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count156
+\MPscratchDim=\dimen150
+\MPnumerator=\count157
+\makeMPintoPDFobject=\count158
+\everyMPtoPDFconversion=\toks31
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\AtBeginShipoutBox=\box32
+Package hyperref Info: Link coloring ON on input line 43.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count159
+)
+LaTeX Info: Redefining \ref on input line 43.
+LaTeX Info: Redefining \pageref on input line 43.
+LaTeX Info: Redefining \nameref on input line 43.
+
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(61.42993pt, 328.82764pt, 43.36243pt)
+* v-part:(T,H,B)=(78.0524pt, 529.01517pt, 43.36243pt)
+* \paperwidth=433.62pt
+* \paperheight=650.43pt
+* \textwidth=328.82764pt
+* \textheight=529.01517pt
+* \oddsidemargin=-10.84006pt
+* \evensidemargin=-28.90756pt
+* \topmargin=-24.28508pt
+* \headheight=12.0pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=25.29494pt
+* \marginparwidth=125.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\a_notes_front_matter.
+tex [1
+
+
+
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
+<Figures/stern_logo3.pdf, id=13, 381.425pt x 80.3pt>
+File: Figures/stern_logo3.pdf Graphic file (type pdf)
+
+<use Figures/stern_logo3.pdf>
+Package pdftex.def Info: Figures/stern_logo3.pdf used on input line 29.
+(pdftex.def)             Requested size: 213.73595pt x 44.99709pt.
+ [3 <C:/Users/dbackus/Documents/Classes/Global_Economy/Amazon/Figures/stern_log
+o3.pdf>]
+LaTeX Font Info:    Try loading font information for U+msa on input line 49.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 49.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 55.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 55.
+
+<Figures/by_sa.pdf, id=24, 120.45pt x 42.1575pt>
+File: Figures/by_sa.pdf Graphic file (type pdf)
+ <use Figures/by_sa.pdf>
+Package pdftex.def Info: Figures/by_sa.pdf used on input line 59.
+(pdftex.def)             Requested size: 65.04256pt x 22.76534pt.
+
+[4 <C:/Users/dbackus/Documents/Classes/Global_Economy/Amazon/Figures/by_sa.pdf>
+]
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\The_Global_Eco
+nomy_Amazon.toc [5]
+Overfull \hbox (1.74986pt too wide) detected at line 45
+ \OT1/cmr/bx/n/10 105
+ []
+
+
+Overfull \hbox (1.74986pt too wide) detected at line 48
+ \OT1/cmr/bx/n/10 109
+ []
+
+
+Overfull \hbox (1.74986pt too wide) detected at line 55
+ \OT1/cmr/bx/n/10 127
+ []
+
+[6]
+Overfull \hbox (1.74986pt too wide) detected at line 59
+ \OT1/cmr/bx/n/10 135
+ []
+
+
+Overfull \hbox (1.74986pt too wide) detected at line 67
+ \OT1/cmr/bx/n/10 151
+ []
+
+
+Overfull \hbox (1.74986pt too wide) detected at line 74
+ \OT1/cmr/bx/n/10 163
+ []
+
+
+Overfull \hbox (1.74986pt too wide) detected at line 79
+ \OT1/cmr/bx/n/10 175
+ []
+
+
+Overfull \hbox (1.74986pt too wide) detected at line 82
+ \OT1/cmr/bx/n/10 183
+ []
+
+
+Overfull \hbox (1.74986pt too wide) detected at line 90
+ \OT1/cmr/bx/n/10 203
+ []
+
+[7]
+Overfull \hbox (1.74986pt too wide) detected at line 94
+ \OT1/cmr/bx/n/10 217
+ []
+
+
+Overfull \hbox (1.74986pt too wide) detected at line 100
+ \OT1/cmr/bx/n/10 231
+ []
+
+
+Overfull \hbox (1.74986pt too wide) detected at line 107
+ \OT1/cmr/bx/n/10 241
+ []
+
+
+Overfull \hbox (1.74986pt too wide) detected at line 114
+ \OT1/cmr/bx/n/10 255
+ []
+
+
+Overfull \hbox (1.74986pt too wide) detected at line 121
+ \OT1/cmr/bx/n/10 263
+ []
+
+[8])
+\tf@toc=\write4
+ [9] [10
+
+]) [11] [12
+
+
+]
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\notes_review_prelim.t
+ex [1
+
+
+] [2])
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\notes_math_2012.tex
+Chapter 1.
+
+Overfull \hbox (3.41484pt too wide) in paragraph at lines 7--8
+[]\OT1/cmr/bx/n/10 Key Words: \OT1/cmr/m/n/10 Pro-duc-tion func-tion; de-mand f
+unc-tion; marginal prod-uct/cost. 
+ []
+
+[3
+
+
+
+] [4] [5] [6] [7]
+Overfull \hbox (4.11687pt too wide) in paragraph at lines 254--255
+[]\OT1/cmr/bx/n/10 Notation note: \OT1/cmr/m/n/10 We will al-ways de-note the c
+on-tin-u-ously com-pounded growth
+ []
+
+[8]
+Overfull \hbox (14.62624pt too wide) in paragraph at lines 271--272
+[]\OT1/cmr/bx/n/10 Continuously-compounded growth rates ap-prox-i-mate discrete
+ly-
+ []
+
+
+Overfull \hbox (1.96971pt too wide) in paragraph at lines 271--272
+\OT1/cmr/bx/n/10 compounded growth rates. \OT1/cmr/m/n/10 In the ex-am-ple abov
+e, the continuously-
+ []
+
+[9]
+Overfull \hbox (18.49669pt too wide) detected at line 305
+\OML/cmm/m/it/10    \OT1/cmr/m/n/10 =   []\OML/cmm/m/it/10 :
+ []
+
+[10] [11] [12] [13] [14] [15] [16] [17] [18]) [19]
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\notes_data_2012.tex
+[20
+
+
+
+]
+Chapter 2.
+[21] [22] [23] [24] [25]
+Overfull \hbox (7.51813pt too wide) in alignment at lines 307--332
+[] [] [] []
+ []
+
+[26] [27] [28] [29] [30] [31] [32] [33] [34]
+Underfull \hbox (badness 10000) in alignment at lines 852--862
+[][][][][][][][]
+ []
+
+[35] [36] [37]) [38] [39]
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\notes_review_long.tex
+[40
+
+
+
+] [41] [42]
+Overfull \hbox (5.53403pt too wide) in paragraph at lines 42--43
+[]\OT1/cmr/m/n/10 The Solow model con-nects sav-ing and in-vest-ment with eco-n
+omic growth. 
+ []
+
+[43
+
+] [44]) [45]
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\notes_production_2012
+.tex [46
+
+
+
+]
+Chapter 3.
+[47]
+Overfull \hbox (1.96254pt too wide) in paragraph at lines 72--76
+[]\OT1/cmr/bx/n/10 More in-put leads to more out-put. \OT1/cmr/m/n/10 In eco-no
+mic terms, the marginal
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[48] [49] [50] [51] [52] [53] [54] [55] [56]
+Overfull \hbox (3.38588pt too wide) in paragraph at lines 634--636
+[]\OT1/cmr/m/n/10 The Con-fer-ence Board. Their To-tal Econ-omy Database in-clu
+des growth
+ []
+
+[57]) [58]
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\notes_solow_2012.tex
+Chapter 4.
+
+Overfull \hbox (5.53403pt too wide) in paragraph at lines 11--12
+[]\OT1/cmr/m/n/10 The Solow model con-nects sav-ing and in-vest-ment with eco-n
+omic growth. 
+ []
+
+[59
+
+
+
+] [60] [61]
+
+pdfTeX warning: pdflatex.exe (file C:/Users/dbackus/Documents/Classes/Global_Ec
+onomy/Amazon/Figures/solow1.pdf): PDF inclusion: found PDF version <1.6>, but a
+t most version <1.5> allowed
+<Figures/solow1.pdf, id=748, 401.36752pt x 292.96552pt>
+File: Figures/solow1.pdf Graphic file (type pdf)
+
+<use Figures/solow1.pdf>
+Package pdftex.def Info: Figures/solow1.pdf used on input line 200.
+(pdftex.def)             Requested size: 263.06311pt x 192.02121pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[62]
+
+pdfTeX warning: pdflatex.exe (file C:/Users/dbackus/Documents/Classes/Global_Ec
+onomy/Amazon/Figures/solow2.pdf): PDF inclusion: found PDF version <1.6>, but a
+t most version <1.5> allowed
+<Figures/solow2.pdf, id=761, 401.36752pt x 292.96552pt>
+File: Figures/solow2.pdf Graphic file (type pdf)
+
+<use Figures/solow2.pdf>
+Package pdftex.def Info: Figures/solow2.pdf used on input line 251.
+(pdftex.def)             Requested size: 263.06311pt x 192.02121pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[63 <C:/Users/dbackus/Documents/Classes/Global_Economy/Amazon/Figures/solow1.pd
+f>]
+Overfull \hbox (1.20068pt too wide) in paragraph at lines 270--274
+[]\OT1/cmr/m/n/10 We have shown that the capital-labor ra-tio even-tu-ally con-
+verges to its steady-
+ []
+
+[64 <C:/Users/dbackus/Documents/Classes/Global_Economy/Amazon/Figures/solow2.pd
+f>] [65] [66] [67] [68] [69]) [70]
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\notes_growth_2012.tex
+Chapter 5.
+[71
+
+
+
+] [72] [73]
+Overfull \hbox (2.5823pt too wide) detected at line 302
+[] \OML/cmm/m/it/10 Y[] \OMS/cmsy/m/n/10   [] \OML/cmm/m/it/10 Y[]  \OT1/cmr/m/
+n/10 =  ([] \OML/cmm/m/it/10 A[] \OMS/cmsy/m/n/10   [] \OML/cmm/m/it/10 A[]\OT1
+/cmr/m/n/10 ) + \OML/cmm/m/it/10 \OT1/cmr/m/n/10 ([] \OML/cmm/m/it/10 K[] \OMS
+/cmsy/m/n/10   [] \OML/cmm/m/it/10 K[]\OT1/cmr/m/n/10 ) + (1 \OMS/cmsy/m/n/10  
+ \OML/cmm/m/it/10 \OT1/cmr/m/n/10 )([] \OML/cmm/m/it/10 L[] \OMS/cmsy/m/n/10  
+ [] \OML/cmm/m/it/10 L[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 :
+ []
+
+
+Overfull \hbox (1.08958pt too wide) in paragraph at lines 311--314
+\OT1/cmr/m/n/10 Notice that we have ex-pressed the av-er-age, continuously-comp
+ounded growth
+ []
+
+[74] [75] [76] [77] [78]
+Overfull \hbox (3.90265pt too wide) in alignment at lines 607--617
+[][][][][][][][][]
+ []
+
+[79]) [80]
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\notes_institutions_20
+12.tex
+Chapter 6.
+[81
+
+
+
+] [82] [83] [84]) [85]
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\notes_labor_2012.tex
+[86
+
+
+
+]
+Chapter 7.
+[87] [88] [89] [90]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[91] [92] [93] [94] [95] [96] [97] [98] [99] [100] [101] [102]) [103] [104]
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\notes_finance_2012.te
+x
+Chapter 8.
+[105
+
+
+
+] [106] [107]) [108]
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\notes_trade_2012.tex
+Chapter 9.
+[109
+
+
+
+] [110]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[111] [112] [113]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[114] [115] [116] [117] [118] [119]) [120]
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\notes_review_short.te
+x [121
+
+
+
+] [122] [123
+
+] [124]) [125]
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\notes_cycles_2012.tex
+[126
+
+
+
+]
+Chapter 10.
+[127]
+
+pdfTeX warning: pdflatex.exe (file C:/Users/dbackus/Documents/Classes/Global_Ec
+onomy/Amazon/Figures/us_gdp.pdf): PDF inclusion: found PDF version <1.6>, but a
+t most version <1.5> allowed
+<Figures/us_gdp.pdf, id=1238, 401.36752pt x 292.96552pt>
+File: Figures/us_gdp.pdf Graphic file (type pdf)
+
+<use Figures/us_gdp.pdf>
+Package pdftex.def Info: Figures/us_gdp.pdf used on input line 76.
+(pdftex.def)             Requested size: 263.06311pt x 192.02121pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[128]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+pdfTeX warning: pdflatex.exe (file C:/Users/dbackus/Documents/Classes/Global_Ec
+onomy/Amazon/Figures/us_inv_cons_gdp.pdf): PDF inclusion: found PDF version <1.
+6>, but at most version <1.5> allowed
+<Figures/us_inv_cons_gdp.pdf, id=1248, 401.36752pt x 292.96552pt>
+File: Figures/us_inv_cons_gdp.pdf Graphic file (type pdf)
+
+<use Figures/us_inv_cons_gdp.pdf>
+Package pdftex.def Info: Figures/us_inv_cons_gdp.pdf used on input line 155.
+(pdftex.def)             Requested size: 263.06311pt x 192.02121pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[129 <C:/Users/dbackus/Documents/Classes/Global_Economy/Amazon/Figures/us_gdp.p
+df>] [130 <C:/Users/dbackus/Documents/Classes/Global_Economy/Amazon/Figures/us_
+inv_cons_gdp.pdf>]
+
+pdfTeX warning: pdflatex.exe (file C:/Users/dbackus/Documents/Classes/Global_Ec
+onomy/Amazon/Figures/us_emp_gdp.pdf): PDF inclusion: found PDF version <1.6>, b
+ut at most version <1.5> allowed
+<Figures/us_emp_gdp.pdf, id=1308, 401.36752pt x 292.96552pt>
+File: Figures/us_emp_gdp.pdf Graphic file (type pdf)
+
+<use Figures/us_emp_gdp.pdf>
+Package pdftex.def Info: Figures/us_emp_gdp.pdf used on input line 199.
+(pdftex.def)             Requested size: 263.06311pt x 192.02121pt.
+
+
+pdfTeX warning: pdflatex.exe (file C:/Users/dbackus/Documents/Classes/Global_Ec
+onomy/Amazon/Figures/us_gdp_sp500.pdf): PDF inclusion: found PDF version <1.6>,
+ but at most version <1.5> allowed
+<Figures/us_gdp_sp500.pdf, id=1309, 401.36752pt x 292.96552pt>
+File: Figures/us_gdp_sp500.pdf Graphic file (type pdf)
+
+<use Figures/us_gdp_sp500.pdf>
+Package pdftex.def Info: Figures/us_gdp_sp500.pdf used on input line 206.
+(pdftex.def)             Requested size: 263.06311pt x 192.02121pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[131 <C:/Users/dbackus/Documents/Classes/Global_Economy/Amazon/Figures/us_emp_g
+dp.pdf>] [132 <C:/Users/dbackus/Documents/Classes/Global_Economy/Amazon/Figures
+/us_gdp_sp500.pdf>]
+Overfull \hbox (7.38495pt too wide) in paragraph at lines 270--275
+\OT1/cmr/m/n/10 text-books. A rea-son-ably good overview is Finn Kyd-land and E
+d-ward Prescott,
+ []
+
+) [133]
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\notes_indicators_2012
+.tex [134
+
+
+
+]
+Chapter 11.
+[135]
+
+pdfTeX warning: pdflatex.exe (file C:/Users/dbackus/Documents/Classes/Global_Ec
+onomy/Amazon/Figures/us_gdp_indprod.pdf): PDF inclusion: found PDF version <1.6
+>, but at most version <1.5> allowed
+<Figures/us_gdp_indprod.pdf, id=1394, 401.36752pt x 292.96552pt>
+File: Figures/us_gdp_indprod.pdf Graphic file (type pdf)
+
+<use Figures/us_gdp_indprod.pdf>
+Package pdftex.def Info: Figures/us_gdp_indprod.pdf used on input line 83.
+(pdftex.def)             Requested size: 263.06311pt x 192.02121pt.
+ [136] [137 <C:/Users/dbackus/Documents/Classes/Global_Economy/Amazon/Figures/u
+s_gdp_indprod.pdf>]
+
+pdfTeX warning: pdflatex.exe (file C:/Users/dbackus/Documents/Classes/Global_Ec
+onomy/Amazon/Figures/xcsp500.pdf): PDF inclusion: found PDF version <1.6>, but 
+at most version <1.5> allowed
+<Figures/xcsp500.pdf, id=1422, 401.36752pt x 292.96552pt>
+File: Figures/xcsp500.pdf Graphic file (type pdf)
+
+<use Figures/xcsp500.pdf>
+Package pdftex.def Info: Figures/xcsp500.pdf used on input line 181.
+(pdftex.def)             Requested size: 263.06311pt x 192.02121pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[138] [139 <C:/Users/dbackus/Documents/Classes/Global_Economy/Amazon/Figures/xc
+sp500.pdf>]
+
+pdfTeX warning: pdflatex.exe (file C:/Users/dbackus/Documents/Classes/Global_Ec
+onomy/Amazon/Figures/xclabor.pdf): PDF inclusion: found PDF version <1.6>, but 
+at most version <1.5> allowed
+<Figures/xclabor.pdf, id=1452, 401.36752pt x 292.96552pt>
+File: Figures/xclabor.pdf Graphic file (type pdf)
+
+<use Figures/xclabor.pdf>
+Package pdftex.def Info: Figures/xclabor.pdf used on input line 319.
+(pdftex.def)             Requested size: 295.94286pt x 216.02219pt.
+
+
+pdfTeX warning: pdflatex.exe (file C:/Users/dbackus/Documents/Classes/Global_Ec
+onomy/Amazon/Figures/xcsurvey.pdf): PDF inclusion: found PDF version <1.6>, but
+ at most version <1.5> allowed
+<Figures/xcsurvey.pdf, id=1453, 401.36752pt x 292.96552pt>
+File: Figures/xcsurvey.pdf Graphic file (type pdf)
+
+<use Figures/xcsurvey.pdf>
+Package pdftex.def Info: Figures/xcsurvey.pdf used on input line 326.
+(pdftex.def)             Requested size: 263.06311pt x 192.02121pt.
+ [140] [141 <C:/Users/dbackus/Documents/Classes/Global_Economy/Amazon/Figures/x
+clabor.pdf> <C:/Users/dbackus/Documents/Classes/Global_Economy/Amazon/Figures/x
+csurvey.pdf>]
+
+pdfTeX warning: pdflatex.exe (file C:/Users/dbackus/Documents/Classes/Global_Ec
+onomy/Amazon/Figures/scorecard_1.pdf): PDF inclusion: found PDF version <1.6>, 
+but at most version <1.5> allowed
+<Figures/scorecard_1.pdf, id=1499, 401.36752pt x 292.96552pt>
+File: Figures/scorecard_1.pdf Graphic file (type pdf)
+
+<use Figures/scorecard_1.pdf>
+Package pdftex.def Info: Figures/scorecard_1.pdf used on input line 391.
+(pdftex.def)             Requested size: 295.94286pt x 216.02219pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+pdfTeX warning: pdflatex.exe (file C:/Users/dbackus/Documents/Classes/Global_Ec
+onomy/Amazon/Figures/scorecard_2.pdf): PDF inclusion: found PDF version <1.6>, 
+but at most version <1.5> allowed
+<Figures/scorecard_2.pdf, id=1500, 401.36752pt x 292.96552pt>
+File: Figures/scorecard_2.pdf Graphic file (type pdf)
+
+<use Figures/scorecard_2.pdf>
+Package pdftex.def Info: Figures/scorecard_2.pdf used on input line 403.
+(pdftex.def)             Requested size: 295.94286pt x 216.02219pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[142] [143 <C:/Users/dbackus/Documents/Classes/Global_Economy/Amazon/Figures/sc
+orecard_1.pdf>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[144 <C:/Users/dbackus/Documents/Classes/Global_Economy/Amazon/Figures/scorecar
+d_2.pdf>] [145] [146] [147] [148] [149]) [150]
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\notes_inflation_2012.
+tex
+Chapter 12.
+[151
+
+
+
+] [152]
+Overfull \hbox (8.02625pt too wide) in alignment at lines 118--123
+ [][][] []
+ []
+
+
+
+pdfTeX warning: pdflatex.exe (file C:/Users/dbackus/Documents/Classes/Global_Ec
+onomy/Amazon/Figures/long.pdf): PDF inclusion: found PDF version <1.6>, but at 
+most version <1.5> allowed
+<Figures/long.pdf, id=1604, 401.36752pt x 292.96552pt>
+File: Figures/long.pdf Graphic file (type pdf)
+ <use Figures/long.pdf>
+Package pdftex.def Info: Figures/long.pdf used on input line 161.
+(pdftex.def)             Requested size: 263.06311pt x 192.02121pt.
+
+[153]
+
+pdfTeX warning: pdflatex.exe (file C:/Users/dbackus/Documents/Classes/Global_Ec
+onomy/Amazon/Figures/short_1.pdf): PDF inclusion: found PDF version <1.6>, but 
+at most version <1.5> allowed
+<Figures/short_1.pdf, id=1612, 401.36752pt x 292.96552pt>
+File: Figures/short_1.pdf Graphic file (type pdf)
+
+<use Figures/short_1.pdf>
+Package pdftex.def Info: Figures/short_1.pdf used on input line 182.
+(pdftex.def)             Requested size: 263.06311pt x 192.02121pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[154 <C:/Users/dbackus/Documents/Classes/Global_Economy/Amazon/Figures/long.pdf
+>] [155 <C:/Users/dbackus/Documents/Classes/Global_Economy/Amazon/Figures/short
+_1.pdf>] [156] [157] [158] [159]
+Overfull \hbox (11.14519pt too wide) in paragraph at lines 513--515
+\OT1/cmr/m/n/10 In words: Money growth ac-com-mo-dates in-fla-tion and eco-nomi
+c growth. 
+ []
+
+[160]) [161] [162]
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\notes_asad_2012.tex
+Chapter 13.
+[163
+
+
+
+]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[164] [165] [166] [167] [168] [169] [170] [171] [172] [173]) [174]
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\notes_asadpolicy_2012
+.tex
+Chapter 14.
+[175
+
+
+
+]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[176]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[177] [178] [179] [180] [181]) [182]
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\notes_monpol_2012.tex
+Chapter 15.
+[183
+
+
+
+] [184]
+
+LaTeX Warning: Hyper reference `sec:yield_curve' on page 185 undefined on input
+ line 113.
+
+[185] [186] [187] [188] [189] [190] [191] [192] [193] [194] [195]
+Missing character: There is no â in font cmr10!
+) [196]
+[197]
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\notes_review_other.te
+x [198
+
+
+
+] [199] [200]
+
+Package hyperref Warning: Ignoring empty anchor on input line 5.
+
+[201
+
+]) [202]
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\notes_taxes_2012.tex
+Chapter 16.
+[203
+
+
+
+] [204] [205]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[206]
+Overfull \hbox (2.70076pt too wide) in paragraph at lines 336--338
+\OT1/cmr/m/n/10 Here are some prac-ti-cal ap-pli-ca-tions of the broad-tax-base
+/tax-similar-goods-
+ []
+
+[207] [208] [209] [210] [211] [212] [213] [214]) [215]
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\notes_deficits_2012.t
+ex [216
+
+
+
+]
+Chapter 17.
+[217] [218] [219] [220] [221] [222]
+Underfull \hbox (badness 10000) in alignment at lines 403--420
+[][][][][]
+ []
+
+[223] [224] [225] [226]
+Overfull \hbox (4.04216pt too wide) in alignment at lines 670--678
+[] [] [] []
+ []
+
+[227]) [228] [229]
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\notes_bop_2012.tex
+[230
+
+
+
+]
+Chapter 18.
+[231]
+Missing character: There is no “ in font cmbx10!
+Missing character: There is no ” in font cmbx10!
+ [232] [233] [234] [235] [236] [237]
+Overfull \hbox (41.54045pt too wide) in alignment at lines 463--481
+[] []
+ []
+
+[238]) [239]
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\notes_fx_2012.tex
+[240
+
+
+
+]
+Chapter 19.
+[241] [242]
+
+pdfTeX warning: pdflatex.exe (file C:/Users/dbackus/Documents/Classes/Global_Ec
+onomy/Amazon/Figures/exchange.pdf): PDF inclusion: found PDF version <1.6>, but
+ at most version <1.5> allowed
+<Figures/exchange.pdf, id=2279, 401.36752pt x 292.96552pt>
+File: Figures/exchange.pdf Graphic file (type pdf)
+
+<use Figures/exchange.pdf>
+Package pdftex.def Info: Figures/exchange.pdf used on input line 157.
+(pdftex.def)             Requested size: 263.06311pt x 192.02121pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[243] [244 <C:/Users/dbackus/Documents/Classes/Global_Economy/Amazon/Figures/ex
+change.pdf>] [245] [246]
+
+pdfTeX warning: pdflatex.exe (file C:/Users/dbackus/Documents/Classes/Global_Ec
+onomy/Amazon/Figures/venezuela.pdf): PDF inclusion: found PDF version <1.6>, bu
+t at most version <1.5> allowed
+<Figures/venezuela.pdf, id=2309, 401.36752pt x 292.96552pt>
+File: Figures/venezuela.pdf Graphic file (type pdf)
+
+<use Figures/venezuela.pdf>
+Package pdftex.def Info: Figures/venezuela.pdf used on input line 324.
+(pdftex.def)             Requested size: 263.06311pt x 192.02121pt.
+
+
+pdfTeX warning: pdflatex.exe (file C:/Users/dbackus/Documents/Classes/Global_Ec
+onomy/Amazon/Figures/us_euro.pdf): PDF inclusion: found PDF version <1.6>, but 
+at most version <1.5> allowed
+<Figures/us_euro.pdf, id=2312, 401.36752pt x 292.96552pt>
+File: Figures/us_euro.pdf Graphic file (type pdf)
+
+<use Figures/us_euro.pdf>
+Package pdftex.def Info: Figures/us_euro.pdf used on input line 351.
+(pdftex.def)             Requested size: 263.06311pt x 192.02121pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[247 <C:/Users/dbackus/Documents/Classes/Global_Economy/Amazon/Figures/venezuel
+a.pdf>] [248 <C:/Users/dbackus/Documents/Classes/Global_Economy/Amazon/Figures/
+us_euro.pdf>] [249] [250] [251] [252]) [253]
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\notes_fxregimes_2012.
+tex [254
+
+
+
+]
+Chapter 20.
+[255]
+Overfull \hbox (0.85808pt too wide) in paragraph at lines 74--81
+\OT1/cmr/m/n/10 Many coun-tries have fixed exchange-rate regimes of one sort or
+ other. Colom-
+ []
+
+[256] [257] [258] [259] [260] [261]) [262]
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\notes_crises_2012.tex
+Chapter 21.
+[263
+
+
+
+] [264] [265] [266] [267]
+Overfull \hbox (1.52647pt too wide) in paragraph at lines 306--322
+[][]  
+ []
+
+[268] [269]) [270]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 84.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 84.
+
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\The_Global_Eco
+nomy_Amazon.aux
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\a_notes_front_
+matter.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_review_p
+relim.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_math_201
+2.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_data_201
+2.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_review_l
+ong.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_producti
+on_2012.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_solow_20
+12.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_growth_2
+012.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_institut
+ions_2012.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_labor_20
+12.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_finance_
+2012.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_trade_20
+12.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_review_s
+hort.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_cycles_2
+012.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_indicato
+rs_2012.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_inflatio
+n_2012.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_asad_201
+2.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_asadpoli
+cy_2012.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_monpol_2
+012.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_review_o
+ther.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_taxes_20
+12.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_deficits
+_2012.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_bop_2012
+.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_fx_2012.
+aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_fxregime
+s_2012.aux)
+(C:\Users\dbackus\Documents\Classes\Global_Economy\Amazon\TeXAux\notes_crises_2
+012.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 84.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 84.
+
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 84.
+ ) 
+Here is how much of TeX's memory you used:
+ 9433 strings out of 494053
+ 146003 string characters out of 3146179
+ 368474 words of memory out of 3000000
+ 11562 multiletter control sequences out of 15000+200000
+ 15607 words of font info for 60 fonts, out of 3000000 for 9000
+ 715 hyphenation exceptions out of 8191
+ 38i,12n,43p,1010b,548s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{??} has been referenced but does not exist, repla
+ced by a fixed one
+
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/P
+rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Progr
+am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files (x86
+)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x86)/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmti8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmtt10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmtt8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
+onts/latxfont/linew10.pfb>
+Output written on The_Global_Economy_Amazon.pdf (282 pages, 1654327 bytes).
+PDF statistics:
+ 2742 PDF objects out of 2984 (max. 8388607)
+ 850 named destinations out of 1000 (max. 500000)
+ 96 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,0 +1,303 @@
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage{ge05}
+\usepackage{comment}
+\usepackage{booktabs}
+\usepackage[dvipdfm]{hyperref}
+\urlstyle{rm}   % change fonts for url's (from Chad Jones)
+\hypersetup{
+    colorlinks=true,        % kills boxes
+    allcolors=blue,
+    pdfsubject={NYU Stern course GB 2303, Global Economy},
+    pdfauthor={Dave Backus @ NYU},
+    pdfstartview={FitH},
+    pdfpagemode={UseNone},
+%    pdfnewwindow=true,      % links in new window
+%    linkcolor=blue,         % color of internal links
+%    citecolor=blue,         % color of links to bibliography
+%    filecolor=blue,         % color of file links
+%    urlcolor=blue           % color of external links
+% see:  http://www.tug.org/applications/hyperref/manual.html
+}
+
+\newcommand{\GDP}{\mbox{\em GDP\/}}
+\newcommand{\NDP}{\mbox{\em NDP\/}}
+\newcommand{\GNP}{\mbox{\em GNP\/}}
+\newcommand{\NX}{\mbox{\em NX\/}}
+\newcommand{\NY}{\mbox{\em NY\/}}
+\newcommand{\CA}{\mbox{\em CA\/}}
+\newcommand{\NFA}{\mbox{\em NFA\/}}
+\newcommand{\Def}{\mbox{\em Def\/}}
+\newcommand{\CPI}{\mbox{\em CPI\/}}
+
+\def\ClassName{The Global Economy}
+\def\Category{Class Notes}
+\def\HeadName{Macroeconomic Crises}
+
+\begin{document}
+\thispagestyle{empty}%
+\Head
+
+\centerline{\large \bf \HeadName}%
+\centerline{Revised: \today}
+
+\bigskip
+Economies periodically experience {\it crises\/}:
+economic downturns that are not only larger than typical recessions
+but qualitatively different.
+The idea is now fresh in our minds,
+but similar episodes have occurred throughout recorded history.
+They're less common in modern developed countries,
+but they can happen anywhere.
+Like snowflakes and business cycles, no two are exactly the same,
+but they share some common features.
+
+
+\subsubsection*{Classic crisis triggers}
+
+There are three classic triggers of macroeconomic crises:
+sovereign debt, financial fragility, and a fixed exchange rate.
+
+{\it Sovereign debt\/} problems date back as far as governments have borrowed.
+If investors fear that a government may not repay its debt,
+the market for debt collapses, often taking the economy with it.
+In the old days, wars were the standard problem.
+Wars are expensive, and if investors thought the expense was more
+than the government was willing or able to bear,
+they would stop buying the debt.
+In modern times, governments spend money on many things,
+but the possibility of default remains.
+Argentina in 2002 and Greece today are recent examples.
+This experience should remind us that sovereign debt 
+need not be riskfree.  
+
+One of the issues with government debts is sovereignty.
+If a corporation defaults, the creditors take it to court
+and claim the assets.
+With governments there's no such mechanism and the process
+is sloppier as a result.
+
+{\it Financial fragility\/} is another classic trigger of crises.
+We know from centuries of experience that when the
+financial system freezes up,
+economic activity slows down sharply.
+We saw that in 2008,
+but the same thing happened during the Bank of England Panic of 1825,
+the Baring Crisis of 1890,
+the US Panic of 1907,
+Japan and Scandinavia in the 1990s,
+and many other occasions.
+It's a feature of even advanced financial systems that they
+sometimes implode.
+
+In most cases, these financial problems follow from
+poor investments (real estate is a common example),
+which put the solvency of financial institutions in question.
+The problems tend to snowball:
+worries about the viability of one firm may lead others to
+reduce their lending, leading to a cycle of retrenchment
+that puts even sound firms in trouble.
+The word ``panic'' is apt here and stems 
+from the imperfect information investors have
+when deciding where to put their money.  
+
+
+{\it Fixed exchange rates\/} are the third classic trigger.
+For whatever reason, fixed exchange rates periodically 
+must be defended in ways that undermine the economy.  
+Recent examples include the UK in 1992,
+Mexico in 1994,
+Korea in 1997,
+and Argentina in 2000.
+
+Many crises combine several of these elements.
+The Euro Zone today has all three.
+In Ireland and Spain, bailing out their banks 
+landed the governments in financial peril.
+In other countries, bank positions in government debt
+put the banking system in peril.
+A question for another time is what, if anything,
+the single currency has to do with this.
+
+
+\subsubsection*{Crisis indicators}
+
+Crises are inherently hard to predict.
+Why? 
+Think about cardiologists.
+We understand that they can identify risk factors 
+(weight, high blood pressure) but cannot predict
+the date of a heart attack with any precision. 
+Crises are worse.  
+Once people see a crisis on the way, 
+their actions tend to reinforce it, 
+either by avoiding government debt,
+withdrawing their money from banks,
+or investing their money in foreign currency.
+But like the cardiologist, you can use what we learned earlier
+to identify signs of trouble.
+
+
+Analysts differ in the details, but most
+would include the following in any assessment of crisis risk:
+%
+\begin{itemize}
+\item {\it Government debt and deficits.\/}
+Rules of thumb:  worry if government
+deficit is more than 5\% of GDP or debt is more than 50\% of GDP.
+Adjust upward for developed countries, downward for developing countries.
+Watch out for hidden liabilities:  pensions, health care, bailouts, etc.
+These are often much larger than official liabilities.  
+
+Fine points:  worry further if debt is short-term and/or denominated in foreign currency.
+Short-term debt subjects the government to refinancing (``rollover'') risk:
+ markets may demand better terms or refuse to refinance.  Foreign-denominated debt subjects government to risk
+if currency falls in value, making the debt larger in local terms.
+
+\item {\it Banking/financial system.\/}
+This isn't something we've discussed,
+but  analysts track leverage, duration mismatch, exposure concentration, 
+risk management processes,  
+and nonperforming loans.
+The challenge is measuring them accurately from reported information.
+
+\item {\it Exchange rate and reserves.\/}
+Rule of thumb:  worry if the exchange rate is fixed, or close to it,
+and the currency is significantly overvalued in PPP terms
+(Big Macs cost 30\% more than in other currencies;
+real exchange rate has risen more than 30\% in last 2-5 years).
+Worry more if foreign exchange reserves
+are low or have fallen significantly.
+\end{itemize}
+
+All of these things generate more concern
+in countries with weak institutions.
+It's not an accident that Greece is in worse trouble
+than France or Germany.
+Analysts often find that local politics are more important
+to the outcome than the numbers.
+
+\subsubsection*{Crisis responses}
+
+What should a government do when faced with a crisis?
+It depends on the trigger.
+Standard advice includes:
+
+{\it Sovereign debt crises.\/}
+If the problem is that the government is borrowing too much,
+the answer is to stop doing it:
+run primary surpluses until the debt is manageable.
+Default is also an option, and saves money in the short term,
+but probably raises borrowing costs in the future.
+IMF support is often used to cushion the blow:
+contingent on progress with the deficit,
+they loan the government money on more attractive terms
+than the market would provide.
+The ``conditionality,'' as it's called, 
+helps reduce moral hazard and can make it easier politically
+for governments to undertake painful policy changes.  
+Such conditional lending can be critical in a crisis, 
+when high borrowing rates exacerbate the government's debt problems.
+
+{\it Financial crises.\/}
+If the financial system is fundamentally sound but illiquid,
+the longstanding advice is for the central bank to lend
+aggressively.
+The standard quote comes from Walter Bagehot,
+a 19th-century businessman and journalist:
+``To avert panic, central banks should lend early and freely,
+to solvent firms, against good collateral, and at high rates.''
+Put simply, 
+the goals of crisis prevention and crisis management 
+are often at odds.  
+
+
+If the financial system is insolvent,
+it's important to get it recapitalized and operating again.
+This comes with more than a little irony,
+but governments sometimes find themselves bailing out
+precisely those banks that triggered the crisis.
+The trick is to do it in ways that don't bankrupt the
+government and inflict some pain on the bank's management and creditors
+(incentives for the future).
+These things happen fast, so it's hard to get everything right.
+
+{\it Fixed exchange rates.\/}
+Let them float.
+More controversial:  impose capital controls to inhibit the
+response of capital markets to a possible drop in the exchange rate.
+(See:  trilemma.)
+Capital controls are a dangerous tool,
+because the fear of future capital controls
+can generate a crisis on its own,
+as investors rush to get their money out of the country.
+Capital controls on inflows may, for that reason, be more attractive
+than controls on outflows.  
+
+
+\subsubsection*{Executive summary}
+
+\begin{enumerate}\itemsep=0.0in
+\item The classic crisis triggers are
+(i)~government debt and deficits,
+(ii)~a fragile financial system,
+and (iii)~a fixed exchange rate system.
+
+\item Crises are hard to predict,
+but we nevertheless have some useful indicators.
+
+%\item Institutions and politics are central.
+\end{enumerate}
+
+
+\begin{comment}
+\subsubsection*{Review questions}
+
+\begin{enumerate}
+\item {\it Country risk analysis.\/}
+Make up your own:
+collect data for any country of interest
+and run through the same analysis we did
+for Turkey.
+\end{enumerate}
+\end{comment}
+
+\subsubsection*{If you're looking for more}
+
+On the most recent crisis, Ben Bernanke's
+\href{http://www.federalreserve.gov/newsevents/testimony/bernanke20100902a.htm}
+{testimony} to the crisis commission is a nice overview (also mercifully short).
+There are a number of well-written books about economic crises.  
+Among the best:
+%
+\begin{itemize}
+\item Carmen Reinhart and Ken Rogoff, 
+\href{http://www.amazon.com/This-Time-Different-Centuries-ebook/dp/B004EYT932/}
+{\it This Time is Different\/}.
+The recent bestseller, covering 800 years and the whole world.  
+
+\item Robert Bruner and Sean Carr, 
+\href{http://www.amazon.com/Panic-1907-Lessons-Learned-Markets/dp/0470452587/}
+{\it The Panic of 1907\/}.  
+Great read, short, you'll think it's about 2007.
+
+\item David Wessel, 
+\href{http://www.amazon.com/Fed-We-Trust-Bernankes-Great/dp/0307459683/}
+{\it In Fed We Trust\/}.
+Terrific book from the Wall Street Journal writer.  
+
+%\item Paul Blustein,
+%    {\it And the money rolled in (and out).\/}
+%    Wonderful review of Argentina's 1999-2001 crisis.
+%    He has another one, {\it The chastening\/}, about the Asian crisis
+%    and the IMF.
+%\item Andres Oppenheimer, {\it Bordering on chaos: Mexico's roller-coaster journey %toward prosperity.\/}
+%    About Mexico in running up to the election and
+%    subsequent crisis of 1994.
+\end{itemize}
+
+
+\vfill \centerline{\it \copyright \ \number\year \ NYU Stern
+School of Business}
+
+\end{document}

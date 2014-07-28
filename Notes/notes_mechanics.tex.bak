@@ -1,0 +1,598 @@
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage{amsmath}
+\usepackage[dvips]{graphicx}
+\usepackage{hyperref}
+%    \hypersetup{colorlinks=true,urlcolor=blue,linkcolor=red}
+\RequirePackage{GE05}
+
+\newcommand{\GDP}{\mbox{\em GDP\/}}
+\newcommand{\NDP}{\mbox{\em NDP\/}}
+\newcommand{\GNP}{\mbox{\em GNP\/}}
+\newcommand{\NX}{\mbox{\em NX\/}}
+\newcommand{\NY}{\mbox{\em NY\/}}
+\newcommand{\CA}{\mbox{\em CA\/}}
+\newcommand{\NFA}{\mbox{\em NFA\/}}
+\newcommand{\Def}{\mbox{\em Def\/}}
+\newcommand{\CPI}{\mbox{\em CPI\/}}
+\newcommand{\CU}{\mbox{\em CU\/}}
+\newcommand{\RE}{\mbox{\em RE\/}}
+\newcommand{\MB}{\mbox{\em MB\/}}
+
+\def\ClassName{The Global Economy}
+\def\Category{Backus \& Clementi}
+\def\HeadName{Mechanics of Monetary Policy}
+
+\begin{document}
+\thispagestyle{empty}%
+\Head
+
+\centerline{\large \bf \HeadName}%
+\centerline{Revised: \today}
+
+\bigskip
+This is really about the mechanics of monetary policy...
+Money as it's commonly used consists primarily of the liabilities of private financial institutions.
+But if they're private, how does the central affect them?  ..
+
+
+\subsubsection*{Commercial Banking in the US}
+
+     Financial intermediaries are ``middle-men" who funnel funds from sources
+of funds (savers, foreign investors) to users (business, government).  In principle, savers could
+purchase assets directly from users, as when an individual buys a treasury bill or share of stock.
+But in practice, most funds flow through intermediaries of various types:  commercial banks,
+thrift institutions, pension plans, insurance companies, and so on.  Investment banks play a role
+here, too, and also help to match borrowers and lenders. To get a rough idea where these
+institutions stand in the US, here are some numbers for 1991:
+%
+\begin{center}
+\begin{tabular}{lrr}
+               Institution          &   Assets   & Percent    \\
+                                                 &            \\
+               Commercial banks     &   3442.5   &  29.1      \\
+               Thrift institutions  &   1414.1   &  11.9      \\
+               Insurance companies  &   2096.9   &  17.7      \\
+               Pension funds        &   2729.7   &  23.0      \\
+               Finance Companies    &    812.4   &   6.9      \\
+               Mutual Funds         &   1352.0   &  11.4      \\
+                                                 &            \\
+               Total                &  11847.6   & 100.0      \\
+\end{tabular}
+\end{center}
+%
+[The numbers are billions of dollars, from the Federal Reserve's {\em Flow of Funds Accounts
+Financial Assets and Liabilities Year-End}, Z.1.]  These figures should make it clear that banks
+are not, by a long shot, the only financial institutions in the US.  In fact, their market share
+has fallen from about 39 percent in 1970 to 29 percent in the numbers above.  Thrifts have done
+even worse, falling from 20 to 12 percent over the same period (and for obvious reasons). The big
+gainers have been pension funds and mutual funds.
+
+     While many financial trends are global, there are nonetheless
+substantial cross-country differences in financial institutions.  The most obvious of these
+concern banks.  The US banking system differs from many countries both in the range of services
+supplied by commercial banks and in the sheer number of them---roughly 12,000 at last count.  This
+compares with 10 in Canada, of which 4 or 5 have almost all of the business.  Or about a hundred
+in the UK, where 6-8 banks control about 80 percent of the market. We could make similar
+statements about France, Germany, and Japan:  they have nowhere near as many banks as the US.
+[Again: I am referring here to commercial banks or their equivalent in other countries, not thrift
+institutions, investment banks, or anything else that sounds like a bank.] These banks differ, as
+well, in their range of activities.  US banks have traditionally accepted deposits from customers
+(individuals and businesses) and used the proceeds to finance loans to businesses and individuals
+and investments in corporate and government securities.  This is often allied with related
+businesses like credit cards, foreign currency transactions, and so on.  But until recently the
+reach of commercial banks did not extend to investment banking activities, like underwriting.  In
+many countries, however, banks provide a more complete range of financial services.   In Germany,
+for example, ``universal" banks provide investment banking and insurance services.
+
+     In the US, the banking and insurance industries have been separately
+regulated almost from the start, and commercial and investment banking were formally torn apart by
+the Glass-Steagall Act of 1933---hence the separate identities now of Morgan Stanley and JP
+Morgan.  In recent years, the Act has been weakened, and many of the leading commercial banks now
+offer some range of investment banking services through so-called Section 20 subs.  Bankers Trust
+has moved so far along this path that while it's still officially a commercial bank, it no longer
+has a retail business.  Conversely, Merrill Lynch and other retail brokers now offer money market
+accounts that serve much the same purpose as checking accounts at commercial banks.  In short,
+changes in regulations have had an enormous impact on the financial services industry in general,
+and commercial banking in particular, over the last twenty years or so.
+
+     Along with the reduction in the market share of commercial banking, we
+have seen, and will likely continue to see, a sharp reduction in the number of banks.  The huge
+number of commercial banks in the US reflects a long-standing political impasse.  On the one hand,
+Alexander Hamilton, resting in the Trinity Church cemetery near the head of Wall Street, argued
+that a strong banking system was essential to the economic viability of the country.  On the
+other, Thomas Jefferson and his Virginia compatriots thought that large banks would place too much
+power in the hands of a few individuals.  The result was a compromise that placed much of the
+oversight and control of banks in the hands of states.  Thus we have, in some ways, not a single
+national set of banking legislation but fifty different sets.  This has come up in talks with the
+European Community concerning reciprocal foreign banking regulations:  the Europeans complain that
+access to US markets requires the approval of individual states as well as the federal government.
+As the regulations supporting the excessive segmentation of the banking industry are relaxed, we
+can expect to see a steady decline in the number of banks.
+
+
+\subsubsection*{Monetary Aggregates}
+
+     One of the ways in which commercial banks show up in this course is
+through their deposits, which are part of what we generally call ``money". Money, as the word is
+understood by economists and business-people, consists of both currency issued by the government
+and deposits at banks (and now at other deposit-taking institutions, as well).  The narrowest
+monetary aggregate is M1, which consists largely of currency and checking accounts. This aggregate
+is an attempt to mimic our theory, in which we viewed money as something that could be used to
+make transaction.  We defined this as currency, but in practice it's often easier to write a check
+than to pay in cash, so we might want to include checking accounts in our measure of money. In
+November 1990 M1 consisted of
+%
+\begin{center}
+\begin{tabular}{lr}
+                        Currency             &   244.8   \\
+                        Checkable deposits   &   569.4   \\
+                        Travellers checks    &     8.4   \\
+                                             &           \\
+                        M1 (total)           &   822.6   \\
+\end{tabular}
+\end{center}
+%
+[These numbers are billions of dollars; see Table A12 of the {\em Federal Reserve Bulletin}.]
+[Note that we have lots of currency:  about \$1000 for every man, woman, and child in the US.  Who
+has all this?  And why?]  In this aggregate and others, ``deposits" includes money at institutions
+other than commercial banks:  savings and loans, credit unions, brokerage firms, and so on.  This
+wasn't always the case, but since these institutions now have deposits that are like bank accounts
+in everything but name, they are now included in the data and are treated the same by regulators
+(reserve requirements, for example).
+
+     M1 is the aggregate that conforms most closely with our macroeconomic
+theory.  We argued that ``money" was useful for transactions, but paid no interest.  [That led to
+the money demand relation, $L(i,Y)$, that underlies the LM curve.]  But as we often find, the
+world is more complicated than our theory.  Particularly during the 1970s and 80s, the line
+dividing accounts used for transactions and those that were pure investments became extremely
+fuzzy.  Banks, in competing for deposits, offered accounts that paid interest like time deposits
+yet had some of the check writing capabilities of checking accounts.  In fact only a small part of
+the so-called checkable deposits above consists of pure demand deposits.  They also offered,
+especially to large business customers, demand deposits that could be converted to time deposits
+or other interest-bearing asset at the end of the day to get higher interest.
+
+     As a result, economists who studied this found that M1 seemed to vary
+erratically over time as demand deposits were relabeled as time deposits and so on, and that the
+definition of M1 itself was becoming highly arbitrary. In the last decade, emphasis has switched
+instead to broader definitions of money that include both demand and time deposits and are thus
+less prone to variation as names and features of deposits change.  The disadvantage of the broader
+definitions is that we are no longer talking about assets held purely for transactions purposes.
+In any case, the numbers for M2 and M3 are:
+%
+\begin{center}
+\begin{tabular}{lcr}
+                              M2      & &    3316.4   \\
+                              M3      & &    4085.8   \\
+\end{tabular}
+\end{center}
+%
+M2 contains, in addition to M1, overnight RPs and Eurodollars, money market accounts, and small
+denomination time and saving accounts.  M3 contains, in addition to M2, large denomination time
+deposits and Eurodollar accounts, and some other things.  [See the notes to Table A13 of the {\em
+Federal Reserve Bulletin} for details.]  You can see that the major difference is between M1 and
+M2:  the latter is about 4 times as big as the former.  The Federal Reserve currently emphasizes
+M2 in its policy statements.  Our graphs of ``money" in earlier lectures were also M2.
+
+     It's clear, then, that most of what we call ``money" consists of bank
+deposits and is therefore not under the direct control of the Fed.  To see how the Fed might
+influence M2 indirectly, we need to think a little about how the banking system interacts with
+monetary policy.  That's what we do next.
+
+
+\section{A Theoretical Model of a Banking System}
+
+     Many aspects of economic theory have been around for decades, even
+centuries.  Past and future changes in the global financial system, however, are likely to make
+some of what we're about to do obsolete before long.  The tradition in theory has been to
+emphasize the role of banks over other financial intermediaries and focus, in particular, on
+banks' role as suppliers of assets that are used in making transactions---checking accounts and
+their close relatives.  But as the line between banks and other institutions gets fuzzier, and
+alternative means of payments arise, these two distinctions may turn out to be less useful than
+they have been in the past. Nevertheless, this line of study gives us a start toward understanding
+how the financial system operates.
+
+     The objective of this section is to provide a link between the money
+between the monetary aggregates used in our theory (think of this as M2) and the part of ``money"
+that is under the direct control of the Federal Reserve (which we call the {\em monetary base},
+MB).  We try to spell out the link between Fed policy and monetary aggregates, and the role of the
+banking system in this process.
+
+     {\em A bankless economy.}
+To get ourselves warmed up, as it were, let's look at the balance sheets of the Fed and the
+Private Sector in a stylized economy that has no banking system, and the effect on these balance
+sheets of an open market operation.  Then we'll go on to see how a banking system changes the
+analysis.  Let us say, then, that the Private Sector (excluding banks) has, among other assets,
+500 of treasury bills, 100 of currency, and some equity.  Its balance sheet might then be
+something like
+%
+\begin{center}
+\begin{tabular}{lrclr}
+\multicolumn{5}{c}{Private Sector Balance Sheet}                             \\
+                                                                &       \\
+            Assets                &&&
+                        \multicolumn{2}{l}{Liabilities and Net Worth}   \\
+%                                                               &       \\
+            Currency        &   100   &&   Net worth  &   8600          \\
+            Treasury bills  &   500   &&                                \\
+            Equity          &  8000   &&                                \\
+\end{tabular}
+\end{center}
+%
+[In real life, this would be much more complicated, but since this is theory we can go easy on
+ourselves.]
+
+     The Fed might have, say, an inventory of 100 in treasury bills and a
+liability of the same 100 in currency, since currency in the US is Federal Reserve Notes:  in
+effect, interest free loans from the public to the Fed. (Read one sometime to see for yourself.)
+Thus the Fed's balance sheet is
+%
+\begin{center}
+\begin{tabular}{lrclr}
+\multicolumn{5}{c}{Federal Reserve Balance Sheet}               \\
+                                                        &       \\
+                    Assets      &&&          Liabilities        \\
+%                                                       &       \\
+                    Treas bills & 100    &&  Currency   &100    \\
+\end{tabular}
+\end{center}
+%
+(The convention is that the Fed has no net worth:  earnings accrue to the Treasury.)
+
+     In this economy, like the one I had in mind when we talked about the
+Keynesian model, the money supply is the supply of currency:  100.  We can change this with an
+open market operation.  If the Fed wants to increase the money supply by 10, it simply buys 10
+worth of treasury bills from the public.  [Work through this on the balance sheets for practice.]
+This changes the composition of the balance sheets of both the public sector and the Fed, but not
+their net worths.  That's what was going on behind the scenes in our discussion of monetary policy
+in the Keynesian model:  an increase in the money supply made the composition of the private
+sector balance sheets more liquid, in the sense that it included more money after the open market
+purchase than before.
+
+     {\em A banking system.}
+That was practice, now we develop the same idea for an economy with a banking system.  We add bank
+deposits (and the corresponding loans) to the private sector's balance sheet and bring banks into
+the picture.  A possible configuration is:
+%
+\begin{center}
+\begin{tabular}{lrclr}
+\multicolumn{5}{c}{Private Sector Balance Sheet}                             \\
+                                                                &       \\
+            Assets                &&&
+                        \multicolumn{2}{l}{Liabilities and Net Worth}   \\
+%                                                               &       \\
+            Currency        &    50   &&   Bank Loans &    150          \\
+            Bank Deposits   &   200   &&   Net worth  &   8600          \\
+            Treasury bills  &   500   &&                                \\
+            Equity          &  8000   &&                                \\
+\end{tabular}
+\end{center}
+%
+\begin{center}
+\begin{tabular}{lrclr}
+\multicolumn{5}{c}{Federal Reserve Balance Sheet}               \\
+                                                        &       \\
+                    Assets      &&&          Liabilities        \\
+%                                                       &       \\
+                    Treas bills & 100    &&  Currency   & 50    \\
+                                &        &&  Reserves   & 50    \\
+\end{tabular}
+\end{center}
+%
+\begin{center}
+\begin{tabular}{lrclr}
+\multicolumn{5}{c}{Commercial Banks' Balance Sheet}             \\
+                                                        &       \\
+                    Assets      &&&          Liabilities        \\
+%                                                       &       \\
+                    Reserves    &  50    &&  Deposits   &200    \\
+                    Loans       & 150    &&             &       \\
+\end{tabular}
+\end{center}
+%
+You'll note that net worth is zero for the Fed (it's ``owned" by the Treasury) and Commercial
+Banks (they're owned by shareholders).
+
+     A useful example of a monetary aggregate in this economy is $M = \CU$
+(Currency) $+ D $(Bank Deposits).  [This is simpler than we saw in the real world, since we only
+have one type of deposit.  With more than one type of deposit we have more than one type of money
+and a more complicated theoretical setup.]  The Fed, on the other hand, controls the amount of
+currency held by the private sector (as cash) and banks (as reserves).  We call this quantity the
+monetary base, $\MB = \CU + \RE $ (Reserves).
+
+     The question is how an open market operation that changes the monetary
+base MB influences the monetary aggregate $M$---whether, that is, we can talk about the Fed
+influencing a monetary aggregate, when policy involves the narrower monetary base.  We can derive
+the relation between the monetary base $MB$ and the monetary aggregate $M$ if we make some
+assumptions about behavior. Let us say, first, that private agents like to hold cash and bank
+deposits in some strict proportion:
+$$
+                                 \CU/D  =  \gamma,
+$$
+where $\gamma$ is some number that we might expect to be roughly constant.  The idea is that we
+make some transactions with cash, others with checks, and the proportions of the two doesn't
+change much.  Let us also assume that banks hold a constant fraction of their deposits as
+reserves:
+$$
+                                 \RE/D  =  \rho .
+$$
+This latter assumption is pretty good, since the Fed requires them to hold reserves proportional
+to their deposits (we'll see the details shortly). From a bank's point of view this acts as a tax
+on their deposits, since reserves earn no interest.  Even if there were no minimum reserves, banks
+might be expected to hold some fraction of deposits in cash as part of their day to day business.
+From this, we can derive a relation between the monetary aggregate and the monetary base.  We
+know:
+$$
+               \MB  =  \RE + \CU    \eqno{\mbox{(equilibrium condition)}}
+$$
+$$
+                   M  =  \CU + D    \eqno{\mbox{(definition of money)}}
+$$
+This leads (after some relatively simple algebra) to
+$$
+             M  = \left( \frac{1+\gamma}{\gamma+\rho} \right) \MB.
+$$
+The expression in brackets is referred to as the money multiplier, since we generally see that the
+stock of money is a multiple of the monetary base.  In the US, for example, the multiple is about
+3 for M1 and over 10 for M2 and M3.
+
+     We now have an answer to our question:  if the ratios
+$ \rho $ and $ \gamma $ are approximately constant, then by controlling the monetary base the Fed
+exerts indirect control over the broader monetary aggregates.  In that sense, we can speak loosely
+about the Fed ``controlling" M2 and other aggregates.
+
+     But are the ratios constant?  We can get some idea by plotting the data.
+In Figures 1 and 2 we see how monetary aggregates and related variables have behaved over time.
+In Figure 1 I've graphed MB, M1, and M2 for the last thirty years (each is scaled to equal 0.0 in
+the first quarter of 1959).  The trends are somewhat different, with M2 and M3 growing faster than
+MB and M1. In Figure 2 we see the money multipliers for the three aggregates.  Again there has
+been some variation over time (as there must be since the aggregates have grown at different
+rates).  You can see the same thing in different form Figure 3, where the growth rates of MB and
+M2 are drawn.  In short, the money multipliers are another case of a reasonable approximation, but
+in the short run we see some variation which is reflected in different growth rates across
+aggregates.  Thus the money multiplier theory is only a rough guide and in the short run, at
+least, the Fed may have a difficult time affecting monetary aggregates.
+
+
+\subsubsection*{Application:  Contrary Movements in Monetary Aggregates}
+
+     Over the last few years we've seen, as we did in the Depression, a
+divergence between the movements in the monetary base (MB) and monetary aggregates (like M2), with
+the base growing more rapidly than the aggregates. See Figure 3.  Apparently the increase in the
+monetary base has been offset by declines in the money multipliers.
+
+     The story has some similarity to the Depression.  For whatever reasons,
+there has been, since 1986, a sharp rise in the ratio of currency to deposits (this includes all
+the deposits counted in M2); see Figure 4.  This implies, as we've seen, a fall in the M2
+multiplier.  Thus M2 over this period has grown less rapidly than the base.  But why?  Three
+possibilities cross my mind, maybe you can think of others:  (i) Lack of confidence in the banking
+system led people to put less of their wealth in banks.  Given deposit insurance this is probably
+a misplaced concern, but maybe it affected peoples' behavior.  (ii) Growth in the underground
+economy (drugs?) led people to use more cash than before.  (iii) Banks made less effort than
+before to attract deposits, since they had no desire to to make additional loans, when past loans
+were turning out so badly.  Or a minor variation: alternatives to banks (mutual funds, brokers and
+dealers, etc.) attracted some of the funds that were previously invested in commercial banks, and
+thus led to a decline in the D part of the currency-deposit ratio.  In other words, the decline in
+commercial banking's market share shows up here as a rise in the currency-deposit ratio.
+
+     Whatever the reason, it gives you some idea of the difficulties of
+``controlling" monetary aggregates.  Some critics have argued that Greenspan has starved the
+banking system of funds; he replied, in essence, that the funds were there (base growth was
+reasonable) but that the banking system wasn't attracting deposits and (the other thing banks do)
+loaning them out. As the saying goes:  ``You can bring a horse to water, but you can't make him
+drink."  Given the enormous changes we've seen in the financial system in the last fifteen years,
+it may simply be that broad aggregates like M2, which emphasize bank liabilities, are no longer
+good indicators of how well the financial system is meeting the needs of the economy.
+
+     We could tell a similar story about Japan:  monetary aggregates have
+been growing more slowly than the monetary base, as people take money out of banks and invest it
+elsewhere, including the government's postal saving system.  This shows up as a drop in the money
+multiplier.  It's an open question, given the conflicting evidence, whether we view monetary
+policy in Japan as loose, tight, or in between.
+
+
+\section{The Federal Reserve and US Monetary Policy}
+
+     The Federal Reserve System is a curious mixture of public and private,
+federal and regional.  The Board of Governors, in Washington DC, consists of 7 individuals
+appointed by the President and approved by the Senate.  Each serves a fourteen year term (unless a
+better offer comes along).  One of its members is appointed chair for a four-year term by the same
+procedure. Greenspan, for example, was appointed in 1988 and reappointed in 1992.  The length of
+term and the timing of chair appointments (before presidential elections) is intended to provide
+the Fed some short-run independence from the political process.  Although the institutions vary,
+this independence is a feature of central banks in many developed countries.
+
+     The system also includes 12 regional Federal Reserve Banks, whose
+location tells you something about the US and its politics in 1913, when the Federal Reserve Act
+was passed.  These regional banks do a lot of the bank supervision, check-clearing, and other
+day-to-day operations of the system.
+
+     With regard to macroeconomic policy, the Fed has three distinct
+instruments.  By far the most important is open market operations, but they also control reserve
+requirements on deposits and the discount rate on borrowing from the Fed.  Each of these policies
+is determined by a somewhat different combination of players.  Open market operations are
+determined by the Federal Open Market Committee (FOMC), which meets eight times a year and can
+change policy between meetings in conference calls.  The FOMC consists of the seven members of the
+Board of Governors and five presidents of regional banks.  Of the five, the president of the NY
+Fed is always a member, and the other 11 members rotate (Chicago gets the odd share).  Thus the
+president of the Minneapolis Fed is a voting member every third year.  In off years, regional
+presidents are ex officio members.
+
+     Day-to-day open market operations are carried out with repurchase
+agreements, or repos, on US government securities with sanctioned US security dealers (which
+includes many of the big financial institutions of various types, including commercial banks).  In
+a typical ``system RP" (system distinguishing this from private sector repos) the Fed purchases
+government securities and sells them back again a few days later.  The terminology means that the
+customer has ``repurchased" the securities it temporarily sold to the Fed.  The difference between
+the sale and repurchase prices indicates the interest rate on the transaction.  The reverse
+transaction is called a reverse repo by the market, and a matched sale purchase (or MSP) by the
+Fed. Both of these instruments allow the Fed to affect the quantity of reserves and the monetary
+base.
+
+     The most popular indicator of the Fed's open market operations is the
+federal funds rate.  In the course of satisfying their reserve requirements, banks often borrow
+and lend reserves.  A bank with more reserves than it needs will loan them to a bank that needs
+more, and charge interest on the loan.  This market for reserves is referred to as the federal
+funds market, and the rate the federal funds rate.  With reserve requirements imposed weekly, the
+loans are generally of very short duration, often only a day.
+
+     The other two policy instruments are changed less frequently.  As I
+mentioned, one of the tasks of the Fed is to provide short-term loans to banks.  These loans are
+secured with government securities.  In the old days this took the form of banks selling
+securities to the Fed at a discount, with the result that this arm of the Fed is known as the
+discount window.  The interest rate on such borrowing is called the discount rate.  The discount
+rates are suggested by the regional banks subject to the Board of Governors and in recent times
+have been below market rates.  The loans are made at the discretion of the Fed, and banks that are
+seen as abusing their borrowing privileges may lose them.  In practice, the discount rate is not
+viewed as an important aspect of monetary policy, but it is often used to signal the Fed's
+intentions.  A rate cut, for example, may indicate that the Fed foresees lower rates, and possibly
+looser monetary policy.
+
+     The final policy instrument of policy is reserve requirements.  As we've
+seen, banks (and other depository institutions) must hold reserves against deposits in the form of
+cash or deposits at federal reserve banks.  These reserves do not pay interest.  The Board sets
+these requirements within limits set by the Monetary Control Act of 1980.  These requirement are
+changed much less often than the discount rate.
+
+     I should add one final policy instrument, foreign exchange intervention,
+which in the US is the joint responsibility of the Fed and the Treasury.
+
+\section{Application:  Recent Changes in Reserve Requirements}
+
+     There has been concern recently that the dire straits of the banking
+system has led to excessively tight loan requirements which in turn might prolong the recession:
+what might be termed a credit crunch.  There's some question what this term means, but most have
+in mind tighter credit than would be indicated by the amount of money available to be loaned out.
+
+     The Fed has responded to these concerns by changing some of the subtler
+aspects of monetary control in ways that should make funds more readily available to borrowers.
+One policy was to eliminate reserve requirements on some types of deposits.  As of early December
+of 1990, required reserve ratios were
+%
+\begin{center}
+\begin{tabular}{lrl}
+          Transaction accounts   &  12\%  & (3 on first 41 million)  \\
+          Time deposits            \\
+  \hspace{0.25in} Personal       &   0                                \\
+  \hspace{0.25in} Nonpersonal    &   3\%   & (if shorter than 18 months) \\
+          Eurodeposits           &   3\%   \\
+\end{tabular}
+\end{center}
+%
+Other deposits were free of reserve requirements.  As of December 27, 1990 the last two categories
+were reduced to 0.  And on April 2, 1992 the rate on transaction accounts was reduced to 10
+percent.  The effect is to provide banks with more money to loan out and thus enable them to earn
+more (they avoid, in effect, the ``reserve tax" on these deposits).  The idea was to make banks
+healthier and get loans into the system (or, in our model, to increase the money multiplier).
+There has also been talk of easing the use of the discount window for bank borrowing from the Fed
+and of relaxing accounting rules on bad loans.  All of these suggest that Fed policy consists of
+more than open market operations.
+
+     On the whole, the US has been moving closer to the British system, where
+reserve requirements are minuscule, thereby reducing the competitive disadvantage of noninterest
+bearing reserves for banks.  Germany has been moving in a similar direction in an effort to put
+their banks on a more equal footing with those of the Benelux countries.  A good guess is that
+reserve requirements will be much less important worldwide ten years from now than they were ten
+years ago.
+
+
+\section{Monetary Policy in Other Countries}
+
+     Although our theoretical discussion of monetary policy has been generic,
+the institutional details differ widely across countries.  If you're in this business, there's no
+substitute for learning the rules of the country you're in.  An executive summary for a few major
+countries follows.  Most of this comes from the JP Morgan publication cited at the end.
+
+     {\em Germany.}
+The formal structure of the Bundesbank mirrors the US Federal Reserve System, although in practice
+the Bundesbank is widely thought to have greater autonomy.  The Directorate consists of
+presidential appointments and state (Lander) nominees, who serve for eight years each.  Price
+stability is its legally mandated primary objective.  Open market operations generally work
+through repurchase agreements.  The repo rate is generally bracketed by two rates on bank
+borrowing from the Bundesbank.  A limited quota of credit is available at the discount rate, which
+puts a floor on the repo rate.  The lombard rate on overnight loans to banks acts as a ceiling.
+Both are used, as is the discount rate in the US, to signal changes in interest rates. Reserve
+requirements have been reduced over the last few years.  Foreign exchange intervention is used to
+fulfill obligations of the Exchange Rate Mechanism of the European Monetary System.
+
+     {\em Japan.}
+The policy making bodies of the Bank of Japan (BoJ) consist of both political appointees with
+five-year terms and career civil servants, and operate under the guidance of the Ministry of
+Finance (MOF).  For this reason, most observers regard the BoJ as having little independence, but
+since their debacle with high inflation following the 1973-75 OPEC price increase, they have been
+very successful in maintaining price stability. Open market operations are executed with purchases
+of government securities in the long-term, repurchase agreements on a variety of securities in the
+short term; the Gensaki rate on bond repos is the most widely cited.  Reserve requirements are
+changed infrequently.
+
+     {\em United Kingdom.}
+Authority over the Bank of England rests with the Chancellor of the Exchequer (the finance
+minister of the government), which gives the Bank more limited control over monetary policy than
+either the Fed or the Bundesbank.  Policy operates through open market operations in Treasury
+securities (``gilts").  A ``minimum lending rate" for Bank loans to discount houses (security
+dealers) is sometimes used to signal policy-induced changes in interest rates.  Reserve
+requirements are minimal.  Policy is circumscribed by its (wavering) commitment to the Exchange
+Rate Mechanism of the European Monetary System.
+
+
+\section*{Summary}
+
+\begin{enumerate}
+\item We've seen various concepts of money:  the monetary base and three monetary aggregates, M1,
+M2, and M3.
+
+\item Open market operations have a direct influence on the monetary base. Monetary aggregates are
+influenced by private sector decisions as well as monetary policy.
+
+\item The monetary base and monetary aggregates are related through ``multipliers," which in
+practice are only roughly constant.  In this sense, the Fed cannot claim to have close control
+over the broader aggregates (``the loose steering wheel"), although its actions do influence them.
+
+\item The Federal Reserve System in general, and the Federal Open Market Committee in particular,
+are responsible for monetary policy in the US.  Its tools are open market operations, reserve
+requirements, and the discount rate.
+
+\item The mechanics of monetary policy differ across countries.
+\end{enumerate}
+
+
+
+
+
+\subsubsection*{Executive summary}
+
+Business cycles around the world share these properties:
+\begin{enumerate}
+\item Economies do not growth smoothly, they exhibit a lot of
+short-run volatility.
+
+\end{enumerate}
+
+
+\subsubsection*{Review questions}
+
+You might think about each of the following issues, which we'll
+address at greater length shortly.
+\begin{enumerate}
+
+\item Why do you think employment lags the economy?
+
+\end{enumerate}
+
+
+\subsubsection*{Further reading}
+
+For more information ...
+%
+\begin{itemize}
+\item Fed Governor Ben Bernanke,
+``\href{http://www.federalreserve.gov/BoardDocs/Speeches/2005/20050330/default.htm}{Implementing monetary policy},''
+speech made MArch 30, 2005, outlining the mechanics of US monetary policy.  Terrific summary.
+
+\end{itemize}
+
+
+\vfill \centerline{\it \copyright \ \number\year \ NYU Stern
+School of Business}
+
+\end{document}

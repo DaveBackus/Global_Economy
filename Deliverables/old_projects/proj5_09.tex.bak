@@ -1,0 +1,127 @@
+\documentclass[letterpaper,12pt]{article}
+
+\RequirePackage{GE05}
+% this inputs graphicx, too
+\RequirePackage{comment}
+\RequirePackage[hypertex]{hyperref}
+    \hypersetup{colorlinks=true,urlcolor=blue,linkcolor=red}
+
+\def\ClassName{The Global Economy}
+\def\Category{Professor David Backus}
+\def\HeadName{Group Project \#5}
+
+\begin{document}
+\parindent = 0.0in
+\parskip = 0.6\bigskipamount
+\thispagestyle{empty}%
+\Head
+
+\centerline{\large \bf \HeadName:  Fixed Income Research}%
+\centerline{Revised:  \today}
+
+\medskip
+{\it Submit via Blackboard by 9am March 31.}
+\medskip
+
+You are delighted to have a summer internship in JP Morgan's 
+capital markets group.  
+Your first rotation:  Fixed Income Research.  
+On your first day, the Managing Director gives you 
+a small project to get your feet wet. 
+Noting that bond markets are driven largely by macroeconomic news, 
+she asks you to write a report summarizing the near-term prospects for the US 
+economy  --- specifically, 
+the change in employment (nonfarm payroll) between now and, respectively, 
+1 and 6 months from now. 
+Your report should look like a professional business document 
+and include:  
+%
+\begin{itemize}
+
+\item A list of what you think are the most useful indicators
+of future employment 
+along with a short description of what they are and why you think they 
+are useful.  
+
+\item A statistical analysis of what each of these indicators implies  
+for the change in employment between now and next month (March) and 6 months from now (August).  
+
+\item A combination forecast that aggregates  --- in some way --- 
+the information in each of your chosen indicators into a 
+forecast of the change in employment.  
+
+\item A narrative to be shared with clients 
+about the likely evolution of the US economy over the next 6 months
+including, if you wish, a discussion of factors that may not 
+be captured by your quantitative analysis.    
+%This narrative should supplement your quantitative analysis with
+%qualitative analysis if you think there are additional features of the
+%current situation that should be taken into account. 
+\end{itemize}
+%
+She hands you a spreadsheet containing a large number of 
+economic indicators and walks away.  
+
+Keep in mind: 
+\begin{itemize}
+\item Your mission is to forecast the change in employment, 
+not the growth rate.
+Why?  Because that's the industry standard.   
+\item If you find your forecasting regression has an $R^2$ over 0.2, 
+you should check to make sure you're really forecasting --- that you
+have the timing right in the regression.
+It's generally easier to forecast the future with future data
+than with current data, but it's not really a forecast. 
+\item The March employment report will be released Friday.  
+\end{itemize}
+
+\vfill \centerline{\it \copyright \ \number\year \ 
+NYU Stern School of Business}
+
+
+\end{document}
+% --------------------------------------------------------------------------
+\newpage
+{Sketch of an answer.  
+The project is a loosely structured real-world problem;
+it does not lend itself to a simple mechanical answer.
+Here's a sketch of what I'd do: }  
+\begin{itemize}
+\item List of indicators.  
+We've looked at many, take your pick.  
+Among the most popular:  
+housing starts and building permits, 
+stock market, 
+new claims for unemployment insurance, 
+industrial production, term spreads.  
+The challenge here is that a 6-month forecast is very demanding:
+you need a substantial lead in anything you use.  
+
+\item Statistical analysis.  
+I think cross-correlation functions are useful ways to get across leads and lags, but you can get across similar 
+information in different ways --- 
+regressions with lags, for example,
+or scatterplots of variables with different leads and lags.  
+
+\item Combination.  
+I'd use a multivariate regression, with the forward-looking 
+6-month growth rate of employment as the dependent variable
+and several indicators as independent variables.
+I'd include lags of the indicators and the dependent 
+variable as additional independent variables.
+You'd have to take a course in time series statistics 
+to understand this fully, 
+but the idea is that they allow more flexibility in the dynamic relations
+among the variables.  
+
+\item Narrative.  This would depend on what you find.
+If you find that (say) housing variables are weak,
+and that this weakness translates (through the regression)
+into a forecast of weak growth, 
+you could join Professor Roubini and many others and talk about that.
+Almost everyone predicts weakness right now, 
+the question is how much.  
+
+\end{itemize}
+
+\end{document} 

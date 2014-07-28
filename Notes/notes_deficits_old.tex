@@ -1,0 +1,465 @@
+\documentclass[letterpaper,12pt]{article}
+
+\RequirePackage{comment}
+\RequirePackage[hypertex]{hyperref}
+    \hypersetup{colorlinks=true,urlcolor=blue,linkcolor=red}
+\RequirePackage{GE05}
+%\usepackage[hypertex]{hyperref}
+%    \hypersetup{colorlinks=true,urlcolor=blue,linkcolor=red}
+
+\newcommand{\GDP}{\mbox{\em GDP\/}}
+\newcommand{\NDP}{\mbox{\em NDP\/}}
+\newcommand{\GNP}{\mbox{\em GNP\/}}
+\newcommand{\NX}{\mbox{\em NX\/}}
+\newcommand{\NY}{\mbox{\em NY\/}}
+\newcommand{\CA}{\mbox{\em CA\/}}
+\newcommand{\NFA}{\mbox{\em NFA\/}}
+\newcommand{\Def}{\mbox{\em Def\/}}
+\newcommand{\CPI}{\mbox{\em CPI\/}}
+\newcommand{\IP}{\mbox{\em IP\/}}
+\newcommand{\PD}{\mbox{\em PD\/}}
+\newcommand{\hsp}{\hspace{0.25in}}
+
+\def\ClassName{The Global Economy}
+\def\Category{Class Notes}
+\def\HeadName{Government Debt and Deficits}
+
+\begin{document}
+\thispagestyle{empty}%
+\Head
+
+\centerline{\large \bf \HeadName}%
+\centerline{Revised: \today}
+
+\bigskip
+The phrase ``fiscal policy'' refers to government decisions 
+to spend, tax, and issue debt.  
+Since governments play a central role in most modern economies, 
+summary measures of fiscal policy are used to assess the
+performance of the economy, future interest rates, 
+and the likelihood that the government will honor its debt.  
+We examine each of these aspects of fiscal policy, starting with
+a quick overview of how government finances are measured and reported in the National Income and Product Accounts.
+
+
+\subsubsection*{The government's budget}
+
+Governments everywhere collect revenue (largely through taxes), purchase goods and services (schools, police, courts, military), 
+transfer money to people and corporations through a variety of
+programs (social insurance, health care),   
+and pay interest on outstanding government debt.  
+You can get a sense of how this looks in Table~\ref{tab:usdef}, where we report the basic government finance numbers for the US in 2003.  (For comparison, US GDP in 2003 was \$11 trillion.)
+
+\begin{table}[h]
+\centering \tabcolsep=0.2in
+\begin{tabular}{lr}
+\hline\hline Category  &  Amount \\
+\hline\hline
+
+{Total receipts}        &      3,060.4 \\
+\hsp Tax receipts              &      2,033.8     \\
+\hsp Contributions for social insurance        &   773.2     \\
+\hsp Other              &          759.7      \\
+
+\hline
+
+{Total expenditures}    &    3,566.7    \\
+\hsp Government consumption expenditures             &      1,717.1          \\
+\hsp Government investment expenditures (gross)             &    358.5            \\
+\hsp Transfers            &       1,332.9         \\
+\hsp Interest payments             &    303.0            \\
+\hsp Balancing item              &           --144.8     \\
+
+\hline
+
+Net lending or borrowing   &     --506.3  \\
+
+\hline\hline
+\end{tabular}
+\caption{US government budget in 2003. Billions of US dollars.}
+\label{tab:usdef}
+\end{table}
+
+We can compute various summary measures from the entries in the
+table.  {\it Government purchases\/} is the sum of (government)
+consumption and investment expenditures (1,717.1 + 358.5). This is
+the $G$ in the expenditure identity. {\it Transfers\/} are another
+category of expenditures (1,332.9); we treat them separately because
+they consist of transfers of purchasing power, not direct purchases
+of goods or services. They include Social Security outlays. The {\it
+government deficit\/} (506.3) is the difference between total
+expenditures and total receipts. It's a measure of the borrowing
+requirement of the government. The {\it primary deficit\/} equals
+government deficit excluding interest payments (506.3 -- 303.0 = 203.3).
+You might think of it as a rough analog to operating cash flow.  
+{\it National saving\/} (--367.8) is minus the deficit plus net
+investment (gross investment minus depreciation); it can't be
+computed from the numbers in the table.
+
+
+We can put these elements together in a relation we'll call 
+the {\it government budget constraint\/}.
+On the expense side, governments purchase goods and services 
+(label this $G$), make transfer payments ($V$) to (primarily) households, 
+and pay interest on accumulated debt.
+If the debt is $B$ and the interest rate is $i$, then this payment 
+is $iB$.
+On the revenue side, they collect taxes ($T$).
+Note that $T$ is tax revenue, not the tax rate.
+By convention, all of these things are nominal:
+they're measured in current prices.  
+The government budget constraint is then 
+\begin{equation}
+    G_t + V_t + i_t B_t - T_t  \;=\; (B_{t+1} - B_t ) .
+    \label{eq:gbc}
+\end{equation}
+It says, in essence, that any surplus or deficit must be matched
+by a change in the quantity of debt.
+The left-hand side of (\ref{eq:gbc}) 
+is the government deficit, 
+the right the change in the quantity of debt.
+Typically all of these components are measured in 
+units of the local currency. 
+
+
+The elements of equation (\ref{eq:gbc}) 
+are often used to generate summary measures 
+of fiscal policy. 
+The most common are ratios  of 
+the government deficit and government debt to GDP.  
+We'll look at both, as well as the connection between them.  
+
+
+\subsubsection*{Pay me now or pay me later}  
+
+
+Governments need to finance their spending with taxes.
+It's not quite true --- governments have other sources of revenue ---
+but it's close enough to be worth remembering.  
+Issuing debt allows a government to postpone taxes, 
+just as a credit card allows an individual to postpone paying 
+for purchases, 
+but does not eliminate the obligation.  
+Delay, in fact, comes with a cost:  we need to pay the original 
+obligation, plus interest.  
+If this is obvious to you,  you can skim the rest of this section.
+
+
+We're going to take our budget constraint, equation (\ref{eq:gbc}), 
+and use it to express debt as a present value of future surpluses.  
+To make things simple, define the primary deficit $D$ as the deficit 
+net of interest payments:
+\[
+    D_t \;=\;  G_t + V_t - T_t .
+\]
+The primary surplus is the same object with a minus sign. 
+Then (\ref{eq:gbc}) can be expressed as 
+\[
+    B_{t+1}   \;=\; (1+i) B_t + D_t 
+\]
+or 
+\begin{equation}
+    B_{t}   \;=\;  B_{t+1}/(1+i) - D_t/(1+i) .
+    \label{eq:gbc-bdynamics}
+\end{equation}
+All three versions contain the same information, but we'll 
+focus on (\ref{eq:gbc-bdynamics}).  
+If we use it to substitute repeatedly, we find 
+\begin{eqnarray*}
+    B_{t}   &=&  B_{t+2}/(1+i)^2 - [D_t/(1+i)+ D_{t+1}/(1+i)^2] \\
+            &=&  B_{t+3}/(1+i)^3 - 
+                [D_t/(1+i)+ D_{t+1}/(1+i)^2 + D_{t+2}/(1+i)^3] \\
+            &=&  B_{t+n}/(1+i)^n - 
+                [D_t/(1+i)+ D_{t+1}/(1+i)^2 + \cdots + D_{t+n-1}/(1+i)^n] .
+%    \label{eq:gbc-bdynamics-rec}
+\end{eqnarray*}
+If we assume that debt can't grow faster than the interest rate forever, 
+then as we continue to substitute, the first term goes to zero.
+[The technical condition is $B_{t+n}/(1+i)^n$ goes to zero as $n$ 
+approaches infinity.]
+The assumption seems reasonable, since our payments 
+aren't growing fast enough in this case even to cover the interest.  
+The relation then becomes  
+\begin{eqnarray*}
+    B_{t}   &=&  -[D_t/(1+i)+ D_{t+1}/(1+i)^2 + 
+                   D_{t+2}/(1+i)^3] +   \cdots ]  \\
+            &=& - \mbox{Present Discounted Value of Primary Deficits} \\
+            &=& \mbox{Present Discounted Value of Primary Surpluses} .
+\end{eqnarray*}
+In words:   the current government debt (the result of past deficits) 
+must be matched  by the present discounted value of future primary surpluses
+(in which we pay our creditors back).  
+As we said earlier, all spending must by financed by tax revenue.  
+It's not enough to shrink the deficit:  eventually we have 
+to run surpluses, measured net of interest payments.  
+There's a limit, in other words, to deficit spending. 
+None of this is any different from an individual borrowing 
+from a bank.   
+
+
+Although (primary) government deficits must eventually be reversed, 
+they may have affect the economy while they last.  
+One route is distribution.  
+If taxes are delayed long enough, the tax burden 
+will be shifted from current to future generations.
+Thus the US contribution to World War II was financed largely with debt, 
+shifting some of the tax burden from those alive at the time 
+to those born later.
+
+Is deficit financing a good or bad thing?  
+One approach to this question is based on tax smoothing.
+As we mentioned in an earlier class,
+the economic disincentives built into taxes are minimized
+by having relatively fixed tax {\it rates\/} 
+even if tax revenues vary over time.
+On average this is likely to lead to governments running (modest) 
+surpluses in booms and deficits in recessions, 
+as tax revenues go up and down with the economy.  
+
+
+\subsubsection*{Debt dynamics and sustainability} 
+
+One common measure of fiscal discipline (or lack thereof)
+is the ratio of government debt to GDP.  
+Since the debt accrues interest, it has a natural tendency to grow.  
+If the current situation leads the ratio of debt to GDP to grow, 
+then if nothing changes --- ever --- it will eventually become too large 
+for the government to finance:  
+interest payments alone will eat up the entire budget.  
+We would say the situation is not sustainable.  
+Something will change to keep this from happening.  
+The question is what.  
+We'll work through the possibilities.  
+
+
+How do debt and the debt-to-GDP ratio change through time?  
+Debt evolves according to  
+\begin{eqnarray*}
+    B_{t+1} &=& D_t + (1+i) B_t  ,
+\end{eqnarray*}
+where $D$ is (again) the primary deficit.  
+Note that everything is nominal, including the interest rate $i$.  
+If the growth rate of (nominal) GDP is $g$, then  
+\[
+    Y_{t+1} \;=\; (1+g) Y_t 
+\]
+and $B/Y$ follows 
+\begin{equation}
+    \frac{B_{t+1}}{Y_{t+1}} \;=\; 
+                \left( \frac{1+i}{1+g} \right)  \frac{B_{t}}{Y_{t}} 
+             +   \left( \frac{1}{1+g} \right)  \frac{D_{t}}{Y_{t}} .
+    \label{eq:debtdynamics}             
+\end{equation}
+This equation tells us how the debt-to-GDP ratio changes 
+from period to period.   
+
+
+How does the debt-to-GDP ratio evolve?  
+The first issue is whether $g$ is larger or smaller than $i$.  
+If $g>i$, then a government can run deficits forever without 
+the ratio exploding --- although it could nevertheless become large.  
+More commonly, $ g<i$, as above, 
+in which case the ratio 
+will continue to grow, even if we have a zero primary deficit ($D = 0$).
+In this more common case, any deficit is unsustainable, 
+in the sense that if the deficit isn't eliminated, 
+the ratio of debt to GDP will eventually become infinite.
+Similarly, interest payments will grow without bound.
+
+
+If interest on the debt becomes large enough, something must change.
+But what?
+One candidate is the deficit itself:  the government 
+does this analysis, realizes that interest will eat up 
+all its revenue, and decides to reduce the deficit before that happens.  
+This could come from a reduction in spending or an increase in taxes; 
+both work the same way in this analysis, 
+although  in other respects the two may differ.  
+Another candidate --- one we'd generally prefer not to consider 
+--- is default.
+Bond investors can do this analysis, too, 
+and if they find that the debt is more than the government 
+is likely to pay back, they will stop lending. 
+This tends to reduce the deficit, too, 
+by restricting the government's ability to finance it.  
+
+
+This is a mechanical analysis, but a useful one. 
+By looking at the components of equation (\ref{eq:debtdynamics}), 
+we can get a sense of how fast the debt ratio is changing, 
+and therefore whether or not we're headed into trouble in the near future.
+How much debt is too much?  
+It depends on the situation.
+(We know this is a copout, but it's true.)
+If investors get the idea that they may not be paid back, 
+then it's too high.  
+When that happens depends on the country and circumstances. 
+Ultimately investors are betting on a country's ability and 
+willingness to repay its debt, so we're back in the business 
+of assessing the political aspects of default and repayment.  
+
+
+What's missing?  What we're doing is extrapolating 
+the current situation, but 
+governments make commitments all the time about future 
+spending that we should also consider. 
+Right now, for example, most governments have made at least informal
+commitments to finance (in part) their citizens' retirements.
+But as the fraction of the population collecting such benefits
+increases, it becomes increasingly difficult to finance.
+What will happen?  Will benefits be cut?  
+Will taxes in the working population go up?  
+Probably some combination, but 
+the point is that we have more information at hand than the 
+current primary deficit.  
+In principle, these future commitments should appear 
+as liabilities now, but pension accounting remains insufficient 
+for this task in both the public and private domains.  
+
+
+\subsubsection*{Executive summary}
+
+\begin{enumerate}
+
+\item Countries differ widely in the magnitude of government spending.  
+
+\item Deficits are promises to collect future taxes.  Any effect on the economy must be based on differences in timing of revenue rather than differences in its present discounted value.
+
+\item Debt dynamics imply that a government deficit must eventually 
+be reversed. 
+
+\end{enumerate}
+
+
+\begin{comment}
+\subsubsection*{Review questions}
+
+\begin{enumerate}
+
+\item 
+
+\end{enumerate}
+\end{comment}
+
+%\subsubsection*{Further information}
+
+
+\vfill \centerline{\it \copyright \ \number\year \  
+NYU Stern School of Business}
+
+\end{document}
+
+
+% **********************************************************************************************
+Class outline
+
+
+
+Class 1:  
+govt budget constraint 
+incentives...  
+
+
+Class 2:  ...  
+
+
+
+
+
+% old stuff
+\subsubsection*{Government purchases}
+
+Government purchases of goods and services use resources:  if the government purchases more, then
+unless there is a comparable increase in production there will be less available for consumption
+and investment.  The primary effect is almost certainly to reduce the quantity of resources
+available for other purposes, but beyond that the impact will depend on the type of government
+purchase and specific features of the economic system.
+
+Government purchases cover a wide range.  They include spending on the judicial system, public
+education, health and medical services, transportation and telecommunication infrastructure, and
+national security. Some of these expenditures raise the productivity of firms (eg, highways),
+others provide utility to consumers (health services), and still others may do neither or both.
+Some purchases compete with privately produced services (education) while others do not (national
+security).
+
+Let us consider, in the interest of concreteness, an increase in government purchases of goods and
+services that neither increase the productivity of firms nor substitute for private consumption.
+Let us assume, in addition, that the increase is financed by a comparable increase in lump-sum
+taxes.  What is the impact on output, employment, consumption, investment, and interest rates?
+
+There are many answers to this question, but what follows is a summary of our current
+understanding of the issues.
+%
+\begin{itemize}
+\item Output rises, but by less than the increase in government purchases.  In the Keynesian
+models that you many of you studied as undergraduates, output rises because the economy has excess
+capacity, and government spending acts as a catalyst.  But those models often suggest
+``multiplier'' effects that lead to larger increases in output than government purchases. Modern
+dynamic models operate through labor supply (see below) and typically imply small output effects.
+
+\item Consumption and investment fall.  You might have guessed this from the output effect: since
+$G$ rises by more than $Y$, there is less left for $C$ and $I$ (see:  expenditure identity). We're
+ignoring international trade here, but will come back to it later in the course.
+
+\item Employment rises.  This is the reason output rises (more people are working), but why?  In
+Keynesian models we're simply jump-starting the economy.  In modern dynamic models, the increase
+in government purchases reduces household's lifetime income (remember, their taxes went up, too).
+This income effect leads them to work more (they buy less leisure).  The longer the increase in
+spending lasts, the larger the impact on lifetime income and the greater the impact on labor
+supply.  In most models the impact is relatively small in any case.  If the increase in spending
+lasts a long time, the impact on employment (and output) is reduced further by a reduction in the
+capital stock, which reduces the demand for labor.
+
+\item Interest rates.  If the increase is temporary, then we expect consumption to increase in the
+future (rebound) and hence for the interest rate to rise now, before returning to its current
+level when the spending stops.  If the increase is permanent, consumption drops immediately and
+the interest rate doesn't change.
+
+\end{itemize}
+
+These are claims of theory, but are the conclusions reasonable?  A number of kinds of evidence
+suggest they are.  First, we have periodic wars. Wars are natural experiments, because they
+increase government purchases sharply. In the US, for example, all of these features apply to
+World War I, World War II, and the Korean War.  (Later wars were too small relative to the size of
+the economy to have a noticeable impact.) Note, in particular, the evidence for WW II, which many
+observers have credited with getting the country out of the Depression. (Robert Barro's {\it
+Macroeconomics\/} has a nice summary of this evidence if you're interested in the details.)
+Second, we can compare differences in the performance of countries with different levels of
+government purchases.  The evidence for a broad cross-section of countries is that those with high
+spending have lower growth rates and (eventually) lower output. Whether this reflects the
+mechanism we've described or something else is a matter for debate, but the simple Keynesian
+prediction that high levels of spending will be associated with high levels of output is simply
+not a feature of the data.
+
+
+
+\subsubsection*{Debt and deficits}
+
+We're going to treat debt and deficits as promises to collect taxes in the future. The question is
+whether the timing of taxes affects the economy.
+
+Let us consider a drop in current tax revenue that increases the current deficit.  The government
+budget constraint implies
+\[
+    B_t \;=\; (T_t - G_t - V_t)/(1+r_t) + B_{t+1}/(1+r_t) .
+\]
+If we substitute for the last term using the same equation at $t+1$, we get
+\begin{eqnarray*}
+    B_t &=& (T_t - G_t - V_t)/(1+r_t)
+        + (T_{t+1} - G_{t+1} - V_{t+1})/[(1+r_t)(1+r_{t+1})] \\
+        && + \; B_{t+2}/[(1+r_t)(1+r_{t+1})] .
+\end{eqnarray*}
+If we do this over and over again, and assume that the debt doesn't explode (we're making a
+technical assumption that guarantees convergence), we find that the value of the current debt
+equals the present discounted value of future surpluses:
+\begin{eqnarray*}
+    B_t &=&  (T_t - G_t - V_t)/(1+r_t) + (T_{t+1} - G_{t+1} - V_{t+1})/[(1+r_t)(1+r_{t+1})] \cdots \\
+        &=&  \sum_{s=0}^\infty R_{t,t+s} (T_{t+s} - G_{t+s} - V_{t+s}) ,
+\end{eqnarray*}
+where
+\[
+    R_{t,t+s} \;=\; 1/[(1+r_t) (1+r_{t+1}) \cdots (1+r_{t+s})]
+\]
+is the discount factor applied at date $t$ to cash flows at $t+s$.  In words:  the debt is the
+present value of future (primary) surpluses.  If we do something that changes the current deficit,
+we must increase a future surplus to match.

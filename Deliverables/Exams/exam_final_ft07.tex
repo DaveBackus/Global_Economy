@@ -1,0 +1,259 @@
+\documentclass[letterpaper,12pt]{article}
+
+%\usepackage[hypertex]{hyperref}
+\usepackage{comment}
+\RequirePackage{GE05}
+% this inputs graphicx, too
+
+\newcommand{\GDP}{\mbox{\em GDP\/}}
+\newcommand{\NDP}{\mbox{\em NDP\/}}
+\newcommand{\GNP}{\mbox{\em GNP\/}}
+\newcommand{\NX}{\mbox{\em NX\/}}
+\newcommand{\NY}{\mbox{\em NY\/}}
+\newcommand{\CA}{\mbox{\em CA\/}}
+\newcommand{\NFA}{\mbox{\em NFA\/}}
+\newcommand{\Def}{\mbox{\em Def\/}}
+\newcommand{\CPI}{\mbox{\em CPI\/}}
+\newcommand{\phm}{\phantom{--}}
+
+\def\ClassName{The Global Economy}
+\def\Category{Professor David Backus}
+\def\HeadName{Final Exam}
+
+\begin{document}
+\parindent = 0.0in
+\parskip = \bigskipamount
+\thispagestyle{empty}%
+\Head
+
+\centerline{\large \bf \HeadName}%
+\centerline{Revised:  \today}
+
+\bigskip
+You have 100 minutes to complete this exam.  Please answer each question in the space provided.
+You may consult one page of notes and a calculator, but devices capable of wireless transmission
+are prohibited.
+
+I understand that the honor code applies: I will not lie, cheat, or
+steal to gain an academic advantage, or tolerate those who do.
+
+\begin{flushright}
+\rule{4in}{0.5pt} \\ (Name, section, and signature)
+\end{flushright}
+
+
+%\bigskip
+\begin{enumerate}
+
+\item {\it Prospects for Spain (35 points).\/} 
+While much of Europe struggles, Spain has been a continuing economic 
+success, with growth rates well above the EU average.  
+As an analyst in Deutsche Bank's London office, 
+you wonder whether this trend is likely to continue.  
+You look at the data:  
+
+\begin{table}[h]
+\vspace{1em}%
+\centering%
+\hspace{-3cm}%
+\begin{minipage}
+{0.52\textwidth}%
+\begin{center}{\small
+\begin{tabular}{lccccccc}%
+\vspace{-0.6cm}\\
+%\multicolumn{2}{c}{Seedorf Bank} \\%
+\hline%
+\vspace{-.3cm}\\
+                     & 2000  &  2001  &  2002   & 2003  & 2004 &  2005  &  2006 \\%
+\vspace{-.3cm}\\
+\hline%
+\vspace{-.2cm}\\
+Real GDP Growth      &  5.0   &   3.6  &   2.7   &  3.0  &  3.3  &   3.5  &  3.9 \\%
+Population Growth    &  0.6   &   1.1  &    1.2  &  2.0  &  2.2  &   2.3  &  2.2 \\
+TFP Growth           &  --0.1 &  --0.4 &   --0.4 &  --0.7&  --0.5&   --1.1&  --0.2\\%
+Interest rate (3m)   &  4.1 &  4.4  &  3.3  &  2.3  & 2.0   &  2.1  &  2.8 \\
+Inflation            &  3.4 &  3.6  &  3.5  &  3.0  &  3.0  &  3.4  &   3.5 \\
+Investment*      &  25.9  &   26.2 &   26.2  &  27.1 &  27.4 &   28.4 &  29.1\\%
+Saving*          &  22.3  &   22.4 &   23.4  &  23.9 &  23.0 &   22.2 &  21.8\\%
+Budget Balance*       &  --0.9 &  --0.5 &   --0.3 &  --0.1&  --0.2&    1.1 &  1.4 \\%
+Primary Balance*      &  2.1 &    2.2 &   2.1  &  2.0 &  1.7  &  2.7 &  2.8  \\%
+Public Debt*          &  59.2  &  55.6  &   52.5  &  48.8 &  46.2 &   43.1 &  39.8\\%
+Current Account*      &  --4.0 &  --3.9 &   --3.2 &  --3.5&  --5.3&   --7.4&  --8.8\\%
+Net Foreign Assets*   & --74.9  & --77.1  & --92.4  & --97.2 & --90.1 & --86.3 &  --81.3 \\%
+\hline%
+\vspace{-3mm}\\
+\end{tabular}
+}
+\end{center}
+\end{minipage}
+\end{table}
+
+Note: Variables marked by * are ratios to GDP (nominal to nominal).  
+
+\begin{enumerate}
+
+\item What do you see as the likely source(s) of GDP growth 
+over the recent past?  
+(5~points)
+
+\item Does the budget balance concern you?  
+Why or why not?  (10~points)
+
+\item The current account deficit is currently one of the largest 
+among developed countries.
+Does that concern you?  Be as specific as possible in your answer. 
+(10~points)
+
+\item What is your overall assessment of the prospects for Spain
+for the next 2-3 years?  
+Please mention any issues that you think might call for a closer look.  
+(10~points)
+
+\end{enumerate}
+
+%\begin{comment}
+Answer.
+\begin{enumerate}
+\item Lack of TFP growth is a concern.  
+Growth must be coming from increases in $K$ and/or $L$.  
+\item The government is running a surplus, with the result that 
+the debt-to-GDP ratio has fallen dramatically.  
+You could formalize this, but the answer is clear.  
+\item This is worth a closer look:  the deficit and net foreign assets
+are both large.  
+Are they getting worse?  
+Consider the relation, 
+\[
+    \frac{\mbox{\em NFA}_{t+1}}{Y_{t+1}} \;=\; \left( \frac{1+i}{1+g} \right)
+     \frac{\mbox{\em NFA}_{t}}{Y_{t}} + (1+g)^{-1} \frac{\mbox{\em NX}_{t}}{Y_{t}} .
+\]
+We don't have net exports, but we can try the closely related current account.
+With $ i = 2.8\%$ and $ g = 2.9 + 3.5 = 7.4\%$, 
+the numbers tell us that next year's ratio of net foreign 
+assets to GDP will fall to about:
+\[
+    - (1.028/1.074) \times 81.3 - 8.8/1.074 \;=\; -86.0 .
+\]
+In short, foreign borrowing is going up. 
+(If we had NX data, the change would probably be less, because 
+the current account includes interest payments.) 
+The question is why. 
+A deeper analysis would look into the kinds of borrowing 
+(equity or debt?  firms or housing?) and its origins.  
+
+\item Personally, I think they're good.  
+However, lack of TFP growth is an obvious concern.  
+Ditto the current account deficit.
+Either of these could reflect good or bad news, 
+depending on the source. 
+
+\end{enumerate}
+%\end{comment}
+
+
+%\pagebreak \phantom{bla} \pagebreak %\phantom{bla} \pagebreak
+% ---------------------------------------------------------
+\item {\it Globalization and inflation (20 points).\/}
+Fed Chairman Bernanke said recently (March 2007):  
+\begin{quote}
+As national markets become increasingly integrated and open, sellers of goods, services, and labor may face more competition and have less market power than in the past. 
+These linkages suggest that, at least in the short run, globalization and trade may affect the course of domestic inflation.
+\end{quote}
+%
+\begin{enumerate}
+\item Use aggregate supply and demand to 
+describe how expansionary monetary policy 
+affects output and inflation in the short run.  
+(10~points)
+
+\item Back to Bernanke:  How would you represent the impact of 
+globalization (think:  imports from China) 
+in the aggregate supply and demand diagram?  
+How does globalization change the impact of expansionary monetary 
+policy in this model?
+Do you find the model persuasive in this respect?  
+(10~points)
+\end{enumerate}
+
+
+\begin{comment}
+Answer.
+\begin{enumerate}
+\item This would increase both output and prices (inflation, 
+loosely speaking).  Your answer should show a diagram with 
+AS, AD, and AS$^*$.
+AD shifts out, with the stated result.  
+
+\item The typical argument is that AS has become flatter.
+As a result, expansionary monetary policy has a 
+smaller impact on inflation, and larger impact on output. 
+
+\end{enumerate}
+\end{comment}
+
+
+%\pagebreak \phantom{bla} \pagebreak %\phantom{bla} \pagebreak
+% ---------------------------------------------------------
+\item {\it Miscellany (45 points).}
+%
+\begin{enumerate} 
+
+\item {\it Exchange rates.\/}
+In the most recent data, a Big Mac costs \$3.22 in the US but only
+\$2.31 in Japan.
+Short-term interest rates are 5.23\% in the US, 0.57\% in Japan.
+What do each of these comparisons suggest for the future value of the 
+yen-dollar exchange rate?  
+(15~points) 
+
+Answer.  Big Mac:  PPP suggests that the yen will appreciate, 
+but we know that this tendency only shows up over long periods of time.  
+Interest differential:  on average, currencies with low interest rates
+fall in value in the short run.
+That's what fuels the infamous carry trade:  borrow in yen, 
+lend in dollars, collect the interest differential, 
+and hope the yen doesn't rise enough to wipe out your gains.  
+
+\item {\it Inflation.\/}
+Milton Friedman once said:  inflation is always and everywhere a monetary phenomenon. 
+Do you agree or disagree?  Why or why not?  (15~points)
+
+Answer.  It has lots of truth in it, but I'd disagree for two reasons. 
+First, it's an incomplete statement for high inflations: 
+it's true, but high money growth itself typically stems from 
+a government deficit.
+Second, over short periods of time, the quantity theory doesn't work 
+that well.  
+It's entirely possible, as our AS/AD analysis implies, that 
+money can have only a modest short-run impact on inflation, 
+and that other demand and supply factors play a role, too.  
+
+\item {\it Employment report.\/} 
+At 8:30 am on April 6, the US Bureau of Labor Statistics released
+its closely-watched employment report, {\it The Employment Situation\/}.
+Firms reported an increase of 180,000 jobs in March, 
+well above the consensus of 135,000.  
+Treasury yields immediately rose 5-10 basis points 
+for maturities from 2 to 30 years.  
+Why?  
+(15~points)
+
+Answer.  I'd start with the Taylor rule:  indicators of high output 
+lead to high interest rates.
+The deeper question is why this shows up in long yields.
+Certainly it will take some time to affect the Fed's choice of 
+target interest rate, but the impact on the very long end is a 
+typical, if somewhat mysterious, result.  
+
+\end{enumerate}
+
+\end{enumerate}
+
+%\pagebreak \phantom{bla} %\pagebreak \phantom{bla} %\pagebreak
+
+\vfill \centerline{\it \copyright \ \number\year \ 
+NYU Stern School of Business}
+
+
+\end{document}
+

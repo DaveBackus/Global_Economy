@@ -1,0 +1,617 @@
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage{ge05}
+\usepackage{comment}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage[dvipdfm]{hyperref}
+\urlstyle{rm}   % change fonts for url's (from Chad Jones)
+\hypersetup{
+    colorlinks=true,        % kills boxes
+    allcolors=blue,
+    pdfsubject={NYU Stern course GB 2303, Global Economy},
+    pdfauthor={Dave Backus @ NYU},
+    pdfstartview={FitH},
+    pdfpagemode={UseNone},
+%    pdfnewwindow=true,      % links in new window
+%    linkcolor=blue,         % color of internal links
+%    citecolor=blue,         % color of links to bibliography
+%    filecolor=blue,         % color of file links
+%    urlcolor=blue           % color of external links
+% see:  http://www.tug.org/applications/hyperref/manual.html
+}
+
+\newcommand{\GDP}{\mbox{\em GDP\/}}
+\newcommand{\NDP}{\mbox{\em NDP\/}}
+\newcommand{\GNP}{\mbox{\em GNP\/}}
+\newcommand{\NX}{\mbox{\em NX\/}}
+\newcommand{\NY}{\mbox{\em NY\/}}
+\newcommand{\CA}{\mbox{\em CA\/}}
+\newcommand{\NFA}{\mbox{\em NFA\/}}
+\newcommand{\Def}{\mbox{\em Def\/}}
+\newcommand{\CPI}{\mbox{\em CPI\/}}
+
+\def\ClassName{The Global Economy}
+\def\Category{Class Notes}
+\def\HeadName{Inflation}
+
+\begin{document}
+\thispagestyle{empty}%
+\Head
+
+\centerline{\large \bf Monetary Policy \& \HeadName}%
+\centerline{Revised: \today}
+
+\bigskip
+Milton Friedman, winner of the 1976 Nobel Prize in economics, once
+said: ``Inflation is always and everywhere a monetary phenomenon.
+To control inflation, you need to control the money supply.''
+Friedman believed what he said, but he also enjoyed
+thumbing his nose at the popular Keynesian theory of the 1960s,
+in which inflation was the result of excess demand for goods.
+
+Was Friedman right?
+We consider his claim in the context of hyperinflations:
+episodes of very high inflation, 100\% per year or more.
+Although extreme, hypinflations are a recurring phenomenon
+and a wonderful laboratory for
+studying inflation more generally.
+In these situations (but not necessarily in others),
+money growth is present,
+but it's invariably connected to government deficits.
+The key to stopping inflation, then, is to
+balance the government's budget.
+
+
+\subsubsection*{The quantity theory}
+
+Friedman's claim about inflation is based on a theory that is
+several centuries old: the {\it quantity theory of
+money\/}. Like a lot of good theory, it's based on an analogy. Think
+for a moment about the effect of a two-for-one stock split on the
+price of a stock. If it's now selling for 100, then you'd probably
+expect it to sell for 50 after the split. (This wouldn't be true if
+the split were a signal of some new information about the firm,
+but let's assume it's not.) The point is that the value of a firm's
+total stock of equity shouldn't depend on anything as arbitrary as
+the number of shares.
+
+Now suppose we do the same thing with money.  This is
+unrealistically simple, but makes the point effectively. Suppose the
+government replaced every dollar with two ``new dollars,''
+marked so we can tell the difference between old and new notes. Then
+you'd expect, I think, that new dollars would be worth half as much
+as old dollars. That is, you'd expect prices of goods and services
+quoted in new dollars to be twice as high as prices quoted in old
+dollars. In short, changes in the quantity of money in circulation
+(the ``money supply'') executed in this way will be associated with
+proportionate changes in prices, with no effect on output.  Why the
+latter? Because output is determined by productivity and inputs, and
+we wouldn't expect either one to be influenced by the number of
+pieces of paper used to make transactions.
+
+Of course the world is more complicated than this, and monetary
+policy consists of more than just currency exchanges, but some of
+the same reasoning applies more generally (we'll look at some data
+shortly). The quantity theory is the result of two ideas:  that
+money is not fundamental (pieces of paper don't change the
+productivity of the US or Chinese economies), and that its
+usefulness is in executing transactions.  Let's start with the
+latter. In all developed economies, transactions consists of
+exchanges of goods and services for money. This means that, by
+definition, the amount of money $M$ in circulation must equal the
+dollar volume of transactions. If we approximate the volume of
+transactions in an economy by nominal GDP, then we have
+$M=PY$, where $Y$ is real GDP and $P$ is a measure of the
+price level such as the GDP deflator. This isn't quite right yet. A
+dollar can be used to execute several different transactions in a
+given year.
+To take this into account, we use
+%
+\begin{equation}
+    M V  \;\equiv\;  P Y,
+    \label{eq:quantity_theory}
+\end{equation}
+%
+where $V$ is the \textit{velocity} of money: the number of times a
+dollar is used to execute transactions in a given year.
+
+At this level of generality,
+equation (\ref{eq:quantity_theory}) is a tautology:
+for any data we collect on $M$, $P$, and $Y$,
+we simply choose $V$ to make the equation hold.
+What gives the equation content is the
+assumption that velocity $V$ is (at least approximately)
+constant.  This implies that increases in $M$ are associated with
+proportionate increases in $PY$.
+We add one further assumption to get Friedman's connection between
+money and prices:
+that real GDP is determined by the productivity and inputs of the economy,
+and is not affected by the amount of money in circulation.
+We can change that later, but it seems like a good place to start.
+
+
+The same theory explains inflation if we express it in growth rates.
+As with growth accounting, we define growth rates as differences
+in (natural) logs.
+Thus the growth rate of a variable $X$ is
+$ \gamma_X = \log X_t - \log X_{t-1}$.
+In logs, equation (\ref{eq:quantity_theory}) and its first difference are
+%
+\begin{eqnarray*}
+    \log M_t + \log V_t &=& \log P_t + \log Y_t \\
+    (\log M_t - \log M_{t-1})  + (\log V_t - \log V_{t-1})
+                 &=& (\log P_t - \log P_{t-1}) + (\log Y_t - \log Y_{t-1})\\
+    \gamma_M  + \gamma_V &=&  \pi + \gamma_Y ,
+\end{eqnarray*}
+%
+where $\pi = \gamma_P $ is the inflation rate
+(rate of growth of the price level).
+If velocity is constant,
+\begin{eqnarray}
+    \gamma_M   &=&  \pi + \gamma_Y ,
+    \label{eq:quantity_theory-growth}
+\end{eqnarray}
+and changes in the growth rate of money are associated
+with changes in the growth rate of inflation and output.
+The second assumption is that the growth rate of money does not influence
+output, so changes in money growth translate one-for-one
+into changes in inflation.
+That's Friedman's argument.
+
+
+\subsubsection*{Evidence}
+
+It's not that easy to check the second assumption, but we can
+check the first (constant velocity) by looking at the components of
+equation (\ref{eq:quantity_theory}).
+They imply that velocity is constant and that movements in the price
+level $P$ mirror those in $M/Y$.
+You can see both in Figure~\ref{fig:quantity_long} for the US.
+(Money here is M2, a detail we recommend you ignore --- forever.)
+The figure suggests that the theory is a reasonable approximation of the data, at least
+over the last fifty years or so.
+The two increasing lines ($P$ and
+$M/Y$) show some short-run differences, but their movements are similar.
+Velocity itself wiggles around a little, but is not
+much different now than it was in 1960.
+%
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.8]{long.eps}
+    \caption{The quantity theory in the long run.}
+    \label{fig:quantity_long}
+\end{figure}
+%
+
+The evidence for short-run changes is much different.
+When we look at deviations from trend (Figure~\ref{fig:quantity_short}), movements in prices are only loosely related to movements in money, and
+velocity has as much short-run volatility as the stock of money.
+%We'll discuss the short run later in the course, where we try to
+%figure out the impact of monetary policy on real output,
+%inflation, and interest rates.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.8]{short_1.eps}
+    \caption{The quantity theory in the short run.}
+    \label{fig:quantity_short}
+\end{figure}
+
+
+\subsubsection*{Changing the money supply}
+
+Currency is a liability of the government,
+which can (and does) change the quantity in circulation.
+To see how this works, it's helpful to take a
+step back and consider the broader issue of government debt.
+We can divide the government's debt management into two
+related pieces.
+The first piece is the size of the debt.
+Measured in units of currency (dollars, say, or pesos),
+the debt changes over time as the government runs surpluses
+or deficits.
+Mathematically, we might write:
+\begin{eqnarray*}
+    \mbox{Debt}_{t} &=& \mbox{Debt}_{t-1} + \mbox{Deficit}_t .
+\end{eqnarray*}
+This is an example of a government budget constraint, something
+we'll see more of later on.
+The second piece is the composition of the debt.
+In practice, governments have lots of different liabilities,
+but for the purposes of this discussion let us say it has two:
+government bonds and money (currency).
+In both theory and practice,
+these two pieces are typically separate,
+with the treasury issuing bonds to cover the entire debt
+and the monetary authority (central bank) buying back
+some of these bonds and issuing money in return.
+
+Day-to-day monetary policy is most countries consists of what we term
+{\it open market purchases\/} or {\it sales\/} of government debt (bonds).
+At any point in time, the treasury's balance sheet looks
+something like
+%
+\begin{center}
+\begin{tabular}{lr|lr}
+%\multicolumn{4}{l}{Treasury} \\
+Assets  &&  Liabilities \\
+\hline
+& & Bonds & 200
+\end{tabular}
+\end{center}
+%
+and the central bank's looks like
+%
+\begin{center}
+\begin{tabular}{lr|lr}
+Assets  &&  Liabilities \\
+\hline
+Bonds &  100 & Money & 100
+\end{tabular}
+\end{center}
+%
+If it seems strange to treat money as a liability of the
+central bank (isn't money an asset?),
+think of it as a bond with the unusual
+feature that its nominal interest rate is zero.
+That's what it is, which makes it a good deal for the borrower.
+
+
+An open market purchase of bonds results in an increase
+in bonds held by the central bank and an equal increase in its
+monetary liability.
+For example, a purchase of 20 worth of bonds would change its
+balance sheet to
+%
+\begin{center}
+\begin{tabular}{lr|lr}
+Assets  &&  Liabilities \\
+\hline
+Bonds &  120 & Money & 120
+\end{tabular}
+\end{center}
+%
+The result is an increase in the amount of money in private hands,
+since the private sector (the other side of this transaction)
+has reduced its holdings of government bonds
+and increased its holdings of money.
+Similarly, an open market sale of bonds would reduce the amount of money in
+private hands.
+
+The question we're leading up to is why money growth is so high
+in countries with hyperinflations.
+Why does the central bank keep issuing money?
+
+
+\subsubsection*{Hyperinflations}
+
+%Inflation is now low in most developed countries, but there are
+%periodic outbursts of high inflation around the world.  The term
+%{\it hyperinflation\/} is generally used to mean inflation rates
+%above 100\% a year, but in some cases annual inflation rates
+%exceeded 1,000\%! Chances are we'll see one again --- soon.
+
+If inflation is as easily cured as Friedman suggests
+(``control the money supply''),
+why do big inflations happen?
+People who live through such
+episodes describe them as traumatic; they spend an hour or more
+every day converting cash into anything with stable value:  real estate,
+cars, foreign assets.
+The economy is usually a mess, but whether's that cause or effect is
+hard to say.
+But if hyperinflations are so painful, why do governments let them happen?
+The problem, typically, starts with a government deficit.
+A political impasse makes it nearly impossible to reduce the deficit.
+Given the government's budget constraint, it must then issue debt.
+There is apparently no shortage of ready buyers of US debt
+(ditto other developed countries),
+but the same can't be said for every country.
+If no one will buy its debt,
+the remaining option is to finance the deficit with money
+(read: oblige the central bank to purchase bonds
+from the treasury).
+In short, when the government can't
+pay its bills in any other way, it pays them with money, which is
+easy enough to print.
+The effect of this, of course, is inflation.
+
+
+The conventional solution to hyperinflation has two parts.  The
+first is fiscal discipline: balance the government budget.  The
+second is monetary discipline: separate the central bank
+from the treasury and tell the bank that its job is to maintain
+price stability. There are lots of fine points --- how quickly must
+the deficit be eliminated?  should the IMF supply short-term
+financing?  --- but the outlines of the problem and its solution
+are clear.
+%Brazil managed to bring inflation under control by tightening its budget.
+Going back to Friedman's quote: inflation may be a monetary phenomenon,
+but the trouble often starts with fiscal policy ---
+and the political situation that led to it.
+
+For someone operating an international business,
+the thing to remember is that ``big inflations''
+are relatively common.
+What do you do if you're hit with one?
+You'll probably find that the
+most important thing you can do is streamline your cash management.
+If you can reduce the payment
+terms from (say) 60 days to 30 days, you increase your ``real'' revenue substantially.
+You may also find that big inflations lead to policies,
+like price controls and capital controls,
+that make life more complicated.
+Finally, you may find that your financial statements
+are highly misleading, since they measure performance in terms of the local
+currency, whose value is changing rapidly.
+For a US subsidiary, high inflation triggers a change
+in the rules for translating financial entries into dollars for tax and reporting purposes.
+
+\subsubsection*{Inflation and interest rates}
+
+The interest rates we typically use are nominal:
+they tell us how much money we get in the future
+for a given investment of money today.
+Since inflation measures the change in the value
+of money, it shows up in interest rates.
+More concretely, we would say that the nominal interest
+rate equals the real interest rate (the interest rate
+adjusted for inflation) and inflation:
+\begin{eqnarray}
+    i &=& r + \pi .
+    \label{eq:fisher}
+\end{eqnarray}
+For a given real interest rate $r$,
+an increase in inflation raises the nominal interest rate
+one for one.
+
+If you buy that, you can stop there.
+If you want a deeper explanation,  here's how it works.
+Consider a one-year interest rate on a Treasury bill.
+The rate tells us how many dollars (say)
+we get in one year for a given payment of dollars today.
+For example, if a 12-month treasury bill has a price
+of \$96.15, its annualized yield is the value of $i$ that solves
+%
+\begin{eqnarray}
+    96.15 &=& \frac{100}{1+i}.
+    \label{eq:nominal_yield}
+\end{eqnarray}
+%
+In this case, $i = 4\%$.  Thus each dollar invested today gives us
+1.04 dollars in 12 months.
+We refer to $i$ as the  {\it nominal rate of interest\/} ---
+nominal because its refers to payments of currency.
+
+For many purposes, we'd like to know not only the dollar yield, but
+also how much 1.04 dollars will buy when we get it.  If we expect
+the inflation rate to be 3\% a year, then we'd guess that 3/4 of the
+interest will be eaten up by inflation.  The investment only gains
+us about 1\% in terms of purchasing power.
+We refer to the increase in purchasing power as the
+{\it real rate of interest\/} --- real because it refers to the
+quantity of real consumption it finances.
+That gives us equation (\ref{eq:fisher}).
+
+
+We can show this more formally
+by translating the words into equations more carefully.
+We have just argued that investors are interested not in the money the
+bond is a claim to but in what that money will buy. If by ``what
+that money will buy'' we mean the basket of goods used to construct
+the CPI, we can define the real interest rate $r$ by
+%
+\[
+    (96.15/P_t) \;=\; \frac{100/ P_{t+1}}{1+r_t},
+\]
+%
+where $P_{t}$ is the CPI index in year $t$ and $P_{t+1}$ is the
+expected value of the same index in year $t+1$. What we are doing
+here is expressing the current bond price, measured in terms of what
+it will buy, as the discounted value of the principal, also measured
+in terms of what it will buy. Doing a little algebra, we find
+%
+\begin{equation*}
+    (1+r)(P_{t+1}/P_{t})=100/96.15
+\end{equation*}
+%
+Then equation (\ref{eq:nominal_yield}) tells us that the real and
+nominal interest rates are related by
+\[
+    1 + i_t \;=\; (1+r_t)(1+\pi_{t}),
+\]
+where $(P_{t+1}-P_t)/P_t $ is the expected inflation rate between
+$t$ (now) and $t+1$ (a year from now). Since the product
+$r_{t}\pi_{t}$ is a small number, it follows that
+\begin{eqnarray*}
+    i_t  &\approx&  r_t + \pi_{t+1} ,
+\end{eqnarray*}
+where $\approx$ means ``equals approximately.''
+If we're careful about timing, we see that all three variables
+are comparisons between now and one year from now.
+Inflation is therefore typically understood to be
+expected inflation, since we don't know what inflation 
+will be when we buy the bond.
+In principle, we could also take into account the risk
+inherent in inflation --- but we won't.
+
+
+Now that we're done with definitions, we can ask how inflation
+affects nominal interest rates.
+In principle, either component (the real rate or expected inflation)
+can change the nominal interest rate.
+In practice, we typically find that in periods of
+high and variable inflation,
+the inflation component dominates.
+This is approximately true of the US, where high-inflation periods
+(the 1970s and early 1980s)
+are high-interest rate periods, too.
+It's even more evident in countries with very high inflation rates.
+
+
+\subsubsection*{Velocity reconsidered (optional)}
+
+In very high inflation environments,
+people often find that that the inflation rate accelerates
+quickly, often far exceeding the rate of money growth.
+One factor here is velocity, which typically
+rises sharply with inflation.
+Why?
+Because inflation (and nominal interest) is effectively a tax on holding money:
+the higher the tax, the less money you hold.
+During hyperinflations,
+people spend money as soon as they get it, because its
+value falls by the minute.
+It's common, for example, for people to buy groceries
+and gasoline as soon as they get their paychecks;
+if they wait even a day or two, their purchasing power falls.
+
+If velocity $V$ rises with inflation, then we can reconsider
+\begin{eqnarray}
+    \gamma_M + \gamma_V  &=&  \pi + \gamma_Y .
+\end{eqnarray}
+If $\gamma_Y$ is approximately constant,
+then an increase in money growth not only
+produces inflation directly,
+its impact is magnified by the increase in the
+interest rate, which increases velocity ($\gamma_V > 0$).
+Similarly, when hyperinflations are reversed,
+we often see a larger drop in inflation
+than in money growth, as velocity falls.
+
+
+\subsubsection*{Executive summary}
+
+\begin{enumerate}
+
+\item Over long periods of time, inflation is closely related to money growth.
+
+%\item High inflation is usually associated with
+%high (nominal) interest rates.
+
+\item Extremely high rates of inflation are invariably associated with high rates of money growth.
+
+\item High money growth is often the result of financing large fiscal deficits with money.
+    The deficits, in turn, often reflect some kind of political gridlock.
+
+\item High inflation is typically associated with high interest rates,
+since investors demand higher yields to compensate for the loss of purchasing
+power of the currency.
+
+\end{enumerate}
+
+
+\subsubsection*{Review questions}
+
+\begin{enumerate}
+\item Friedman suggested that the Fed might do better to adopt
+a rule in which it kept the growth rate of the money supply constant.
+\begin{enumerate}
+\item If the growth rate of real GDP is 3\%, on average,
+what growth rate of the money supply would deliver
+average inflation of 2\%?
+\item What are the strengths and weaknesses of such a policy rule?
+\end{enumerate}
+
+Answer.
+\begin{enumerate}
+\item If velocity is constant, then
+equation (\ref{eq:quantity_theory-growth}) gives us
+a money growth rate of
+\begin{eqnarray*}
+    \gamma_M &=& \gamma_P + \gamma_Y
+            \;\;=\;\;  2 + 3 \;\;=\;\; 5.
+\end{eqnarray*}
+In words: money growth accommodates inflation and economic growth.
+\item Strengths: predictable, good average inflation performance,
+avoid major policy mistakes.
+Weakness: no room for policy to respond to current conditions.
+Compare, for example, policy in the aggregate supply and demand model.
+\end{enumerate}
+
+%\end{enumerate}
+
+\item Why do many countries make central banks independent of the
+treasury?
+
+Answer.  The idea is that monetary policy should focus on good long-term
+performance, and to accomplish this should be immune to
+short-term political pressure.
+With respect to hyperinflations,
+you might argue that if the government does not have access to money finance,
+it will be forced to confront its deficit issues earlier,
+which is a good thing.
+
+\item If we evolve toward an economy in which transactions are made without
+money, what role will the central bank play?
+
+Answer.  Good question, someone should start thinking about that!
+
+\item Zimbabwe ended its hyperinflation by abandoning its currency.  Even official transactions were switched to either US dollars or
+    South African rand.
+    Does this seem like a good solution?
+    Does it make sense for a country to abandon its currency?
+
+Answer.  There's a long tradition of each country having its own currency,
+but there's good reason to think at least some countries would be better
+off using someone else's.
+Zimbabwe has shown no ability to manage its own currency effectively,
+so using another sounds like a great idea.
+There are other examples --- Panama uses the US dollar ---
+and perhaps there should be more.
+%The downside is that you lose a degree of freedom in policy.
+
+\item Describe the short- and long-run impact of increasing
+the money supply on inflation and output in the aggregate supply
+and demand model.
+How do your answers compare to the quantity theory:
+more money leads to higher prices, period.
+
+Answer.
+In the short run, an increase in the money supply increases
+both output and the price level.
+In the long run, only the price level increases.
+The latter is the quantity theory.
+
+\item Go to
+\href{http://research.stlouisfed.org/fred2/}{FRED} and find
+the 3-month treasury bill rate (TB3MS)
+and the consumer price index (CPIAUCSL).
+Manipulate them as needed and graph
+the nominal interest rate and inflation rate together.
+What do you see?
+
+Answer.  Do it and see!
+
+\end{enumerate}
+
+\subsubsection*{If you're looking for more}
+
+Similar material is covered in most macroeconomics textbooks.
+Wikipedia has a nice article on hyperinflation,
+including a list of the biggest ones.
+Two recommended (but more specialized) pieces about specific
+episodes are
+%
+\begin{itemize}
+\item Thomas Sargent, ``The ends of four big inflation,"
+linked
+\href{http://www.nber.org/chapters/c11452.pdf}{here}.
+It's about hyperinflations in Europe in the 1920s and documents
+the fiscal situations that produced them.
+Really interesting if you like history.
+
+\item Thomas Sargent and Joseph Zeira,
+``\href{http://homepages.nyu.edu/~ts43/research/zeira_sargent_final.pdf}
+{Israel 1983}.''
+The idea is that expected future government deficits
+(in this case triggered by a large bank bailout)
+can generate inflation immediately,
+even before the money supply has increased.
+\end{itemize}
+
+\vfill \centerline{\it \copyright \ \number\year \ NYU Stern School of Business}
+
+\end{document}
+

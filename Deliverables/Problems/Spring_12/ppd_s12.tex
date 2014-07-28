@@ -1,0 +1,273 @@
+\documentclass[12pt]{exam}
+
+\usepackage{ge05}
+\usepackage{comment}
+\usepackage{booktabs}
+\usepackage[dvipdfm]{hyperref}
+\urlstyle{rm}   % change fonts for url's (from Chad Jones)
+\hypersetup{
+    colorlinks=true,        % kills boxes
+    allcolors=blue,
+    pdfsubject={NYU Stern course GB 2303, Global Economy},
+    pdfauthor={Dave Backus @ NYU},
+    pdfstartview={FitH},
+    pdfpagemode={UseNone},
+%    pdfnewwindow=true,      % links in new window
+%    linkcolor=blue,         % color of internal links
+%    citecolor=blue,         % color of links to bibliography
+%    filecolor=blue,         % color of file links
+%    urlcolor=blue           % color of external links
+% see:  http://www.tug.org/applications/hyperref/manual.html
+}
+
+% for ge05.sty
+\def\ClassName{The Global Economy}
+%\def\Category{Professor David Backus}
+\def\Category{Backus \& Cooley}
+\def\HeadName{Practice Problems D}
+\newcommand{\phm}{\phantom{--}}
+\newcommand{\NX}{\mbox{\it NX\/}}
+
+\printanswers
+
+\begin{document}
+\parindent = 0.0in
+\parskip = \bigskipamount
+\thispagestyle{empty}%
+\Head
+
+\centerline{\large \bf \HeadName:  Exchange Rates \& Crises}
+\centerline{Revised:  \today}
+
+\medskip
+{\it This will not be collected or graded,
+but it's a good way to make sure you're up to speed.
+We recommend you do it before the next class.}
+
+
+\begin{questions}
+% --------------------------------------------------------------------
+\question Purchasing power parity for Big Macs.
+The Economist reports the following data for
+local prices of Big Macs and US dollars in July 2011:
+
+\begin{center}
+\begin{tabular}{lccc}
+\toprule
+        & Big Mac Price  &  Exchange Rate    \\
+        &(Local Currency)&(LCUs per Dollar)   \\
+\midrule
+Argentina       &  20.0  &  4.13  \\
+Brazil          &  9.50  &  1.54 \\
+India           &  84.0  &  44.4   \\
+United States   &  4.07  &  1.00   \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{parts}
+\part What is the dollar price of a Big Mac in each of these locations?
+\part How does the ratio of Big Mac prices compare to the real exchange rate?
+\part What exchange rates for the first three currencies would
+equate the dollar prices of Big Macs to the US price.
+\part How much are the first three currencies over or undervalued
+relative to the US dollar?
+\end{parts}
+
+\begin{solution}
+The calculations are summarized in
+
+{\small
+\begin{center}
+\begin{tabular}{lccccc}
+\toprule
+        & Big Mac  &  Exch Rate & Big Mac   &  Big Mac  & Overvaluation\\
+        &(LCU)     &(LCU/USD)  &  (USD)&   (Ratio) &  (percent)\\
+        &(A)&(B)& (C) & (D) & (E)  \\
+\midrule
+Argentina       &  20.0  &  4.13  &  4.84 &  4.91  &  19\\
+Brazil          &  9.50  &  1.54  &  6.17 &  2.33  & 51\\
+India           &  84.0  &  44.4  &  1.89 &  20.64 & $-53$\\
+United States   &  4.07  &  1.00  &  4.07 &  1.00  & 0.0\\
+\bottomrule
+\end{tabular}
+\end{center}
+}
+See the spreadsheet for a complete description.
+
+\begin{parts}
+\part Dollar prices of Big Macs are reported above as column (C),
+computed as (A)/(B).
+
+\part The relative price of Big Macs is like a real exchange rate.
+The real exchange rate is the ratio of prices converted to a common currency:
+\begin{eqnarray*}
+    \mbox{RER}  &=&  eP^*/P .
+\end{eqnarray*}
+Usually we use prices indexes for $P$ and $P^*$, here we use prices of Big Macs.
+
+\part Mathematically, we set RER equal to one and solve for $e = P/P^*$.
+In the table, we computed this as the ratio of entries on column (A) to the US
+entry in the same column.
+That gives us a ``PPP'' benchmark for what the exchange rate should be.
+
+\part If we compare our calculation of the PPP exchange rate in (c) to the actual,
+we can see how far off we are.
+In the table, we compute ``overvaluation'' as the percentage difference between
+the PPP and true exchange rates:  {\tt 100*[(D)/(B)-1]}.
+We see that the Brazilian real is overvalued (Big Macs are expensive there) 
+and the Indian rupee is undervalued (Big Macs are cheap there).
+\end{parts}
+\end{solution}
+
+% --------------------------------------------------------------------
+\question Foreign exchange reserves.
+Countries often buy and sell foreign currency as part of their
+day-to-day central bank operations.
+
+\begin{parts}
+\part Describe the central bank's balance sheet.
+Where do foreign exchange reserves appear?
+\part If private citizens choose to buy foreign currency
+from the central bank, what happens to its balance sheet?
+What limits how much of this the central bank can accommodate?
+\end{parts}
+
+\begin{solution}
+\begin{parts}
+\part Foreign exchange reserves are an asset of the central bank.  
+\part The balance sheets look something like this:  
+
+\pagebreak 
+\begin{center}
+\begin{tabular}{lr|lr}
+\multicolumn{4}{l}{} \\
+\multicolumn{4}{l}{Central Bank} \\
+\midrule
+Assets  &&  Liabilities \\
+\midrule
+Bonds &  10    & Money & 20 \\
+FX reserves & 10 \\
+
+\multicolumn{4}{l}{} \\
+\multicolumn{4}{l}{Households \& firms (everyone else)} \\
+\midrule
+Assets  &&  Liabilities \\
+\midrule
+Money & 10 \\
+FX    &  50 \\
+Bonds & 180 \\
+\multicolumn{4}{l}{}
+\end{tabular}
+\end{center}
+
+\part Suppose private citizens buy 5 worth of ``FX'' (foreign currency) 
+from the central banks, paying in local currency (money).  
+Balance sheets change like this:
+
+\begin{center}
+\begin{tabular}{lr|lr}
+\multicolumn{4}{l}{} \\
+\multicolumn{4}{l}{Central Bank} \\
+\midrule
+Assets  &&  Liabilities \\
+\midrule
+Bonds &  10    & Money & 15 \\
+FX reserves &  5 \\
+
+\multicolumn{4}{l}{} \\
+\multicolumn{4}{l}{Households \& firms (everyone else)} \\
+\midrule
+Assets  &&  Liabilities \\
+\midrule
+Money & 5 \\
+FX    &  55 \\
+Bonds & 180 \\
+\multicolumn{4}{l}{}
+\end{tabular}
+\end{center}
+
+The central bank is limited by the quantity of reserves it holds.
+Once it runs out, it either finds a way to get more 
+or stops trading currencies. 
+
+\end{parts}
+\end{solution}
+
+% --------------------------------------------------------------------
+\question The trilemma in action.  In 1992, the Bank of England found
+that its commitment to maintain a quasi-fixed parity of the pound against
+the Deutschemark forced it to raise short-term interest rates during
+a recession.
+What were its choices?
+How does this illustrate the trilemma?
+
+\begin{solution}
+The trilemma says you can have at most two of these three things:
+(i) independent monetary policy, (ii) fixed exchange rate,
+and (iii) free capital mobility.
+
+In the UK, they took (iii) as given, but (i) and (ii) were in conflict.
+The economy was in a recession, so the central bank wanted to lower
+interest rates.  But that conflicted with their agreement to maintain
+a quasi-fixed exchange rate with European currencies, including the
+Deutschemark.
+In the end, they kept (i) and abandoned (ii).
+\end{solution}
+
+
+% --------------------------------------------------------------------
+\question Crisis triggers.
+Economic crises have been with us throughout recorded history.
+Although they often come as a surprise, their forms are familiar
+from past experience.
+
+\begin{parts}
+\part What are the classic crisis triggers?
+\part What indicators would you use to help assess
+each source of crisis risk?
+\part What are the standard responses to each one?
+\part What would you do now if you were the benevolent dictator
+of the European Union?
+\end{parts}
+
+\begin{solution}
+\begin{parts}
+\part Classic triggers:  government debt, finance/banking,
+and fixed exchange rates.
+
+\part Common indicators: 
+\begin{itemize}
+\item Government debt:  lots of debt, continuing deficits, 
+and (most important) the political situation.
+\item Banking:  not part of this course, but people would look 
+at capital ratios, nonperforming loans, and asset problems in 
+the economy (real estate is a standard source of problems
+dating back to Roman times).  
+\item Fixed exchange rate:  overvaluation either from PPP or compared to 
+the recent past, reserves.   
+\end{itemize}
+
+\part Common responses:  
+\begin{itemize}
+\item Government debt:  fiscal discipline, 
+perhaps an IMF program to indicate commitment and finance
+a transition period.  
+\item Banking:  if the issue is illiquidity, 
+the central bank supplies liquidity to the financial system;
+if the issue is insolvency, it's important to recapitalize the 
+system and get it working again.  
+\item Fixed exchange rate:  give it up, let the currency float.  
+\end{itemize}
+
+\part Where do we start?  
+\end{parts}
+\end{solution}
+
+\end{questions}
+
+\vfill \centerline{\it \copyright \ \number\year \
+NYU Stern School of Business}
+
+\end{document}
+

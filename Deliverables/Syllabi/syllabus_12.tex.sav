@@ -1,0 +1,347 @@
+\documentclass[12pt]{article}
+
+\usepackage{ge05}
+% this inputs graphicx, too
+\usepackage{comment}
+\usepackage[dvipdfm]{hyperref}
+\urlstyle{rm}   % change fonts for url's (from Chad Jones)
+\hypersetup{
+    colorlinks=true,        % kills boxes
+%    allcolors=blue,
+    pdfsubject={ECON-UB233, Macroeconomic foundations for asset pricing},
+    pdfauthor={Dave Backus @ NYU},
+%    pdfnewwindow=true,      % links in new window
+%    linkcolor=blue,         % color of internal links
+%    citecolor=blue,         % color of links to bibliography
+%    filecolor=blue,         % color of file links
+%    urlcolor=blue           % color of external links
+% see:  http://www.tug.org/applications/hyperref/manual.html
+}
+
+% for ge05.sty
+\def\ClassName{The Global Economy}
+\def\Category{Professor David Backus}
+\def\HeadName{Global Economy}
+
+
+\begin{document}
+\thispagestyle{empty}%
+\Head
+\centerline{\large\bf The Global Economy:  Syllabus}
+\vspace{1mm}
+\centerline{\large\bf ECON-GB 2303.00/30 $|$ Spring 2012}
+\vspace{2mm}
+%\centerline{\large\bf **** ROUGH DRAFT ****}
+%\vspace{1mm}
+\centerline{Revised:  \today}
+
+
+\subsubsection*{About the course}
+
+We will use economics as a tool for exploring the enormous
+differences in the economic and business environments of
+countries. By the end of the course, you will be able to:
+%
+\begin{itemize}
+\item Explain how differences in local conditions
+and institutions
+affect the nature and cost of doing business.
+
+\item Describe the causes of good long-term performance: why per
+capita income is higher in the US and France than in China and India,
+and why China and India are among the fastest growing countries in the
+world.
+
+\item Evaluate indicators of good short-term performance
+and their impact on product and financial markets.
+
+\item Identify countries with promising business opportunities.
+
+\end{itemize}
+%
+These skills will serve you well, whether you are
+marketing consumer products,
+advising clients on their international operations,
+managing an emerging market hedge fund,
+or even working for movie studio.
+
+
+\subsubsection*{Important dates}
+
+Please check the midterm and final dates on the course web site:  \\
+
+\centerline{\url{https://sites.google.com/site/nyusternglobal/}}
+
+The 
+\href{https://sites.google.com/site/nyusternglobal/home/outline}{complete schedule}
+is posted on the course web site.  
+Dates for ``deliverables'' (assignments and exams) are marked in red. 
+
+
+\subsubsection*{Prerequisites}
+
+I expect you to be able to apply basic tools of economics,
+statistics, and mathematics.  We will use
+logarithms and spreadsheets (extensively) and calculus (somewhat).
+To make sure you're ready, 
+please work through the
+``\href{http://www.stern.nyu.edu/~dbackus/2303/notes_math.pdf}
+{Mathematics Review}''
+before the term starts.
+
+
+\subsubsection*{Help}
+
+If you need help, please contact me or the teaching fellow.  
+I am available after class, by appointment, and by email.  
+I usually reply quickly to email.  If you do not get a response in 
+24 hours, feel free to send a friendly reminder.  
+
+Questions about assignments will be posted under Discussion 
+on Blackboard so that everyone can see them.  
+Plan ahead:  I may not be able to answer questions sent 
+less than 24 hours before an assignment is due.
+
+Teaching fellows:  ??  
+%We also have two first-rate Teaching Fellows,
+%Caitlin Reidway (caitlin.coyle@stern.nyu.edu) and
+%Jason Gilbertson (jason.gilbertson@stern.nyu.edu).
+%Their office hours are posted on Blackboard.
+
+\subsubsection*{Blackboard}
+
+I'm trying to move away from Blackboard for lots of reasons,
+but I will use it for grades, discussions, and class emails.  
+Materials will be posted on the course website.  
+
+
+\subsubsection*{Course materials}
+
+We will use a variety of materials, including:
+%
+\begin{itemize}
+
+\item {\it Optional textbook.\/}
+There is no requited text for the course.  
+If you would like to use one, we recommend 
+Cowen and Tabarrock's {\it Modern Principles:  Macroeconomics\/}
+and Mankiw's {\it Macroeconomics\/}.  
+I'll post readingss from the first edition of 
+Cowen-Tabarrock 
+\href{}{(link)}
+and the sixth edition of Mankiw 
+\href{}{(link)}, 
+which are much less expensive than the current edition 
+and no more useful for our purposes.
+
+Do NOT buy Mankiw's {\it Principles of Macroeconomics\/}.
+That's the macro half of his principles book,
+not his macroeconomics book. Here's a
+\href{http://www.amazon.com/Macroeconomics-N-Gregory-Mankiw/dp/0716762137/ref=pd_bbs_sr_3?ie=UTF8&s=books&qid=1196705962&sr=8-3}
+{link}
+to the right one.
+
+\item {\it Notes\/}.
+We will use custom-designed (``bespoke'') notes that will be
+distributed the first day of class and posted on Blackboard.
+They are much more concise than a textbook.
+Some of the material is demanding,
+so it's helpful to at least skim them before class
+and read them again afterwards.
+
+\item {\it The Economist\/}.
+Subscription information is posted on Blackboard.
+Consider it required reading.
+It's a wonderful weekly summary of what's going on in the world.
+Bring it with you on the subway.
+
+\item {\it Slides\/}.
+I will post them on Blackboard approximately one day before class.
+I reserve the right to change them at any time up to the start of class,
+but will post the latest version after class.
+If you find them difficult to read on their own,
+that's a feature not a bug:
+they're designed to facilitate discussion
+and have gaps for the class to fill in.
+
+\end{itemize}
+
+
+\subsubsection*{Grades}
+
+Your grade will be based on:
+%
+\begin{center}
+\begin{tabular}{lcc}
+    Class participation &\hspace*{0.50in}&   10\%  \\
+    Group projects (best 5 of 7) &&  30\% \\
+    Midterm exam &&  30\% \\
+    Final exam   &&  30\%
+\end{tabular}
+\end{center}
+%
+Final grades will conform with the school's guideline for core courses:
+no more than 35\% of the class will receive an A or A--.
+There are typically a small number of grades below B, too.
+My guess is that anyone who attends class regularly and
+understands the projects submitted by his/her group will
+not be in this category.
+
+
+The fine print:
+\begin{itemize}
+
+\item \textit{Class attendance and participation}. Your thoughtful
+participation makes the course more interesting and productive for everyone,
+including you and me.
+You can participate by asking questions,
+raising issues from articles in {\it The Economist\/} and
+other publications,
+offering your own insights,
+or posting articles and comments on the class's
+discussion board.
+The participation grade is based on
+participation in class and activity on the discussion board.
+To make sure your participation is noted, please bring your
+nameplate to class.
+
+An important part of your participation will be based on
+mini-cases:  short cases designed to focus your attention
+on specific issues.
+It's essential that you read them before class so that you
+can contribute to the discussion.
+
+\item \textit{Group projects}.
+Group projects review and extend the material covered in class.
+There are seven projects; your course grade will be based
+on your five best project grades.
+Answers must be submitted through Blackboard
+by 9am on the due date.
+%Late assignments will be penalized 10 points for every hour or part
+%thereof past 9am.
+
+\item \textit{Exams}. The two exams will take 75 minutes each.
+You can use one sheet of notes: letter paper, both sides, any size type you like. You may also use a calculator, but may not use any device
+capable of wireless transmission.  Proximity to any such
+device during the exam will be treated as a violation of the honor
+code (see below).
+
+%\item \textit{Appeals}.
+%Our prime directive is to treat everyone the same way.
+%For that reason, we feel it's important ???
+%If we made a clear mistake, we'll correct it,
+%but we will not reconsider judgment calls.
+%[??]
+
+\end{itemize}
+
+
+\subsubsection*{Groups}
+
+Group projects should be done in groups of no more than five.
+I will constitute internationally diverse groups before the start of term,
+on the theory that you can learn a lot from classmates with
+different backgrounds,
+but you are free to change the composition of your group at any time
+as long as you give your former group-mates reasonable notice.
+Groups can contain members from both sections.
+
+
+\subsubsection*{Blackboard}
+
+Virtually everything you need for this course will be posted on Blackboard:
+notes, assignments, slides, and links to information sources.
+Some online documents, including this one,
+have links to outside sources that
+may not be apparent in the printed version.
+If all goes well (meaning, no guarantees),
+videos of classes will be posted roughly one day later.
+
+
+\subsubsection*{Submitting projects}
+
+To submit a project,
+go to ``Submit Projects" on Blackboard and follow the instructions.
+{\bf Be sure to submit your project:  saving is not the same as submitting.}
+Please label the submission with its name (eg, Group Project \#2)
+and include the names of all the members of your group on that assignment. If you submit a spreadsheet, it must be printable on letter paper simply by clicking on print.  Better yet, convert it to a pdf file and submit that.
+
+If you would like to submit a revision,
+please label it as such and have another member of your group submit it --- Blackboard will not allow multiple submissions by the same person.
+
+One last thought:  some people have difficulty getting ``submit'' and
+other commands to work.
+Things often work better if you use Internet Explorer.
+I'm not a huge fan of IE myself, but it seems to work well with BB.
+
+% ??*** Turnitin assignments?  Auto email receipt?
+
+\begin{comment}
+\subsubsection*{Office 2007}
+
+From our IT group:  If you submit Word 2007 or other Office 2007
+documents through Blackboard, make sure you save the files as Word 97-2003 documents
+(or in Excel, Excel 97-2003 workbooks).
+This ensures not only that Blackboard recognizes the file extension,
+but that others (ie, me) will be able to open the document.
+\end{comment}
+
+
+\subsubsection*{Honor Code}
+
+At the Stern School,
+we believe that honesty and integrity are necessary for a
+rewarding educational experience. These qualities form the basis
+for the trust among members of the community (students,
+faculty, and administrators) that is essential for educational
+excellence. The Honor Code was instituted several years ago by
+students, and requires each student to act with integrity in all
+academic activities and to hold his or her peers to the same
+standard.
+
+In this course, you may discuss assignments with anyone  --- in
+fact, I encourage it --- but any work submitted for a
+grade should be your own (for individual work) or your group's
+(for group work).
+Projects will be scanned electronically to identify projects with content
+similar to others or with material from other sources
+used without attribution.
+On exams, you may bring in and consult one piece
+of paper with anything on it you like (letter size, both sides),
+but your answers should be entirely your own work.
+
+\pagebreak
+\subsubsection*{Professional behavior}
+
+%As a general guideline, please do not do anything
+%that will disrupt me or your classmates during class.
+In the interest of having a high-quality experience for all,
+your classmates and I ask that you
+%
+\begin{itemize}
+\item Come on time.  I recommend you aim for 5 minutes early,
+both at the start of class and after the break.
+
+\item Put away your laptop and Blackberry.
+
+\item Join your classmates.
+Avoid the last row and the section of seats to my right.
+%
+\end{itemize}
+We thank you in advance.
+
+
+\subsubsection*{Students with disabilities}
+
+If you have a qualified disability that requires academic accommodation during this course,
+please contact the Moses Center for Students with Disabilities (CSD, 212-998-4980) and ask them to
+send me a letter verifying your registration and outlining the accommodation they recommend.
+If you need to take an exam at the CSD,
+you must submit a completed Exam Accommodations Form to them
+at least one week prior to the scheduled exam time to be guaranteed accommodation.
+
+\vfill \centerline{\it \copyright \ \number\year \
+NYU Stern School of Business}
+
+
+\end{document}
