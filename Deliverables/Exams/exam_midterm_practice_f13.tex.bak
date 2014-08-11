@@ -1,6 +1,6 @@
 \documentclass[letterpaper,12pt]{exam}
 
-\usepackage{ge05}
+\usepackage{ge13}
 \usepackage{comment}
 \usepackage{booktabs}
 \usepackage{hyperref}
@@ -24,12 +24,14 @@
 \newcommand{\POP}{\mbox{\em POP\/}}
 \renewcommand{\log}{\ln}
 
+\usepackage{float}
+\restylefloat{table}
 
 \def\ClassName{The Global Economy}
-\def\Category{Backus \& Cooley}
+\def\Category{David Backus}
 \def\HeadName{Practice Midterm Examination 1}
 
-%\printanswers
+\printanswers
 
 \begin{document}
 \parindent = 0.0in
@@ -60,324 +62,388 @@ But be assured:  good analysis lasts forever.}  \\
 
 \begin{figure}[h]
     \centering
-    \includegraphics[scale=0.8]{pwtbramidterm07.eps}
-    \caption{GDP Per Capita and GDP Per Worker in Brazil.}
-    \label{fig:brazil}
+    \includegraphics[scale=0.6]{PAKIND_s13_YL.pdf}
+    \caption{GDP Per Worker in Pakistan and India.}
+    \label{fig:pakistan}
 \end{figure}
+
+\begin{table}[h]
+    \centering
+    \tabcolsep = 0.3in
+    \begin{tabular}{lrrr}
+    \toprule
+    & India & \multicolumn{2}{c}{Pakistan}  \\
+    \cmidrule(r){2-2} \cmidrule{3-4}
+    Year     &  $Y/L$ &  $ Y/L $   &  $K/L$   \\
+    \midrule
+    1990 &  3.780   &   5.473  &   9.040   \\
+    2010 &  9.010   &   6.681  &   10.577  \\
+    \bottomrule
+    \end{tabular}
+    \caption{Aggregate data for Pakistan and India.
+    The numbers are thousands of 2005 US dollars.
+    Source:  Penn World Table, Version 7.1.}
+    \label{tab:pakistan}
+\end{table}
+
+\begin{table}[h]
+    \centering
+    \tabcolsep = 0.2in
+    \begin{tabular}{lcc}
+    \toprule
+    & {Pakistan} & India \\
+    \midrule
+    Voice and accountability	& 26.3 & 59.2  \\
+    Political stability	        & 0.5  & 12.7 \\
+    Govt effectiveness	        & 22.3 & 54.5 \\
+    Regulatory quality	        & 29.9 & 40.3 \\
+    Rule of law		            & 20.7 & 52.6 \\
+    Control of corruption	    & 15.6 & 35.1 \\
+    \bottomrule
+    \end{tabular}
+    \caption{Governance indicators for Pakistan and India.
+    The numbers are percentiles and range from 0 (worst) to 100 (best).
+    Source:  World Bank.}
+    \label{tab:pakistan-governance}
+\end{table}
 
 \begin{questions}
 % ======================================================================
-\question {\it Brazil.\/}
-As a successful European investment banker, you
-happen to have lunch with Rupert Murdoch.
-Looking for a mutually beneficial topic of conversation,
-you mention the limitless opportunities of Brazil,
-which you've seen first-hand while arranging mergers
-between Brazilian and European companies.
-Murdoch calls your bluff, and asks why you see Brazil as an opportunity,
-when its recent growth experience has been modest.
-You change subjects after promising to send him a short
-memo the next day.
+\question {\it Prospects for Pakistan.\/}
+You have been asked to write a short report on the prospects
+for Pakistan:  Can we expect it to grow as India has, or are there
+factors that you think will inhibit future economic performance?
 
-Back in the office,
-you ask your assistant to download some Brazilian data.
-She collects the information in
-Table \ref{tab:brazil} and Figure \ref{fig:brazil}.
-In the table,
-$\POP$ is population, $Y$ is real GDP, $L$ is employment
-(the number of people working),
-and $K$ is the stock of physical capital (plant and equipment).
-Population is reported in millions;
-the other numbers are PPP adjusted, reported in 2000 US dollars.
-All come from the Penn World Tables, version 6.2.
+Pakistan is a large country, with
+an ethnically and linguistically diverse population of 180 million
+and an equally diverse geography.
+Its level of development after independence in 1947
+was comparable to India's.
+The Penn World Table estimates that GDP per worker in 1950
+was 25\% above India's, with somewhat less difference in
+GDP per capita.
+Since 1990, however, India has grown rapidly, while Pakistan has not.
+See Figure \ref{fig:pakistan} and Table \ref{tab:pakistan}.
 
-Using this data, you do a few quick calculations.
-Since the figure suggests a sharp change in 1980,
-you decide to look separately at the periods before and after 1980.
-%
+
+The country is now a democracy,
+but has alternated democratic and military rule throughout its history.
+The Economist Intelligence Unit's Country Report states:
+``Pakistan's 1973  constitution established Pakistan as a federal parliamentary
+democracy, but it has undergone major amendments to mould the political
+system to the wishes of successive political leaders. ...
+Still in force before the October 1999 coup launched by General Pervez Musharraf, it
+had undergone major amendments, often to legitimise the authoritarian actions
+of successive administrations. ...
+President Pervez Musharraf
+ceded power to a civilian government in early  2008.
+In the wake of his resignation the new civilian
+government appears likely to amend the constitution once again to limit the
+powers of the presidency.
+...
+The EIU now categorises  Pakistan as a `hybrid regime'
+and ranks it 108 (of 167) on its democracy index.''
+The EIU adds:
+``pervasive official
+corruption and increasingly frequent terrorist attacks''
+act as a disincentive to foreign investors.
+Additional governance indicators from the World Bank
+are reported on Table \ref{tab:pakistan-governance}.
+
+
 \begin{parts}
 
-\part You compute continuously-compounded annual growth rates of GDP,
-GDP per capita, and GDP per worker
-for the two periods.
-What are the important differences?
+\part Compute continuously-compounded annual growth rates of GDP per worker
+for Pakistan and India for the period 1990-2010.
+Which is higher?
+(10~points)
+
+\part Identify the sources of growth in Pakistan over the same period.
+(This is an indication that you should do the usual growth accounting calculations.)
+Why has growth been so slow?
 (15~points)
 
-\part Since GDP per capita and GDP per worker are similar,
-you decide to focus on the latter and
-decompose its growth in each period into components
-due to capital per worker and total factor productivity.
-Which component accounts for the difference between
-the two periods?
-(15~points)
-
-\part You are looking for a positive tone to your memo.
-What exactly can you claim is growing in Brazil?  (10~points)
-
+\part Use the information provided to assess Pakistan's prospects.
+Do you see it growing like India or more slowly?  Why?
+(10~points)
 \end{parts}
 
-\begin{table}
-    \centering
-    \tabcolsep = 0.2in
-    \begin{tabular}{lcccc}
-    \toprule
-    Year     &  $ \POP $   &  $Y/\POP$   &  $Y/L$  &  $K/L$  \\
-    \midrule
-    1950 & \phantom{1}53,443  &   1,802  &  5,045   &  \phantom{1}8,559  \\
-    1980 &   122,958  &   6,776  &  17,285\phantom{1}  & 39,064  \\
-    2003 &   182,033  &   7,205  & 15,462\phantom{1} & 37,604    \\
-    \bottomrule
-    \end{tabular}
-    \caption{Aggregate Data for Brazil.}
-    \label{tab:brazil}
-\end{table}
-
-
 \begin{solution}
-\begin{parts}
-\part We compute continuously-compounded growth rates the usual way.
-The results are summarized in below.
-With both measures, growth effectively halted in 1980.
-[Caveat:  this answer is only as good as the data that produced it.
-There's been some controversy about whether this dataset
-(``PPP adjusted'') measures real GDP appropriately.
-There's no question growth rates have fallen, but the magnitude may be
-overstated here.]
-
 \begin{center}
-    \begin{tabular}{lccccc}
+    \tabcolsep = 0.2in
+    \begin{tabular}{lrrrr}
     \toprule
-    Period    &   $Y$ &  $Y/\POP$   &  $Y/L$  &  $K/L$  &  $A$ \\
+    & India & \multicolumn{3}{c}{Pakistan}  \\
+    \cmidrule(r){2-2} \cmidrule{3-5}
+    Year     &  $Y/L$ &  $ Y/L $   &  $K/L$  & $A$  \\
     \midrule
-    1950-1980 &  7.2 & 4.4 &  4.1  &  5.1   & 2.4  \\
-    1980-2003 &  2.0 & 0.3 & (0.5) &  (0.2) & (0.4)  \\
+    1990 &  3.780   &   5.473  &   9.040   & 2.627 \\
+    2010 &  9.010   &   6.681  &   10.577  & 3.044 \\
+    Growth rate (\%) & 3.343  & 0.997 & 0.785 & 0.735 \\
     \bottomrule
     \end{tabular}
 \end{center}
 
-\part The usual growth accounting exercise.
-First we compute TFP ($A$):
-247 in 1950, 509 in 1980, and 462 in 2003.
-Apparently TFP growth has disappeared.
-The growth rates of the various components are listed above.
-Our decomposition of the growth rate of output per worker is
-
-\newpage
-\[
-        \gamma_{Y/L} \;=\; \gamma_A + \alpha \gamma_{K/L}
-\]
-with $\alpha = 1/3$.
-For the two periods, we get
+\begin{parts}
+\part Complete table of calculations above.
+The annual growth rate of Pakistan's GDP per worker is
 \begin{eqnarray*}
-    \mbox{1950-1980:} &&  4.1  \;=\; 2.4 \mbox{ (A)} +  1.7 \mbox{ (K/L)}   \\
-    \mbox{1980-2003:} &&  -0.5 \;=\; -0.4 \mbox{ (A)} -  0.1 \mbox{ (K/L)} .
+    \gamma_{Y/L} &=& [\ln (6.681) - \ln(5.473)]/(2010-1990) \;\;=\;\; 0.997 \%.
 \end{eqnarray*}
+The others are computed the same way.
+We see growth rates of (roughly) 4.3\% in India and 1.0\% in Pakistan,
+which is a huge difference over 20 years.
+You can see the result in Figure \ref{fig:pakistan}.
 
-\part Anything sensible is fine.
-Here's an attempt:
-Although GDP per capita and GDP per worker are not growing,
-GDP is, since there are more people, and more people working.
-You have no way of knowing this, but there's also a difference
-between the PPP-adjusted numbers reported in the Penn World Tables
-and Brazil's official ``real GDP'' data.
-Which you trust more is hard to say.
-Despite all this, it's hard to avoid concern about the Brazilian
-economy.
-Going beyond what's in the exam,
-I would add that Brazil now has a reasonably stable
-political environment,
-with several changes of government without major
-changes in economic policy.
-Long-term, that's a good thing, and could lead to
-much better performance in the future.
+Grading:  5 points for each calculation done correctly.
 
+\part Growth accounting involves this equation:
+\begin{eqnarray*}
+    \gamma_{Y/L} &=& (1/3) \gamma_{K/L} + \gamma_{A} .
+\end{eqnarray*}
+With the numbers above, we have
+\begin{eqnarray*}
+    0.997 &=& (1/3) 0.785  + 0.735 .
+\end{eqnarray*}
+We see that most of the growth has been due to productivity $A$,
+but the total is small.
+Evidently there's little productivity growth or capital formation in Pakistan,
+with the result that there's little growth in output per worker.
+
+Grading:  3 points for noting the growth accounting equation,
+3 for each of the numbers in it,
+3 more for interpreting the results sensibly.
+
+\part How does Pakistan look to you?
+The political history and governance indicators all show
+that Pakistan's institutions work less well than India's.
+It's not hard to imagine that political instability,
+lawlessness, and corruption discourage investment
+and productivity improvements.
+
+Grading:  10 points for linking slow growth to the
+political history and governance indicators.
+\end{parts}
+\end{solution}
+
+
+%\pagebreak \phantom{xx} \pagebreak %\phantom{xx} \pagebreak
+% ======================================================================
+\begin{table}[h]
+\centering
+\tabcolsep = 0.1in
+\begin{tabular}{lrrr}
+\toprule
+Indicator & China & Thailand & Vietnam \\
+\midrule
+\multicolumn{2}{l}{\it General} \\
+GDP per capita  (2005 USD) &  8400 & 9200 & 3500  \\
+Doing Business overall (percentile) & 50.8  &90.3 & 46.5 \\
+World Economic Forum overall (percentile) & 80.0 & 73.6 & 47.9\\
+\midrule
+\multicolumn{2}{l}{\it Governance} \\
+Political stability (percentile)  &  25.0 & 16.5 & 52.8 \\
+Govt effectiveness (percentile)   &  60.7 & 59.7 & 45.0 \\
+Regulatory quality                & 45.5  & 56.4 & 29.4\\
+Rule of law                       & 41.8 & 48.8 & 39.9 \\
+Control of corruption (percentile) & 30.3 & 43.6 & 33.6  \\
+\midrule
+\multicolumn{2}{l}{\it Labor} \\
+Minimum wage (USD per month) &  204 & 118 & 65 \\
+Severance after 10 years (weeks of pay) & 43 & 50 & 43 \\
+Labor market efficiency (percentile) & 71.5 & 47.2 & 64.6 \\
+Literacy (percent of adults)        & 94 & 94 & 93 \\
+Years of school (adults)        & 8.2 & 7.5 & 6.4 \\
+\midrule
+\multicolumn{2}{l}{\it Infrastructure and trade} \\
+Infrastructure quality (percentile)  & 66.7 & 68.1 & 34.0 \\
+%\midrule
+%\multicolumn{2}{l}{\it International trade} \\
+Export documents required (number) & 8 & 5 & 6\\
+Export delay (days) &  21 & 14 & 21  \\
+Export cost (USD per container) &  580 & 585 & 610 \\
+\bottomrule
+\end{tabular}
+\caption{Institutional indicators for China, Thailand, and Vietnam.
+Percentiles range from 0 (worst) to 100 (best).
+Sources:  Penn World Table, World Economic Forum, World Bank, Doing Business.}
+\label{tab:ctv}
+\end{table}
+
+\question {\it Foxconn's next frontier.\/}
+Hon Hai Precision Industry Co. Ltd. (``Foxconn'') is a Taiwan-based manufacturer that makes
+products for Apple, Intel, Sony, and others.
+Known for its plants in China, including one in Shenzhen that makes iPads,
+it also has operations in Brazil, Malaysia, Mexico, and other locations.
+
+With wages rising rapidly in China, Foxconn is exploring other locations.
+As a private consultant, you have been asked to write a short report
+outlining the advantages and disadvantages of locating in Thailand and Vietnam
+and to compare both to China.
+You collect the information in Table \ref{tab:ctv} and begin your report.
+
+\begin{parts}
+\part Which of these indicators are most important to your venture?
+How do the two countries compare on them?
+(10~points)
+\part Which country or countries would you recommend to your clients?
+What are the primary challenges they would face?
+(10~points)
+\end{parts}
+
+\begin{solution}
+This is a more qualitative question, but here's an outline
+of what a good answer might look like.
+A good answer should put some structure on the analysis,
+not simply list what's in the table.
+
+\begin{parts}
+\part If you build a plant in another country, you'll be concerned
+with overall institutional quality,
+property rights (whether the government might steal the plant),
+labor cost and quality,
+labor market institutions,
+and the challenges of exporting your product.
+There's no clean link to the indicators, but you might guess that
+property rights would be related to the governance indicators,
+esp political stability and the rule of law.
+The labor indicators obviously address concerns with labor.
+And infrastructure and trade address the challenges of exporting.
+
+As a rough guide:
+\begin{itemize}
+\item Overall:  It's interesting that Doing Business rates
+Thailand highest, but the World Economic Forum rates China highest.
+And the differences are large.  In the real world,
+this would call for a closer look.
+Ditto the source of political instability in Thailand.
+\item Property rights and overall:  Thailand looks a bit better than the
+others on Control of Corruption and Rule of Law, Vietnam looks better
+on Political Stability.
+\item Labor cost and quality:  Vietnam is considerably cheaper than the other two,
+if we use GDP per capita or the minimum wage as rough guides to wages.
+Literacy is similar in the three countries, China is highest, and Vietnam lowest,
+on education.
+\item Labor institutions:  The World Economic Forum ranks China highest,
+and Thailand lowest, on overall labor market efficiency.
+Another thing that's worth a closer look.
+Severance looks similar.
+
+\item Exporting:  cost and delay look similar, but Vietnam
+has the worst infrastructure.
+You'll want to look into this, see what aspects of the infrastructure
+are likely to affect you.
+\end{itemize}
+
+Grading:  10 points for a clear list of issues and
+a logical argument that connects
+the institutions to the demands of the business.
+Partial credit for part thereof.
+
+\part
+
+To me, they both look like reasonable candidates.
+For Thailand, I'd want to look closer at political stability,
+see what that represents and think about how it would affect me.
+For Vietnam, I'd want to look closer at infrastructure.
+
+Grading:  10 points for a logical argument
+that flows from your earlier analysis and identifies
+the key issues in Thailand and Vietnam.
 \end{parts}
 \end{solution}
 
 %\pagebreak \phantom{xx} \pagebreak \phantom{xx} \pagebreak
 % ======================================================================
-\question {\it Vietnam.\/}
-Since 1991, Vietnam's per capita GDP has
-been growing at an average rate of 6.75\%, positioning the
-Southeast Asian economy among the fastest growing in the world.
-According to analysts, an obstacle to even speedier
-growth will likely be removed shortly when Vietnam
-joins the World Trade Organization.
-
-Some facts.
-In 2005, manufacturing and construction accounted for 41\% of GDP (up
-from 38\% in 2001) and services for 38\% (from 27\%), whereas agriculture dropped to 21\% (from 23\%).
-Employment is divided among the three sectors in the following
-proportions: 17\%, 25\%, and 57\%, respectively (the service figure
-includes 10\% in state employment). Female labor force participation
-is high by world standards, with women accounting for 49\% of the
-labor force. According to the World Bank, school enrollment rates
-are 100\% in primary school, 70\% in secondary school, and 10\% in
-university.
-
-%\pagebreak % ****************
-The most notable immediate effect of
-WTO membership will be the scrapping of US quotas on garment imports
-from Vietnam. While these quotas limit Vietnamese exports to the
-US, some analysts warn that their removal may have a relatively
-modest effect: the EU's decision to waive its import quotas this year
-had only a small effect on shipments, probably because of strong
-competition from other producers, particularly China.
-A further difficulty is the spate of strikes in foreign-owned factories,
-which led the government to raise the minimum wage paid by foreign firms
-by 40\%.  See the attached article in {\it The Economist\/}.
-
-\begin{parts}
-\part
-In which broad sectors is Vietnam likely to shift its
-production in the next five years?  20 years?
-Why? (10~points)
-
-\part To comply with the conditions for WTO membership, the
-Vietnamese National Assembly recently passed two pieces of
-legislation that may have a substantial impact on the
-economy. The Anti-corruption Law, which comes into effect June
-1st, is intended to improve the detection and prevention of public
-official corruption.  The Law on Investment, also
-expected to come into effect in mid-2006, allows investment projects worth
-less than \$1m to proceed without registration, and projects
-valued at less than \$19m  will need to be registered but will not
-require licenses.
-
-Describe --- concretely --- how each of these changes are likely to effect
-the economy's total factor productivity.
-(10~points)
-
-\part In your view, what government policies are likely to be
-most effective in raising the living standard of the Vietnamese people
- over the next 25 years?  Why? (10~points)
-\end{parts}
-
-\begin{solution}
-\begin{parts}
-\part
-In recent times, agriculture has fallen as a fraction of GDP,
-and the other two sectors have increased their shares.
-We'd expect that to continue for two reasons.
-One is that this is a standard pattern for developing countries,
-including the US 150 years ago:  people move off farms.
-Another is that this reflects the (admittedly crude) productivities
-implied by the GDP and employment shares:
-17\% of the workforce produces 41\% of GDP in manufacturing
-and construction,
-whereas 57\% of the workforce produces only 21\% of GDP in agriculture.
-Some of this might reflect differences in skill level
-and capital per worker across industries, but it's likely that
-productivity is lower in agriculture,
-and that market forces will reallocate people from agriculture
-into manufacturing --- and maybe services, too.
-
-\part Each of these changes should reduce the cost of running a business,
-which will increase TFP directly.
-The investment law, in particular,
-should make it easier to start new businesses,
-which should facilitate the reallocation described above.
-As the economy shifts resources to more productive sectors,
-overall TFP will increase.
-It's the same argument we used with international trade.
-
-
-\part There are lots of sensible answers.
-We'd stress flexible labor markets;
-competitive product markets, including competition from abroad;
-and a legal system that enforces property rights.
-
-\end{parts}
-\end{solution}
-
-%\pagebreak %\phantom{xx} \pagebreak \phantom{xx} \pagebreak
-% ======================================================================
-\question {\it Miscellany.\/}
+\question {\it Short questions.\/}
 %
 \begin{parts}
-\part {\it Bridge to nowhere.\/}
-In the context of our production function, would
-the construction of an economically useless bridge in Alaska lead
-(once it's completed)
-to a change in total factor productivity?
-Please explain your answer.  (10~points)
+\part XYZZY Partners offers business consulting
+services worldwide from its US headquarters.
+In 2012, sales were 235 (million dollars),
+of which 60 came from clients in other countries.
+Expenses included labor compensation of 150, rent of 35,
+and materials of 25.
+Any surplus goes to the firm's partners.
+They also purchased enterprise resource management software
+from German software giant SAP for 85,
+which they will treat as a capital expenditure
+and amortize over ten years.
 
-\part {\it Labor markets and trade.\/}
-An analyst at the OECD commented that the difficulty Italy has had
-adapting to increasing international trade
-was a reflection of its rigid labor markets,
-which discourage Italian businesses from the restructuring needed to
-compete in global markets.
-Do you find this argument persuasive?   Why or why not?  (10~points)
+What was the firm's contribution to US GDP?
+(10~points)
 
-\part {\it Off-shoring.\/}
-The term \textit{off-shoring} refers to
-the relocation of work from one country (the US, say) to another
-(India, for example).
-Greg Mankiw, Bush's former economic advisor, suggested that
-such trade in labor services was no different than
-trade in goods:  the goal remains for countries
-to perform those tasks it does relatively efficiently.
-Do you agree?  Why or why not?
-Would your answer change if you viewed the issue from the
-perspective of the in-shoring country?  (10~points)
+
+\part In Ricardo's model, what is the impact of trade on jobs?
+(10~points)
+
+\part When an unemployed person stops looking for work,
+what happens to the unemployment rate?
+The employment rate?
+The labor force?
+(10~points)
+
+\part Consider the statement:  ``In financial markets it's important
+to protect lenders.  Otherwise, both borrowers and lenders lose.''
+Do you agree or disagree?  Why?
+(10~points)
+
+\part Consider the statement:
+``It's not necessary for a country to save in a global economy.
+Firms can finance all the investment they want in
+global capital markets.''
+Do you agree or disagree?  Why?
+(10~points)
+
+
 \end{parts}
 
 \begin{solution}
 \begin{parts}
+\part Value added by XYZZY is sales of 235 minus materials of 25,
+for a total of 210.  None of the other numbers are relevant.
 
-\part TFP falls.  The production function is
-\[
-    Y \;=\; A K^\alpha L^{1-\alpha} .
-\]
-A new bridge increases the capital stock $K$.
-If it leads to no additional output (it's ``useless'') then
-$A$ must fall.
+\part In Ricardo's model, the amount of work (jobs, hours) is
+the same with and without trade.
+As we said in class:  trade is about which jobs, not the number of jobs.
 
-\part Sounds right to me.
-Rigid labor markets make it difficult for
-the Italian economy to shift people from
-their current low-productivity jobs to
-others.
+\part We divide the adult population into these categories:
+A = working, B = unemployed (not working, but looking for work),
+and C = neither working nor looking for work.
+In the example, the person has left B and entered C,
+so B falls by one and C rises by one.
+The unemployment rate B/(A+B) it falls.
+The employment rate is A/(A+B+C), so it stays the same.
+The labor force A+B falls.
 
-\part Almost all economists, even liberal ones,
-would agree with Mankiw:
-have people do the jobs at which they are relatively most
-productive.
-In the long run, that produces a higher standard of living.
-That's as true for one country as it is for the other.
-Of course, individuals may be concerned with the disruption
-that might generate in their own lives,
-but there's little question where the greater good lies.
+\part The idea is that if we don't protect lenders, they will simply
+decide not to lend.
+That hurts borrowers who have profitable projects that go unfunded.
+In class we illustrated this with a simple game, but it's not necessary to
+go through that.
+
+\part This is a call to apply the flow identity,
+\begin{eqnarray*}
+    S &=& I + \NX .
+\end{eqnarray*}
+If investment $I$ is greater than saving $S$,
+then firms can finance the difference by raising money in
+international capital markets ($\NX < 0$).
+As an example:  when Norway developed oil fields in the North Sea,
+it didn't need to finance that all at home,
+it could access international markets.
+And it did.
+Ditto Ghana today.
+
 \end{parts}
+%
+Grading:  10 points for clear statements along the same lines as these answers.
 \end{solution}
 
 \end{questions}
 
-%\pagebreak \phantom{xx} \pagebreak \phantom{xx}
-%\end{document}
-\newpage
-Trouble at the mill \\
-Jan 26th 2006 |  HANOI \\
-From The Economist print edition
 
-Strikes and pay rises afflict the new South-East Asian tiger
-
-FACTORY workers in Vietnam have an extra reason to celebrate Tet, the lunar new year holiday that begins this weekend. Their government recently decided to raise the minimum wage in foreign-owned factories by up to 40\%, starting on February 1st. Pay packets in Hanoi and Ho Chi Minh City will now start at \$45 a month, the first mandated rise in several years. Experienced workers can expect an extra 7\% increase on top of that.
-
-What is especially unsettling for investors is how the workers got their extra dough. Since late December, wildcat strikes have swept through the industrial zones surrounding Ho Chi Minh City. Tens of thousands of workers joined the protests over wages and conditions. Some of these turned violent, and machines were wrecked at one Taiwanese-owned plant. Bosses claim that outside agitators stoked the protests, distributing notes at factory gates while police stood idly by.
-
-Apparently caught off-guard, the government issued a decree earlier this month raising the minimum wage in foreign-owned factories. Most strikers have now returned to work, but some have not, and investors are fuming over production stoppages and a higher wage bill. The European Chamber of Commerce has gone so far as to write a tart letter to the prime minister, Phan Van Khai, reminding him that investors set up shop in Vietnam precisely because ``the workforce is not prone to industrial action.''
-
-At least, not until now. Workers in Vietnam have staged walkouts before, particularly over alleged mistreatment by foreign managers, but the scale and co-ordinated nature of the latest strikes are, well, striking. Some observers find it implausible that they could occur without the prior knowledge of the ruling party, which forbids independent trade unions. As in China, workers are allowed to join only a pliant, party-affiliated union.
-
-Most of the affected factories are owned by East Asian companies, the biggest investors in Vietnam. At Song Than industrial zone, on the outskirts of Ho Chi Minh City, 80\% of the factories are owned by Taiwanese, producing clothing, shoes, furniture and bicycles for export. They grumble that higher wages will drive away foreign investment, running at \$5.8 billion last year, and give warning that Vietnam needs to stay competitive. ``Chinese wages are higher. But the quality and efficiency are also higher,” said Chen Chi Young, an official at Taiwan's de facto embassy.
-
-So why didn't Vietnam crush the illegal strikes? One reason, say observers, may be internal jockeying ahead of the party congress in April, a five-yearly affair. The aim could have been to embarrass the provincial officials where the unrest began, or to burnish the leadership's credentials, or both. The factories most affected may also be a clue: Vietnam and Taiwan both claim ownership of the Spratly Islands, along with several other countries. On December 15th, Taiwan said it was building a landing strip on one of the islands.
-
-Or perhaps the workers were simply fed up with low pay and stingy bosses, and were too numerous to repress. Vietnam has one of the world's fastest growing economies. Now it is learning that higher output means higher expectations.
-
-
+\pagebreak
 %**********************************************************************
 %**********************************************************************
 \newpage
