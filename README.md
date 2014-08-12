@@ -1,4 +1,4 @@
-###NYU's Global Economy courses materials
+###NYU's Global Economy course materials
 
 Materials for NYU's Global Economy course:  slides, cases, old problem sets and exams, etc.    
 
