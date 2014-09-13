@@ -1,6 +1,7 @@
 \documentclass[12pt]{article}
 
 \usepackage{../../LaTeX/ge14}
+\input{../../LaTeX/preamble.tex} 
 \usepackage{comment}
 \usepackage{hyperref}
 \urlstyle{rm}   % change fonts for url's (from Chad Jones)
@@ -161,8 +162,8 @@ Please read the relevant sections before class.
 It will be distributed in the first class,
 posted on the course website,
 and sold through
-\href{http://www.amazon.com/dp/0615871038/}{Amazon} [?? update]
-(Version 2.0, dated August 2013).
+\href{http://www.amazon.com/dp/1500837105/}{Amazon} 
+(Version 2.1, dated August 2014).
 Use whatever format you prefer.
 The online version comes with links and color graphs.
 
@@ -189,14 +190,18 @@ some of which we'll discuss in class.
 There's a link on the course website.
 
 \item {\it Slides\/}.
-I will distribute copies at the start of class and post them on the course website.
+I will distribute copies at the start of class and post pdf's on the course website.
+And if you want the full-page color experience, the original powerpoints are on 
+\href{https://github.com/DaveBackus/Global_Economy}{GitHub}.
+
 If you find them difficult to read on their own,
 remind yourself that's a feature not a bug.
 They're designed to facilitate discussion
-and have gaps designed for us to fill in during class. 
-
-Let me repeat: the slides are not intended to be read on their own.
-They are an input to class discussion.  
+and have gaps designed for us to fill in during class.
+Let me repeat: {\bf The slides are not intended to be read on their own.}
+They are an input to class discussion, not a summary of where that discussion
+leads.
+Reading them without attending class is likely to be a frustrating experience.
 
 \item {\it Videos.\/}
 Classes will be videotaped, but keep in mind:
