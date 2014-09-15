@@ -30,8 +30,7 @@ References
 * http://pandas.pydata.org/pandas-docs/stable/remote_data.html#world-bank
 * http://quant-econ.net/pandas.html#data-from-the-world-bank
 
-Prepared for the NYU Course "Global Economy." 
-More at
+Prepared for the NYU Course "Global Economy" 
 * https://sites.google.com/site/nyusternglobal/home 
 * https://github.com/DaveBackus/Global_Economy 
 
@@ -47,7 +46,6 @@ mpl.rcParams['figure.figsize'] = 6, 4.5  # default is 6, 4
 mpl.rcParams['legend.fontsize'] = 10  
 mpl.rcParams['legend.labelspacing'] = 0.25
 mpl.rcParams['legend.handlelength'] = 3
-
 
 
 """
@@ -139,3 +137,92 @@ plt.legend(loc='best')
 plt.title(country[0] + ':  Saving and Investment', loc='left', fontsize=14)
 plt.savefig('shares_sav_'+ country_list[0] +'.pdf')
 
+#%%
+"""
+4. Spencer's version 
+Works great but (a) has to be changed if not France and (b) plots backwards
+Also kill the x axis label, add y axis label  
+"""
+# add series to df 
+df['Consumption'] = df['c2']/df['y']
+df['Investment'] = df['gcf']/df['y']
+df['Government'] = df['g']/df['y']
+df['Net Exports'] = nxy = df['nx']/df['y']
+df['Saving'] = (df['y']-df['c2']-df['g'])/df['y']
+#df['year'] = df.index.get_level_index('year')
+
+
+#%%
+# define a resuseable plotting function
+# by keeping the numbers in a df, the plot takes the df's parameters
+def wb_plot(df, country, cols, title_str=None, save_str=None, **kwargs):
+    """
+    Quick function to plot specific columns for a particular country
+    in the DataFrame obtained from the world bank
+
+    Any additional keyword arguments are passed directly to the
+    DataFrame.plot method
+
+    Parameters
+    ----------
+    df : DataFrame
+        The DataFrame that contains the data
+
+    country : string
+        A string specifying the name of the country. This must also be
+        the entry on the outer level of the hierarchical index
+
+    cols : list
+        A list of column names to be plotted.
+
+    title_str : optional(default=None)
+        An optional title to be added to the plot. Note that you can
+        leave a placeholder for country and it will automatically
+        be filled for you with the country argument. An example of how
+        this can be done is the following:
+
+            title_str = '{country}: Expenditure Shares of GDP'
+
+    save_str : optional (default=None)
+        Similar to title_str, but provides the name the figure should be
+        saved under. If none is given, then the figure is not saved. 
+
+    Returns
+    -------
+    ax : matplotlib.pyplot.Axes
+        The axes containing the plot
+
+    """
+    # return flat (non hierarchical-indexed) dataframe for a single country
+    new_df = df.loc[country]
+    new_df = new_df.sort()  # this corrects the order of dates 
+    ax = new_df[cols].plot()
+    ax.axhline(y=0, color='k', linestyle='-', linewidth=1)
+    ax.legend(loc='best')
+
+    if title_str is not None:
+        ax.set_title(title_str.format(**{'country': country}))
+
+    if save_str is not None:
+        ax.get_figure().savefig(save_str.format(**{'country': country}))
+
+    return ax
+
+
+# Now generate the first figure
+countryname = country[0] 
+
+ax1 = wb_plot(df,
+                country=countryname,
+                cols=['Net Exports', 'Investment', 'Consumption', 'Government'],
+                title_str='{country}:  Expenditure Shares of GDP',
+#                save_str="shares_sav_%s.pdf" % country_list[0]
+                )
+
+
+ax2 = wb_plot(df,
+                country=countryname,
+                cols=['Net Exports', 'Investment', 'Saving'],
+                title_str='{country}:  Saving and Investment',
+#                save_str="shares_exp_%s.pdf" % country_list[0]
+                )
