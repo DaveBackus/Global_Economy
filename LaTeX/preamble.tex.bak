@@ -51,4 +51,5 @@
 
 %\newcommand{\phm}{\phantom{--}}
 \newcommand{\NX}{\mbox{\it NX\/}}
-%\renewcommand{\log}{\ln}
+\newcommand{\POP}{\mbox{\it POP\/}}
+\renewcommand{\log}{\ln}

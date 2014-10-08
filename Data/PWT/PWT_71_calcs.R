@@ -55,7 +55,7 @@
 # clear memory, set directory for output 
 rm(list=ls())
 # remember to change \ to /
-dir = "c:/Users/dbackus/Documents/Classes/Global_Economy/Data/PWT"
+dir = "c:/Users/dbackus/Dropbox/Documents/Classes/Global_Economy/Data/PWT"
 setwd(dir)
 
 
@@ -365,12 +365,14 @@ plot_YL(pwt,c("CHN"))
 plot_YL(pwt,c("IND"))
 plot_YL(pwt,c("VEN"))
 plot_YL(pwt,c("PAK"))
+plot_YL(pwt,c("KEN"))
+plot_YL(pwt,c("RUS"))
+
 
 
 # level comparisions
 
 print(level_comp(pwt, c("MEX", "USA"), c("2010"))) 
-
 print(level_comp(pwt, c("CHN", "IND"), c("2010"))) 
 
 
@@ -380,6 +382,8 @@ years   <- c("1960", "2010")
 myvars    <- c("isocode", "year", "YL", "KL", "TFP")
 
 print(growth_acc(pwt, c("USA"), c("1950", "2010"))) 
+
+print(growth_acc(pwt, c("KEN"), c("1950", "2010"))) 
 
 print(growth_acc(pwt, c("ZWE"), c("1990", "2010"))) 
 print(growth_acc(pwt, c("KOR"), c("1953", "2010"))) 
