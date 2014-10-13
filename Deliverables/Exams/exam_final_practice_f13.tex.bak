@@ -26,16 +26,8 @@
 \setitemize{leftmargin=*, topsep=0pt}
 \setenumerate{leftmargin=*, topsep=0pt}
 
-\newcommand{\GDP}{\mbox{\em GDP\/}}
-\newcommand{\NDP}{\mbox{\em NDP\/}}
-\newcommand{\GNP}{\mbox{\em GNP\/}}
-\newcommand{\NX}{\mbox{\em NX\/}}
-\newcommand{\NY}{\mbox{\em NY\/}}
-\newcommand{\CA}{\mbox{\em CA\/}}
-\newcommand{\NFA}{\mbox{\em NFA\/}}
-\newcommand{\Def}{\mbox{\em Def\/}}
-\newcommand{\CPI}{\mbox{\em CPI\/}}
-\newcommand{\phm}{\phantom{--}}
+\usepackage{attachfile}
+    \attachfilesetup{color=0.5 0 0.5}
 
 \def\ClassName{The Global Economy}
 \def\Category{David Backus}
@@ -1078,8 +1070,6 @@ NYU Stern School of Business}
 \centerline{\large \bf \HeadName}%
 %\centerline{March 9, 2005}
 \centerline{Revised:  \today}
-***** kill this exam *********************
-
 
 \bigskip
 You have 120 minutes to complete this exam.  Please answer each

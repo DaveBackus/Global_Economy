@@ -1,35 +1,11 @@
-\documentclass[letterpaper,12pt]{exam}
-
-\usepackage{ge05}
-\usepackage{comment}
-\usepackage{booktabs}
-\usepackage{hyperref}
-\urlstyle{rm}   % change fonts for url's (from Chad Jones)
-\hypersetup{
-    colorlinks=true,        % kills boxes
-    allcolors=blue,
-    pdfsubject={NYU Stern course GB 2303, Global Economy},
-    pdfauthor={Dave Backus @ NYU},
-    pdfstartview={FitH},
-    pdfpagemode={UseNone},
-%    pdfnewwindow=true,      % links in new window
-%    linkcolor=blue,         % color of internal links
-%    citecolor=blue,         % color of links to bibliography
-%    filecolor=blue,         % color of file links
-%    urlcolor=blue           % color of external links
-% see:  http://www.tug.org/applications/hyperref/manual.html
-}
-
-\newcommand{\NX}{\mbox{\em NX\/}}
-\newcommand{\POP}{\mbox{\em POP\/}}
-\renewcommand{\log}{\ln}
+\documentclass[12pt]{exam}
 
 
 \def\ClassName{The Global Economy}
 \def\Category{Backus \& Cooley}
 \def\HeadName{Practice Midterm Examination 1}
 
-\printanswers
+%\printanswers
 
 \begin{document}
 \parindent = 0.0in

@@ -206,7 +206,7 @@ been multiplied by $\alpha = 1/3$.
 \begin{parts}
 \item The continuously-compounded annual rate of growth is
 \begin{eqnarray*}
-    \gamma_{Y/L} &=& [\ln (6.582) - \ln(2.489)]/(2011-1990) \;\;=\;\; 0.926 \%.
+    \gamma_{Y/L} &=& [\ln (6.582) - \ln(2.489)]/(2011-1990) \;\;=\;\; 4.631 \%.
 \end{eqnarray*}
 
 Grading:  5 points for correct calculation.
@@ -400,7 +400,7 @@ If, say, meat inspectors are corrupt, that's a problem for the business
 
 \item Labor market.
 We have limited data here, but obviously we need to hire people.
-The worst labor market seems to be Zambia, where the business seems to operate fine, 
+The worst labor market seems to be Zambia, where the business seems to operate fine,
 so the other countries must be doable.
 The minimum wages seem manageable.
 It's not clear how important literacy is, but there's not a huge difference
