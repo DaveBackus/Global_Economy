@@ -1,32 +1,7 @@
 \documentclass[letterpaper,12pt]{article}
 
-\RequirePackage{GE13}
-% this inputs graphicx, too
-\usepackage{booktabs}
-\RequirePackage{comment}
-\usepackage{hyperref}
-\urlstyle{rm}   % change fonts for url's (from Chad Jones)
-\hypersetup{
-    colorlinks=true,        % kills boxes
-    allcolors=blue,
-    pdfsubject={ECON-UB233, Macroeconomic foundations for asset pricing},
-    pdfauthor={Dave Backus @ NYU},
-    pdfstartview={FitH},
-    pdfpagemode={UseNone},
-%    pdfnewwindow=true,      % links in new window
-%    linkcolor=blue,         % color of internal links
-%    citecolor=blue,         % color of links to bibliography
-%    filecolor=blue,         % color of file links
-%    urlcolor=blue           % color of external links
-% see:  http://www.tug.org/applications/hyperref/manual.html
-}
-
-\usepackage[small, compact]{titlesec}
-
-% list spacing
-\usepackage{enumitem}
-\setitemize{leftmargin=*, topsep=0pt}
-\setenumerate{leftmargin=*, topsep=0pt}
+\usepackage{../LaTeX/ge14}
+\input{../LaTeX/preamble.tex}
 
 \def\ClassName{The Global Economy}
 \def\Category{Mini-Case}
@@ -86,7 +61,7 @@ economic fluctuations than nondurable goods and services.
 You can see that in the growth rates over the last few years:
 as GDP growth fell, consumption of durables and sales of cars
 fell sharply.
-The following numbers are 
+The following numbers are
 from the Bureau of Economic Analysis and the Federal Reserve.
 
 
@@ -94,17 +69,17 @@ from the Bureau of Economic Analysis and the Federal Reserve.
 \begin{tabular}{lrrrrrr}
 \multicolumn{6}{l}{Table 1.  Growth rates (percentages)} \\
 \toprule
-        & 2007 & 2008 & 2009 & 2010 & 2011 & 2012 \\
+        & 2008 & 2009 & 2010 & 2011 & 2012 & 2013 \\
 
 \midrule
 Real GDP
-        & 1.8 & --0.3 & --2.8 & 2.5 & 1.8 & 2.8 \\
+        & --0.3 & --2.8 & 2.5 & 1.8 & 2.8 & 1.9\\
 Real consumption (total)
-        & 2.2 & --0.4 & --1.6 & 2.0 & 2.5 & 2.2 \\
+        & --0.4 & --1.6 & 2.0 & 2.5 & 2.2 & 2.0 \\
 Real consumption (durables)
-        & 4.6 & --5.1 & --5.5 & 6.1 & 6.6 & 7.7 \\
+        & --5.1 & --5.5 & 6.1 & 6.6 & 7.7 & 6.9 \\
 Real consumption (motor vehicles)
-        & 2.0 & --13.2 & --7.0& 2.0 & 4.9 & 7.2 \\
+        & --19.3 & --11.5& 7.9 & 10.9 & 12.0 & 4.0 \\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -113,7 +88,7 @@ Real consumption (motor vehicles)
 {\bf 2. Major product lines\/}
 
 Mercedes-Benz USA sells a broad range of automobiles
-designed to appeal to a similarly broad range of income segments. 
+designed to appeal to a similarly broad range of income segments.
 Sedans include the C-Class (starting at \$38,200),
 the E-Class (\$52,200), and the CL-Class (\$116,600).
 This information and more is available on the
@@ -127,7 +102,7 @@ Just as we saw that some products are more cyclical than others,
 so the consumption of some consumers is more cyclical than that of others.
 Curiously enough, the consumption expenditures of the rich are more
 cyclically sensitive than the consumption expenditures of the poor.
-Their consumption expenditures are high --- they're the rich, after all --- 
+Their consumption expenditures are high --- they're the rich, after all ---
 but respond more
 in both directions to fluctuations in the economy.
 
@@ -163,10 +138,10 @@ Consumption sensitivity &  0.79 & 1.83 & 2.15 & 2.52 \\
 {\bf 4. Questions\/}
 
 \begin{itemize}
-\item How cyclical are Mercedes' product lines? 
+\item How cyclical are Mercedes' product lines?
 
 \item How does that affect your decisions on production,
-pricing, and product positioning?  
+pricing, and product positioning?
 \end{itemize}
 
 \vfill \centerline{\it \copyright \ \number\year \ NYU Stern

@@ -1,25 +1,7 @@
 \documentclass[letterpaper,12pt]{article}
 
-\usepackage{ge13}
-\usepackage{comment}
-\usepackage{graphicx}
-\usepackage{hyperref}
-\urlstyle{rm}   % change fonts for url's (from Chad Jones)
-\hypersetup{
-    colorlinks=true,        % kills boxes
-    allcolors=blue,
-    pdfsubject={NYU Stern course GB 2303, Global Economy},
-    pdfauthor={Dave Backus @ NYU},
-    pdfstartview={FitH},
-    pdfpagemode={UseNone},
-%    pdfnewwindow=true,      % links in new window
-%    linkcolor=blue,         % color of internal links
-%    citecolor=blue,         % color of links to bibliography
-%    filecolor=blue,         % color of file links
-%    urlcolor=blue           % color of external links
-% see:  http://www.tug.org/applications/hyperref/manual.html
-}
-\usepackage[small,compact]{titlesec}
+\usepackage{../LaTeX/ge14}
+\input{../LaTeX/preamble.tex}
 
 \def\ClassName{The Global Economy}
 \def\Category{Mini-Case}
@@ -41,6 +23,7 @@ Program at NYU's Stern School of Business.
 At the debate, roughly 75\% of the audience (mostly business students)
 disagreed with the proposition:  markets are moral.\/}
 
+\begin{comment}
 *** New things \\
 Marijuana:  http://www.nytimes.com/2013/10/27/us/few-problems-with-cannabis-for-california.html \\
 Slaves:  http://qz.com/136664/there-could-be-slaves-in-the-supply-chain-of-your-chocolate-smartphone-and-sushi/
@@ -51,6 +34,8 @@ http://www.becker-posner-blog.com/2006/01/organ-sales--posners-comment.html
 http://www.bloombergview.com/articles/2014-05-29/would-you-pay-84-000-for-a-new-liver
 
 http://www.imf.org/external/pubs/ft/fandd/2014/06/taylor.htm
+
+http://marginalrevolution.com/marginalrevolution/2014/08/ebola-and-the-fda.html
 
 Markets are free of coercion and therefore the best and most moral means of transaction available.
 “The argument for liberty is not an argument against organization…. But an argument against all exclusive, monopolistic organization, against the use of coercion to prevent others from trying to do better
@@ -70,6 +55,7 @@ Also:
 \url{http://mungowitzend.blogspot.com/2014/01/morality-and-markets.html}
 
 *****
+\end{comment}
 
 I'm an economist, so the idea of morality is wasted on me, not to
 mention good taste.  Maybe I should have mentioned that to Bruce
@@ -141,7 +127,7 @@ pretty well for most people.  In many other countries, not so much.
 China has been doing very well, but it's still possible to be
 poisoned by cough syrup or milk.  In Russia, an
 entrepreneur stands a fair chance of having his business stolen ---
-taken from him lock, stock, and barrel, possibly with the connivance
+taken lock, stock, and barrel, possibly with the connivance
 of the government.  In Mexico, more than in the US, government is
 often used to protect the businesses of the rich and powerful.
 Carlos Slim is one of the richest men in the world,
@@ -296,15 +282,13 @@ in the following areas:
 \item human organs?
 \end{itemize}
 
-\item Do markets contribute to prosperity?
-
-\item Are markets moral?  Is that the same thing?
+\item Do markets contribute to prosperity? Are markets moral?
+Are they the same thing?
 
 \end{enumerate}
 
 
-\vfill \centerline{\it \copyright \ \number\year \
-NYU Stern School of Business}
+\input{../LaTeX/footer.tex}
 
 \end{document}
 

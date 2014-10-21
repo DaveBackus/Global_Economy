@@ -1,26 +1,9 @@
 \documentclass[12pt]{article}
 
-\usepackage{GE13}
-\usepackage{comment}
-\usepackage{booktabs}
-\usepackage{hyperref}
-\urlstyle{rm}   % change fonts for url's (from Chad Jones)
-\hypersetup{
-    colorlinks=true,        % kills boxes
-    allcolors=blue,
-    pdfsubject={NYU Stern course GB 2303, Global Economy},
-    pdfauthor={Dave Backus @ NYU},
-    pdfstartview={FitH},
-    pdfpagemode={UseNone},
-%    pdfnewwindow=true,      % links in new window
-%    linkcolor=blue,         % color of internal links
-%    citecolor=blue,         % color of links to bibliography
-%    filecolor=blue,         % color of file links
-%    urlcolor=blue           % color of external links
-% see:  http://www.tug.org/applications/hyperref/manual.html
-}
+\usepackage{../LaTeX/ge14}
+\input{../LaTeX/preamble.tex}
 
-% for ge05.sty
+
 \def\ClassName{The Global Economy}
 \def\Category{Mini-Case}
 \def\HeadName{Opportunity in Ghana?}
@@ -144,14 +127,12 @@ the International Monetary Fund (IMF);
 and the World Economic Forum (WEF).
 Percentiles range from 0 (bad) to 100 (good).
 
-\vfill
-{
-More of this kind of thing at \url{https://sites.google.com/site/nyusternglobal/}
+\vspace*{0.1in}
+More of this kind of thing at \url{https://sites.google.com/site/nyusternglobal/home}
 %\url{http://goo.gl/EDybU}
 
-\vspace*{0.25in}
-\centerline{\it \copyright \ \number\year \
-NYU Stern School of Business}
+{\vfill
+\input{../../LaTeX/footer.tex}
 }
 
 \end{document}

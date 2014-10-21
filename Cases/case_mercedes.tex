@@ -1,32 +1,7 @@
 \documentclass[letterpaper,12pt]{article}
 
-\RequirePackage{GE13}
-% this inputs graphicx, too
-\usepackage{booktabs}
-\RequirePackage{comment}
-\usepackage{hyperref}
-\urlstyle{rm}   % change fonts for url's (from Chad Jones)
-\hypersetup{
-    colorlinks=true,        % kills boxes
-    allcolors=blue,
-    pdfsubject={ECON-UB233, Macroeconomic foundations for asset pricing},
-    pdfauthor={Dave Backus @ NYU},
-    pdfstartview={FitH},
-    pdfpagemode={UseNone},
-%    pdfnewwindow=true,      % links in new window
-%    linkcolor=blue,         % color of internal links
-%    citecolor=blue,         % color of links to bibliography
-%    filecolor=blue,         % color of file links
-%    urlcolor=blue           % color of external links
-% see:  http://www.tug.org/applications/hyperref/manual.html
-}
-
-\usepackage[small, compact]{titlesec}
-
-% list spacing
-\usepackage{enumitem}
-\setitemize{leftmargin=*, topsep=0pt}
-\setenumerate{leftmargin=*, topsep=0pt}
+\usepackage{../LaTeX/ge14}
+\input{../LaTeX/preamble.tex}
 
 \def\ClassName{The Global Economy}
 \def\Category{Mini-Case}
@@ -77,9 +52,7 @@ while you think about what to tell your boss.
 
 
 
-{\bf 1. GDP growth and car sales\/}
-%\section{GDP growth and car sales}
-
+\section{GDP growth and car sales}
 
 Automobiles --- and other durable goods --- are more sensitive to
 economic fluctuations than nondurable goods and services.
@@ -110,18 +83,19 @@ Real consumption (motor vehicles)
 \end{center}
 
 %\bigskip
-{\bf 2. Major product lines\/}
+\section{Major product lines}
 
 Mercedes-Benz USA sells a broad range of automobiles
 designed to appeal to a similarly broad range of income segments.
-Sedans include the C-Class (starting at \$38,200),
-the E-Class (\$52,200), and the CL-Class (\$116,600).
+Sedans include the C-Class (starting at \$29,900),
+the C-Class (\$40,400),
+the E-Class (\$51,400), and the CL-Class (\$94,400).
 This information and more is available on the
 MB USA
 \href{http://www.mbusa.com/}{website}.
 
-%\bigskip
-{\bf 3. Cyclical sensitivity of consumption by income group\/}
+
+\section{Cyclical sensitivity of consumption by income group}
 
 Just as we saw that some products are more cyclical than others,
 so the consumption of some consumers is more cyclical than that of others.
@@ -160,17 +134,18 @@ Consumption sensitivity &  0.79 & 1.83 & 2.15 & 2.52 \\
 \end{tabular}
 \end{center}
 
-{\bf 4. Questions\/}
+\section{Questions}
 
 \begin{itemize}
 \item How cyclical are Mercedes' product lines?
 
-\item How does that affect your decisions on production,
+\item How would you suggest they deal with that?
+
+\item More concretely:  How does it affect decisions on production,
 pricing, and product positioning?
 \end{itemize}
 
-\vfill \centerline{\it \copyright \ \number\year \ NYU Stern
-School of Business}
+\input{../LaTeX/footer.tex}
 
 \end{document}
 
@@ -218,8 +193,6 @@ but turn immediately to classmates working at banks,
 who provide you with the relevant analysis.
 
 
-\vfill \centerline{\it \copyright \ \number\year \ NYU Stern
-School of Business}
 
 \end{document}
 

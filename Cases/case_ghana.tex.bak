@@ -1,26 +1,9 @@
 \documentclass[12pt]{article}
 
-\usepackage{GE13}
-\usepackage{comment}
-\usepackage{booktabs}
-\usepackage{hyperref}
-\urlstyle{rm}   % change fonts for url's (from Chad Jones)
-\hypersetup{
-    colorlinks=true,        % kills boxes
-    allcolors=blue,
-    pdfsubject={NYU Stern course GB 2303, Global Economy},
-    pdfauthor={Dave Backus @ NYU},
-    pdfstartview={FitH},
-    pdfpagemode={UseNone},
-%    pdfnewwindow=true,      % links in new window
-%    linkcolor=blue,         % color of internal links
-%    citecolor=blue,         % color of links to bibliography
-%    filecolor=blue,         % color of file links
-%    urlcolor=blue           % color of external links
-% see:  http://www.tug.org/applications/hyperref/manual.html
-}
+\usepackage{../LaTeX/ge14}
+\input{../LaTeX/preamble.tex}
 
-% for ge05.sty
+
 \def\ClassName{The Global Economy}
 \def\Category{Mini-Case}
 \def\HeadName{Opportunity in Ghana?}
@@ -77,16 +60,16 @@ and your own experience and insight ---
 jot down your thoughts about these questions:
 %
 \begin{itemize}
-%\item What do we know about this business?  
+%\item What do we know about this business?
 \item What features of a country would make it a good location for this business?
 \item Based on the evidence here, how do India and Ghana compare?
-What are their strengths and weaknesses along the important dimensions?  
+What are their strengths and weaknesses along the important dimensions?
 \item What other information would you like to have?
+\item Suppose Ghana set up a Special Economic Zone,
+free from some of the laws and practices operating elsewhere in the country.
+What different laws and practices would be most attractive to Genpact?
 \item Overall, would you favor expansion into Ghana?
 Why or why not?
-%\item Suppose Ghana set up a Special Economic Zone,
-%free from some of the laws and practices operating elsewhere in the country.
-%What different laws and practices would be most attractive to Genpact?
 \end{itemize}
 
 
@@ -135,19 +118,19 @@ Broadband penetration (\%) &  0.2 & 0.9 & WB, WDI \\
 \bottomrule
 \end{tabular}
 \end{center}
-% 
+%
 \vspace{-0.15in}
 Sources include:  the World Bank (WB),
-including their World Development Indicators (WDI), 
+including their World Development Indicators (WDI),
 World Governance Indicators (WGI), and Doing Business;
 the International Monetary Fund (IMF);
 and the World Economic Forum (WEF).
-Percentiles range from 0 (bad) to 100 (good).  
+Percentiles range from 0 (bad) to 100 (good).
 
 \vfill
 {
-More of this kind of thing at \url{https://sites.google.com/site/nyusternglobal/} 
-%\url{http://goo.gl/EDybU} 
+More of this kind of thing at \url{https://sites.google.com/site/nyusternglobal/}
+%\url{http://goo.gl/EDybU}
 
 \vspace*{0.25in}
 \centerline{\it \copyright \ \number\year \
