@@ -1,7 +1,5 @@
 \documentclass[letterpaper,12pt]{exam}
 
-\usepackage{../../LaTeX/ge14}
-\input{../../LaTeX/preamble.tex}
 
 
 \def\ClassName{The Global Economy}

@@ -1,4 +1,4 @@
-\documentclass[letterpaper,12pt]{exam}
+\documentclass[letterpaper,12pt]{article}
 
 \usepackage{../../LaTeX/ge14}
 \input{../../LaTeX/preamble.tex}
@@ -51,7 +51,7 @@ to quantify Poland's recent experience
 and speculate about its sources.
 
 %
-\begin{table}[b]
+\begin{table}
     \centering
     \tabcolsep = 0.2in
     \begin{tabular}{lcccc}
@@ -105,7 +105,7 @@ and the 2003 value of $K/Y$.
 \end{enumerate}
 
 
-\begin{solution}
+%\begin{comment}
 Answer.
 \begin{enumerate}
 
@@ -168,7 +168,7 @@ Grading: 3 points for mentioning equation (\ref{eq:lom-k}),
 1 more for the second equation.
 
 \end{enumerate}
-\end{solution}
+%\end{comment}
 
 
 %\pagebreak \phantom{xx} \pagebreak %\phantom{xx} \pagebreak

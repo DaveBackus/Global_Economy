@@ -9,7 +9,7 @@
 \def\HeadName{Practice Midterm \#1}
 
 % prints answers -- or not, if commented out
-%\printanswers
+\printanswers
 
 \begin{document}
 \parindent = 0.0in
