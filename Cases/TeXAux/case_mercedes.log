@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.1.21)  21 OCT 2014 10:51
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.1.21)  1 NOV 2014 13:06
 entering extended mode
 **case_mercedes.tex
 
@@ -422,50 +422,50 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/dbackus/Dropbox/
 Documents/Classes/Global_Economy/LaTeX/stern_black1.png>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 140.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 147.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 140.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 147.
 
 (C:\Users\dbackus\Dropbox\Documents\Classes\Global_Economy\LaTeX\footer.tex
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 3.
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 150.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 157.
 
 Overfull \vbox (14.33331pt too high) has occurred while \output is active []
 
 
 [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 150.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 157.
 
 (C:\Users\dbackus\Dropbox\Documents\Classes\Global_Economy\Cases\TeXAux\case_me
 rcedes.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 150.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 150.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 157.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 157.
 Package rerunfilecheck Info: File `case_mercedes.out' has not changed.
 (rerunfilecheck)             Checksum: 6EBA82266F5182E5EF3E358E031EDBF7;247.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 150.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 157.
  ) 
 Here is how much of TeX's memory you used:
- 7768 strings out of 493921
- 116603 string characters out of 3147276
- 203148 words of memory out of 3000000
- 10960 multiletter control sequences out of 15000+200000
+ 7774 strings out of 493921
+ 116694 string characters out of 3147276
+ 203147 words of memory out of 3000000
+ 10964 multiletter control sequences out of 15000+200000
  9544 words of font info for 36 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 38i,8n,38p,255b,323s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,9n,38p,255b,343s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on case_mercedes.pdf (2 pages, 77635 bytes).
+Output written on case_mercedes.pdf (2 pages, 78118 bytes).
 PDF statistics:
- 54 PDF objects out of 1000 (max. 8388607)
- 7 named destinations out of 1000 (max. 500000)
+ 56 PDF objects out of 1000 (max. 8388607)
+ 9 named destinations out of 1000 (max. 500000)
  38 words of extra memory for PDF output out of 10000 (max. 10000000)
 
