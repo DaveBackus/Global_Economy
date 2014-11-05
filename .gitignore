@@ -33,3 +33,8 @@ desktop.ini
 *.synctex.gz
 *.synctex.gz(busy)
 *.pdfsync
+
+## Potentially large data files
+*.xls
+*.xlsx
+*.csv 
