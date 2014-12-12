@@ -53,3 +53,5 @@
 \newcommand{\NX}{\mbox{\it NX\/}}
 \newcommand{\POP}{\mbox{\it POP\/}}
 \renewcommand{\log}{\ln}
+
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}

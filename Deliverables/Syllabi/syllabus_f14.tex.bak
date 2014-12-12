@@ -2,31 +2,6 @@
 
 \usepackage{../../LaTeX/ge14}
 \input{../../LaTeX/preamble.tex} 
-\usepackage{comment}
-\usepackage{hyperref}
-\urlstyle{rm}   % change fonts for url's (from Chad Jones)
-\hypersetup{
-    colorlinks=true,        % kills boxes
-    allcolors=blue,
-    pdfsubject={NYU Stern course GB 2303, Global Economy},
-    pdfauthor={Dave Backus @ NYU},
-    pdfstartview={FitH},
-    pdfpagemode={UseNone},
-    pdfborder = {0 0 0 0},
-%    bookmarks=false,
-%    pdfnewwindow=true,      % links in new window
-%    linkcolor=blue,         % color of internal links
-%    citecolor=blue,         % color of links to bibliography
-%    filecolor=blue,         % color of file links
-%    urlcolor=blue           % color of external links
-% see:  http://www.tug.org/applications/hyperref/manual.html
-}
-\usepackage[tiny, compact]{titlesec}
-\usepackage{enumitem}   % http://www.tex-tipografia.com/archive/enumitem.pdf
-\setitemize{leftmargin=*, topsep=0pt} %, itemsep=0pt} %, parsep=0pt}
-\setenumerate{leftmargin=*, topsep=0pt}
-\usepackage{needspace}
-% example:  \needspace{4\baselineskip} makes sure we have four lines available before pagebreak
 
 % for gexx.sty
 \def\ClassName{The Global Economy}
@@ -116,14 +91,13 @@ that is due at the start of the second class.
 \section{Data}
 
 We will use online data sources extensively.
-There's a collection of links on the macro resources page,
-
-\vspace*{\parskip}
-\centerline{\url{http://pages.stern.nyu.edu/~dbackus/macro_resources.htm},}
-
-but the best one is the St Louis Fed's
+%There's a collection of links on the macro resources page,
+%
+%\vspace*{\parskip}
+%\centerline{\url{http://pages.stern.nyu.edu/~dbackus/macro_resources.htm},}
+The best one is the St Louis Fed's
 \href{http://research.stlouisfed.org/fred2/}{FRED}.
-You'll have an opportunity to use FRED, and perhaps the FRED apps or Excel add-in,
+You will have an opportunity to use FRED, and perhaps the FRED apps or Excel add-in,
 in Problem Set \#0.
 
 
@@ -143,10 +117,10 @@ For most questions, I recommend the
 \href{https://sites.google.com/site/nyusternglobal/home/announcements}{Announcements \& Discussion}
 page.
 If you think you know the answer to someone else's question, please post that, too.
-The idea is to create an environment in which we teach ourselves,
-which lots of research shows is the best way to learn.
+The idea is to create an environment in which we teach ourselves, 
+which is both effective and fun.  
 I'll weigh in if I think greater clarity is called for.
-{\bf Plan ahead:  you may not be able to get a response to anything posted
+{\bf Plan ahead:  you may not be able to get a useful response to anything posted
 less than 24 hours before an assignment is due.}
 
 
@@ -155,7 +129,7 @@ less than 24 hours before an assignment is due.}
 The materials include:
 %
 \begin{itemize}
-\item {\it Book.\/}
+\item {\it The Book.\/}
 We developed a book specifically for this course:
 just what you need, no more, no less.
 Please read the relevant sections before class.
@@ -191,13 +165,13 @@ There's a link on the course website.
 
 \item {\it Slides\/}.
 I will distribute copies at the start of class and post pdf's on the course website.
-And if you want the full-page color experience, the original powerpoints are on 
-\href{https://github.com/DaveBackus/Global_Economy}{GitHub}.
+If you want the full Powerpoint experience, the originals are on 
+\href{https://github.com/DaveBackus/Global_Economy}{GitHub} in the Slides directory.
 
-If you find them difficult to read on their own,
+If you find the slides difficult to read on their own,
 remind yourself that's a feature not a bug.
 They're designed to facilitate discussion
-and have gaps designed for us to fill in during class.
+and have intentional gaps that we will fill in during class.
 Let me repeat: {\bf The slides are not intended to be read on their own.}
 They are an input to class discussion, not a summary of where that discussion
 leads.
@@ -250,15 +224,15 @@ due in hardcopy at the start of class.
 anything submitted after the start of class on the due date will be given a grade of zero.}
 You should do Problem Set \#0 on your own,
 but for the others you may work in groups.
-I recommend groups of three or four,
+I recommend groups of two to four,
 but a group of one is doable, and five might be permitted in unusual circumstances.
 The work you hand in should be the work of you or your group
 and include the names of everyone involved on the first page.
-Outside sources should be noted.
+Outside sources should be noted; ditto quotations.  
 
 %Form counts as well as substance.
-{\bf Anything you hand in should be a  professional product.}
-Anything less will be downgraded accordingly.
+{\bf Everything you hand in should be a  professional product.
+Anything less will be downgraded accordingly.} 
 You should state your answer clearly and prominently,
 and not bury it in a pile of calculations.
 You should not include printouts of data.
@@ -314,7 +288,7 @@ includes references and links to other sources.
 We envision this as a resource if you happen to find yourself in
 a situation that goes beyond what you find in the book.
 You can also send me an email:  the course comes with what we like
-to call lifetime technical support.
+to call lifetime technical support.  
 
 The course outline, posted on the course website,
 contains lighter references related to each class
@@ -385,7 +359,5 @@ send me a letter verifying your registration and outlining the accommodation the
 you must submit a completed Exam Accommodations Form to them
 at least one week prior to the scheduled exam time.}
 
-\vfill
-\centerline{\it \copyright \ \number\year \ NYU Stern School of Business}
-
+\input{../../LaTeX/footer.tex} 
 \end{document}

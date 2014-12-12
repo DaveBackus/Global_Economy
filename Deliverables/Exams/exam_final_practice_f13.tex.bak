@@ -1,38 +1,14 @@
 \documentclass[letterpaper,12pt]{exam}
 
-\usepackage{ge13}
-\usepackage{comment}
-\usepackage{eurosym}
-\usepackage{booktabs}
-\usepackage{hyperref}
-\urlstyle{rm}   % change fonts for url's (from Chad Jones)
-\hypersetup{
-    colorlinks=true,        % kills boxes
-    allcolors=blue,
-    pdfsubject={NYU Stern course GB 2303, Global Economy},
-    pdfauthor={Dave Backus @ NYU},
-    pdfstartview={FitH},
-    pdfpagemode={UseNone},
-%    pdfnewwindow=true,      % links in new window
-%    linkcolor=blue,         % color of internal links
-%    citecolor=blue,         % color of links to bibliography
-%    filecolor=blue,         % color of file links
-%    urlcolor=blue           % color of external links
-% see:  http://www.tug.org/applications/hyperref/manual.html
-}
+\usepackage{../../LaTeX/ge14}
+\input{../../LaTeX/preamble.tex}
 
-% list spacing
-\usepackage{enumitem}
-\setitemize{leftmargin=*, topsep=0pt}
-\setenumerate{leftmargin=*, topsep=0pt}
-
-\usepackage{attachfile}
-    \attachfilesetup{color=0.5 0 0.5}
-
+% for gexx.sty
 \def\ClassName{The Global Economy}
 \def\Category{David Backus}
-\def\HeadName{Practice Final Examination 1}
+\def\HeadName{Practice Midterm \#1}
 
+% prints answers -- or not, if commented out
 \printanswers
 
 \begin{document}
@@ -1178,7 +1154,7 @@ The numbers for 2011 and 2012 are estimates.
 
 \begin{solution}
 Answers follow.
-See the spreadsheet for calculations 
+See the spreadsheet for calculations
 (download this pdf file, open it with the Adobe Reader or the equivalent,
 and click on the pushpin):
 \attachfile{exam_final_s12_answerkey.xlsx}

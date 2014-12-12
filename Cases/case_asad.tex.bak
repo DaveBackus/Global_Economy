@@ -13,8 +13,14 @@
 \thispagestyle{empty}%
 \Head
 
-\centerline{\large \bf \HeadName}%
+\centerline{\large \bf \HeadName%
+\footnote{This was written with Kim Schoenholtz, Japan expert extraordinaire.}
+}%
 \centerline{Revised:  \today}
+
+
+% ?? check low unemployment rate, comments:  
+% http://marginalrevolution.com/marginalrevolution/2014/11/the-bad-economic-news-out-of-japan-what-does-it-mean.html
 
 \bigskip
 Shinzo Abe was elected Prime Minister of Japan in December 2012
@@ -24,39 +30,63 @@ dubbed the ``three arrows'' of ``Abenomics.''
 We consult the Economist Intelligence Unit and press reports for specifics:
 %
 \begin{itemize}
-\item Fiscal stimulus.  A sizeable economic stimulus package was passed by parliament in
-February 2013, and a smaller one in October.
-This is expected to produce a budget deficit of 8\% in 2013.
-\item Monetary stimulus. A plan to double Japan's
-money supply within two years was implemented in April 2013 to help to achieve the Bank of Japan's
-target of 2\%  inflation.
-\item Structural reform.
-This is less clearly articulated, but some observers hope for a range of micro-based reforms,
-including loosening product-market regulations that reduce productivity,
-tightening corporate requirements for funding pensions,
-creating a more flexible labor market,
-and reducing subsidies to an inefficient agricultural sector.
+\item Arrow \#1:  Fiscal stimulus.  A sizeable economic stimulus package was passed by parliament in
+February of 2013, and a smaller one in October.
+The IMF reports that this resulted in a 2013 fiscal deficit of 7.6\% of GDP
+and net government debt over 130\% of GDP.
+
+\item Arrow \#2: Monetary stimulus.
+After nearly two decades of deflation, the Bank of Japan (BOJ) announced in April 2013
+an aggressive plan to expand the money supply
+to achieve an inflation target of 2\%.
+Falling short of their target, the BOJ announced on October 31, 2014,
+a further massive increase in its balance sheet.
+Total assets of the BOJ are now projected to exceed 70\% of GDP in 2015,
+more than double comparable figures from the Fed,
+the European Central Bank, and the Bank of England.
+
+\item Arrow \#3: Structural reform.
+The government has proposed a broad array of micro-based reforms,
+including looser product-market regulations,
+a more flexible labor market,
+and smaller subsidies to an inefficient agricultural sector.
+However, the government has been reluctant to reduce Japan's high level of agricultural protectionism,
+which keeps out a range of agricultural products, including rice, from other countries.
+Many observers remain skeptical that the government will promote these structural reforms aggressively.
 \end{itemize}
 %
-Your mission is to explore the impact of the three arrows using the aggregate supply and demand
-framework.
+Your mission is to explore the impact of the three arrows using
+the aggregate supply and demand framework summarized by Figure \ref{fig:asad}.
 \begin{itemize}
 \item Explain, for each ``arrow,'' whether it affects supply or demand.
 Which way does each one shift the appropriate curve(s)?
-(15~points)
 \item Compare the short- and long-term impact on output of the three policies.
 Which are likely to have the greatest impact in the short term?
 In the long term?
-(15~points)
+
+\item The fiscal stimulus was enacted despite fears that Japan's public debt was reaching
+dangerous levels.
+To allay these fears,
+parliament raised the consumption tax from 5\% to 8\% in April 2014.
+At the government's discretion, a further hike to 10\% is scheduled for October 2015.
+If the second tax hike is implemented,
+the IMF projects Japan's fiscal deficit to decline to 6.7\% of GDP in 2014,
+5.5\% in 2015, and 4.7\% in 2016.
+
+What are the likely effects of these tax increases?
+
+\item Overall, which arrow do you think is most important to Japan's future?
 \end{itemize}
 
 
-\begin{figure}[t]
+\vspace*{0.5in}
+\begin{figure}[h!]
 \caption{Aggregate supply and demand diagram}
+\label{fig:asad}
 \begin{center}
 %\setlength{\unitlength}{0.075em}
-\setlength{\unitlength}{0.09em}
-\begin{picture}(280,200)(0,-10)
+\setlength{\unitlength}{0.1em}
+\begin{picture}(280,200)(-20,-10)
 %\footnotesize
 \thicklines
 
@@ -93,6 +123,10 @@ In the long term?
 
 
 
+\input{../LaTeX/footer.tex}
+
+\end{document}
+
 \begin{comment}
 This continues to be topical.
 Here's a
@@ -121,79 +155,4 @@ Also:  the original question asks for the short and long-term impact, and doesn'
 specify output, so answers might include comments about the impact on prices.
 \end{itemize}
 \end{comment}
-
-
-\input{../LaTeX/footer.tex}
-
-\end{document}
-
-\pagebreak
-OLD STUFF \\
-You have rotated into the economic analysis group at JP Morgan Chase,
-reporting to US Chief Economist Michael Feroli.
-As your first assignment, he asks you to work through the possible impact
-on the US economy of further deterioration in Europe.
-He suggests that this might affect the US economy through three channels.
-First, Europeans may buy fewer US products.
-Second, financial conditions in Europe might spill over to the US,
-making it more difficult, for example, for US firms to finance expansion.
-And third, the loss of confidence there might lead to a fall
-in confidence of US business leaders.
-
-
-You go back to your Global Economy notes, in particular the
-chapters on the aggregate supply and demand model,
-where you find this figure:
-
-\begin{center}
-\setlength{\unitlength}{0.075em}
-%\setlength{\unitlength}{0.1em}
-\begin{picture}(280,200)(0,-10)
-%\footnotesize
-\thicklines
-
-% horizontal axis
-\put(-30,0){\vector(1,0){300}}
-\put(255,-16){$Y$}
-
-% vertical axis
-\put(0,-20){\vector(0,1){200}}
-\put(-15,155){$P$}
-
-% demand
-\put(25,165){\line(4,-3){200}}\put(230,10){AD}
-%\put(65,165){\line(4,-3){200}}\put(270,10){AD}
-
-% supply
-\put(25,13){\line(4,3){200}} \put(230,160){AS}
-%\put(65,13){\line(4,3){200}} \put(270,160){AS$'$}
-\put(126.4,0){\line(0,1){170}} \put(118,175){AS$^*$}\put(122,-16){$Y^*$}
-
-% equilibrium labels
-%\put(105,85){\footnotesize B}
-%\put(150,115){\footnotesize A}
-%\put(138,64){\footnotesize C}
-% dotted lines
-%\qbezier[31]{(133,0)(133,46)(133,92)}
-%\qbezier[45]{(0,92)(67,92)(133,92)}
-%\qbezier[45]{(0,72)(67,72)(133,72)}
-
-\end{picture}
-\end{center}
-
-You remind yourself what it means and write down some questions:
-%
-\begin{itemize}
-\item Where is the current short-run equilibrium in this diagram?
-Does that seem right to you?
-\item Do Feroli's channels correspond to changes in supply or demand?
-\item If you decide the primary effect is on demand, how would you expect
-GDP growth and inflation to respond in the short run?  In the long run?
-\item What, if anything, do you think is missing from this analysis?
-\end{itemize}
-
-\input{../LaTeX/footer.tex}
-
-\end{document}
-
 
