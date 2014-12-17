@@ -9,7 +9,7 @@
 \def\HeadName{Practice Final \#1}
 
 % prints answers -- or not, if commented out
-%\printanswers
+\printanswers
 
 \begin{document}
 \parindent = 0.0in
@@ -18,8 +18,360 @@
 \Head
 
 \centerline{\large \bf \HeadName}%
-%\centerline{March 9, 2005}
-\centerline{Revised:  \today}
+\centerline{December 2013}
+%\centerline{Revised:  \today}
+
+\bigskip
+{\it You have 120 minutes to complete this exam.  Please answer each
+question in the space provided and show all of your work.
+You may consult one page of notes and a calculator,
+but devices capable of wireless transmission are prohibited.
+
+I understand that the honor code applies: I will not lie, cheat,
+or steal to gain an academic advantage, or tolerate those who do.}
+
+\bigskip
+\begin{flushright}
+\rule{4in}{0.5pt} \\ (Name and Signature)
+\end{flushright}
+
+
+\begin{questions}
+% ======================================================================
+\begin{table}[h]
+\centering
+\tabcolsep=0.1in
+\begin{tabular}{lrrrrr}
+\toprule
+                & 2010 & 2011 & 2012 & 2013 \\
+\midrule
+Official exchange rate (pesos per USD)  & 3.90 & 4.11 & 4.54 & 5.46  \\
+Inflation (\%)              & 22.9 & 24.4 & 25.3 & 20.6 \\
+Foreign currency reserves (USD billions) & 52.2 & 46.4 & 43.2 & 32.2 \\
+Real GDP growth (\%)        & 9.2 & 8.9 & 1.9 & 5.2  \\
+Govt revenue (\% of GDP)    & 24.3 & 23.6 & 25.4 & 27.3 \\
+Govt spending (\% of GDP)   & 24.1 & 25.3 & 28.0 & 30.5  \\
+Public sector surplus (\% of GDP) & 0.2 & --1.7 & --2.6 & --3.2 \\
+Primary surplus (\% of GDP) &  1.7 & 0.3 & --0.2 & --0.8   \\
+Govt debt (yearend, \% of GDP)  & & & 44.8\\
+Interest rate paid on debt (\%) & 4.0 & 5.5 & 6.7 & 6.5  \\
+Money market interest rate (\%) & 9.1 & 10.0 & 9.8 & 12.7 \\
+\bottomrule
+\end{tabular}
+\label{tab:portugal}
+\caption{Economic indicators for Argentina.  Source:  EIU.}
+\end{table}
+
+\item  {\it Don't Cry for Me Argentina (40~points).\/}
+Argentina is a seemingly endless source of entertainment to economists,
+yet its economy has done well in the recent past.
+GDP growth fell to 0.9\% in 2009, during the global financial crisis,
+but averaged over 9\% the next two years.
+Most analysts attribute this success to
+favorable commodity prices and strong global demand for Argentina's commodity exports.
+
+At the same time, the government of President Cristina Fernandez de Kirchner
+continues to adopt policies that befuddle outside observers, including:
+taking over private pension funds,
+restricting imports and purchases of foreign currency,
+attacking the press,
+nationalizing the Spanish-owned oil company YPF,
+imposing price controls on electricity, natural gas, and public transportation,
+and subsidizing energy consumption.
+
+The Economist Intelligence Unit reports:
+\begin{itemize}
+\item A US court case may eventually leave
+Argentina with the unpalatable choice of repaying the ``holdouts'' (creditors that
+did not participate in the 2005 or 2010 restructurings) in full --- something that it
+has sworn never to do --- or falling into technical default to avoid repaying
+current creditors in a US jurisdiction.
+
+\item According to official data, consumer price inflation remains among the highest
+in emerging markets, at 10.5\% in April 2013. However, the official data are
+widely discredited, and we are now using estimates produced by PriceStats,
+which estimates that inflation in 2012 was 25\%.
+
+\item Double-digit inflation has generated real peso appreciation.
+Foreign-exchange controls have failed to prevent an erosion of the reserves cushion,
+heightening the risk of an eventual devaluation.
+
+\item The Argentine peso floats in principle, but the central bank intervenes to limit
+the peso's depreciation.
+In addition, foreign currency transactions are subject to a variety of controls.
+For the past couple of years, the government has been gradually tightening the `clamp,'
+an unofficial policy of discouraging purchases of dollars.
+As a result, the peso's official decline has been modest,
+but the unofficial ``blue market'' price of the peso is considerably lower.
+
+\item The (bad) banking sector risk rating reflects weak economic activity, expansionary
+monetary policies that contribute to credit risk, high risk of exchange-rate
+and interest-rate volatility, and increased currency convertibility risk.
+
+\item The ruling party fared badly in the October midterm election,
+ leaving the president without enough support in Congress
+ to change the constitution and run for re-election.
+ Focus will now shift rapidly to the 2015 presidential race.
+ The president remains alienated from almost all of the country's most influential groups,
+including the unions, the media, the Catholic Church and the traditional
+leaders of the Peronist party. In this context, risks to political stability will be
+high. An additional risk to stability is the president's health.
+\end{itemize}
+%
+The question is what happens next:  Could another crisis be on the way,
+or has Argentina put its problematic past to rest?
+Use the information provided, and your own experience and good judgement,
+to assess the risks to the Argentina economy over the next 2-3 years.
+%
+\begin{parts}
+\item By ``real appreciation'' we mean an increase in the price
+of local goods relative to foreign goods ---
+what is sometimes called a decline in the real exchange rate.
+Use the numbers in the table to demonstrate (or disprove) real appreciation
+of the peso.
+(10~points)
+
+\item Why do you think the central bank's foreign exchange reserves have declined?
+(5~points)
+
+\item How do you see government debt evolving?
+Compute, in particular, the ratio of government debt to GDP at year-end 2013.
+What factors contribute the most to the change in the ratio?
+(10~points)
+
+\item Overall, how would you rate the risk of a macroeconomic crisis in Argentina?
+What are the biggest sources of concern?
+(15~points)
+\end{parts}
+
+\begin{solution}
+Answers follow.
+See the spreadsheet for calculations in (a) and (c)
+(download this pdf file, open it with the Adobe Reader or the equivalent,
+and click on the pushpin):
+\attachfile{exam_final_f13_answerkey.xlsx}
+
+\begin{parts}
+\item
+One way to think about this (not the only one) is with the real exchange rate
+$ \mbox{\em RER\/} = eP^*/P$, where $e$ is the exchange rate, $P$ is the price of Argentine goods,
+and $P^*$ is the price of American goods.
+So how is the real exchange rate changing?
+Inflation is the rate of increase in $P$, so we see the price of Argentine goods
+is going up rapidly, roughly 20\% a year.
+In contrast, $eP^*$ is going up less:
+$P^*$ is roughly flat (1-2\% inflation in the US)
+and $e$ is rising (if we compute its rate of change)
+5\% in 2011 and 10\% in 2012.
+Thus {\it RER\/} is falling, as Argentine goods get relatively more expensive.
+
+In words:  the combination of high inflation and
+more modest currency depreciation has made Argentine goods expensive.
+
+Grading:  5 points for the basic idea, 5 for a calculation that compares
+inflation rates and the change in the exchange rate.
+
+\item Evidently people want dollars, not pesos, and the central bank supplies
+them to maintain a relatively stable exchange rate.
+One possible reason:  Argentine prices are rising,
+and a substantial depreciation is one way to get that.
+That makes pesos less attractive, since you'd lose (relative to dollars)
+if the peso falls in value.
+
+Grading:  5 points for something along these lines.
+
+See also \href{http://focoeconomico.org/2013/12/22/el-drenaje-de-reservas-del-bcra-una-amenaza-al-sistema-financiero/}
+{this link}.
+
+\item The debt dynamics equation is
+\begin{eqnarray*}
+   \Delta (B_t/Y_t)  &=&  (i_t - \pi_t)(B_{t-1}/Y_{t-1})
+                - g_t (B_{t-1}/Y_{t-1}) + D_t/Y_t .
+\end{eqnarray*}
+The three terms are
+\begin{eqnarray*}
+    (i_t - \pi_t)(B_{t-1}/Y_{t-1}) &=&  -6.3  \\
+    - g_t (B_{t-1}/Y_{t-1})   &=&  -2.3 \\
+    D_t/Y_t  &=&  0.8 .
+\end{eqnarray*}
+Their total is --7.8, so the ratio of debt to GDP will fall to 37.0.
+Note for later the negative contribution of the real interest rate:
+they're getting a very good deal on their debt, hard to believe that will
+continue.
+
+Grading:  3 points for each component done right, 1 more for summing them.
+
+\item This is a call for the checklist:
+\begin{itemize}
+\item Debt and deficits.
+(i)~The calculation shows the debt ratio is falling.
+But the US court case could lead to a technical default,
+which isn't a good thing.
+And the negative real interest rate is unlikely to continue.
+If they paid a modest 2\% real rate on debt, the debt ratio would
+go up about 4\% this year.
+
+\item Banks.
+The EIU suggests that banks could suffer from a weak economy.
+
+\item Exchange rates and reserves.
+They're losing reserves as they try to keep the peso
+from depreciating.
+Either the peso depreciates more or they continue to lose reserves.
+
+\item Politics.  Always an issue in Argentina.
+There's some uncertainty given the president's lame duck status and health.
+On the other hand, a change could make things better.
+\end{itemize}
+%
+The fiscal situation, including the court case, the exchange rate and reserve position,
+the banking system, and the political situation all shows signs of trouble.
+Overall, I'd say they'll probably muddle through,
+but there's a chance of serious trouble.
+
+Grading:  10 points for the checklist and its components,
+5 points for a sensible argument assessing the various risks.
+\end{parts}
+\end{solution}
+
+
+%\pagebreak \phantom{x} \pagebreak
+% ======================================================================
+\item  {\it The supply and demand of Abenomics (30~points).\/}
+Shinzo Abe was elected Prime Minister of Japan in December 2012
+after two decades of slow growth and falling prices.
+He pledged dramatic policy changes to revive the Japanese economy,
+dubbed the ``three arrows'' of ``Abenomics.''
+We consult the Economist Intelligence Unit for specifics:
+%
+\begin{itemize}
+\item Fiscal stimulus.  A sizeable economic stimulus package was passed by parliament in
+February 2013, and a smaller one in October.
+This is expected to produce a budget deficit of 8\% in 2013.
+\item Monetary stimulus. A plan to double Japan's
+money supply within two years was implemented in April 2013 to help to achieve the Bank of Japan's
+target of 2\%  inflation.
+\item Structural reform.
+This is less clearly articulated, but some observers hope for a range of micro-based reforms,
+including loosening product-market regulations that reduce productivity,
+tightening corporate requirements for funding pensions,
+creating a more flexible labor market,
+and reducing subsidies to an inefficient agricultural sector.
+\end{itemize}
+%
+Your mission is to explore the impact of the three arrows using the aggregate supply and demand
+framework.
+\begin{parts}
+\item Explain, for each ``arrow,'' whether it affects supply or demand.
+Which way does each one shift the appropriate curve(s)?
+(15~points)
+\item Compare the short- and long-term impact on output of the three policies.
+Which are likely to have the greatest impact in the short term?
+In the long term?
+(15~points)
+\end{parts}
+
+\begin{solution}
+
+This continues to be topical.
+Here's a
+\href{http://www.bloomberg.com/news/2013-12-12/abe-pushes-biggest-farm-revamp-since-macarthur-broke-landlords.html}
+{recent comment} about agricultural policy.
+
+\begin{parts}
+\item We have:
+\begin{itemize}
+\item Fiscal stimulus. This shifts aggregate demand to the right.
+\item Monetary stimulus. Same.
+\item Structural reform. This shifts both aggregate supply curves to the right.
+\end{itemize}
+Grading:  5 points for each bullet done correctly.
+The graphs need not be included, but if they are they should be correct.
+
+\item Fiscal and monetary stimulus will raise output in the short run.
+They have no long-run impact on output.
+
+Structural reform, on the other hand, raises output both short-term and long-term.
+In this respect, it's likely the most important of the arrows.
+(Also, unfortunately, the one that's been executed least effectively.)
+
+Grading: 5 points for each one.
+Also:  the original question asks for the short and long-term impact, and doesn't
+specify output, so answers might include comments about the impact on prices.
+\end{parts}
+\end{solution}
+
+
+%\pagebreak \phantom{x} \pagebreak
+% ======================================================================
+\needspace{2\baselineskip}
+\item  {\it Short answers (40 points).\/}
+\begin{parts}
+\item  How sensitive to the business cycle would you expect demand for Rolex watches to be?
+Why?
+(10~points)
+
+\item If US inflation jumped to 5\%, how would you expect
+interest rates to respond?  Why?
+(10~points)
+
+\item  Given what you know about global economic conditions,
+how would you expect the US dollar to perform over the next year versus the euro?  Why?
+(10~points)
+
+\item Consider the statement:  ``Tax deductions are good, because they save taxpayers money.''
+Do you agree or disagree?  Why?
+(10~points)
+\end{parts}
+
+\begin{solution}
+\begin{parts}
+\item We would expect it to be very cyclical for two reasons:
+it's a durable good, and it's a luxury.
+Both categories are very cyclical.
+
+Grading:  5 points each for durable and luxury.
+
+\item This calls for a rough-and-ready Taylor rule calculation:
+\begin{eqnarray*}
+    i &=& r^* + \pi + 0.5 (\pi - \pi^*) + 0.5 (g - g^*) .
+\end{eqnarray*}
+With any conceivable inputs, you'd see a sharp increase in the fed funds rate,
+and therefore in other interest rates.
+
+Grading:  5 points for noting that this calls for the Taylor rule,
+5 for suggesting it calls for an increase in the interest rate.
+
+\item For most exchange rates, our best guess over periods less than 5 years is no change.
+
+Grading:  10 points for something like this.
+
+\item One feature of a good tax system is that it applies a low tax rate to a broad
+base.
+Given the overall level of spending, a tax deduction means tax rates must be higher
+on other things, which violates this principle.
+
+Grading:  10 points for something like this.
+\end{parts}
+\end{solution}
+
+\end{questions}
+
+
+\input{../../LaTeX/footer.tex}
+
+%**********************************************************************
+%**********************************************************************
+\newpage
+\def\HeadName{Practice Final \#2}
+\parindent = 0.0in
+\parskip = \bigskipamount
+\thispagestyle{empty}%
+\Head
+
+\centerline{\large \bf \HeadName}%
+\centerline{May 2013}
+%\centerline{Revised:  \today}
 
 \bigskip
 {\it You have 120 minutes to complete this exam.  Please answer each
@@ -83,19 +435,19 @@ about monetary policy,
 starting with the diagram in Figure \ref{fig:asad}.
 
 \begin{parts}
-\part If we increase the money supply, what happens to the curves in the diagram?
+\item If we increase the money supply, what happens to the curves in the diagram?
 Which ones shift?  Why?
 (5~points)
-\part What is the short-run impact on prices and output?  The long-run impact?
+\item What is the short-run impact on prices and output?  The long-run impact?
 Illustrate both in the diagram.
 (10~points)
-\part How does the impact compare to the traditional goals of monetary policy?
+\item How does the impact compare to the traditional goals of monetary policy?
 Is the policy of increasing the money supply a good one in the context of the figure?
 (10~points)
-\part Now consider the same thing from the perspective of the quantity theory equation.
+\item Now consider the same thing from the perspective of the quantity theory equation.
 If velocity is constant, what is the impact of an increase in the money supply?
 (10~points)
-\part How do your answers to (b) and (d) compare?
+\item How do your answers to (b) and (d) compare?
 Is your analysis in (b) consistent with the quantity theory?
 (5~points)
 \end{parts}
@@ -140,18 +492,18 @@ We'll refer to the diagram:
 
 
 \begin{parts}
-\part An increase in the money supply shifts aggregate demand to the right.
+\item An increase in the money supply shifts aggregate demand to the right.
 The new curve is represented in the diagram by AD$'$.
 
-\part In the short run, we move from A to B.  Prices and output both rise.
+\item In the short run, we move from A to B.  Prices and output both rise.
 In the long run, we move to C, where we see (relative to A) that the only impact is on prices.
 
-\part The traditional goals are (i) output equal to $Y^*$ and
+\item The traditional goals are (i) output equal to $Y^*$ and
 (ii) stable prices.
-We miss on both in the short run and the long run.
+We miss on both in the short run and on stable prices in the long run.
 The best policy is to stay at A.
 
-\part The quantity theory equation is
+\item The quantity theory equation is
 \begin{eqnarray*}
     M V &=& P Y ,
 \end{eqnarray*}
@@ -162,7 +514,7 @@ of $P$ and $Y$.
 
 Grading:  5 points for the equation, 5 points for noting its consequences.
 
-\part We found the same in our AS/AD analysis,
+\item We found the same in our AS/AD analysis,
 but in the latter
 we also had a way to determine how much of each,
 and how that changes over different time horizons.
@@ -184,7 +536,7 @@ Inflation (\%) & 2.6 & --0.8 & 1.4 & 3.7 & 2.8 & 0.4 \\
 Govt revenue (\% of GDP)  & 41.1 & 39.6 & 41.4 & 45.0 & 41.0 & 40.7 \\
 Govt spending (\% of GDP) & 44.8 & 49.8 & 51.3 & 49.4 & 47.4 & 46.7  \\
 Public sector balance (\% of GDP) & --3.7 & --10.2 & --9.9 & --4.4 & --6.4 & --6.0\\
-Primary balance (\% of GDP)  & --1.0 & --7.6 &  --7.1 & --0.6 & --2.4 & --0.5   \\
+Primary surplus (\% of GDP)  & --1.0 & --7.6 &  --7.1 & --0.6 & --2.4 & --0.5   \\
 Govt debt (yearend, \% of GDP) & 71.7 & 83.4 & 91.0 & 98.9 & 118.2 \\
 Interest rate paid on debt (\%) &  & 3.6 & 3.5 & 4.0 & 3.6	& 4.2 \\
 Market rate on debt (\%)        & 4.5 & 4.2 & 5.4 & 10.2 & 10.5 & 6.3 \\
@@ -236,16 +588,16 @@ Using all of the information above, and your own experience and good judgement,
 assess the risks to an investor in Portuguese government debt.
 %
 \begin{parts}
-\part Use what you know about debt dynamics to compute the ratio
+\item Use what you know about debt dynamics to compute the ratio
 of government debt to GDP at year-end 2013.
 What factors contribute to this number?
 (10~points)
-\part How important is the interest rate paid on debt?
+\item How important is the interest rate paid on debt?
 How would your analysis change if the rate rose by 2\%?
 Fell by 2\%?
 Which is more likely, in your view?
 (10~points)
-\part Overall, how would you assess the risks to investors?
+\item Overall, how would you assess the risks to investors?
 What are the biggest risks?
 Would you buy Portuguese debt now?
 (20~points)
@@ -253,7 +605,7 @@ Would you buy Portuguese debt now?
 
 \begin{solution}
 \begin{parts}
-\part The debt dynamics equation is
+\item The debt dynamics equation is
 \begin{eqnarray*}
    \Delta (B_t/Y_t)  &=&  (i_t - \pi_t)(B_{t-1}/Y_{t-1})
                 - g_t (B_{t-1}/Y_{t-1}) + D_t/Y_t .
@@ -265,7 +617,7 @@ The three terms are
 \end{eqnarray*}
 Their total is 8.5, so the ratio of debt to GDP will rise from 118.2 to 126.7.
 
-\part This involves the first term above.  If we increase the interest rate paid
+\item This involves the first term above.  If we increase the interest rate paid
 by 2\%, that adds $ 0.02 \times 118.2 = 2.4$,
 so you get an additional increase in debt of 2.4\% of GDP.
 Similarly, a decline of 2\% leads to a decline in debt of the same amount.
@@ -273,7 +625,7 @@ Given the large difference between the interest rate paid on the debt
 and the current market rate, it seems more likely the rate will go up
 than go down.
 
-\part This is a call for the checklist:
+\item This is a call for the checklist:
 \begin{itemize}
 \item Debt and deficits.
 (i)~The calculation shows us debt is still rising, although a substantial part
@@ -288,7 +640,7 @@ from a bad economy.
 Portugal is part of the Euro Zone and does not have any control over
 its exchange rate.
 
-\part Politics.  Always an issue, but the EIU thinks
+\item Politics.  Always an issue, but the EIU thinks
 it's mostly under control.
 \end{itemize}
 The biggest risk seems to be that the government is unable to get
@@ -306,18 +658,18 @@ and if they continue to get favorable terms from the troika.
 % ======================================================================
 \question {\it Short answers (40 points).\/}
 \begin{parts}
-\part Draw the cross-correlation function for a countercyclical lagging indicator.
+\item Draw the cross-correlation function for a countercyclical lagging indicator.
 (10~points)
-\part In the Euro Zone, GDP growth is now $-0.5$\%
+\item In the Euro Zone, GDP growth is now $-0.5$\%
 and inflation is 1.7\%.
 The ECB recently reduced its target interest rate to 0.5\%.
 Use the Taylor rule to assess the suitability of this policy.
 (10~points)
-\part Describe how China's purchases of foreign currency affect
+\item Describe how China's purchases of foreign currency affect
 the balance sheet of the central bank, the People's Bank of China.
 How would it be affected by ``sterlization.''
 (10~points)
-\part The Economist reports that Big Macs cost about the same in Canada
+\item The Economist reports that Big Macs cost about the same in Canada
 and the US in 2008, but are now 25\% more expensive in Canada.
 What does this suggest about the ``dollar-dollar'' exchange rate over the next 6 months?
 (10~points)
@@ -325,20 +677,21 @@ What does this suggest about the ``dollar-dollar'' exchange rate over the next 6
 
 \begin{solution}
 \begin{parts}
-\part The largest correlation should be in the lower-right quadrant,
+\item The largest correlation should be in the lower-right quadrant,
 like the ccf for the unemployment rate in Figure 11.3 of the book.
 Your figure should be labeled correctly, with leads to the left and
 lags to the right.
 
-\part The Taylor rule calculation is something like this:
+\item The Taylor rule calculation is something like this:
 \begin{eqnarray*}
     i &=& r^* + \pi + 0.5 (\pi - \pi^*) + 0.5 (g - g^*) .
 \end{eqnarray*}
-The US targets are
+We need some inputs to put this to work, your call what that might be.  
+The US numbers are
 $ r^* = 2$, $\pi^* = 2$, and $g^* = 3$.
 If we use the same, we get $i = 1.8$, well above the current rate of 0.5.
 
-\part Let's say the PBOC's balance sheet looks something like this:
+\item Let's say the PBOC's balance sheet looks something like this:
 %
 \begin{center}
 \begin{tabular}{lr|lr}
@@ -377,7 +730,7 @@ in exchange:
 %
 This transaction is referred to as ``sterilization.''
 
-\part This is a PPP-like calculation:  goods are expensive in Canada,
+\item This is a PPP-like calculation:  goods are expensive in Canada,
 so the Canadian dollar is overvalued.
 We know from experience that this has no predictive value in the short term.
 \end{parts}
@@ -386,22 +739,21 @@ We know from experience that this has no predictive value in the short term.
 \end{questions}
 %\pagebreak \phantom{xx} %\pagebreak \phantom{xx}
 
-\vfill
-\centerline{\it \copyright \ \number\year \ NYU Stern
-School of Business}
 
+\input{../../LaTeX/footer.tex}
 
 %**********************************************************************
 %**********************************************************************
 \newpage
-\def\HeadName{Practice Final Examination 2}
+\def\HeadName{Practice Final \#3}
 \parindent = 0.0in
 \parskip = \bigskipamount
-\setcounter{page}{1} \thispagestyle{empty}
+%\setcounter{page}{1} 
+\thispagestyle{empty}
 \Head
 
 \centerline{\large \bf \HeadName}%
-\centerline{Revised:  \today}
+\centerline{May 2010}
 
 \bigskip
 You have 120 minutes to complete this exam.  Please answer each
@@ -448,14 +800,14 @@ The following questions should help you work your
 way through this process.
 %
 \begin{parts}
-\part How would you interpret the Fed's statement in terms
+\item How would you interpret the Fed's statement in terms
 of its goals of low inflation and full employment?
 Do you agree that the evidence, as presented,
 suggests that inflation is
 the ``predominant policy concern''?
 (10~points)
 
-\part Use the aggregate supply and demand framework
+\item Use the aggregate supply and demand framework
 to illustrate how the FOMC might think about monetary policy.
 Consider each of the following questions in turn:
 (i)~How would an increase in the money supply affect
@@ -463,7 +815,7 @@ output and prices in the short run?
 (ii)~In the long run?
 (10~points)
 
-\part Given the Fed's assessment of current economic conditions,
+\item Given the Fed's assessment of current economic conditions,
 how would you expect it to respond?
 Would you expect interest rates to rise or fall?
 (10~points)
@@ -471,14 +823,13 @@ Would you expect interest rates to rise or fall?
 
 \begin{solution}
 \begin{parts}
-\part
-The statement suggests that inflation is above target
+\item The statement suggests that inflation is above target
 (``core inflation elevated'') and output is at the target
 (``high level of resource utilization'') or possible beyond it.
 With output at or above target, inflation is the appropriate focus.
 GDP growth points the other way, so there's a question about this assessment.
 
-\part Draw a diagram with AS, AD, and AS$^*$.
+\item Draw a diagram with AS, AD, and AS$^*$.
 %Note in particular where the short-run equilibrium (where AS and AD cross)
 %is relative to AS$^*$.
 Assume for the time being that we start at a long-run equilibrium
@@ -500,7 +851,7 @@ steeper the curve, the smaller the increase in output. [For
 practice, contrast this analysis with one where we start to the left
 of AS$^*$.]
 
-\part The comment about utilization tells you that
+\item The comment about utilization tells you that
 the FOMC sees output as at or beyond the long-run supply curve AS$^*$.
 To reduce inflation, the Fed would reduce the money supply,
 shifting aggregate demand left.
@@ -611,16 +962,16 @@ of high quality and stable.
 With this information in hand, you go through your checklist:
 %
 \begin{parts}
-\part Fiscal policy 1.
+\item Fiscal policy 1.
 Why are the total and primary government balances different?
 (10~points)
 
-\part Fiscal policy 2.
+\item Fiscal policy 2.
 What would you estimate for the debt-to-GDP ratio
 at the end of 2009?
 (20~points)
 
-\part Considering fiscal policy and other risk factors,
+\item Considering fiscal policy and other risk factors,
 how do you see the risks to the Australian economy
 over the next two years or so?
 (10~points)
@@ -628,7 +979,7 @@ over the next two years or so?
 
 \begin{solution}
 \begin{parts}
-\part The difference is interest on government debt.
+\item The difference is interest on government debt.
 The government budget looks like (you'll have to look
 up the notation)
 \begin{eqnarray*}
@@ -640,7 +991,7 @@ term:  $ i B_{t-1}$.
 The numbers tell us this is expected to be 0.7\% of GDP
 (the difference between the primary and total deficits).
 
-\part The debt-to-GDP ratio evolves like this:
+\item The debt-to-GDP ratio evolves like this:
 \begin{eqnarray*}
    \Delta (B_t/Y_t)  &=&  (i_t - \pi_t)(B_{t-1}/Y_{t-1})
                 - g_t (B_{t-1}/Y_{t-1}) + D_t/Y_t .
@@ -655,7 +1006,7 @@ That gives us
 \end{eqnarray*}
 so the debt-to-GDP ratio rises to 17.0\%.
 
-\part You have some flexibility here, but I would expect you to
+\item You have some flexibility here, but I would expect you to
 go through the checklist:
 fiscal policy (done),
 exchange rate (overvalued but flexible, with limited reserves),
@@ -681,7 +1032,7 @@ see if there are any obvious landmines lying around.]
 \question {\it Miscellany (50 points).}
 
 \begin{parts}
-\part {\it Chinese crisis?\/}
+\item {\it Chinese crisis?\/}
 An analyst suggested that China may suffer a currency crisis
 along the lines of Mexico in 1994-95,
 in which the peso fell sharply when the Banco de Mexico
@@ -689,23 +1040,23 @@ ran out of foreign currency reserves.
 Do you find this scenario likely or unlikely?  Why?
  (10~points)
 
-\part {\it Government deficits.\/}
+\item {\it Government deficits.\/}
 Can a country run a fiscal (government) deficit forever?
 Why or why not?
  (10~points)
 
 
-\part {\it Canadian inflation.\/}
+\item {\it Canadian inflation.\/}
 In Canada over the last year, inflation has been 2.3\%
 and money growth  has been 11.8\%.
 Do you find the difference between the two numbers surprising?
 Why or why not?  (10~points)
 
-\part {\it Leading indicators.\/}
+\item {\it Leading indicators.\/}
 Explain what a leading indicator is
 and give an example for the US.  (10~points)
 
-\part {\it Monetary policy mechanics.\/}
+\item {\it Monetary policy mechanics.\/}
 Use the central bank's balance sheet to describe
 how it
 maintains the short-term interest rate at a specific level.
@@ -714,38 +1065,33 @@ maintains the short-term interest rate at a specific level.
 
 \begin{solution}
 \begin{parts}
-\part
-(i)~China has enormous foreign exchange
+\item (i)~China has enormous foreign exchange
 reserves:  they won't run out any time soon.
 (ii)~The renminbi seems to be undervalued:
 people want to buy it,
 not sell it, which results in the central bank accumulating reserves,
 not losing them.
 
-\part
-The present value of future primary surpluses has to equal
+\item The present value of future primary surpluses has to equal
 the current debt.  Thus past deficits must be balanced by future
 surpluses --- you can't run a primary deficit forever. The key word
 is primary:  you can run a primary surplus and an overall deficit at
 the same time, as we see in (for example) Turkey.
 
-\part
-Under the quantity theory, inflation equals money growth
+\item Under the quantity theory, inflation equals money growth
 minus real GDP growth. Unless real GDP growth is 9\%, something's
 wrong. What's wrong is that this relation is well known not to work
 in the short run.  Over periods of several years, however, it
 typically works pretty well.
 
-\part
-A leading indicator (of the economy)
+\item A leading indicator (of the economy)
 is an observable economic variable whose ups and
 downs precede those in (say) real GDP.
 You can see this in the cross-correlation function, for example.
 Common examples:  housing starts, stock market indexes,
 interest rate spread (long minus short).
 
-\part
-Central banks manage short-term interest rates through
+\item Central banks manage short-term interest rates through
 ``open market operations'': buying and selling government
 securities. Selling securities, for example, reduces the amount of
 currency in private circulation, which generally increases
@@ -761,22 +1107,21 @@ reducing the quantity of currency in circulation.
 %\pagebreak \phantom{bla} \pagebreak \phantom{bla}
 
 
-\vfill \centerline{\it \copyright \ \number\year \
-NYU Stern School of Business}
 
-
+\input{../../LaTeX/footer.tex}
 
 %**********************************************************************
 %**********************************************************************
 \newpage
-\def\HeadName{Practice Final Examination 3}
+\def\HeadName{Practice Final \#4}
 \parindent = 0.0in
 \parskip = \bigskipamount
-\setcounter{page}{1} \thispagestyle{empty}
+%\setcounter{page}{1} 
+\thispagestyle{empty}
 \Head
 
 \centerline{\large \bf \HeadName}%
-\centerline{Revised:  \today}
+\centerline{May 2009}
 
 \bigskip
 You have 120 minutes to complete this exam.  Please answer each
@@ -811,15 +1156,15 @@ which gradually reduces the value of those foreign assets in renminbi terms.
 \end{quote}
 
 \begin{parts}
-\part Use the central bank's balance sheet to show how purchases of
+\item Use the central bank's balance sheet to show how purchases of
 foreign currency increase the monetary base (think:  supply of currency).
 (10~points)
 
-\part Show how sterilization can be used to reverse the impact on
+\item Show how sterilization can be used to reverse the impact on
 the supply of currency.
 (10~points)
 
-\part You may note that interest rates have now flipped, with Chinese interest rates above US interest rates.
+\item You may note that interest rates have now flipped, with Chinese interest rates above US interest rates.
     What does this imply for the returns on the PBOC's balance sheet?
     How might it avoid this outcome?
 (10~points)
@@ -827,7 +1172,7 @@ the supply of currency.
 
 \begin{solution}
 \begin{parts}
-\part A typical central bank balance sheet looks something like this:
+\item A typical central bank balance sheet looks something like this:
 %
 \begin{center}
 \begin{tabular}{lrclr}
@@ -856,7 +1201,7 @@ Then the balance sheet becomes
 This is the impact of the accumulation of reserves on the monetary base described by Yam.
 
 
-\part To undo the increase in the monetary base, the PBOC will issue 100 worth of bonds and accept money in return:
+\item To undo the increase in the monetary base, the PBOC will issue 100 worth of bonds and accept money in return:
 %
 \begin{center}
 \begin{tabular}{lrclr}
@@ -885,7 +1230,7 @@ are issued primarily to Chinese commercial banks,
 as outlined above.
 Note, as Yam does, that assets and liabilities are equal.
 
-\part The PBOC is now likely losing money on its portfolio
+\item The PBOC is now likely losing money on its portfolio
 for two reasons:
 (i)~because the rate it's paying on liabilities is greater than
 the rate received on assets and
@@ -913,12 +1258,12 @@ may affect the course of domestic inflation.
 \end{quote}
 %
 \begin{parts}
-\part Use aggregate supply and demand to
+\item Use aggregate supply and demand to
 describe how expansionary monetary policy
 affects output and inflation in the short run.
 (10~points)
 
-\part Back to Bernanke:
+\item Back to Bernanke:
 What do you see as the impact of globalization
 (think: imports from China)
 on domestic inflation?
@@ -933,12 +1278,12 @@ Do you find the model persuasive in this respect?
 
 \begin{solution}
 \begin{parts}
-\part This would increase both output and prices (inflation,
+\item This would increase both output and prices (inflation,
 loosely speaking).  Your answer should show a diagram with
 AS, AD, and AS$^*$.
 AD shifts out, with the stated result.
 
-\part The typical argument is that AS has become flatter,
+\item The typical argument is that AS has become flatter,
 since attempts to raise prices will meet with strong foreign competition.
 As a result, expansionary monetary policy has a
 smaller impact on inflation and larger impact on output.
@@ -951,17 +1296,17 @@ smaller impact on inflation and larger impact on output.
 \question {\it Miscellany (50 points).}
 
 \begin{parts}
-\part {\it Exchange rates.\/}
+\item {\it Exchange rates.\/}
 {\it The Economist\/} reports that a Big Mac costs \$2.90 in the US, \$3.28 in the eurozone,
 and \$2.33 in Japan.  (These prices are averages for the various regional markets, expressed in US
 dollars using current spot exchange rates.)  What does this suggest about the likely change in
 value of the euro and yen v. the dollar over the coming 6 months?  6 years? (10~points)
 
-\part {\it Inflation.\/}
+\item {\it Inflation.\/}
 Milton Friedman once said:  inflation is always and everywhere a monetary phenomenon.
 Do you agree or disagree?  Why or why not?  (10~points)
 
-\part {\it Employment report.\/}
+\item {\it Employment report.\/}
 At 8:30 am on April 6, 2006,
 the US Bureau of Labor Statistics released
 its closely-watched employment report, {\it The Employment Situation\/}.
@@ -972,12 +1317,12 @@ for maturities from 2 to 30 years.
 Why?
 (10~points)
 
-\part {\it ECB policy.\/}
+\item {\it ECB policy.\/}
 The European Central Bank has kept short-term interest rates
 in the Euro Zone well above those in the US.
 Why?  (10~points)
 
-\part {\it Cross-correlation function.\/}
+\item {\it Cross-correlation function.\/}
 Describe the cross-correlation function and show how it can
 be used to identify promising leading indicators.
 (10~points)
@@ -986,12 +1331,12 @@ be used to identify promising leading indicators.
 \begin{solution}
 \begin{parts}
 
-\part   PPP suggests that exchange rates will adjust to make prices the same across countries. In
+\item   PPP suggests that exchange rates will adjust to make prices the same across countries. In
 this case, that means the dollar will rise against the euro, fall against the yen.  Is this right?
 Over short periods of time, exchange rates are close to unpredictable by any means, PPP included.
 Over longer periods of time (5-20 years) PPP is a reasonable indicator.
 
-\part It has lots of truth in it, but I'd disagree for two reasons.
+\item It has lots of truth in it, but I'd disagree for two reasons.
 First, it's an incomplete statement for high inflations:
 it's true, but high money growth itself typically stems from
 a government deficit.
@@ -1001,20 +1346,20 @@ It's entirely possible, as our AS/AD analysis implies, that
 money can have only a modest short-run impact on inflation,
 and that other demand and supply factors play a role, too.
 
-\part  I'd start with the Taylor rule:  indicators of high output
+\item  I'd start with the Taylor rule:  indicators of high output
 lead to high interest rates.
 The deeper question is why this shows up in long yields.
 Certainly it will take some time to affect the Fed's choice of
 target interest rate, but the impact on the very long end is a
 typical, if somewhat mysterious, result.
 
-\part One reason is that the ECB, by design,
+\item One reason is that the ECB, by design,
 places greater weight on inflation:  its primary goal is price stability.
 Another is that they have not had the kind of financial turmoil
 that has afflicted US markets and driven the Fed to
 largely abandon its own devotion to stable prices.
 
-\part The cross-correlation function is a plot of the correlation
+\item The cross-correlation function is a plot of the correlation
 of the correlation of two variables at different leads and lags
 against the lead or lag.
 Formally, the ccf for two variables $x$ and $y$ is a plot
@@ -1028,24 +1373,21 @@ against $k$.
 
 \end{questions}
 
-%\pagebreak \phantom{bla} \pagebreak \phantom{bla}
 
-
-\vfill \centerline{\it \copyright \ \number\year \
-NYU Stern School of Business}
+\input{../../LaTeX/footer.tex}
 
 %**********************************************************************
 %**********************************************************************
 \newpage
-\def\HeadName{Practice Final Examination 4}
+\def\HeadName{Practice Final \#5}
 \parindent = 0.0in
 \parskip = \bigskipamount
 \thispagestyle{empty}%
 \Head
 
 \centerline{\large \bf \HeadName}%
-%\centerline{March 9, 2005}
-\centerline{Revised:  \today}
+\centerline{December 2012}
+%\centerline{Revised:  \today}
 
 \bigskip
 You have 120 minutes to complete this exam.  Please answer each
@@ -1100,11 +1442,11 @@ the information above, the data in Table \ref{tab:ghana},
 and your own good judgement and analytical skills.
 
 \begin{parts}
-\part  You decide to start with a fiscal assessment.
+\item  You decide to start with a fiscal assessment.
 What trend do you see in government revenues and expenses?
 (5~points)
 
-\part You notice that neither the primary deficit nor
+\item You notice that neither the primary deficit nor
 interest expenses are reported separately.
 How would you estimate them from the numbers in the table?
 What are their values for 2011?
@@ -1112,12 +1454,12 @@ What are their values for 2011?
 just make up primary deficit numbers somehow.\/}
 (10~points)
 
-\part Using what you know about government debt dynamics,
+\item Using what you know about government debt dynamics,
 compute the ratio of government debt to GDP for 2011.
 What factors contribute the most to the change from 2010?
 (10~points)
 
-\part Overall, how would you assess the risks to Ghana's economy over
+\item Overall, how would you assess the risks to Ghana's economy over
 the next couple of years?
 (10~points)
 \end{parts}
@@ -1160,14 +1502,14 @@ and click on the pushpin):
 \attachfile{exam_final_s12_answerkey.xlsx}
 
 \begin{parts}
-\part Trends include:
+\item Trends include:
 (i)~revenues and spending both rising,
 (ii)~spending still ahead of revenue (there's a deficit),
 and (as a direct result)
 (iii)~ratio of debt to GDP rising a little
 (more on that to come).
 
-\part {\it Comment:  this was more difficult than intended.}
+\item {\it Comment:  this was more difficult than intended.}
 Remember that interest payments in year $t$ are $ i_t B_{t-1}$.
 Expressed as a ratio to GDP we have $ i_t B_{t-1}/Y_t$.
 This is a little involved, but we can get what we want from
@@ -1178,7 +1520,7 @@ This is a little involved, but we can get what we want from
 That gives us interest payments in 2011 of 5.7\% of GDP and
 a primary deficit of $-0.2$\% (that is, a surplus).
 
-\part The key relation is this one:
+\item The key relation is this one:
 \begin{eqnarray*}
     \Delta ({B_{t}}/{Y_{t}})
             &=&
@@ -1213,7 +1555,7 @@ interest +7.9, growth --7.0, and the primary deficit --1.7.
 One thing you might note is that impact of a very high interest rate
 and similarly high real GDP growth.
 
-\part This is a call to look at the checklist:
+\item This is a call to look at the checklist:
 \begin{itemize}
 \item Government debt and deficits:  we have deficits, but there's not
 much sign yet of a growth debt to GDP ratio.
@@ -1242,13 +1584,13 @@ By an accident of history, health insurance in the US is generally
 provided by employers.
 Suppose a sharp rise in healthcare costs leads firms to hire fewer workers.
 \begin{parts}
-\part How would you represent this in an aggregate supply and demand diagram?
+\item How would you represent this in an aggregate supply and demand diagram?
 Which curve shifts?  In which direction?
 (10~points)
-\part What is the new short-run equilibrium?  Long-run equilibrium?
+\item What is the new short-run equilibrium?  Long-run equilibrium?
 What happens to inflation and output?
 (10~points)
-\part How should the central bank respond?
+\item How should the central bank respond?
 Be specific about its goals and how it would accomplish them.
 (10~points)
 \end{parts}
@@ -1256,7 +1598,7 @@ Be specific about its goals and how it would accomplish them.
 
 \begin{solution}
 \begin{parts}
-\part Since we're talking about firms and production,
+\item Since we're talking about firms and production,
 this must involve the supply side of the model.
 We shift AS and AS$^*$ to the left, both by the same amount.
 See the figure below.
@@ -1305,7 +1647,7 @@ See the figure below.
 Grading:  10 points for noting that it's a supply shift
 and reproducing the figure above.
 
-\part We started at A.
+\item We started at A.
 After the shift, we move to a new short-run equilibrium at B,
 where the new AS crosses AD.
 Evidently output falls and prices rise.
@@ -1318,7 +1660,7 @@ Grading:  7 points for telling us which curves determine
  short-run and long-run equilibria and 3 points for reporting
  the implications for output and prices.
 
-\part The central bank has two goals:  stable prices and output
+\item The central bank has two goals:  stable prices and output
 at its long-run equilibrium.
 Here we've moved from A to C.
 We're ok at C on the second goal:  output fell,
@@ -1343,29 +1685,29 @@ Please explain why each statement is true, false, or uncertain.
 The explanation is essential.
 %
 \begin{parts}
-\part The New York Times reports that Apple paid a worldwide corporate
+\item The New York Times reports that Apple paid a worldwide corporate
 tax rate of about 10\%, while Walmart paid about 24\%.
 This difference in tax rates is good for the global economy,
 because Apple is part of the high-growth technology sector.
 (10~points)
 
-\part The unemployment rate is a leading countercyclical indicator
+\item The unemployment rate is a leading countercyclical indicator
 of economic growth.
 (10~points)
 
-\part If a central bank is purchasing foreign currency,
+\item If a central bank is purchasing foreign currency,
 sterilization would consist of selling bonds.
 (10~points)
 
-\part Purchases of household furniture are more cyclical
+\item Purchases of household furniture are more cyclical
 than purchases of toothpaste.
 (10~points)
 
-\part If year-on-year GDP growth rises 1 percent, you
+\item If year-on-year GDP growth rises 1 percent, you
 would expect the fed funds rate to go up by roughly 1.5 percent.
 (10~points)
 
-\part Since 1983, Hong Kong has run a hard peg, with
+\item Since 1983, Hong Kong has run a hard peg, with
 the Hong Kong Dollar trading between 7.75 and 7.85 per US dollar.
 As a result, Hong Kong inherits US monetary policy.
 (10~points)
@@ -1373,19 +1715,19 @@ As a result, Hong Kong inherits US monetary policy.
 
 \begin{solution}
 \begin{parts}
-\part False.  A sound principle of tax policy is to apply the same rate
+\item False.  A sound principle of tax policy is to apply the same rate
 to (in this case) both firms:  this is what maximizes the surplus,
 minimizes the cost of distortions.
 And in this case, it's arguable that Walmart has done more for aggregate
 productivity than Apple.
 
-\part True.  Furniture is a durable good, hence likely to be more cyclical
+\item True.  Furniture is a durable good, hence likely to be more cyclical
 than a nondurable good like toothpaste.
 
-\part Half true.  The unemployment rate is countercyclical,
+\item Half true.  The unemployment rate is countercyclical,
 but it's a lagging indicator.
 
-\part True.  Here's how that might look.
+\item True.  Here's how that might look.
 The central bank starts out with the balance sheet
 
 \begin{center}
@@ -1421,12 +1763,12 @@ FX reserves & 15
 \end{tabular}
 \end{center}
 
-\part False.
+\item False.
 It's an allusion to the Taylor rule,
 which says (in the form we used it in class) that an increase in GDP growth
 of 1\% would lead to an increase in the fed funds rate of 0.5\%.
 
-\part True.
+\item True.
 It's a reference to the trilemma, where you get to choose no more than two of:
 (i) fixed exchange rate, (ii)~free flows of capital, and (iii)~independent monetary policy. Hong Kong has chosen (i) and (ii), given up on (iii).
 
