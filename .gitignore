@@ -33,6 +33,7 @@ desktop.ini
 *.synctex.gz
 *.synctex.gz(busy)
 *.pdfsync
+*.tex.bak
 
 ## Potentially large data files
 *.xls
