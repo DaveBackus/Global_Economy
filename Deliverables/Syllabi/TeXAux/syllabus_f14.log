@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.4.30)  12 NOV 2014 09:31
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.4.30)  1 APR 2015 08:06
 entering extended mode
 **syllabus_f14.tex
 
@@ -139,6 +139,10 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
 )
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\eurosym\eurosym.sty"
+Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
+\@eurobox=\box28
+)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption.sty"
 Package: caption 2012/02/19 v3.2f Customizing captions (AR)
 
@@ -260,7 +264,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip46
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 29.
+Package hyperref Info: Option `colorlinks' set `true' on input line 30.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\verbatim.sty"
 Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
@@ -290,7 +294,7 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\titlesec\titlesec.sty"
 Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
-\ttl@box=\box28
+\ttl@box=\box29
 \beforetitleunit=\skip47
 \aftertitleunit=\skip48
 \ttl@plus=\dimen136
@@ -305,7 +309,7 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \labelindent=\skip49
 \enit@outerparindent=\dimen141
 \enit@toks=\toks24
-\enit@inbox=\box29
+\enit@inbox=\box30
 \enitdp@description=\count115
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\attachfile\attachfile.sty"
@@ -336,7 +340,7 @@ Package color Info: Driver file: pdftex.def on input line 130.
 \atfi@appearancewidth=\skip53
 \atfi@appearanceheight=\skip54
 \atfi@appearancedepth=\skip55
-\atfi@appearancebox=\box30
+\atfi@appearancebox=\box31
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\needspace\needspace.sty"
 Package: needspace 2010/09/12 v1.3c reserve vertical space
@@ -362,7 +366,7 @@ LaTeX Font Info:    ... okay on input line 11.
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count120
 \scratchdimen=\dimen144
-\scratchbox=\box31
+\scratchbox=\box32
 \nofMPsegments=\count121
 \nofMParguments=\count122
 \everyMPshowfont=\toks25
@@ -375,7 +379,7 @@ LaTeX Font Info:    ... okay on input line 11.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box32
+\AtBeginShipoutBox=\box33
 Package hyperref Info: Link coloring ON on input line 11.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
@@ -437,36 +441,36 @@ Overfull \vbox (16.66663pt too high) has occurred while \output is active []
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 3.
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 370.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 379.
 
 Overfull \vbox (16.66663pt too high) has occurred while \output is active []
 
 
 [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 370.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 379.
 
 (C:\Users\dbackus\Dropbox\Documents\Classes\Global_Economy\Deliverables\Syllabi
 \TeXAux\syllabus_f14.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 370.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 370.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 379.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 379.
 Package rerunfilecheck Info: File `syllabus_f14.out' has not changed.
 (rerunfilecheck)             Checksum: C16AE50DC9C0DA90DCE44FC10AF665E1;655.
  ) 
 Here is how much of TeX's memory you used:
- 7588 strings out of 494045
- 114080 string characters out of 3145963
- 200904 words of memory out of 3000000
- 10771 multiletter control sequences out of 15000+200000
+ 7652 strings out of 494045
+ 115028 string characters out of 3145963
+ 201241 words of memory out of 3000000
+ 10831 multiletter control sequences out of 15000+200000
  11845 words of font info for 46 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 38i,8n,38p,316b,440s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,9n,38p,316b,450s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:
 /Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/P
 rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on syllabus_f14.pdf (5 pages, 98274 bytes).
+Output written on syllabus_f14.pdf (5 pages, 99283 bytes).
 PDF statistics:
- 113 PDF objects out of 1000 (max. 8388607)
+ 115 PDF objects out of 1000 (max. 8388607)
  19 named destinations out of 1000 (max. 500000)
  110 words of extra memory for PDF output out of 10000 (max. 10000000)
 
