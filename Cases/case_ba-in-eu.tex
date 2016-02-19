@@ -1,0 +1,144 @@
+\documentclass[12pt]{article}
+
+\usepackage{../LaTeX/ge14}
+\input{../LaTeX/preamble.tex}
+
+
+\def\ClassName{The Global Economy}
+\def\Category{Mini-Case}
+\def\HeadName{Business Analytics in Europe}
+
+\begin{document}
+\parindent = 0.0in
+\parskip = 0.5\bigskipamount
+\thispagestyle{empty}%
+\Head
+
+\centerline{\large \bf \HeadName}%
+\centerline{Revised:  \today}
+
+\bigskip
+As a graduating MBA student at the prestigious ecole des Hautes Etudes Commerciales (HEC) de Paris,
+you face a daunting job market as Europe struggles through its 
+worst economic climate since the 1930s.  
+In a bad job market, you figure the solution is to hire yourself. 
+Together with two classmates, you start developing plans for a business analytics startup.
+The idea is to provide data insights to a broad range of businesses located
+throughout the European Union.
+The beauty of the plan, you think, is that you can do it anywhere.
+
+
+The three of you begin to compare the pros and cons of Paris, Barcelona, and Stockholm,
+your respective home bases.
+You collect the data in Table \ref{tab:cities} and begin to sketch out a plan.
+As you think this through, you run through the issues in your mind:
+\begin{itemize} \itemsep=0.0in
+\item What features do you need in a city to make it attractive to you and your business?
+\item What are the pros and cons of each city along these dimensions?
+\item Which city do you think best fits your plans?
+\end{itemize}
+
+\bigskip
+\begin{table}[h]
+%    \tabcolsep = 0.2in
+\centering
+\begin{tabular}{lrrr}
+\toprule
+Country Indicators & France  & Spain  & Sweden  \\
+\midrule
+Ease of doing business (rank) &  38  &  52  &  14   \\
+Ease of starting a business (rank) &  41  &  142  &  61   \\
+Protecting investors (rank)     &  80  &  98    & 34  \\
+Getting electricity (rank)      &  42 &  62  &  9 \\
+Resolving insolvency (rank)     &  46 &  22 &  20 \\
+%\midrule
+Minimum wage (USD/month)        &  778 & 1009   &  none \\
+Mandatory severance (weeks of pay)        &  4   &  14    & none \\
+Unemployment rate               &  10.5  &  24.4   & 7.4  \\
+Employment rate                 & 64.3  &  55.8  &  74.7    \\
+Difficulty of dismissals (index, 1-6)   &  2.6 & 2.0 & 2.5  \\
+%\midrule
+Education of workers aged 25-34 (years) &  12.6  &  11.5  &  12.5  \\
+Internet quality (Ookla, index)    &  81.3  &  84.0  &  86.9 \\
+\midrule
+City Indicators & Paris  & Barcelona  & Stockholm  \\
+\midrule
+Quality of life (rank, Mercer)  &  34  &  44  &  20  \\
+Cost of living (index)          & 226  & 223  &  157 \\
+\bottomrule
+\end{tabular}
+\caption{Business indicators for three cities and countries.}
+\label{tab:cities}
+\end{table}
+
+
+{\vfill
+\input{../../LaTeX/footer.tex}
+}
+
+\end{document}
+
+From Peter:  \href{http://www.technologyreview.com/computing/12908/}{Ghana}
+(Good story, paywall...)
+
+
+\begin{solution}
+The challenge here is to take a random collection
+of data and use it to form a coherent view of
+the quality of the local business environment
+{\it for this particular business\/}.
+Good answers tied these measures to the needs of call centers,
+less good answers typically listed the measures and
+simply noted which country looked better.
+%
+\begin{parts}
+\part Here's a guess of the main issues
+in (roughly) declining order of importance:
+wages, English-speaking, literate and somewhat educated,
+flexible labor market, good telecommunications infrastructure,
+and general business-friendly environment.
+Most of the indicators can be mapped into these categories.
+
+Grading:  10 points for something close to this or
+something logically coherent
+on its own terms, partial credit otherwise.
+It's essential that the answer address this specific business.
+
+\part Overall they're pretty similar.
+Wages are likely lower in Ghana, since GDP per capita is.
+English isn't the official language India, but it's a common
+second language and many Indians speak English.
+In Ghana, English is the official language.
+Literacy and education are a little lower in Ghana, but there's not much difference.
+It's not clear how good the infrastructure is, but related measures
+(electricity, general infrastructure) are similar or somewhat better
+in Ghana.
+The countries are similar on employment rigidity
+(Ghana is slightly less rigid), but Ghana has higher severance costs.
+(It's not reported in the table, but
+severance payments here are for workers with 20+ years of employment,
+so the number may not be typical for this business.)
+As for the general environment:
+rule of law, control of corruption, and effectiveness of government
+are all similar in the two countries.
+
+Grading:  10 points for similar discussion.
+
+\part I'd say the two countries are similar in most respects.
+If you can run this business in India, you can probably run it in Ghana,
+where wages are lower.
+The one source of concern is severance costs --- we might
+want to look more closely at this.
+
+Things I'd want to collect more information about:
+wages for the appropriate skilled people,
+political situation, how severance works,
+whether this quality of education measure is relevant to me.
+
+Grading:  10 points for this or other logical argument.
+
+\end{parts}
+\end{solution}
+
+
+
