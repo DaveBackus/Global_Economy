@@ -29,7 +29,7 @@ desktop.ini
 
 ## Build tool auxiliary files:
 *.fdb_latexmk
-*.syntex 
+*.synctex 
 *.synctex.gz
 *.synctex.gz(busy)
 *.pdfsync
